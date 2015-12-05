@@ -1,17 +1,29 @@
 ---
 layout: page
-title: "Contact"
-meta_title: "Contact and use our contact form"
-subheadline: "Wufoo-powered contact forms"
-teaser: "Get in touch with me? Use the contact form."
+title: "院長紹介"
+meta_title: "Café Of Life 院長紹介"
+subheadline: ""
+teaser: ""
 permalink: "/profile/"
 ---
-If you need a fabulous contact form for your website, I suggest you use [Wufoo][1]. You can use three forms for free, you get no spam and if you get more than 100 entries you have to pay.
 
-<div class="panel">
-<iframe width="100%" height="650" frameborder="0" scrolling="no" src="https://phlowmedia.wufoo.com/embed/z7x3k1/"></iframe>
-</div>
+![Hideharu Sugimoto](/images/RIMG0290-india1.gif)
 
+【 院長紹介 】
+杉本秀治（すぎもと　ひではる）
+・ 財）日本スポーツクラブ協会『姿勢教育指導士』
+・『スポーツインストラクター』
 
+　プロボクサー、サラリーマンを経て、カイロプラクターへ転身。カイロプラクティックの本場米国に渡り、全米ベストカイロプラクターに選ばれたDr.Arno Burnier（アーノ・ブルニエ）氏に４年間師事。妊産婦・小児・高齢者にも優しいMLSテクニックを習得し、欧米・欧州を中心とした同氏のカイロプラクティック組織「Café of Life」の認可を得る。
 
- [1]: http://www.wufoo.com/
+　姿勢教育指導士でもあり、的確な施術だけでなく、健康を楽しむ術を指導できるカイロプラクターとして活躍中。ライフワークとして国際貢献活動 Mission of LIGHT に参加し、世界各地で老若男女10,000人以上をアジャストメントしている。妊産婦やヨガ体験者からの評価も高い。
+
+　スポーツインストラクターとして、スキューバダイビング・レスキューライセンス(PADI)を持ち、渡米した際にヘリコプターライセンスを取得。パイロット経験あり。
+
+　趣味はサルサダンス、ロードバイクでツーリングなど、様々なアクティビティを愉しむこと。
+※目下トライアスロン参加(アイアンマン)を目指して特訓中！
+
+ご予約・ご質問はお気軽に
+=============================
+
+{% include contact.kramdown %}

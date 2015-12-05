@@ -1,17 +1,51 @@
 ---
 layout: page
-title: "Contact"
-meta_title: "Contact and use our contact form"
-subheadline: "Wufoo-powered contact forms"
-teaser: "Get in touch with me? Use the contact form."
+title: "Café of Life について"
+meta_title: "Café Of Life について"
+subheadline: ""
+teaser: ""
 permalink: "/policy/"
 ---
-If you need a fabulous contact form for your website, I suggest you use [Wufoo][1]. You can use three forms for free, you get no spam and if you get more than 100 entries you have to pay.
+Café of Life カイロプラクティック Studioでは「既存の健康に関する考え方」を変えてもらう必要があるかも知れません。
 
-<div class="panel">
-<iframe width="100%" height="650" frameborder="0" scrolling="no" src="https://phlowmedia.wufoo.com/embed/z7x3k1/"></iframe>
-</div>
+Café of Lifeとは・・・
+Café of Lifeとはその名の通り、「人生のカフェ」。
+このスタジオで提供するのは飲み物ではなく、
+「人生」そして「生命」を輝かせるエッセンス。
+カフェに通うように気軽にご利用下さい。
+カフェ
 
+アジャストメントテーブル
 
+![adjusting table](/images/adjustingtable.gif)
 
- [1]: http://www.wufoo.com/
+![cafe](/images/cafe.gif)
+
+施術方針
+=============================
+
+■ Café of Lifeでは、１００％手技によってカイロプラクティックのアジャストメントを行います。
+
+■ 心身の健康と潜在能力を最大限発揮しようと取り組む方を、カイロプラクターが二人三脚でサポートいたします。したがって、ご利用者は「クライアント」であり、
+“わずらうもの”＝「患者」ではありません。
+
+■ 薬や他人に依存した健康ではなく、健康を自己でコントロールする為の考え方や生活習慣、ストレッチなどをお伝えし、長い人生を通じて最小限の時間と労力で心身ともに快適な生活を送れるようサポートいたします。
+
+■ 尊重し合える関係を築けるクライアントさんを、家族に対する「愛情」を持って施術していきます。
+
+治療院ではなくスタジオです
+=============================
+
+リラックスして施術を受けられるように、明るく笑顔の写真や絵に囲まれた室内です。
+いわゆる治療院のような雰囲気ではありません。
+完全予約制ですので、プライバシーを大切にされる方にもご利用いただけます。
+施術中に思わず熟睡してしまう方もいらっしゃいます。
+
+![dolphin](/images/dolphin.gif)
+
+壁にはイルカも泳いでいます。
+
+ご予約・ご質問はお気軽に
+=============================
+
+{% include contact.kramdown %}

@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "カイロプラクティックとは・・・"
-meta_title: "meta_title - カイロプラクティックとは・・・"
+meta_title: "Café Of Life カイロプラクティックとは・・・"
 subheadline: ""
-teaser: "teaser - カイロプラクティックとは・・・"
+teaser: ""
 permalink: "/introduction/"
 ---
 『カイロプラクティック』とは、あなたの良いものに働きかけて、『自分の力で治す』ことを手助けする目的で行なわれる療法です。
@@ -55,7 +55,4 @@ permalink: "/introduction/"
 ご予約・ご質問はお気軽に
 =============================
 
-TEL：03-3827-8188 又は、080-5528-0300
-※完全予約制です。
-お気軽にお電話、またはE-mailにてご予約下さい。
-E-mail：info@cafeoflifejapan.com
+{% include contact.kramdown %}
