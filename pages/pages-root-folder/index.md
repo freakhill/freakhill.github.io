@@ -10,18 +10,15 @@ header:
 widget1:
   title: "カイロプラクティックとは・・・"
   url: 'http://www.cafeoflife-japan.com/introduction/'
-  image: unsplash_9-302x182.jpg
-  text: '...'
+  text: ''
 widget2:
   title: "Café of Life について"
   url: 'http://www.cafeoflife-japan.com/policy/'
-  text: '...'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+  text: ''
 widget3:
   title: "アクセス"
   url: 'http://www.cafeoflife-japan.com/access/'
-  image: github-303x182.jpg
-  text: '...'
+  text: ''
 permalink: /index.html
 ---
 
