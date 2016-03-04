@@ -7,8 +7,6 @@ teaser: ""
 permalink: "/access/"
 ---
 
-NOT WRITTEN YET!
-
 地図
 =============================
 
