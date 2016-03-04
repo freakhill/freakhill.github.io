@@ -7,7 +7,22 @@
 layout: frontpage
 header:
   image_fullwidth: header_unsplash_12.jpg
-permalink: /introduction
+widget1:
+  title: "カイロプラクティックとは・・・"
+  url: 'http://www.cafeoflife-japan.com/introduction/'
+  image: unsplash_9-302x182.jpg
+  text: '...'
+widget2:
+  title: "Café of Life について"
+  url: 'http://www.cafeoflife-japan.com/policy/'
+  text: '...'
+  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+widget3:
+  title: "アクセス"
+  url: 'http://www.cafeoflife-japan.com/access/'
+  image: github-303x182.jpg
+  text: '...'
+permalink: /index.html
 ---
 
 <!-- <div id="videoModal" class="reveal-modal large" data-reveal="">
