@@ -21,7 +21,7 @@ permalink: "/service/"
 
 **ご予約・ご相談**はお気軽に
 - 03-3827-8188
-- <info@cafeoflifejapan.com>
+- <chiro.hide@gmail.com>
 
 基本料金
 =============================
