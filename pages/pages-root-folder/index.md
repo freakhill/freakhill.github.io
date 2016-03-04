@@ -10,8 +10,20 @@ widget2:
   url: 'http://www.cafeoflife-japan.com/policy/'
   text: ''
 widget3:
+  title: "院長紹介"
+  url: 'http://www.cafeoflife-japan.com/profile/'
+  text: ''
+widget4:
+  title: "サービスと料金"
+  url: 'http://www.cafeoflife-japan.com/service/'
+  text: ''
+widget5:
   title: "アクセス"
   url: 'http://www.cafeoflife-japan.com/access/'
+  text: ''
+widget6:
+  title: "お問い合せ"
+  url: 'http://www.cafeoflife-japan.com/contact/'
   text: ''
 permalink: /index.html
 ---
