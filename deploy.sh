@@ -4,12 +4,11 @@ REPO="$1"
 
 if [ -z "$REPO" ]
 then
-    SCRIPT="$( cd "$(dirname "$0")" ; pwd -P )"
+    SCRIPTDIR="$( cd "$(dirname "$0")" ; pwd -P )"
     TEMPFILE=$(mktemp)
-    cp "$SCRIPT" "$TEMPFILE"
+    cp "$0" "$TEMPFILE"
     chmod +x "$TEMPFILE"
-    REPO=$(dirname "$SCRIPT")
-    exec "$TEMPFILE" "$REPO"
+    exec "$TEMPFILE" "$SCRIPTDIR"
 fi
 
 cd "$REPO"
