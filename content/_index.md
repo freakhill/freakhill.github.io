@@ -1,8 +1,6 @@
 +++
 title = "Jojo's notes"
-
 description = "Bunch of notes I want to be publicly accessible!"
-
 # Whether to sort pages by "date", "weight", or "none". More on that below
 sort_by = "date"
 
