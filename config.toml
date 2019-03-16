@@ -15,8 +15,7 @@ theme = "hyde"
 
 [extra]
 hyde_links = [
-    {url = "https://google.com", name = "Google.com"},
-    {url = "https://google.co.jp", name = "Google.co.jp"},
+           {url = "https://www.youtube.com/watch?v=NYgq75uIMUk", name = "SFV beginner guide"}
 ]
 hyde_theme = "theme-base-0e"
 hyde_reverse = true
