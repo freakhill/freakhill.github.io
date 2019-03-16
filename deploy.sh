@@ -4,6 +4,9 @@ REPO="$1"
 
 if [ -z "$REPO" ]
 then
+    git add -A
+    git commit -am autodeploy
+    git push
     SCRIPTDIR="$( cd "$(dirname "$0")" ; pwd -P )"
     TEMPFILE=$(mktemp)
     cp "$0" "$TEMPFILE"
