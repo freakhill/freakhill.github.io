@@ -19,3 +19,4 @@ hyde_links = [
     {url = "https://google.co.jp", name = "Google.co.jp"},
 ]
 hyde_theme = "theme-base-0e"
+hyde_reverse = true
