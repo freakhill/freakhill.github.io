@@ -1,13 +1,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>http://127.0.0.1:1111/clojure/interesting/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
             <loc>http://127.0.0.1:1111/content/</loc>
             
                 <lastmod>2019-03-17</lastmod>
@@ -15,14 +8,21 @@
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/jojolisp/notes/</loc>
+            <loc>http://127.0.0.1:1111/interesting-clojure/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/rust/interesting/</loc>
+            <loc>http://127.0.0.1:1111/interesting-rust/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1111/jojolisp-notes/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
