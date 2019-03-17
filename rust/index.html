@@ -41,6 +41,10 @@
                         
                         <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;github.com&#x2F;freakhill&#x2F;jojolisp">Jojolisp&#x27;s github repo</a></li>
                         
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;www.twitch.tv&#x2F;lucyjojo">Twitch channel</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="http:&#x2F;&#x2F;www.metro.tokyo.jp&#x2F;english&#x2F;guide&#x2F;bosai&#x2F;index.html">Disaster preparedness Tokyo</a></li>
+                        
                         
                     </ul>
                 </div>
@@ -52,7 +56,37 @@
 <div class="post">
   <h1 class="post-title">Rust stuff!</h1>
   <span class="post-date">2019-03-17</span>
-  <p>Some content</p>
+  <p><a href="https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit#slide=id.p">Rust container cheat sheet</a></p>
+<h3 id="microprofile">Microprofile<a class="zola-anchor" href="#microprofile" aria-label="Anchor link for: microprofile">🔗</a>
+</h3>
+<p><a href="https://www.reddit.com/r/rust/comments/b1iwnc/microprofile_for_rust/">reddit thread</a></p>
+<p>Profiling for rust games! With a chrome interface and all. seems pretty neat!</p>
+<h3 id="building-fast-interpreters-in-rust">Building fast interpreters in Rust<a class="zola-anchor" href="#building-fast-interpreters-in-rust" aria-label="Anchor link for: building-fast-interpreters-in-rust">🔗</a>
+</h3>
+<p><a href="https://www.slideshare.net/RReverser/building-fast-interpreters-in-rust">slideshare</a></p>
+<p>raw AST interpretation slower than bytecode slower than JIT/codegen aaaand codegen has a huge constant factor but ends up beating JIT past some point.</p>
+<h4 id="raw-interpretation">Raw interpretation<a class="zola-anchor" href="#raw-interpretation" aria-label="Anchor link for: raw-interpretation">🔗</a>
+</h4>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Literal(lit) =&gt; *lit,
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Variable(var) =&gt; var.</span><span style="color:#96b5b4;">calc</span><span style="color:#c0c5ce;">(context),
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Binary { lhs, op, rhs } =&gt; {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> lhs = lhs.</span><span style="color:#96b5b4;">calc</span><span style="color:#c0c5ce;">(context);
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> rhs = rhs.</span><span style="color:#96b5b4;">calc</span><span style="color:#c0c5ce;">(context);
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">op.</span><span style="color:#96b5b4;">apply</span><span style="color:#c0c5ce;">(lhs, rhs)
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">}
+</span></pre><h4 id="bytecode">Bytecode<a class="zola-anchor" href="#bytecode" aria-label="Anchor link for: bytecode">🔗</a>
+</h4>
+<p>compile:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">
+</span></pre>
+<p>exec:</p>
+<pre style="background-color:#2b303b;">
+</pre>
+<p>Base idea is to use boxed closures as</p>
 
 </div>
 

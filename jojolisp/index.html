@@ -41,6 +41,10 @@
                         
                         <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;github.com&#x2F;freakhill&#x2F;jojolisp">Jojolisp&#x27;s github repo</a></li>
                         
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;www.twitch.tv&#x2F;lucyjojo">Twitch channel</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="http:&#x2F;&#x2F;www.metro.tokyo.jp&#x2F;english&#x2F;guide&#x2F;bosai&#x2F;index.html">Disaster preparedness Tokyo</a></li>
+                        
                         
                     </ul>
                 </div>
@@ -55,12 +59,14 @@
   <p>I want to make a lisp to develop games on PC and consoles.</p>
 <p>Use F-Expr and pervasive full program optimization, partial interpreter &amp; LLVM code generation.</p>
 <p>First order locality, packing, static &amp; dynamic environments.</p>
+<p>No GC, support for rust Pin/Unpin (build up support of gc as a library)</p>
 <p>Concepts:</p>
 <ul>
 <li>Locality</li>
 <li>Packing = Tilling * Alignment * Size of each field</li>
 <li>Modules</li>
 <li>Each symbol has an API and a version, and a locality</li>
+<li>do not export libraries/packages, but functions and static bundles each with api/version/and dependencies</li>
 </ul>
 <p>Think about:</p>
 <ul>
@@ -85,6 +91,9 @@ our language.</p>
 <li><a href="https://www.johangall.com/jojolisp/">ATS</a></li>
 <li><a href="https://www.johangall.com/jojolisp/">Learn ADA/Spark</a></li>
 <li>look for the source for rust's lifetime checker</li>
+<li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/1992/01/student.pdf">implementing functional languages</a></li>
+<li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/1992/04/spineless-tagless-gmachine.pdf">spineless tagless machine</a></li>
+<li><a href="https://wiki.clean.cs.ru.nl/Functional_Programming_and_Parallel_Graph_Rewriting">functional programming and parallel graph rewriting</a></li>
 </ul>
 
 </div>
