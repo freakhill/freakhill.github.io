@@ -8,7 +8,21 @@
         </url>
     
         <url>
-            <loc>https://www.johangall.com/jojolisp/notes/</loc>
+            <loc>https://www.johangall.com/interesting-clojure/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/interesting-rust/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/jojolisp-notes/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
