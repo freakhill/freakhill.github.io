@@ -13,6 +13,10 @@ build_search_index = false
 
 theme = "hyde"
 
+taxonomies = [
+  {name = "tags", rss = true}, # each tag will have its own RSS feed
+]
+
 [extra]
 hyde_links = [
            {url = "https://www.youtube.com/watch?v=NYgq75uIMUk", name = "SFV beginner guide"}
