@@ -20,11 +20,14 @@ Use F-Expr and pervasive full program optimization, partial interpreter & LLVM c
 
 First order locality, packing, static & dynamic environments.
 
+No GC, support for rust Pin/Unpin (build up support of gc as a library)
+
 Concepts:
 - Locality
 - Packing = Tilling * Alignment * Size of each field
 - Modules
 - Each symbol has an API and a version, and a locality
+- do not export libraries/packages, but functions and static bundles each with api/version/and dependencies
 
 Think about:
 - How to do polymorphism?? in our multi-stage compiling system
@@ -49,3 +52,7 @@ our language.
 - [ATS]()
 - [Learn ADA/Spark]()
 - look for the source for rust's lifetime checker
+- [implementing functional languages](https://www.microsoft.com/en-us/research/wp-content/uploads/1992/01/student.pdf)
+- [spineless tagless machine](https://www.microsoft.com/en-us/research/wp-content/uploads/1992/04/spineless-tagless-gmachine.pdf)
+- [functional programming and parallel graph rewriting](https://wiki.clean.cs.ru.nl/Functional_Programming_and_Parallel_Graph_Rewriting)
+

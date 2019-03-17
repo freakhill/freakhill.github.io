@@ -28,6 +28,13 @@
             
         </url>
     
+        <url>
+            <loc>http://127.0.0.1:1111/toread/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
     
         <url>
             <loc>http://127.0.0.1:1111/</loc>

@@ -16,6 +16,7 @@ taxonomies = [
 hyde_links = [
 {url = "https://www.youtube.com/watch?v=NYgq75uIMUk", name = "SFV beginner guide"},
 {url = "https://github.com/freakhill/jojolisp", name = "Jojolisp's github repo"},
+{url = "https://www.twitch.tv/lucyjojo", name = "Twitch channel"},
 ]
 hyde_theme = "theme-base-0e"
 hyde_reverse = true
