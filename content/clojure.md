@@ -10,4 +10,16 @@ in_search_index = true
 [extra]
 +++
 
-Some content
+### JIT Watch
+
+[github repo](https://github.com/AdoptOpenJDK/jitwatch)
+
+Nice insight in the behaviour of the Hotspot JIT!
+
+Need to try this out to see how it works with clojure.
+
+### Primitive maths
+
+[github repo](https://github.com/ztellman/primitive-math)
+
+Avoid hidden reflection when doing basic math in Clojure.

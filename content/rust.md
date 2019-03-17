@@ -10,6 +10,8 @@ in_search_index = true
 [extra]
 +++
 
+[Rust container cheat sheet](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit#slide=id.p)
+
 ### Microprofile
 
 [reddit thread](https://www.reddit.com/r/rust/comments/b1iwnc/microprofile_for_rust/)
