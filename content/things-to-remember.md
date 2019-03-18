@@ -1,5 +1,5 @@
 +++
-title = "This to remember"
+title = "Things to remember"
 description = "Things I have a tendency to come back to"
 date = 2019-03-17
 weight = 1
