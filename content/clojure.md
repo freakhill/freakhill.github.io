@@ -38,3 +38,18 @@ Consider forking to do an updated version
 
 [github repo](https://github.com/zcaudate/hara)
 
+### bifurcan - high performance data structure
+
+[github repo](https://github.com/lacuna/bifurcan)
+
+Description from the website:
+
+This library provides high-quality Java implementations of mutable and immutable data structures, each sharing a common API and these design principles:
+- efficient random access
+- efficient splitting and merging of collections
+- customizable equality semantics
+- contiguous memory used wherever possible
+- performance equivalent to, or better than, existing alternatives
+
+Rather than using the existing collection interfaces in java.util such as List or Map, it provides its own interfaces (IList, IMap, ISet) that provide functional semantics - each update to a collection returns a reference to a new collection. Each interface provides a method (toList, toMap, toSet) for coercing the collection to a read-only version of the standard Java interfaces.
+
