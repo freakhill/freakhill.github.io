@@ -8,6 +8,8 @@ in_search_index = true
 [extra]
 +++
 
+...
+
 attach to running riak node
 ```shell
 riak attach
