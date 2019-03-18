@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+## if this is the first time we clone this repo
+## do: git submodule update --init --recursive
+
 REPO="$1"
 
 if [ -z "$REPO" ]
