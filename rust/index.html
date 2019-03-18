@@ -81,12 +81,165 @@
 </h4>
 <p>compile:</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">
+<span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Literal(lit) =&gt; bytecode.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(BytecodeOp::Literal(*lit)),
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Variable(v) =&gt; bytecode.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(BytecodeOp::Variable(*v)),
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Binary { lhs, op, rhs } =&gt; {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">lhs.</span><span style="color:#96b5b4;">compile</span><span style="color:#c0c5ce;">(bytecode);
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">rhs.</span><span style="color:#96b5b4;">compile</span><span style="color:#c0c5ce;">(bytecode);
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">bytecode.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(BytecodeOp::BinOp(*op));
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">}
 </span></pre>
 <p>exec:</p>
 <pre style="background-color:#2b303b;">
-</pre>
-<p>Base idea is to use boxed closures as</p>
+<span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> op in &amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.ops {
+</span><span style="color:#c0c5ce;">  </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> op {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">BytecodeOp::Literal(lit) =&gt; stack.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(*lit),
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">BytecodeOp::Variable(var) =&gt; stack.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(var.</span><span style="color:#96b5b4;">calc</span><span style="color:#c0c5ce;">(context)),
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">BytecodeOp::BinOp(op) =&gt; {
+</span><span style="color:#c0c5ce;">      </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> rhs = stack.</span><span style="color:#96b5b4;">pop</span><span style="color:#c0c5ce;">().</span><span style="color:#96b5b4;">unwrap</span><span style="color:#c0c5ce;">();
+</span><span style="color:#c0c5ce;">      </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> lhs = stack.</span><span style="color:#96b5b4;">pop</span><span style="color:#c0c5ce;">().</span><span style="color:#96b5b4;">unwrap</span><span style="color:#c0c5ce;">();
+</span><span style="color:#c0c5ce;">      </span><span style="color:#c0c5ce;">stack.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(op.</span><span style="color:#96b5b4;">apply</span><span style="color:#c0c5ce;">(lhs, rhs));
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">}
+</span></pre><h4 id="boxed-closures-much-better-perf-than-ast-bytecode">Boxed closures (much better perf than ast/bytecode)<a class="zola-anchor" href="#boxed-closures-much-better-perf-than-ast-bytecode" aria-label="Anchor link for: boxed-closures-much-better-perf-than-ast-bytecode">🔗</a>
+</h4>
+<p>(target is f64 because the example is a calculator...)</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">pub type </span><span style="color:#c0c5ce;">CompiledExpr = Box&lt;dyn Fn(&amp;Context) -&gt; </span><span style="color:#b48ead;">f64</span><span style="color:#c0c5ce;">&gt;
+</span></pre><pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Literal(lit) =&gt; Box::new(</span><span style="color:#b48ead;">move </span><span style="color:#c0c5ce;">|_ctx| lit),
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Variable(var) =&gt; </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> var {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">Variable::X =&gt; Box::new(</span><span style="color:#b48ead;">move </span><span style="color:#c0c5ce;">|ctx| ctx.x),
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">...
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">},
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Binary { lhs, op, rhs } =&gt; {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> lhs = lhs.</span><span style="color:#96b5b4;">compile</span><span style="color:#c0c5ce;">();
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> rhs = rhs.</span><span style="color:#96b5b4;">compile</span><span style="color:#c0c5ce;">();
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> op {
+</span><span style="color:#c0c5ce;">      </span><span style="color:#c0c5ce;">BinOp::Add =&gt; Box::new(</span><span style="color:#b48ead;">move </span><span style="color:#c0c5ce;">|ctx| </span><span style="color:#96b5b4;">lhs</span><span style="color:#c0c5ce;">(ctx) + </span><span style="color:#96b5b4;">rhs</span><span style="color:#c0c5ce;">(ctx)),
+</span><span style="color:#c0c5ce;">      </span><span style="color:#c0c5ce;">...
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">}
+</span></pre>
+<p>Then call the resulting closure.</p>
+<p>Why is it faster???</p>
+<p>Bytecode goes:</p>
+<ul>
+<li>fetch op</li>
+<li>pop stack pop stack</li>
+<li>match BinaryOp, op.apply (vtable) on 2 params</li>
+<li>stack push</li>
+</ul>
+<p>Boxed closures go:</p>
+<ul>
+<li>indirect call into indirect call (no vtable)</li>
+</ul>
+<p>no data stack, just the c stack</p>
+<p>matters that much?</p>
+<p>think about it later on...</p>
+<h4 id="llvm-from-rust">LLVM from Rust<a class="zola-anchor" href="#llvm-from-rust" aria-label="Anchor link for: llvm-from-rust">🔗</a>
+</h4>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> context = Context::create();
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> f64type = context.</span><span style="color:#96b5b4;">f64_type</span><span style="color:#c0c5ce;">();
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> builder = context.</span><span style="color:#96b5b4;">create_builder</span><span style="color:#c0c5ce;">();
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> module = context.</span><span style="color:#96b5b4;">create_module</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">module</span><span style="color:#c0c5ce;">&quot;);
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> func = module.</span><span style="color:#96b5b4;">add_function</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">jit_compiled</span><span style="color:#c0c5ce;">&quot;,
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">f64type.</span><span style="color:#96b5b4;">fn_type</span><span style="color:#c0c5ce;">(&amp;[f64type.</span><span style="color:#96b5b4;">into</span><span style="color:#c0c5ce;">(), f64type.</span><span style="color:#96b5b4;">into</span><span style="color:#c0c5ce;">()], </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">),
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">None,);
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> block = func.</span><span style="color:#96b5b4;">append_basic_block</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">entry</span><span style="color:#c0c5ce;">&quot;);
+</span><span style="color:#c0c5ce;">builder.</span><span style="color:#96b5b4;">position_at_end</span><span style="color:#c0c5ce;">(&amp;block);
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> result = ...;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">builder.</span><span style="color:#96b5b4;">build_return</span><span style="color:#c0c5ce;">(Some(&amp;result));
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Literal(lit) =&gt; f64type.</span><span style="color:#96b5b4;">const_float</span><span style="color:#c0c5ce;">(*lit),
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Variable(var) =&gt; func.</span><span style="color:#96b5b4;">get_nth_param</span><span style="color:#c0c5ce;">(...).</span><span style="color:#96b5b4;">into_float_value</span><span style="color:#c0c5ce;">(),
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Binary { lhs, op, rhs } =&gt; {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> lhs = lhs.</span><span style="color:#96b5b4;">compile</span><span style="color:#c0c5ce;">(...);
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> rhs = rhs.</span><span style="color:#96b5b4;">compile</span><span style="color:#c0c5ce;">(...);
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> op {
+</span><span style="color:#c0c5ce;">      </span><span style="color:#c0c5ce;">BinOp::Add =&gt; builder.</span><span style="color:#96b5b4;">build_float_add</span><span style="color:#c0c5ce;">(lhs, rhs, &quot;</span><span style="color:#a3be8c;">add</span><span style="color:#c0c5ce;">&quot;),
+</span><span style="color:#c0c5ce;">      </span><span style="color:#c0c5ce;">...
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> engine = module.</span><span style="color:#96b5b4;">create_jit_execution_engine</span><span style="color:#c0c5ce;">(OptimizationLevel::None)?;
+</span><span style="color:#b48ead;">unsafe </span><span style="color:#c0c5ce;">{ engine.</span><span style="color:#96b5b4;">get_function</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">jit_compiled</span><span style="color:#c0c5ce;">&quot;)? }
+</span></pre><h4 id="cranelift">Cranelift<a class="zola-anchor" href="#cranelift" aria-label="Anchor link for: cranelift">🔗</a>
+</h4>
+<pre style="background-color:#2b303b;">
+<span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> builder = SimpleJITBuilder::new();
+</span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> module: Module&lt;SimpleJITBackend&gt; = Module::new(builder);
+</span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> ctx = module.</span><span style="color:#96b5b4;">make_context</span><span style="color:#c0c5ce;">();
+</span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> func_builder_ctx = FunctionBuilderContext::new();
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> sig = &amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> ctx.func.signature;
+</span><span style="color:#c0c5ce;">sid.params.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(AbiParam::new(types::</span><span style="color:#d08770;">F64</span><span style="color:#c0c5ce;">)); </span><span style="color:#65737e;">// X
+</span><span style="color:#c0c5ce;">sig.params.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(AbiParam::new(types::</span><span style="color:#d08770;">F64</span><span style="color:#c0c5ce;">)); </span><span style="color:#65737e;">// Y
+</span><span style="color:#c0c5ce;">sig.returns.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(AbiParam::new(types::</span><span style="color:#d08770;">F64</span><span style="color:#c0c5ce;">));
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> builder = FunctionBuilder::new(
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">&amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> ctx.func, &amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> func_builder_ctx);
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#65737e;">// ebb = Extended Basic Block
+</span><span style="color:#65737e;">// In compiler construction, a basic block is a straight-line code sequence with no branches in except to the entry and no branches out except at the exit.
+</span><span style="color:#65737e;">// An extended basic block is a maximal collection of basic blocks where:
+</span><span style="color:#65737e;">// - only the first basic block can have multiple predecessor basic blocks;
+</span><span style="color:#65737e;">// - all the other basic blocks have one single predecessor basic block, which must be within the collection of basic blocks.
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> entry_ebb = builder.</span><span style="color:#96b5b4;">create_ebb</span><span style="color:#c0c5ce;">();
+</span><span style="color:#c0c5ce;">builder.</span><span style="color:#96b5b4;">append_ebb_params_for_function_params</span><span style="color:#c0c5ce;">(entry_ebb);
+</span><span style="color:#c0c5ce;">builder.</span><span style="color:#96b5b4;">switch_to_block</span><span style="color:#c0c5ce;">(entry_ebb);
+</span><span style="color:#c0c5ce;">builder.</span><span style="color:#96b5b4;">seal_block</span><span style="color:#c0c5ce;">(entry_ebb);
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> result = ...;
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#65737e;">// ins =&gt; instructions
+</span><span style="color:#c0c5ce;">builder.</span><span style="color:#96b5b4;">ins</span><span style="color:#c0c5ce;">().</span><span style="color:#96b5b4;">return_</span><span style="color:#c0c5ce;">(&amp;[result]);
+</span><span style="color:#c0c5ce;">builder.</span><span style="color:#96b5b4;">finalize</span><span style="color:#c0c5ce;">();
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Literal(lit) =&gt; {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> ins = builder.</span><span style="color:#96b5b4;">ins</span><span style="color:#c0c5ce;">();
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">ins.</span><span style="color:#96b5b4;">f64const</span><span style="color:#c0c5ce;">(Ieee64::with_float(*lit))
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">},
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Variable(var) =&gt; builder.</span><span style="color:#96b5b4;">ebb_params</span><span style="color:#c0c5ce;">(ebb)[ ... ],
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">Expr::Binary { lhs, op, rhs } =&gt; {
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> lhs = lhs.</span><span style="color:#96b5b4;">compile</span><span style="color:#c0c5ce;">( ... );
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> rhs = rhs.</span><span style="color:#96b5b4;">compile</span><span style="color:#c0c5ce;">( ... );
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> ins = builder.</span><span style="color:#96b5b4;">ins</span><span style="color:#c0c5ce;">();
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> op {
+</span><span style="color:#c0c5ce;">      </span><span style="color:#c0c5ce;">BinOp::Add =&gt; ins.</span><span style="color:#96b5b4;">fadd</span><span style="color:#c0c5ce;">(lhs, rhs),
+</span><span style="color:#c0c5ce;">      </span><span style="color:#c0c5ce;">...
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">  </span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">}
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> id = module.</span><span style="color:#96b5b4;">declare_function</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">jit_compiled</span><span style="color:#c0c5ce;">&quot;,
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">Linkage::Local,
+</span><span style="color:#c0c5ce;">    </span><span style="color:#c0c5ce;">&amp;ctx.func.signature);
+</span><span style="color:#c0c5ce;">module.</span><span style="color:#96b5b4;">define_function</span><span style="color:#c0c5ce;">(id, &amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> ctx)?;
+</span><span style="color:#c0c5ce;">module.</span><span style="color:#96b5b4;">clear_context</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> ctx);
+</span><span style="color:#c0c5ce;">module.</span><span style="color:#96b5b4;">finalize_definitions</span><span style="color:#c0c5ce;">();
+</span><span style="color:#c0c5ce;">Ok(</span><span style="color:#b48ead;">unsafe </span><span style="color:#c0c5ce;">{ ::std::mem::transmute(module.</span><span style="color:#96b5b4;">get_finalized_function</span><span style="color:#c0c5ce;">(id)) })
+</span><span style="color:#65737e;">// type FinalizedFunction = *const u8 -&gt; code and data in memory
+</span><span style="color:#65737e;">// type FinalizedData = (*mut u8, usize) -&gt; complete output artifact for a data object
+</span></pre><h3 id="spongedown-markdown-to-html-with-asciiart-to-svg-support">Spongedown - markdown to html with asciiart to svg support<a class="zola-anchor" href="#spongedown-markdown-to-html-with-asciiart-to-svg-support" aria-label="Anchor link for: spongedown-markdown-to-html-with-asciiart-to-svg-support">🔗</a>
+</h3>
+<p><a href="https://github.com/ivanceras/spongedown">Github repo</a></p>
+<h3 id="flamer-flame-graphs-for-rust">Flamer - flame graphs for rust<a class="zola-anchor" href="#flamer-flame-graphs-for-rust" aria-label="Anchor link for: flamer-flame-graphs-for-rust">🔗</a>
+</h3>
+<p><a href="https://github.com/llogiq/flamer">Github repo</a></p>
 
 </div>
 
