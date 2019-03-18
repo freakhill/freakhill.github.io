@@ -14,6 +14,10 @@ in_search_index = true
 
 Currently reading: [The book of Numbers](https://www.springer.com/us/book/9780387979939)
 
+### Book I finished reading since 17th of march 2019
+
+Trying to read books a bit more again :)
+
 ### Music
 
 - [Music theory](https://en.wikipedia.org/wiki/Music_theory)
@@ -36,7 +40,3 @@ Understanding equal temperament
 
 Minor scales - Natural, Harmonic, Melodic
 {{ youtube(id="Q7WqKpD7w4Q") }}
-
-### Book I finished reading since 17th of march 2019
-
-Trying to read books a bit more again :)

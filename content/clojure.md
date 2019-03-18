@@ -23,3 +23,18 @@ Need to try this out to see how it works with clojure.
 [github repo](https://github.com/ztellman/primitive-math)
 
 Avoid hidden reflection when doing basic math in Clojure.
+
+### Xforms - extra transducers
+
+[github repo](https://github.com/cgrand/xforms)
+
+### Soy-clj - clojure wrapper for google close template library
+
+Consider forking to do an updated version
+
+[github repo](https://github.com/codahale/soy-clj)
+
+### Hara - set of libraries to explore more in detail
+
+[github repo](https://github.com/zcaudate/hara)
+

@@ -55,4 +55,6 @@ our language.
 - [implementing functional languages](https://www.microsoft.com/en-us/research/wp-content/uploads/1992/01/student.pdf)
 - [spineless tagless machine](https://www.microsoft.com/en-us/research/wp-content/uploads/1992/04/spineless-tagless-gmachine.pdf)
 - [functional programming and parallel graph rewriting](https://wiki.clean.cs.ru.nl/Functional_Programming_and_Parallel_Graph_Rewriting)
-
+- [llvm reference manual](https://llvm.org/docs/LangRef.html)
+- [llvm docs](http://llvm.org/docs/)
+- [great article about locks!](https://queue.acm.org/detail.cfm?id=2991130)
