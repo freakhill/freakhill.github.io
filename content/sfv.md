@@ -32,7 +32,7 @@ It's my compilation of Zangief data!
 
 #### 3D Games
 
-On a fundamental level, 3d non weapon games want to be played close up, which means small pushback, stand/button blocking, weak lows, and lots of close range evasive options. (also reactable throws). it also impacts the camera style (zoom in when close range). In 3d games lots of damage will come from callouts (calling out an opponent tendency, via backdash/sidestep into whiff punishing, or blowing out strings by exploiting option selects or opponent's tendencies).
+On a fundamental level, 3d non weapon games want to be played close up, which means small pushback, stand/button blocking, weak lows, and lots of close range evasive options. (also reactable throws). it also impacts the camera style (zoom in when close range). In 3d games lots of damage will come from callouts (calling out an opponent tendency, via backdash/sidestep into whiff punishing, or blowing out strings by exploiting option selects or opponent's tendencies in string choices).
 
 #### 2D Games
 
