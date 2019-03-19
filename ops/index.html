@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>Johan Gall</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;www.johangall.com&#x2F;print.css" media="print">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;www.johangall.com&#x2F;poole.css">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;www.johangall.com&#x2F;hyde.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+      
+
+      
+      
+    </head>
+
+    <body class="theme-base-0e layout-reverse">
+        
+            <div class="sidebar">
+                <div class="container sidebar-sticky">
+                    <div class="sidebar-about">
+                        
+                            <a href="https:&#x2F;&#x2F;www.johangall.com"><h1>Johan Gall</h1></a>
+                            
+                            <p class="lead">aka jojo, lucyjojo, freakhill, seku</p>
+                            
+                        
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        
+                        
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=NYgq75uIMUk">SFV beginner guide</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;github.com&#x2F;freakhill&#x2F;jojolisp">Jojolisp&#x27;s github repo</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;www.twitch.tv&#x2F;lucyjojo">Twitch channel</a></li>
+                        
+                        <li class="sidebar-nav-item"><a href="http:&#x2F;&#x2F;www.metro.tokyo.jp&#x2F;english&#x2F;guide&#x2F;bosai&#x2F;index.html">Disaster preparedness Tokyo</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="content container">
+            
+<div class="post">
+  <h1 class="post-title">Ops things for me</h1>
+  <span class="post-date">2019-03-17</span>
+  <h2 id="riak">Riak<a class="zola-anchor" href="#riak" aria-label="Anchor link for: riak">🔗</a>
+</h2>
+<p>attach to running riak node</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">riak attach
+</span></pre>
+<p>list processes by memory usage</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">riak-admin top -sort msg_q
+</span></pre>
+<p>programatically build a pid</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#ebcb8b;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)
+</span></pre>
+<p>get info about a process</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#ebcb8b;">erlang</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">process_info</span><span style="color:#c0c5ce;">(</span><span style="color:#ebcb8b;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)).
+</span></pre><h2 id="haproxy">Haproxy<a class="zola-anchor" href="#haproxy" aria-label="Anchor link for: haproxy">🔗</a>
+</h2>
+<p>use the runtime api to get some info</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#bf616a;">/usr/bin/socat -T</span><span style="color:#c0c5ce;"> 15</span><span style="color:#bf616a;"> -t</span><span style="color:#c0c5ce;"> 5 /run/haproxy/admin.sock - &lt;&lt;&lt; &quot;</span><span style="color:#a3be8c;">show activity</span><span style="color:#c0c5ce;">&quot; 
+</span></pre>
+<p>some of the stuff:</p>
+<ul>
+<li>show errors    : report last request and response errors for each proxy</li>
+<li>clear counters : clear max statistics counters (add 'all' for all counters)</li>
+<li>show info      : report information about the running process</li>
+<li>show stat      : report counters for each proxy and server</li>
+<li>show schema json : report schema used for stats</li>
+</ul>
+<p>how to get the socket?</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#bf616a;">grep </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">stats socket</span><span style="color:#c0c5ce;">&quot; conf
+</span></pre>
+</div>
+
+        </div>
+
+    </body>
+
+</html>
