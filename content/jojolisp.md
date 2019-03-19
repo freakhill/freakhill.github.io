@@ -58,3 +58,8 @@ our language.
 - [llvm reference manual](https://llvm.org/docs/LangRef.html)
 - [llvm docs](http://llvm.org/docs/)
 - [great article about locks!](https://queue.acm.org/detail.cfm?id=2991130)
+
+#### An argument againat resumable exceptions
+
+[From Bjarne Stroupstrup - Design and evolution of C++](https://books.google.co.jp/books?id=hS9mDwAAQBAJ&lpg=PT459&ots=xNle_k81Rl&dq=bjarne%20stroustrup%20against%20resumable%20exceptoni&pg=PT459#v=onepage&q=bjarne%20stroustrup%20against%20resumable%20exceptoni&f=false)
+
