@@ -27,7 +27,7 @@ git push
 
 git checkout master
 git pull
-cp -r "$TEMPDIR/*" ./
+cp -r $TEMPDIR/* ./
 git add -A
 git commit -am "autodeploy"
 git push
