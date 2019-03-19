@@ -11,3 +11,5 @@ in_search_index = true
 ... nothing public yet ...
 
 [crust, rust p2p library supporting hole punching](https://github.com/maidsafe/crust)
+
+[nrs netcode talk](https://www.youtube.com/watch?v=7jb0FOcImdg)
