@@ -1,5 +1,5 @@
 +++
-title = "Notes about operating riak"
+title = "Riak (Ops)"
 description = "I don't want to forget these anymore"
 date = 2019-03-17
 weight = 5
@@ -28,6 +28,6 @@ c:pid(0,227,0)
 get info about a process
 
 ```erlang
-erlang:process_info(c:pid(0,227,0))
+erlang:process_info(c:pid(0,227,0)).
 ```
 
