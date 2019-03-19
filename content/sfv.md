@@ -42,7 +42,7 @@ In 2d games characters will walk in and out much much faster (and also run/dash/
 
 #### By the way
 
-Obviously callouts and whiff punishing are a thing in 2d too, and attention manipulation is a thing in 3d too. I'm just giving out big tendencies.
+Obviously callouts and whiff punishing are a thing in 2d too, and attention manipulation is a thing in 3d too. I'm just giving out big tendencies but in reality it's all a continuum.
 
 Another difference, 2d games are generally more "vortexy" than 3d games (depends on the game). 3d games have more complex wake-up systems, the down is meant to break the pace of the game to give the defendant space. In 2d games down are seen as an achievement for which you should get a reward (called okizeme), in that the attacker gets into an heavily advantageous situation. On a similar aspect, few 3d games have "stun" or "guard break", it's a pacing issue.
 
