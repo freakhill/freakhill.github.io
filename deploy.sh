@@ -26,7 +26,7 @@ git commit -am autodeploy
 git push
 
 git checkout master
-cp -r "$TEMPDIR/" ./
+cp -r "$TEMPDIR/*" ./
 git add -A
 git commit -am "autodeploy"
 git push
