@@ -35,6 +35,8 @@ erlang:process_info(c:pid(0,227,0)).
 
 ## Haproxy
 
+[Haproxy doc (1.9)](https://cbonte.github.io/haproxy-dconv/1.9/configuration.html)
+
 use the runtime api to get some info
 
 ```bash
