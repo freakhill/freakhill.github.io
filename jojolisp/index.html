@@ -83,8 +83,8 @@ our language.</p>
 // align ...
 // sizes ...
 // packing tilling x align x size</p>
-<h3 id="stuff-to-check-out">Stuff to check out<a class="zola-anchor" href="#stuff-to-check-out" aria-label="Anchor link for: stuff-to-check-out">🔗</a>
-</h3>
+<h2 id="stuff-to-check-out">Stuff to check out<a class="zola-anchor" href="#stuff-to-check-out" aria-label="Anchor link for: stuff-to-check-out">🔗</a>
+</h2>
 <ul>
 <li><a href="https://github.com/mrakgr/The-Spiral-Language">Spiral language</a></li>
 <li><a href="https://www.johangall.com/jojolisp/">Vau</a></li>
@@ -98,9 +98,51 @@ our language.</p>
 <li><a href="http://llvm.org/docs/">llvm docs</a></li>
 <li><a href="https://queue.acm.org/detail.cfm?id=2991130">great article about locks!</a></li>
 </ul>
-<h4 id="an-argument-againat-resumable-exceptions">An argument againat resumable exceptions<a class="zola-anchor" href="#an-argument-againat-resumable-exceptions" aria-label="Anchor link for: an-argument-againat-resumable-exceptions">🔗</a>
-</h4>
+<h2 id="an-argument-againat-resumable-exceptions">An argument againat resumable exceptions<a class="zola-anchor" href="#an-argument-againat-resumable-exceptions" aria-label="Anchor link for: an-argument-againat-resumable-exceptions">🔗</a>
+</h2>
 <p><a href="https://books.google.co.jp/books?id=hS9mDwAAQBAJ&amp;lpg=PT459&amp;ots=xNle_k81Rl&amp;dq=bjarne%20stroustrup%20against%20resumable%20exceptoni&amp;pg=PT459#v=onepage&amp;q=bjarne%20stroustrup%20against%20resumable%20exceptoni&amp;f=false">From Bjarne Stroupstrup - Design and evolution of C++</a></p>
+<h2 id="halide">Halide<a class="zola-anchor" href="#halide" aria-label="Anchor link for: halide">🔗</a>
+</h2>
+<p>In Jojolisp we already have the idea of separating a data structure definition (fields, open or close etc.) from its implementation (packing, order etc.).</p>
+<p>Halide pushes further by separating an algorithm definition (a + b * c) from its implementation (vertorization, parallelisation etc.)!</p>
+<p>This separations allows to experiment with different implementation strategies a lot faster (and is one nice step in implementing some degree of automatic high level optimization.</p>
+<p>Halide works on matrix/array operations.</p>
+<h3 id="notes-from-halide-talks">Notes from Halide talks<a class="zola-anchor" href="#notes-from-halide-talks" aria-label="Anchor link for: notes-from-halide-talks">🔗</a>
+</h3>
+<p>(Re)organizing computation is hard:</p>
+<ul>
+<li>Optimizing parallelism/locality requires transforming program &amp; data structure</li>
+<li>What transformations are legal?</li>
+<li>What transformations are beneficial?</li>
+</ul>
+<p>Halide’s answer: decouple algorithm from schedule</p>
+<p>Algorithm: what is computed</p>
+<p>Schedule: where and when it’s computed</p>
+<p>Easy for programmers to build pipelines</p>
+<p>Easy to specify &amp; explore optimizations manual or automatic search</p>
+<p>Easy for the compiler to generate fast code</p>
+<p>How can we determine good schedules?</p>
+<p>Explicit programmer control:</p>
+<ul>
+<li>The compiler does exactly what you say</li>
+<li>Schedules cannot influence correctness</li>
+<li>Exploration is fast and easy</li>
+</ul>
+<p>Stochastic search (autotuning):</p>
+<ul>
+<li>Pick your favorite high-dimensional search.(We used Petabricks’ genetic algorithm tuner [Ansel et al. 2009])</li>
+</ul>
+<p>\ /// \</p>
+<p>BIG POINT : LOOPS ARE IMPLICIT IN HALIDE</p>
+<h2 id="ada-spark">ADA/SPARK<a class="zola-anchor" href="#ada-spark" aria-label="Anchor link for: ada-spark">🔗</a>
+</h2>
+<p>...</p>
+<h3 id="spiral">Spiral<a class="zola-anchor" href="#spiral" aria-label="Anchor link for: spiral">🔗</a>
+</h3>
+<p>...</p>
+<h3 id="vau-klisp-kernel">Vau/KLisp/Kernel<a class="zola-anchor" href="#vau-klisp-kernel" aria-label="Anchor link for: vau-klisp-kernel">🔗</a>
+</h3>
+<p>...</p>
 
 </div>
 
