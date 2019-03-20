@@ -45,7 +45,7 @@ our language.
 // sizes ...
 // packing tilling x align x size
 
-### Stuff to check out
+## Stuff to check out
 
 - [Spiral language](https://github.com/mrakgr/The-Spiral-Language)
 - [Vau]()
@@ -59,7 +59,61 @@ our language.
 - [llvm docs](http://llvm.org/docs/)
 - [great article about locks!](https://queue.acm.org/detail.cfm?id=2991130)
 
-#### An argument againat resumable exceptions
+## An argument againat resumable exceptions
 
 [From Bjarne Stroupstrup - Design and evolution of C++](https://books.google.co.jp/books?id=hS9mDwAAQBAJ&lpg=PT459&ots=xNle_k81Rl&dq=bjarne%20stroustrup%20against%20resumable%20exceptoni&pg=PT459#v=onepage&q=bjarne%20stroustrup%20against%20resumable%20exceptoni&f=false)
 
+## Halide
+
+In Jojolisp we already have the idea of separating a data structure definition (fields, open or close etc.) from its implementation (packing, order etc.).
+
+Halide pushes further by separating an algorithm definition (a + b * c) from its implementation (vertorization, parallelisation etc.)!
+
+This separations allows to experiment with different implementation strategies a lot faster (and is one nice step in implementing some degree of automatic high level optimization.
+
+Halide works on matrix/array operations.
+
+### Notes from Halide talks
+
+(Re)organizing computation is hard:
+- Optimizing parallelism/locality requires transforming program & data structure
+- What transformations are legal?
+- What transformations are beneficial?
+
+Halide’s answer: decouple algorithm from schedule
+
+Algorithm: what is computed
+
+Schedule: where and when it’s computed
+
+Easy for programmers to build pipelines
+
+Easy to specify & explore optimizations manual or automatic search
+
+Easy for the compiler to generate fast code
+
+How can we determine good schedules?
+
+Explicit programmer control: 
+- The compiler does exactly what you say
+- Schedules cannot influence correctness
+- Exploration is fast and easy
+
+Stochastic search (autotuning):
+- Pick your favorite high-dimensional search.(We used Petabricks’ genetic algorithm tuner [Ansel et al. 2009])
+
+\ /// \
+
+BIG POINT : LOOPS ARE IMPLICIT IN HALIDE
+
+## ADA/SPARK
+
+...
+
+### Spiral
+
+...
+
+### Vau/KLisp/Kernel
+
+...
