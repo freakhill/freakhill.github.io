@@ -10,6 +10,8 @@ in_search_index = true
 [extra]
 +++
 
+[sc6 astaroth FR19GF](https://youtu.be/xBvVvCLx7Q4?t=6570)
+
 ### [Twitch channel](https://www.twitch.tv/lucyjojo)
 
 Need to:
