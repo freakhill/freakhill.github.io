@@ -14,8 +14,15 @@ in_search_index = true
 
 [nrs netcode talk](https://www.youtube.com/watch?v=7jb0FOcImdg)
 
+## Solo mode
 
-#### Advice about game pitching
+...
+
+## Online
+
+win streaks, win streaks stealing (relate to the bottom), win streak stealing tree visualize
+
+## Advice about game pitching
 
 https://www.youtube.com/watch?v=4LTtr45y7P0
 
