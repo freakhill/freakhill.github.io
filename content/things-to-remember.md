@@ -15,4 +15,4 @@ TODO: make this proper, rewrite stuff in my own words
 - [First order logic](https://en.wikipedia.org/wiki/First-order_logic)
 - [Second order logic](https://en.wikipedia.org/wiki/Second-order_logic)
 
-review replay for https://www.reddit.com/r/StreetFighter/comments/b58uoy/view_my_replays_please/
+[review replay for SanVerCha](https://www.reddit.com/r/StreetFighter/comments/b58uoy/view_my_replays_please/)
