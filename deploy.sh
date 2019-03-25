@@ -21,14 +21,18 @@ git checkout dev
 TEMPDIR=$(mktemp -d)
 zola build --output-dir="$TEMPDIR"
 
-git add -A
-git commit -am autodeploy
-git push
+add_and_push() {
+    git add -A
+    if [[ -n $(git status -s) ]]
+    then
+        git commit -am autodeploy
+        git push
+    fi
+}
 
+add_and_push
 git checkout master
 git pull
 cp -r $TEMPDIR/* ./
-git add -A
-git commit -am "autodeploy"
-git push
+add_and_push
 git checkout dev
