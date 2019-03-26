@@ -2,7 +2,7 @@
 title = "Ops things for me"
 description = "I don't want to forget these anymore"
 date = 2019-03-17
-weight = 5
+weight = 50
 draft = false
 in_search_index = true
 [extra]

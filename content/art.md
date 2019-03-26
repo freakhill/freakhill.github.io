@@ -2,7 +2,7 @@
 title = "Art"
 description = "learning..."
 date = 2019-03-17
-weight = 9
+weight = 60
 draft = false
 in_search_index = true
 [taxonomies]

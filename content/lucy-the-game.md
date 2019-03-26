@@ -2,7 +2,7 @@
 title = "Lucy the game"
 description = "Notes on the game I am making"
 date = 2019-03-17
-weight = 0
+weight = 10
 draft = false
 in_search_index = true
 [extra]
