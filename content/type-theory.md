@@ -18,6 +18,8 @@ This will be a work in progress for a long long time.
 
 This will contain a bunch of stuff I will study, it's not a book, it's not a tutorial, at best it's a bunch of notes written in order to understand a bunch of stuff through the type theory domain, in a very sparse non exhaustive manner.
 
+Why do I study all that gunk? I want to make a programming language with a powerful type system that stays out of the way as hard as technically possible, some kind of gradual dependent typing where I can just assert stuff and the language can add runtime checks as it sees fits, and it tells me where so I'm aware of the costs. C++ has the idea of "you pay the price for a feature only when you need it", I want to make it so that "you have to endure the typing pain only when you need some specific gain", by default the language should feel 100% like a dynamic language, runtime errors and all.
+
 # What is a type
 
 ...
@@ -153,3 +155,7 @@ This will contain a bunch of stuff I will study, it's not a book, it's not a tut
 ## Subtyping, records, row types, modules, Coq Canonical structures etc.
 
 ... Lots of stuff to cover ...
+
+## Paper i'm reading: "Complete and Easy Bidirectional Typechecking for Higher-Rank Polymorphism" Joshua Dunfield, Neelakantan Krishnaswami
+
+...
