@@ -8,6 +8,7 @@ in_search_index = true
 [extra]
 +++
 
+TUESDAY ISETAN SUSHI -1F!!!
 TODO: make this proper, rewrite stuff in my own words
 
 - [Serializability](https://en.wikipedia.org/wiki/Serializability)
