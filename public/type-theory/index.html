@@ -56,7 +56,28 @@
 <div class="post">
   <h1 class="post-title">My study of type theory</h1>
   <span class="post-date">2019-03-17</span>
-  <script type="text/javascript" async
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    asciimath2jax: {
+      delimiters: [[';;',';;']]
+    },
+      TeX: {
+          extensions: ["color.js", "enclose.js"]
+    },
+    unicode: {
+      fonts: "STIXGeneral, 'Arial Unicode MS'"
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 <p>Type theory people like to make things horribly confusing when there is absolutely no need to. Evil, evil people.</p>
@@ -65,8 +86,119 @@
 <p>This will contain a bunch of stuff I will study, it's not a book, it's not a tutorial, at best it's a bunch of notes written in order to understand a bunch of stuff through the type theory domain, in a very sparse non exhaustive manner.</p>
 <p>Why do I study all that gunk? I want to make a programming language with a powerful type system that stays out of the way as hard as technically possible, some kind of gradual dependent typing where I can just assert stuff and the language can add runtime checks as it sees fits, and it tells me where so I'm aware of the costs. C++ has the idea of &quot;you pay the price for a feature only when you need it&quot;, I want to make it so that &quot;you have to endure the typing pain only when you need some specific gain&quot;, by default the language should feel 100% like a dynamic language, runtime errors and all.</p>
 <p>Trying mathjax...</p>
+<h2 id="testing-latex">Testing latex<a class="zola-anchor" href="#testing-latex" aria-label="Anchor link for: testing-latex">🔗</a>
+</h2>
+<p>https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference</p>
+<p>find unicode for symbol http://detexify.kirelabs.org/classify.html</p>
 <p>When $a \ne 0$, there are two solutions to (ax^2 + bx + c = 0) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
+$$x = {-b \pm \sqrt{\enclose{circle,box}{b^2}-\color{red}{4ac}} \over 2a}.$$</p>
+<p>$$
+\newcommand\C{{\mathbb C}}
+\newcommand\np[2]{{#1}#2{#1}}
+\C[y_1,\ldots,y_n]\to {\mathcal A}, \quad a\mapsto\np{:}{a}
+$$</p>
+<p>$$\unicode[.55,0.05][Geramond]{x22D6}$$</p>
+<p>[ \exp x = 1 + x + x^2/2 + x^3/6 + \cdots ]<br />
+[<br />
+\exp x = 1 + x + x^2/2 + x^3/6 + \cdots<br />
+]</p>
+<p>need to work out how to unescape thing with zola to make following work</p>
+<p>$\require{AMScd}$
+\begin{CD}
+A @&gt;a&gt;&gt; B<br />
+@V b V V= @VV c V<br />
+C @&gt;&gt;d&gt; D
+\end{CD}
+$$
+\begin{matrix}
+1 &amp; x &amp; x^2 <br />
+1 &amp; y &amp; y^2 <br />
+1 &amp; z &amp; z^2 <br />
+\end{matrix}
+$$
+$$ \left[
+\begin{array}{cc|c}
+1&amp;2&amp;3<br />
+4&amp;5&amp;6
+\end{array}
+\right] $$
+$$
+\begin{pmatrix}
+a &amp; b<br />
+c &amp; d<br />
+\hline
+1 &amp; 0<br />
+0 &amp; 1
+\end{pmatrix}
+$$
+$$\begin{align}
+\sqrt{37} &amp; = \sqrt{\frac{73^2-1}{12^2}} <br />
+&amp; = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \ 
+&amp; = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} <br />
+&amp; = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \ 
+&amp; \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
+\end{align}$$
+$$
+judgements
+\hline
+other judgements
+\hgline
+we good???
+$$
+$$\documentclass{article}
+\usepackage{booktabs}
+\begin{document}
+\begin{table}\centering
+\begin{tabular}{lll}
+\toprule
+Foo &amp; 1 &amp; 2 <br />
+&amp; 1 &amp; 2 \\cmidrule{2-3}% That's the rule you're looking for.
+&amp; 1 &amp; 2 <br />
+&amp; 1 &amp; 2 <br />
+\midrule
+Bar &amp; 1 &amp; 2 <br />
+&amp; 1 &amp; 2 \\cmidrule{2-3}% This too. The numbers designate the columns covered.
+&amp; 1 &amp; 2 <br />
+&amp; 1 &amp; 2 <br />
+\bottomrule
+\end{tabular}
+\caption{1 and 2 in relation to Foo and Bar.}
+\end{table}
+\end{document}$$</p>
+<p>$$  f(n) =
+\begin{cases}
+n/2,  &amp; \text{if $n$ is even} <br />
+3n+1, &amp; \text{if $n$ is odd}
+\end{cases}$$</p>
+<p>$$
+\begin{array}{c|lcr}
+n &amp; \text{Left} &amp; \text{Center} &amp; \text{Right} <br />
+\hline
+1 &amp; 0.24 &amp; 1 &amp; 125 <br />
+2 &amp; -1 &amp; 189 &amp; -8 <br />
+3 &amp; -20 &amp; 2000 &amp; 1+10i
+\end{array}
+$$</p>
+<p>$$
+\left{ 
+\begin{array}{c}
+a_1x+b_1y+c_1z=d_1 \ 
+a_2x+b_2y+c_2z=d_2 \ 
+a_3x+b_3y+c_3z=d_3
+\end{array}
+\right. 
+$$</p>
+<p>$$
+\begin{array}{c|rrrr}&amp; x^3 &amp; x^2 &amp; x^1 &amp; x^0\ &amp; 1 &amp; -6 &amp; 11 &amp; -6\ {\color{red}1} &amp; \downarrow &amp; 1 &amp; -5 &amp; 6\ \hline &amp; 1 &amp; -5 &amp; 6 &amp; |\phantom{-} {\color{blue}0} \end{array}
+$$</p>
+<p>inlined $int_0^1 f(x)dx$ and $f'(x) = dy/dx$</p>
+<p>not inlined $$int_0^1 f(x)dx$$ and $$f'(x) = dy/dx$$</p>
+<p>when $x&lt;y$ we have $Bla + BlaBla_7^9$</p>
+<h2 id="testing-asciimath">Testing AsciiMath<a class="zola-anchor" href="#testing-asciimath" aria-label="Anchor link for: testing-asciimath">🔗</a>
+</h2>
+<p>http://asciimath.org/</p>
+<p>;;(1+2+3+4)//(&quot;4 terms&quot;)//More//Judgements;;</p>
+<p>;;[[a,b],[c,d]];;</p>
 <h1 id="what-is-a-type">What is a type<a class="zola-anchor" href="#what-is-a-type" aria-label="Anchor link for: what-is-a-type">🔗</a>
 </h1>
 <p>...</p>
