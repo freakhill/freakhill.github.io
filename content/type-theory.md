@@ -20,6 +20,23 @@ This will contain a bunch of stuff I will study, it's not a book, it's not a tut
 
 Why do I study all that gunk? I want to make a programming language with a powerful type system that stays out of the way as hard as technically possible, some kind of gradual dependent typing where I can just assert stuff and the language can add runtime checks as it sees fits, and it tells me where so I'm aware of the costs. C++ has the idea of "you pay the price for a feature only when you need it", I want to make it so that "you have to endure the typing pain only when you need some specific gain", by default the language should feel 100% like a dynamic language, runtime errors and all.
 
+Trying mathjax...
+
+{{ load-mathjax }}
+
+With tag
+
+{% math %} 
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+{% end %}
+
+
+Raw
+
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
 # What is a type
 
 ...
