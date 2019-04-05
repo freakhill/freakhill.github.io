@@ -24,6 +24,31 @@ Remove some unneccessary allocations by helping generating code LLVM can optimiz
 
 [github repo](https://github.com/kvark/copyless)
 
+### Itertools
+
+tons of iterators, ie. max/min/kmerge/interleave/multizip in between others
+
+[github repo](https://docs.rs/itertools/0.8.0/itertools/)
+
+### Contain-rs
+
+container libraries for rust, ie bitset, lru-cache, ordered iterators, bitvec, vec-map etc.
+
+[github repo](https://github.com/contain-rs)
+
+### Quickcheck
+
+well.. quickcheck
+
+[github repo](https://github.com/BurntSushi/quickcheck)
+
+### Reqwest
+
+simple http client lib
+
+[github repo](https://docs.rs/reqwest/0.7.1/reqwest/)
+
+
 ### Building fast interpreters in Rust
 
 [slideshare](https://www.slideshare.net/RReverser/building-fast-interpreters-in-rust)
@@ -222,3 +247,13 @@ Ok(unsafe { ::std::mem::transmute(module.get_finalized_function(id)) })
 ### Flamer - flame graphs for rust
 
 [Github repo](https://github.com/llogiq/flamer)
+
+### READ!
+
+- [Learn Rust with entirely too many lists](https://rust-unofficial.github.io/too-many-lists/)
+- [The little book of rust macros](https://danielkeep.github.io/tlborm/book/index.html)
+
+
+
+https://rust-unofficial.github.io/too-many-lists/
+
