@@ -103,26 +103,27 @@ $$</p>
 \exp x = 1 + x + x^2/2 + x^3/6 + \cdots<br />
 ]</p>
 <p>need to work out how to unescape thing with zola to make following work</p>
-<p>$\require{AMScd}$
+<p>{% raw %}
+$\require{AMScd}$
 \begin{CD}
 A @&gt;a&gt;&gt; B\
 @V b V V= @VV c V\
 C @&gt;&gt;d&gt; D
-\end{CD}
-$$
+\end{CD}</p>
+<p>$$
 \begin{matrix}
 1 &amp; x &amp; x^2 \
 1 &amp; y &amp; y^2 \
 1 &amp; z &amp; z^2 \
 \end{matrix}
-$$
-$$ \left[
+$$</p>
+<p>$$ \left[
 \begin{array}{cc|c}
 1&amp;2&amp;3\
 4&amp;5&amp;6
 \end{array}
-\right] $$
-$$
+\right] $$</p>
+<p>$$
 \begin{pmatrix}
 a &amp; b\
 c &amp; d\
@@ -130,25 +131,25 @@ c &amp; d\
 1 &amp; 0\
 0 &amp; 1
 \end{pmatrix}
-$$
-$$\begin{align}
+$$</p>
+<p>$$\begin{align}
 \sqrt{37} &amp; = \sqrt{\frac{73^2-1}{12^2}} \
 &amp; = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \
 &amp; = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \
 &amp; = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \
 &amp; \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
-\end{align}$$
-$$
+\end{align}$$</p>
+<p>$$
 judgements
 \hline
 other judgements
 \hgline
 we good???
-$$
-$$\documentclass{article}
-\usepackage{booktabs}
-\begin{document}
-\begin{table}\centering
+$$</p>
+<p>$$\documentclass{article}</p>
+<p>\usepackage{booktabs}</p>
+<p>\begin{document}</p>
+<p>\begin{table}\centering
 \begin{tabular}{lll}
 \toprule
 Foo &amp; 1 &amp; 2 \
@@ -163,8 +164,9 @@ Bar &amp; 1 &amp; 2 \
 \bottomrule
 \end{tabular}
 \caption{1 and 2 in relation to Foo and Bar.}
-\end{table}
-\end{document}$$</p>
+\end{table}</p>
+<p>\end{document}$$</p>
+<p>{% endraw %}</p>
 <p>$$  f(n) =
 \begin{cases}
 n/2,  &amp; \text{if $n$ is even} \
