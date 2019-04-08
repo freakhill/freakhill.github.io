@@ -48,7 +48,7 @@ $$\unicode[.55,0.05][Geramond]{x22D6}$$
 
 need to work out how to unescape thing with zola to make following work
 
-{% raw() %}
+{% raw %}
 $\require{AMScd}$
 \begin{CD}
     A @>a>> B\\
@@ -123,7 +123,7 @@ Bar & 1 & 2 \\
 \end{document}$$
 
 
-{% end %}
+{% endraw %}
 
 $$  f(n) =
 \begin{cases}
