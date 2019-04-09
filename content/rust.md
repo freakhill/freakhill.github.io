@@ -248,6 +248,10 @@ Ok(unsafe { ::std::mem::transmute(module.get_finalized_function(id)) })
 
 [Github repo](https://github.com/llogiq/flamer)
 
+### Cargo-flamegraph - Other flame graphs for rust!
+
+[Github repo](https://github.com/ferrous-systems/flamegraph)
+
 ### READ!
 
 - [Learn Rust with entirely too many lists](https://rust-unofficial.github.io/too-many-lists/)
