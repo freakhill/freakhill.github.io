@@ -8,6 +8,12 @@ in_search_index = true
 [extra]
 +++
 
+where to buy hardware
+
+puri.sm
+
+system76.com
+
 TUESDAY ISETAN SUSHI -1F!!!
 TODO: make this proper, rewrite stuff in my own words
 
