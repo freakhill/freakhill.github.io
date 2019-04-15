@@ -34,6 +34,12 @@ Standard binding is (SFV notation): A->LP, B->MP, C->HP, D->LK
 
 We will assume that binding from now on.
 
+| button | name | description |
+|---|---|---|
+| A+B+C | VO (Veil Off) | some kind of burst, not usable on block, invulnerable, push back opponent your opponent full screen, you can charge it but just tap it. Afterwards you are in VO "Veil Off" state. |
+|   |   |   |
+|   |   |   |
+
 - A+B+C = some kind of burst, not usable on block, invulnerable, push back opponent your opponent full screen, you can charge it but just tap it. Afterwards you are in VO "Veil Off" state.
 - B+C = FF, Force Function, character specific strong move that cost grid, generally pretty OP move
 - A+B = Dash
