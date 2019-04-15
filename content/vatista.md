@@ -22,3 +22,74 @@ https://www.evernote.com/shard/s628/client/snv?noteGuid=ae0b78c4-cd9d-4917-a005-
 general guide with combos inside
 http://wiki.mizuumi.net/w/Under_Night_In-Birth/UNIST/Vatista
 
+Proration system: ???
+
+Max 3 bounces (OTG) in a combo
+
+TODO:
+
+Can I cancel beam into 
+
+combo from:
+
+- 5A
+tip:
+close:
+
+- 5A 5A
+tip:
+close:
+
+- 5A 5A 5A
+tip:
+close:
+
+- 2A
+tip:
+close:
+
+- 2A 2A
+tip:
+close:
+
+- 2A 2A 2A
+tip:
+close:
+
+- Fragmentum high explosion
+tip:
+close:
+
+- Fragmentum low explosion
+tip:
+close:
+
+- 2C 5A
+tip:
+close:
+
+- 5C
+tip:
+close:
+
+- 5C counter
+tip:
+close:
+
+- AA 5A
+tip:
+close:
+
+- AA 5C
+tip:
+close:
+
+- Assault B
+tip:
+close:
+
+- Assault C
+tip:
+close:
+
+How to charge partition blockstring into A/B drill
