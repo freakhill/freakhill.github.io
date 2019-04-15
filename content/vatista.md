@@ -104,4 +104,16 @@ close:
 tip:
 close:
 
+- 66C orb
+tip:
+close:
+
+- 66C FF
+tip:
+close:
+
+- AA 66C
+tip:
+close:
+
 How to charge partition blockstring into A/B drill
