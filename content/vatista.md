@@ -29,7 +29,8 @@ Vatista cannot be counter hit, ever. It's a vatista thing.
 ### The buttons
 
 Buttons: A, B, C ,D
-Standard binding is LP>A, MP>B, HP>C, LK>D
+
+Standard binding is (SFV notation): A->LP, B->MP, C->HP, D->LK
 
 We will assume that binding from now on.
 
