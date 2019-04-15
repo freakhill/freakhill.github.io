@@ -35,32 +35,19 @@ Standard binding is (SFV notation): A->LP, B->MP, C->HP, D->LK
 We will assume that binding from now on.
 
 - A+B+C = some kind of burst, not usable on block, invulnerable, push back opponent your opponent full screen, you can charge it but just tap it. Afterwards you are in VO "Veil Off" state.
-
 - B+C = FF, Force Function, character specific strong move that cost grid, generally pretty OP move
-
 - A+B = Dash
-
 - jA+B = Assault
-
 - (j)6D = Assault
-
 - A+D = Throw (same as SFV throw)
-
 - D>D = Chain Shift (like GG roman cancel)
-
 - Tatsumaki D = Guard cancel (with varying cost)
-
 - hcfD (41236D) = IW = 200% Super
-
 - A+B+C+D = IWEXS = 200% Super while in VO
-
 - When you win the grid war (more grid at the end of a cycle), you get to be in "Vorpal", give you access to character specific stuff.
-
 - 5D = Concentration: generate grids, short startup cancellable by any special move, holding any back direction during startup will shield
-
 - Shield (4D / j.4D): A defensive option that allows the player to benefit from blocking.
 - Guard Thrust (214D): A defensive option that requires meter or vorpal, but allows players in blockstun to perform an invincible move to knock attackers away. If in vorpal, it takes no meter, but costs vorpal and all of a player's grd blocks. If not in vorpal, it costs all of a players meter (with a minimum of 100 meter required to perform it) and grd crushes the player using it. If in vorpal carryover state following a chain shift, players can spend all meter and remaining vorpal carryover bar to perform a guard thrust that does not grd crush themselves.
-
 - There is guard cancel in the game, tatsu D, cost: if in vorpal, vorpag&grid break, if not in verpal 100 too 200 meter. after chain shift (DD cancel) can guard cancel without grid break.
 
 ### Autocombo ("Smart Steer")
