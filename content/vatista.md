@@ -24,7 +24,15 @@ Proration system: TODO <- find out how this works....
 
 ## System info
 
-Max 3 bounces (OTG) in a combo
+- Shield blocking air attack stops the opponent from gattling and opponent becomes minus on land.
+
+- Shield blocking ground reduces blockstun.
+
+- Combo into "VO" (ABC) does something to the opponent grid (or vorpal?)
+
+- There is guard cancel in the game, tatsu D (it grid breaks you though)
+
+- Max 3 bounces (OTG) in a combo
 
 ## Combos
 
