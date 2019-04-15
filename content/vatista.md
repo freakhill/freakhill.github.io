@@ -36,18 +36,22 @@ We will assume that binding from now on.
 
 | button | name | description |
 |---|---|---|
-| A+B+C | VO (Veil Off) | some kind of burst, not usable on block, invulnerable, push back opponent your opponent full screen, you can charge it but just tap it. Afterwards you are in VO "Veil Off" state. |
-|   |   |   |
-|   |   |   |
+| A+B+C | VO (Veil Off) | some kind of GG roman cancel, not usable on block, invulnerable, push back opponent your opponent full screen, you can charge it but just tap it. Afterwards you are in VO "Veil Off" state. |
+| B+C | FF (Force Function) | character specific strong move that cost grid, generally pretty OP move |
+| (4)A+B | (back)dash | |
+| jA+B| assault | forward hop |
+| (j)6D | assault | forward hop |
+| (4)A+D | throw | (can't do it while crouching) |
+| D>D | CC (Chain Shift) | like GG roman cancel |
+| tatsuD | | |
+| hcfD | | |
+| A+B+C+D | | |
+| 5D | | |
+| 1/4/7D | | |
+| | | |
+| | | |
+| | | |
 
-- A+B+C = some kind of burst, not usable on block, invulnerable, push back opponent your opponent full screen, you can charge it but just tap it. Afterwards you are in VO "Veil Off" state.
-- B+C = FF, Force Function, character specific strong move that cost grid, generally pretty OP move
-- A+B = Dash
-- jA+B = Assault
-- (j)6D = Assault
-- A+D = Throw (same as SFV throw)
-- D>D = Chain Shift (like GG roman cancel)
-- Tatsumaki D = Guard cancel (with varying cost)
 - hcfD (41236D) = IW = 200% Super
 - A+B+C+D = IWEXS = 200% Super while in VO
 - When you win the grid war (more grid at the end of a cycle), you get to be in "Vorpal", give you access to character specific stuff.
