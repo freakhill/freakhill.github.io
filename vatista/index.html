@@ -70,25 +70,841 @@
 <li>
 <p>and the <a href="http://wiki.mizuumi.net/w/Under_Night_In-Birth/UNIST/Vatista">Mizuumi wiki!</a></p>
 </li>
+<li>
+<p>aaaand the <a href="http://www.dustloop.com/forums/index.php?/forums/topic/9084-uniel-system-mechanics-updated-april-20th-2015/">dustloop uniel system post</a> (i hope it didn't change too much in unist)</p>
+</li>
 </ul>
-<p>Proration system: TODO &lt;- find out how this works....</p>
-<h2 id="system-info">System info<a class="zola-anchor" href="#system-info" aria-label="Anchor link for: system-info">🔗</a>
+<h2 id="system">System<a class="zola-anchor" href="#system" aria-label="Anchor link for: system">🔗</a>
 </h2>
+<p>Vatista cannot be counter hit, ever. It's a vatista thing.</p>
+<h3 id="the-buttons">The buttons<a class="zola-anchor" href="#the-buttons" aria-label="Anchor link for: the-buttons">🔗</a>
+</h3>
+<p>Buttons: A, B, C ,D
+Standard binding is LP&gt;A, MP&gt;B, HP&gt;C, LK&gt;D</p>
+<p>We will assume that binding from now on.</p>
 <ul>
 <li>
-<p>Shield blocking air attack stops the opponent from gattling and opponent becomes minus on land.</p>
+<p>A+B+C = some kind of burst, not usable on block, invulnerable, push back opponent your opponent full screen, you can charge it but just tap it. Afterwards you are in VO &quot;Veil Off&quot; state.</p>
 </li>
 <li>
-<p>Shield blocking ground reduces blockstun.</p>
+<p>B+C = FF, Force Function, character specific strong move that cost grid, generally pretty OP move</p>
 </li>
 <li>
-<p>Combo into &quot;VO&quot; (ABC) does something to the opponent grid (or vorpal?)</p>
+<p>A+B = Dash</p>
 </li>
 <li>
-<p>There is guard cancel in the game, tatsu D (it grid breaks you though)</p>
+<p>jA+B = Assault</p>
 </li>
 <li>
-<p>Max 3 bounces (OTG) in a combo</p>
+<p>(j)6D = Assault</p>
+</li>
+<li>
+<p>A+D = Throw (same as SFV throw)</p>
+</li>
+<li>
+<p>D&gt;D = Chain Shift (like GG roman cancel)</p>
+</li>
+<li>
+<p>Tatsumaki D = Guard cancel (with varying cost)</p>
+</li>
+<li>
+<p>hcfD (41236D) = IW = 200% Super</p>
+</li>
+<li>
+<p>A+B+C+D = IWEXS = 200% Super while in VO</p>
+</li>
+<li>
+<p>When you win the grid war (more grid at the end of a cycle), you get to be in &quot;Vorpal&quot;, give you access to character specific stuff.</p>
+</li>
+<li>
+<p>5D = Concentration: generate grids, short startup cancellable by any special move, holding any back direction during startup will shield</p>
+</li>
+<li>
+<p>Shield (4D / j.4D): A defensive option that allows the player to benefit from blocking.</p>
+</li>
+<li>
+<p>Guard Thrust (214D): A defensive option that requires meter or vorpal, but allows players in blockstun to perform an invincible move to knock attackers away. If in vorpal, it takes no meter, but costs vorpal and all of a player's grd blocks. If not in vorpal, it costs all of a players meter (with a minimum of 100 meter required to perform it) and grd crushes the player using it. If in vorpal carryover state following a chain shift, players can spend all meter and remaining vorpal carryover bar to perform a guard thrust that does not grd crush themselves.</p>
+</li>
+<li>
+<p>There is guard cancel in the game, tatsu D, cost: if in vorpal, vorpag&amp;grid break, if not in verpal 100 too 200 meter. after chain shift (DD cancel) can guard cancel without grid break.</p>
+</li>
+</ul>
+<h3 id="autocombo-smart-steer">Autocombo ("Smart Steer")<a class="zola-anchor" href="#autocombo-smart-steer" aria-label="Anchor link for: autocombo-smart-steer">🔗</a>
+</h3>
+<ul>
+<li>If a player pushes 5A multiple times in a row on block or hit, they will get an automatic combo string.</li>
+<li>
+<ul>
+<li>This is somewhat useful for players who use their 5B or 5C in their blockstring, but need them as combo tools, because smart steer is typically something like 5A &gt; 5B &gt; 5C &gt; Special.</li>
+</ul>
+</li>
+</ul>
+<h3 id="gattling-passing-link">Gattling ("Passing Link")<a class="zola-anchor" href="#gattling-passing-link" aria-label="Anchor link for: gattling-passing-link">🔗</a>
+</h3>
+<ul>
+<li>A mechanic in the game that allows player to freely chain their normals into each other. Generally important for the ability to 'reverse beat' normals (ie: going from a B button back to an A button, whereas many games force you to only go up the chain of buttons in order, ala A &gt; B &gt; C.)</li>
+<li>Each move can only be used once in a single string of cancels, unless it has a special property (ie: most 2As can self-cancel indefinitely) that allows it to be used more than once.</li>
+<li>
+<ul>
+<li>Note that this remains true for air strings as well. Certain characters can cancel air moves into ground specials and back into air moves, and will still be limited in what air moves they can use at that point.</li>
+</ul>
+</li>
+</ul>
+<h3 id="recovery-teching">Recovery/Teching<a class="zola-anchor" href="#recovery-teching" aria-label="Anchor link for: recovery-teching">🔗</a>
+</h3>
+<ul>
+<li>Upon being hit and knocked down or knocked airborne, players can hold down a non-D button to recover at the earliest possible opportunity. Alternatively, players can choose to wait until they want to tech, at which point they can push a button to tech, assuming they are not stuck in an untechable state.</li>
+<li>The D button can be used to tech, but will generally skip the first possible tech option and only tech on the next tech option.</li>
+<li>
+<ul>
+<li>For example, getting knocked to the ground and holding the D button will cause a late ground tech, not an immediate/emergency tech. Getting hit in the air and holding the D button causes a ground tech.</li>
+</ul>
+</li>
+<li>After any form of recovery, for the first 8 frames after a player can perform actions, they are invulnerable to throws.</li>
+<li>
+<ul>
+<li>This invulnerability is not lost even if the player pushes any buttons.</li>
+</ul>
+</li>
+<li>There are three primary forms of recovery:</li>
+<li>
+<ul>
+<li>Air tech: Players can hold one of three directions (back/forward/neutral) and tech out of air combos in the direction of their choosing. The character will flash briefly as they tech.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>Air techs are useful because of how far they launch teching players away from their opponents, but they have a major downside. Though teching players are invulnerable until they reach the floor, they also cannot perform any actions! This makes them VERY easy to oki for the opponent!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Ground tech: Players can hold one of two directions (back/neutral) and flip off the ground and onto their feet. The character will flash briefly as they tech. The direction influences where players end up after they flip.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>Players can delay their ground techs slightly to throw off opponent's oki timings.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Delayed tech: Players who choose not to push any buttons after falling to the ground will eventually have their character stand up automatically. This form of recovery does not cause the character to flash.</li>
+</ul>
+</li>
+<li>Any form of ground teching causes players to recover in a standing state. However, doing any sort of move overrides this standing recovery state and immediately goes into the move.</li>
+<li>
+<ul>
+<li>For example, waking up and pushing 2A will cause the recovering character to recover into a crouching state with their 2A starting up. This works with shielding as well.</li>
+</ul>
+</li>
+</ul>
+<h3 id="wall-ground-bounces">Wall/Ground bounces<a class="zola-anchor" href="#wall-ground-bounces" aria-label="Anchor link for: wall-ground-bounces">🔗</a>
+</h3>
+<ul>
+<li>Many combos involve bouncing opponents off of walls or sticking them to the ground. This cannot happen more than 3 times in a single combo.</li>
+<li>
+<ul>
+<li>After a third wall/ground slam, opponents immediately become invulnerable and can no longer be hit (even if they are also unable to tech).</li>
+</ul>
+</li>
+</ul>
+<h3 id="jump-cancels">Jump Cancels<a class="zola-anchor" href="#jump-cancels" aria-label="Anchor link for: jump-cancels">🔗</a>
+</h3>
+<ul>
+<li>Players are limited to one jump cancel per combo, unless they have specific moves that allow for special jump cancels.</li>
+<li>Players cannot jump cancel their moves on block, again unless they have specific moves that allow for special jump cancels.</li>
+</ul>
+<h3 id="shielding">Shielding<a class="zola-anchor" href="#shielding" aria-label="Anchor link for: shielding">🔗</a>
+</h3>
+<ul>
+<li>Shielding locks players into high/low blocking if used in neutral, so players can get grd crushed because they can't switch to blocking the right way. They can also be grd crushed by throws (this can be avoided with a throw-tech OS, though--see the throw section for more info).</li>
+<li>Guard shielding (denoted by a green flash around the defending character) does NOT lock players into high/low blocking, but does force them to keep shielding, meaning they can still get grd crushed from throws (unless they use the throw break option; see the bottom of the throw section for more info).</li>
+<li>
+<ul>
+<li>From appearances, guard shielding does make it appear as though a player is locked into high/low blocking state, but this is similar to a blockstun effect. The player can actually block however they wish. If they choose to block low after guard shielding high, players risk being hit by overheads that only hit standing opponents, because their character remains in a standing position.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Guard shielding occurs when players input guard while they are in blockstun, and it costs 10 meter (or anything in your gauge if you have less than 10 meter).</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Unsuccessful guard shielding costs 1 block of grd.</li>
+</ul>
+</li>
+<li>Any successful shield grants 1 block of grd gauge.</li>
+<li>Successful ground shielding grants the defending player 3 frames of reduced blockstun.</li>
+<li>Successful air shielding grants the defending player 6 frames of reduced blockstun.</li>
+<li>Successful normal shielding causes slightly increased pushback.</li>
+<li>Successful guard shielding causes significantly increased pushback, in addition to the normal benefits gained from shielding moves.</li>
+<li>Air normals cannot be blocked by players in the air unless they shield them!</li>
+<li>Air normals that get shielded (either by grounded or aerial defenders) can no longer be cancelled into anything, and the player performing the normal suffers from a flat 10 frames of landing recovery.</li>
+<li>Air specials, ground specials, and ground normals that get shielded do not suffer from any sort of additional recovery or inability to be cancelled. They continue to act as normal. This also applies to ground normals that put the player airborne and aerial dive moves.</li>
+<li>If a player shields and gets grd crushed, they lose the ability to use D-button moves (see above)!</li>
+<li>Every hit in multi-hit moves must be shielded individually.</li>
+<li>
+<ul>
+<li>Note that while players must shield the last hit in multi-hit aerial normals to get the 3 or 6 frames of reduced blockstun, the attacking player will suffer the increased landing recovery and lack of cancel routes regardless of which hit of their normal was shielded.</li>
+</ul>
+</li>
+<li>If a player shields a move right before it hits him (within a few frames) and holds the D button, the game will register the shield input twice, causing him to immediately guard shield after his first shield. This can be useful when shielding multi-hit moves that are difficult to shield normally, but is also terrible if it occurs when shielding a normal jump-in.</li>
+<li>Aerial shielding, like all other aerial actions, counts as a move and therefore incurs landing recovery. Players mindlessly shielding in the air can allow opponents free landing punishes or grd crush opportunities.</li>
+</ul>
+<h3 id="throws">Throws<a class="zola-anchor" href="#throws" aria-label="Anchor link for: throws">🔗</a>
+</h3>
+<ul>
+<li>Non command throws universally have a 4 frame startup.</li>
+<li>Throws have a 14 frame throwbreak window.</li>
+<li>Gold throws (throws performed on opponents who are still stuck in blockstun or hitstun) have a 28 frame throwbreak window</li>
+<li>If a player whiffs a throw attempt, they lose 1 block of grd.</li>
+<li>Players that exit blockstun or hitstun have an additional 7 frames of gold throw protection, meaning any throw performed on them will turn into a gold throw.</li>
+<li>
+<ul>
+<li>Notably, there appears to be a somewhat odd situation where players actually become invulnerable to diving command throws during this window. It is unclear if this is intended.</li>
+</ul>
+</li>
+<li>Players who have just recovered from a ground or air tech are throw invulnerable for approximately 8 frames.</li>
+<li>If players start to perform a move before being thrown, they will always be throw countered and be unable to break the throw, even if it shows up as a gold throw. A red flash on the player's character indicates a throw counter.</li>
+<li>When players break throws, they gain two advantages:</li>
+<li>
+<ul>
+<li>The player breaking the throw gains 2 blocks of grd, while the opponent loses 2 blocks of grd.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>The player breaking the throw has an 8 frame advantage over their opponent after breaking the throw.</li>
+</ul>
+</li>
+<li>If a player grd crushes an opponent with their throw, the throw and subsequent combo will do more damage than usual. There appears to be no extra untech time applied to the combo, however, so it will not become longer than usual.</li>
+<li>If a normal throw and a hit go active on the same frame, the hit will win.</li>
+<li>Throws can be kara-cancelled from B moves, if the throw is inputted within the first 2 frames of the B move's startup.</li>
+<li>If a player guard shields, they can input a throw break while they're locked into the guard shield state. This will put the player in a yellow throw break state instead for a few frames, and then subsequently into a throw counter state.</li>
+<li>
+<ul>
+<li>If a defender uses this option, they will no longer be considered in a shield state, which means that if the attacker does not throw them and instead performs an attack, that attack will not be considered shielded. The defender will gain no vorpal and no frame advantage, and the attacker will suffer no penalties.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Any throw the opponent performs during the yellow throw break window WILL be teched! This includes command throws!</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>If the opponent performs a normal throw during the throw counter window, the player will not suffer from grd crush, and will instead only suffer from a yellow counter throw. (remember, grd crush throws have increased damage, so this is quite useful!)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>If the opponent performs a command throw during that throw counter window, however, the player will still suffer grd crush.</li>
+</ul>
+</li>
+</ul>
+<h3 id="assault">Assault<a class="zola-anchor" href="#assault" aria-label="Anchor link for: assault">🔗</a>
+</h3>
+<ul>
+<li>Players cannot block after performing assault until they touch the ground</li>
+<li>Assaults, like jumps, are throw invulnerable on frame 1</li>
+<li>Assault does not cause any special landing recovery penalty to be applied to aerial normals</li>
+<li>
+<ul>
+<li>It should be noted that assault does count as a move, however, and therefore carries its own landing recovery, so empty assaults are punishable on landing.</li>
+</ul>
+</li>
+<li>Ground assault moves towards the opponent and homes in on them</li>
+<li>Air assault moves towards the opponent in a set distance and arc, meaning players can jump well passed the opponent if too close</li>
+<li>Any aerial normals performed from assault are overheads (note: this does not include special moves like Yuzu's stance-based j.6a/b/c)</li>
+<li>Any normals performed during a grounded assault cannot be chained into other aerial normals</li>
+<li>
+<ul>
+<li>In contrast, aerial assaults do not prevent players from chaining moves together for multiple overheads</li>
+</ul>
+</li>
+<li>Any combo started from a normal performed during assault suffers drastically reduced untech time, making the combos much shorter than normal</li>
+<li>
+<ul>
+<li>This is negated if the assault overhead causes a counterhit or a grd crush.</li>
+</ul>
+</li>
+<li>Any combo started from an assault normal also suffers from slightly reduced damage (worse P2 value on starting move).</li>
+<li>
+<ul>
+<li>This is also negated if the assault normal causes a counterhit or grd crush.</li>
+</ul>
+</li>
+<li>Both aerial and grounded assaults suffer the same reduced starting penalties.</li>
+<li>Assault has a 5 frame startup (likely universal, didn't test thoroughly, but it is true for Waldstein and a couple others)</li>
+</ul>
+<h3 id="grid">Grid<a class="zola-anchor" href="#grid" aria-label="Anchor link for: grid">🔗</a>
+</h3>
+<ul>
+<li>Players automatically generate some grd when not doing anything.</li>
+<li>
+<ul>
+<li>Passive generation speed is directly related to how far a player's character's back is from the edge of the screen. The further away, the faster they generate.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>This means that players who corner their opponent not only have strong pressure options, they also passively are generating more grd!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Actions that generate grd:</li>
+<li>
+<ul>
+<li>Concentration (5D) (see next section for details)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>Concentration drains the opponent's grd as well, and will drain it faster if a player spends meter during their concentration.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Moving forward (walking, running, jumping, etc.)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Using assault (generates ~0.5 grd)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Blocking/Shielding attacks (successfully shielding an attack generates 1 grd)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Aerial forward teching</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>If the opponent does an immediate ground tech from a combo</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>The opponent moving backwards</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>If the opponent cannot actually move backwards (ie: is stuck on the edge of the screen), no grd will be gained</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>This includes both grounded and aerial back teching</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Actions that lose grd:</li>
+<li>
+<ul>
+<li>Opponent using concentration (5D) for longer than 30 frames</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Moving backwards (walking, backdashing, jumping, etc.)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>(backdashing costs 1 grd)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Using guard shield and not blocking anything (costs 1 grd)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Being thrown or having a throw broken (costs 2 grd either way)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Whiffing a throw</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Ground back teching (costs 1 grd)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>The opponent moving forwards</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>If the defender is stuck with their back against the corner, no grd will be lost</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Certain characters can gain and steal grd by hitting the opponents with special moves, like Gordeau's command throws and Byakuya's webs.</li>
+<li>The more grd a player has, the less they will get for every action.</li>
+</ul>
+<h3 id="concentration">Concentration<a class="zola-anchor" href="#concentration" aria-label="Anchor link for: concentration">🔗</a>
+</h3>
+<ul>
+<li>Players can concentrate for up to 420f by holding the D button.</li>
+<li>Concentrating for more than 30f will drain meter from the player, but can be done even even if a player has no meter.</li>
+<li>
+<ul>
+<li>During the meter drain, players will drain opponent's grd significantly faster than normal. Without meter, this faster drain effect will not occur.</li>
+</ul>
+</li>
+<li>Concentration starts generating grd on the first frame a player pushes the D button.</li>
+<li>Each character has a specific concentration modifier that controls how fast they can generate grd AND how fast they drain opponent's grd when spending meter. The higher the modifier, the faster.</li>
+<li>
+<ul>
+<li>1x: Eltnum, Nanase</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>2x: Orie</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>3x: Yuzuriha, Seth, Gordeau, Carmine, Merkava, Hyde, Linne, Vatista, Byakuya, Akatsuki</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>4x: Waldstein</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>5x: Hilda, Chaos</li>
+</ul>
+</li>
+<li>In a concentration battle, the amount of grd that can be drain from the opponent when spending meter will always outweigh the difference in amount gained from the concentration itself.</li>
+<li>
+<ul>
+<li>In other words, even Eltnum can out-generate Hilda in a concentration battle if Eltnum spends meter and Hilda has no meter to spend.</li>
+</ul>
+</li>
+<li>In a mirror at the start of a round, if both players have meter and hold concentration, player 2 will fill their grd blocks slightly faster than player 1.</li>
+<li>
+<ul>
+<li>Without meter, however, both players will tie for the vorpal cycle.</li>
+</ul>
+</li>
+</ul>
+<h3 id="vorpal">Vorpal<a class="zola-anchor" href="#vorpal" aria-label="Anchor link for: vorpal">🔗</a>
+</h3>
+<ul>
+<li>When the grd transfer state ring is filled (every 17 seconds), the player with the most grd gauge will enter vorpal state.</li>
+<li>If a player has no grd gauge, or if a player is grd crushed, he will not be able to enter vorpal state.</li>
+<li>
+<ul>
+<li>If both players cannot enter vorpal, then the meter simply resets with neither player gaining any benefits.</li>
+</ul>
+</li>
+<li>Vorpal grants players an extra 10% in damage output throughout its duration.</li>
+<li>Players in vorpal can consume their vorpal state (and all their grd blocks) to perform one of the following actions:</li>
+<li>
+<ul>
+<li>Using chain shift to cancel their moves and convert all their grd gauge into EXS meter. This will carry over the vorpal damage bonus for a brief moment (see CS section).</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Performing a guard thrust (guard cancel) attack without spending meter or being grd crushed. Outside of vorpal, this normally costs all your meter to perform (with a minimum of 100 meter required), as well as grd crushes you.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>There is a special property on grd thrusts when performed immediately after a chain shift. As long a player is still in vorpal carryover state, the player can spend all of their meter and remaining vorpal carryover bar to perform a grd thrusts without grd crushing themselves.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Use IWEXS without getting grd crushed (200 meter and &lt;30% health requirement remain the same).</li>
+</ul>
+</li>
+<li>Some characters gain special benefits from being in vorpal state. Carmine, for example, spends less health to perform his specials, and Eltnum gains the ability to whiff-cancel her A normals.</li>
+</ul>
+<h3 id="veil-off">Veil Off<a class="zola-anchor" href="#veil-off" aria-label="Anchor link for: veil-off">🔗</a>
+</h3>
+<ul>
+<li>Veil off is a fully invincible burst (except against Gordeau's 214B and rekka grab) that can be performed when a player has 100 or more meter available. Upon entering this mode, the player's meter will slowly drain until it reaches 0 and the mode ends.</li>
+<li>Veil off can only be performed when the player is on the ground</li>
+<li>Activating veil off automatically generates 1 block of grd gauge and removes grd crush status if the player was suffering from it.</li>
+<li>While in veil off, players can freely use EX moves at the cost of a third of their total veil off meter</li>
+<li>While in veil off, players gain 20% extra damage output.</li>
+<li>
+<ul>
+<li>This stacks with vorpal's damage bonus, meaning players can have 30% bonus damage in their combos.</li>
+</ul>
+</li>
+<li>If opponents are hit by the veil off burst, they are grd crushed and will lose vorpal if they had it.</li>
+<li>
+<ul>
+<li>Notably, if opponents are combo'd into the veil off burst, they will not suffer the grd crush penalty, but will still lose vorpal.</li>
+</ul>
+</li>
+<li>While in veil off, players can use their IW or IWEXS (both usually cost 200 meter) at the cost of immediately ending veil off mode.</li>
+<li>
+<ul>
+<li>This is especially useful with IWEXS, because it normally causes grd crush to the player performing the move.</li>
+</ul>
+</li>
+<li>While in veil off, players gain more grd for grd generating actions. Grd loss remains the same as normal.</li>
+<li>If a player uses chain shift during veil off, the veil off meter drain will slow down temporarily.</li>
+<li>
+<ul>
+<li>The amount of slowdown is directly proportional to the amount of meter a player would gain from CS (ie: you can consider the slowdown to be from the meter gain going into the VO meter bar).</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>The duration of the slowdown is also directly proportional to the amount of GRD the player has when CS-ing.</li>
+</ul>
+</li>
+<li>Veil off is -13 on block and has 20 frames of startup if not held.</li>
+<li>
+<ul>
+<li>If held fully, veil off is -14 on block and has 68 frames of startup.</li>
+</ul>
+</li>
+</ul>
+<h3 id="counters">Counters<a class="zola-anchor" href="#counters" aria-label="Anchor link for: counters">🔗</a>
+</h3>
+<ul>
+<li>If a player attempts to perform a move but gets interrupted before the move comes out, they will be countered. There are three types of counters:</li>
+<li>
+<ul>
+<li>Throw counter: If the move is interrupted by a throw, the throw becomes unbreakable and the player being thrown will flash red.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Counterhits: For a counterhit to occur, a move must be interrupted by a B or C normal, or a special move.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>Counter: If the move that is interrupted is a normal move, the player who is interrupted suffers from a counter hit, which causes increased hitstun. If the player was airborne, they suffer 1.5x the normal untech time.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>High Counter: If the move that is interrupted is a special move, the counterhit will become a high counter. If the interrupted player was airborne, they will suffer 2x the normal untech time. High counters are otherwise the same as counters.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Throws cannot be counterhit, but they can be throw countered if a player is thrown out of their throw whiff recovery.</li>
+<li>Notably, landing counters and high counters with an assault overhead will also remove the reduced untech time typically incurred by using assault overheads.</li>
+<li>Counter and High Counter do not add 1.5 or 2 times hitstun to your entire combo (see below). They do add hitstun to the first hit of a combo, and they do remove the assault penalty on overheads, as well as apply any special counterhit properties to the first hit of a combo.</li>
+<li>Counter and High Counter have different effects on airborne and grounded opponents. Against airborne opponents, they extend untech time by 1.5 and 2 times, respectively (haven't actually checked to make sure it's 1.5x and 2x, but it's a very sizable amount that generally seems to just make the opponent ground tech). Against grounded opponents, Counter and High Counter have the same effects as each other. They seem to add between 0 frames (ie: Sion 5A) and 3 frames (ie: Yuzu 5C) of extra hitstun. There may be moves that add more than 3 frames.</li>
+<li>Counter and High Counter do, in fact, add very slight amounts of extra hitstun to an entire combo, likely by reducing the starting untech proration of a combo. The amount of reduced untech appears to be based on what move actually counterhit the opponent. Counterhits likely either add a set amount of additional untech proration to a combo, or add an amount that is based on the untech time of the combo starter. Either way, combos started from counterhit tend to have between 2 and 3 frames of additional hitstun throughout most of the combo in places where proration would normally cause opponents to tech.</li>
+<li>Multi-hit moves do not benefit from the effects of Counter or High Counter against aerial opponents, because only the first hit of a multi-hit move that connects with the opponent will get the untech benefit. Having said that, there are likely multi-hit moves in the game with special counterhit properties that circumvent this limitation. I haven't looked into it too much.</li>
+<li>Counter and High Counter appear to have no effect on hitstop.</li>
+</ul>
+<h3 id="superflash-and-screen-freeze">Superflash and Screen Freeze:<a class="zola-anchor" href="#superflash-and-screen-freeze" aria-label="Anchor link for: superflash-and-screen-freeze">🔗</a>
+</h3>
+<ul>
+<li>EX moves (supers), chain shifts, and infinite worths all cause the game to pause momentarily.</li>
+<li>
+<ul>
+<li>EX moves cause a 20 frame superflash (19 frame freeze).</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Chain shift causes a 40 frame superflash (39 frame freeze).</li>
+</ul>
+</li>
+<li>Superflash is throw invuln, even for non-reversal supers. This is generally useless information, unfortunately, because superflash technically only lasts for 1 frame.</li>
+</ul>
+<h3 id="input-buffering">Input Buffering<a class="zola-anchor" href="#input-buffering" aria-label="Anchor link for: input-buffering">🔗</a>
+</h3>
+<ul>
+<li>When the game pauses, input timers continue, so all inputs are lost during the duration of chain shift, EX move, and IW screen freezes. Players should buffer their inputs a second time during the flashes to make sure their moves occur.</li>
+<li>The input buffer in the game doesn't last as long as screen freezes do, so players should re-buffer their inputs towards the end of the freeze in order to get their moves to occur!</li>
+<li>(note!: this is a massive generalization) Inputs generally last for around 4 frames, so if a player wants to avoid getting 623 motions when they want 236 motions, returning to neutral for 4 frames will reset the input buffer.</li>
+</ul>
+<h3 id="fuzzy-protection">Fuzzy Protection<a class="zola-anchor" href="#fuzzy-protection" aria-label="Anchor link for: fuzzy-protection">🔗</a>
+</h3>
+<ul>
+<li>This game has two distinct forms of fuzzy protection:</li>
+<li>
+<ul>
+<li>Rising overheads are not overheads. This means any aerial move that is normally an overhead will be treated as a mid until the character performing it reaches the apex of his or her jump. Notably, assaulting doesn't even allow characters to attack until they reach the apex of their jumps.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Characters who are holding down-back and get hit out of a move by rising 'overheads' (air normals that are normally overhead) will suffer drastically reduced damage. Any combo started from such a situation will do 50% or less of its usual damage. There is, however, no nerf to untech time in a combo started this way.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>(Note: this fuzzy protection appears to apply proration that scales down from about 40% starting on the second hit of the combo, all the way down to the lowest I've seen so far, at 27% on the last hit of a mid-length combo. It may not be a proration-based damage nerf.)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>This penalty applies to any aerial move that makes the character rise, even if it is performed during the falling portion of a jump. This is clearly seen with Eltnum's j.[C] against a down-backing opponent.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>This penalty can stack with the reduced assault normal proration and untech.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="crossup-protection">Crossup Protection<a class="zola-anchor" href="#crossup-protection" aria-label="Anchor link for: crossup-protection">🔗</a>
+</h3>
+<ul>
+<li>This game has a system in place to protect players from very fast crossups.</li>
+<li>
+<ul>
+<li>Players can always block attacks by blocking in the direction away from the opponent's character.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>Blocking away from the direction the opponent's character is facing is a similar concept that works against everything except projectiles in certain cases (see below)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Players can always block away from the direction of an incoming attack (if a fireball is coming from behind, you can hold forward to block), as long as the attack is originating from that direction (see below).</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Players in blockstun will automatically block the correct direction until they exit blockstun.</li>
+</ul>
+</li>
+<li>Shielding acts as though players are in blockstun, and will allow crouching or standing players to block any crossups during the duration of the shield.</li>
+<li>Each projectile (and attack, technically) in the game has a 'direction of facing', which players can always block away from. However, points of origins for projectiles do not always align with their visual cues. Most projectiles in the game have their directions set whenever their player performs them. Seth's orbs and Carmine's puddle-spawned pinwheels, however, set their direction when they fire, likely because of their homing property.</li>
+<li>Players who are walking backwards prior to getting crossed up will have some amount of extended crossup protection against some moves.</li>
+</ul>
+<h3 id="same-move-proration">Same Move Proration<a class="zola-anchor" href="#same-move-proration" aria-label="Anchor link for: same-move-proration">🔗</a>
+</h3>
+<ul>
+<li>Using certain moves in a combo more than once will cause the combo to suffer reduced untech time (and perhaps damage).</li>
+<li>There is no list at the moment of all moves that suffer from SMP, but it MIGHT be all special moves. It may even apply to all moves, but at minimal effect.</li>
+</ul>
+<h3 id="dashing-backdashing">Dashing/Backdashing<a class="zola-anchor" href="#dashing-backdashing" aria-label="Anchor link for: dashing-backdashing">🔗</a>
+</h3>
+<ul>
+<li>Dashing and backdashing can be done with the A+B input. 6A+B is a dash and 4A+B is a backdash.</li>
+<li>If a player inputs 6A+B, then holds the buttons down and flips the joystick to 4 within 2 frames, the startup of their dash will instantly become a backdash.</li>
+<li>Dashes have around a 2 frame startup before they start moving, but doing micro-dash moves is still possible.</li>
+<li>Dashes can be cancelled out of at any point by blocking, backdashing, doing a move, etc.</li>
+<li>Backdash frame data:</li>
+<li>
+<ul>
+<li>Akatsuki, Hyde, Gordeau: 22f total, 1-8 invuln</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Eltnum: 25f total, 1-8 invuln</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Linne: 26f total, 1-8 invuln</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Vatista, Yuzuriha, Carmine: 27f total, 1-8 invuln</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Nanase, Chaos: 28f total, 1-8 invuln</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Byakuya: 29f total, 1-8 invuln</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Waldstein: 32f total, 1-10 invuln</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Hilda: 36f total, 1-9 invuln</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Orie: 36f total, 1-8 invuln (no foot hitbox until frame 15)</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Seth: 37f total (grounded), 1-7 invuln</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Merkava: 37f total, 1-10 invuln</li>
+</ul>
+</li>
+</ul>
+<h3 id="meter-gain">Meter Gain<a class="zola-anchor" href="#meter-gain" aria-label="Anchor link for: meter-gain">🔗</a>
+</h3>
+<ul>
+<li>Meter is generated at a flat rate based on the damage a move deals on hit, not taking into account any proration.</li>
+<li>On-hit:</li>
+<li>
+<ul>
+<li>Attacker: 0.7% of the unscaled damage of a move is converted into meter gain. This includes any extra damage from being in vorpal state.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Defender: The player who gets hit will gain half the meter that the attacker gets for each hit.</li>
+</ul>
+</li>
+<li>On-block:</li>
+<li>
+<ul>
+<li>Attacker: If a move is blocked, the attacker gains half of the meter they would have gained on hit.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Defender: When blocking, defenders gain 80% of the meter than the attacker gets from having their attack blocked.</li>
+</ul>
+</li>
+<li>EX moves and mid-combo CS cause any subsequent moves to generate only 25% of their normal meter gain for a few seconds (approx. 5 seconds?).</li>
+<li>
+<ul>
+<li>EX moves in neutral still cause this effect, even if they are blocked or whiffed, but CS in neutral does not.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>This penalty ends immediately when a penalized combo stops, or when the timer runs out, whichever occurs first.</li>
+</ul>
+</li>
+</ul>
+<h3 id="training-mode">Training Mode<a class="zola-anchor" href="#training-mode" aria-label="Anchor link for: training-mode">🔗</a>
+</h3>
+<ul>
+<li>The game offers the ability to record dummies and have them play back when they recover from hitstun or blockstun, or after teching. This recording does not play on the first frame that a bot exits hitstun or blockstun.</li>
+<li>
+<ul>
+<li>The game spends 1 frame determining that the bot has returned to neutral (ie: exited hitstun/blockstun) before playing its recording, causing the recording to play on the second frame after the bot recovers from hitstun/blockstun.</li>
+</ul>
+</li>
+<li>When counter/high counter is enabled, the game only assumes the first hit in a string of cancels that touches the dummy is a counterhit. This means that things like cancelling a 5A (CH) into a special that is slow enough to reset the combo counter will not provide a second counterhit for the reset. The player must actually return to neutral if they want to re-enable the counter/high counter mode.</li>
+</ul>
+<h3 id="extra-info">Extra Info<a class="zola-anchor" href="#extra-info" aria-label="Anchor link for: extra-info">🔗</a>
+</h3>
+<ul>
+<li>
+<p>All aerial moves put players into a state of landing recovery (empty jumps do not). A normals have 2f recovery, B normals 3f, C normals 3f. Assault has 4f, assault normals have 2f. Air shield has 2f unless you land while shielding, which has 6f. Most special movement has its own landing recovery frames, but many can be cancelled into air normals for better recovery. Only the last air option performed before reaching the floor matters for landing recovery.</p>
+</li>
+<li>
+<p>Certain anti-air moves in the game have 'jump-in invulnerability,' meaning that any aerial move will whiff through the player doing the anti-air as long as that invuln is in effect. For example, Orie's 623A/B are anti-airs with jump-in invuln starting on frame 1, and her 3B anti-air normal has jump-in invuln starting from frame 5 or so. Not all characters have dedicated anti-air moves like these, though.</p>
+</li>
+<li>
+<p>Jump startup is between 4-6 frames (varies from character to character, with Waldstein having the slowest startup at 6 frames) and is throw invulnerable. Most of the cast has 4 frame startups. Hilda, Merkava, Carmine, and Gordeau have 5f jumps, while Waldstein has a 6f jump.</p>
+</li>
+<li>
+<p>Assault startup is 5 frames, and appears to be universally true. Assault startup is also throw invulnerable.</p>
+</li>
+<li>
+<p>Notably, assault startup can be kara-cancelled into throw within the first two frames, which allows players to have up to 2 frames of throw invuln before their throw occurs. While generally not very useful, it can be rather funny for a defender to invuln through a command throw and throw the attacker instead.</p>
+</li>
+<li>
+<p>Most specials can be cancelled directly in EX moves on whiff.</p>
+</li>
+<li>
+<p>All IWEXS are invulnerable during their startup to hits, but are only throw invuln on their first startup frame. They also lose all invuln after the initial hit, and can trade with projectiles during the period between the hit and the cinematic. Any trade will cause the IWEXS to prematurely end before dealing its damage.</p>
+</li>
+<li>
+<p>Some special moves in this game can gain new cancel properties based on what comes before them. It is unclear if this is a feature or a leftover from mechanics that are no longer in the game. See Yuzuriha's stance cancels and Byakuya's force function cancels(patched out), for example.</p>
+</li>
+<li>
+<p>Hitstop appears to be 8 frames for some A moves. I've seen hitstop go up to 12 frames in duration for some moves. Unsure if there are moves with even more or even less hitstop.</p>
+</li>
+<li>
+<p>After setting a default color for your character, it won't carry over into player lobbies.(patched out) If you switch places with another player in an online lobby, you will not have your default color equipped (instead, you'll have the previous player's color). However, if you simply move the cursor off of your character and then back to your character, it will equip your default color.</p>
 </li>
 </ul>
 <h2 id="combos">Combos<a class="zola-anchor" href="#combos" aria-label="Anchor link for: combos">🔗</a>
