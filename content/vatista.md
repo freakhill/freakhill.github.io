@@ -9,69 +9,133 @@ in_search_index = true
 #tags = [ "clojure" ]
 [extra]
 +++
+| Data from                                                                                                                                                                                                                                                                                                                                                                                |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Koishi](https://twitter.com/crazy_lemonmilk) Vatista [combo guide](https://www.evernote.com/shard/s319/client/snv?noteGuid=66eb1d7d-7b1c-4c46-9462-4f8f1a5fb960&noteKey=c6b0f1e181b407f9111d70de7665480e&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs319%2Fsh%2F66eb1d7d-7b1c-4c46-9462-4f8f1a5fb960%2Fc6b0f1e181b407f9111d70de7665480e&title=UNIST%2Bv3.20%2BVatista%2BCombo%2BGuide) |
+| Dainiru [combo guide](https://docs.google.com/document/d/10S5xFq9PDQRTqYtVxs0P6tv2URhHsnl_bwed_l73Xx4/edit)                                                                                                                                                                                                                                                                              |
+| [Boruphen's charge partitioning guide](https://www.evernote.com/shard/s628/client/snv?noteGuid=ae0b78c4-cd9d-4917-a005-adc76820c93c&noteKey=28ded817c39ffe5b626230061e9668c2&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs628%2Fsh%2Fae0b78c4-cd9d-4917-a005-adc76820c93c%2F28ded817c39ffe5b626230061e9668c2&title=Boruphen%2527s%2BGuide%2Bto%2BCharge%2BPartitioning%2Bin%2BUNIST)     |
+| The [Mizuumi wiki!](http://wiki.mizuumi.net/w/Under_Night_In-Birth/UNIST/Vatista)                                                                                                                                                                                                                                                                                                            |
+| The [dustloop uniel system post](http://www.dustloop.com/forums/index.php?/forums/topic/9084-uniel-system-mechanics-updated-april-20th-2015/) (i hope it didn't change too much in unist)                                                                                                                                                                                                    |
 
-Compilation of data from:
-
-- [Koishi](https://twitter.com/crazy_lemonmilk) Vatista [combo guide](https://www.evernote.com/shard/s319/client/snv?noteGuid=66eb1d7d-7b1c-4c46-9462-4f8f1a5fb960&noteKey=c6b0f1e181b407f9111d70de7665480e&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs319%2Fsh%2F66eb1d7d-7b1c-4c46-9462-4f8f1a5fb960%2Fc6b0f1e181b407f9111d70de7665480e&title=UNIST%2Bv3.20%2BVatista%2BCombo%2BGuide)
-
-- Dainiru [combo guide](https://docs.google.com/document/d/10S5xFq9PDQRTqYtVxs0P6tv2URhHsnl_bwed_l73Xx4/edit)
-
-- [Boruphen's charge partitioning guide](https://www.evernote.com/shard/s628/client/snv?noteGuid=ae0b78c4-cd9d-4917-a005-adc76820c93c&noteKey=28ded817c39ffe5b626230061e9668c2&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs628%2Fsh%2Fae0b78c4-cd9d-4917-a005-adc76820c93c%2F28ded817c39ffe5b626230061e9668c2&title=Boruphen%2527s%2BGuide%2Bto%2BCharge%2BPartitioning%2Bin%2BUNIST)
-
-- and the [Mizuumi wiki!](http://wiki.mizuumi.net/w/Under_Night_In-Birth/UNIST/Vatista)
-
-- aaaand the [dustloop uniel system post](http://www.dustloop.com/forums/index.php?/forums/topic/9084-uniel-system-mechanics-updated-april-20th-2015/) (i hope it didn't change too much in unist)
-
-## System
+### System
 
 Vatista cannot be counter hit, ever. It's a vatista thing.
 
-### The buttons
+Ground moves cannot be air blocked. Some specials cannot be air blocked (character specific).
+
+#### The buttons
 
 Buttons: A, B, C ,D
 
-Standard binding is (SFV notation): A->LP, B->MP, C->HP, D->LK
+Standard binding in (SFV notation): A->LP, B->MP, C->HP, D->LK
 
-We will assume that binding from now on.
+EX moves are made with the C button and use 100% meter (half of your 200% gauge).
 
-| button | name | description |
-|---|---|---|
-| A+B+C | VO (Veil Off) | some kind of GG roman cancel, not usable on block, invulnerable, push back opponent your opponent full screen, you can charge it but just tap it. Afterwards you are in VO "Veil Off" state. |
-| B+C | FF (Force Function) | character specific strong move that cost grid, generally pretty OP move |
-| (4)A+B | (back)dash | |
-| jA+B| assault | forward hop |
-| (j)6D | assault | forward hop |
-| (4)A+D | throw | (can't do it while crouching) |
-| D>D | CC (Chain Shift) | like GG roman cancel |
-| tatsuD | | |
-| hcfD | | |
-| A+B+C+D | | |
-| 5D | | |
-| 1/4/7D | | |
-| | | |
-| | | |
-| | | |
+Directions:
 
-- hcfD (41236D) = IW = 200% Super
-- A+B+C+D = IWEXS = 200% Super while in VO
-- When you win the grid war (more grid at the end of a cycle), you get to be in "Vorpal", give you access to character specific stuff.
-- 5D = Concentration: generate grids, short startup cancellable by any special move, holding any back direction during startup will shield
-- Shield (4D / j.4D): A defensive option that allows the player to benefit from blocking.
-- Guard Thrust (214D): A defensive option that requires meter or vorpal, but allows players in blockstun to perform an invincible move to knock attackers away. If in vorpal, it takes no meter, but costs vorpal and all of a player's grd blocks. If not in vorpal, it costs all of a players meter (with a minimum of 100 meter required to perform it) and grd crushes the player using it. If in vorpal carryover state following a chain shift, players can spend all meter and remaining vorpal carryover bar to perform a guard thrust that does not grd crush themselves.
-- There is guard cancel in the game, tatsu D, cost: if in vorpal, vorpag&grid break, if not in verpal 100 too 200 meter. after chain shift (DD cancel) can guard cancel without grid break.
+|_|_|_|
+|-|-|-|
+|7↖|8↑|9↗|
+|4←|5|6→|
+|1↙|2↓|3↘|
 
-### Autocombo ("Smart Steer")
+For instance 2A would be "crouching light punch" (cLP) in SF parlance.
 
-- If a player pushes 5A multiple times in a row on block or hit, they will get an automatic combo string.
-- - This is somewhat useful for players who use their 5B or 5C in their blockstring, but need them as combo tools, because smart steer is typically something like 5A > 5B > 5C > Special.
+| Notation | Description                                                 |
+|----------|-------------------------------------------------------------|
+| dl5A     | delay 5A                                                    |
+| jA       | jump A                                                      |
+| ]A[      | press and hold A                                            |
+| [2A]     | release down A                                              |
+| jc       | jump cancel                                                 |
+| A+B      | A and B together                                            |
+| 5A>5B    | 5A 5B link                                                  |
+| 5A5B     | 5A 5B chain (gattling)                                      |
+| 2A(1)    | down A one hit (do something on first hit of multihit move) |
+| 💥       | explosion (descriptive)                                     |
+| 💎       | crystal (descriptive)                                                            |
 
-### Gattling ("Passing Link")
+| button  | name                | description                                                                                                                                                                                    |
+|---------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| A+B+C   | VO (Veil Off)       | some kind of GG roman cancel, not a burst, invulnerable, full screen pushback, you can charge it but just tap it, vulnerable during landing frames. Afterwards you are in VO "Veil Off" state. |
+| B+C     | FF (Force Function) | character specific strong move that cost grid, generally pretty OP move                                                                                                                        |
+| (4)A+B  | (back)dash          |                                                                                                                                                                                                |
+| jA+B    | assault             | forward hop (from a jump)                                                                                                                                                                      |
+| (j)6D   | assault             | forward hop (potentially from a jump)                                                                                                                                                          |
+| (4)A+D  | throw               | (can't do it while crouching)                                                                                                                                                                  |
+| D>D     | CC (Chain Shift)    | like GG roman cancel                                                                                                                                                                           |
+| tatsuD  | Guard Thrust        | It's an invulnerable guard cancel move. Uses Vorpal&grid break, or 100-200% meter and grid break. If in "Vorpal carryover" from CC, no grid break.                                             |
+| hcfD    | IW                  | 200% Super                                                                                                                                                                                     |
+| A+B+C+D | IWEXS               | 200% Super while in VO                                                                                                                                                                         |
+| 1/4/7D  | Shield              | guard with special properties                                                                                                                                                                  |
+| 5D      | Concentration       | grid gain. startup is special cancellable. holding a backward direction will start shielding                                                                                                   |
 
-- A mechanic in the game that allows player to freely chain their normals into each other. Generally important for the ability to 'reverse beat' normals (ie: going from a B button back to an A button, whereas many games force you to only go up the chain of buttons in order, ala A > B > C.)
-- Each move can only be used once in a single string of cancels, unless it has a special property (ie: most 2As can self-cancel indefinitely) that allows it to be used more than once.
-- - Note that this remains true for air strings as well. Certain characters can cancel air moves into ground specials and back into air moves, and will still be limited in what air moves they can use at that point.
+#### Frame data
 
-### Recovery/Teching
+| shortname | fullname        | input             | description                                                                                            |
+|-----------|-----------------|-------------------|--------------------------------------------------------------------------------------------------------|
+| fb        | Stella Lumen    | [4]6 A/B/C        | sonic boom (53 charge)                                                                                 |
+| beam      |                 | [6]4 A/B/C        | reverse sonic boom (53 charge)                                                                         |
+| fk        |                 | [2]8 A/B/C        | flash kick                                                                                             |
+| drill     |                 | [8]2 A/B/C        | reverse flash kick                                                                                     |
+| crystal   | Deus Fragmentum | [A/B/C]](2)A/B/C[ | button hold and release (birdie bull horn), 1 crystal by button, position change with stand/crouch/air |
+
+- fb = Stella Lumen = sonic boom (53f charge)
+- beam = ??? = reverse sonic boom (53f charge)
+- drill = ??? = Canon spike, reverse flash kick input (??f charge)
+- fk = Luvel Angelus = Flash Kick (??f charge)
+- Crystal = Deus Fragmentum = button hold and release (birdie bull horn)
+
+| button      | startup    | active | recovery  | on block          | level | note                           |
+|-------------|------------|--------|-----------|-------------------|-------|--------------------------------|
+| 5A          | 6          | 3      | 12        | -3                | high  |                                |
+| 2A          | 6          | 3      | 12        | -3                | high  |                                |
+| 5B          | 12         | 9      | 18        | -2                | high  |                                |
+| 5BB         | -          | 6      | 25        | -8                | high  | sucks                          |
+| 2B          | 10         | 9      | 29        | -13               | high  |                                |
+| 2BB         | -          | 6      | 25        | -8                | high  |                                |
+| 5C          | 12         | 5      | 22        | -11               | high  |                                |
+| 2C          | 11         | 13     | 23        | -6 to -16         | low   |                                |
+| jA          | 6          | 3      | 2land     | ?                 | mid   |                                |
+| jB          | 11         | 6      | 3land     | ?                 | mid   |                                |
+| jC          | 12         | 10     | 4land     | ?                 | high  |                                |
+| jA+B        | 18         |        |           |                   |       | (floats)                       |
+| 66B         | 10         | 2      | 12        | -2                | high  | CS/EX cancel, counterhitKD     |
+| 66C         | 12         | 18     | 20        | -5                | high  | guruguruguru~, cancellable     |
+| groundFF    | 10         | 3      | 30        | -4/-6(held)       | high  |                                |
+| airFF       | 14         | 6      | 9land     |                   | high  | CS/EX cancel                   |
+| throw       | 4          | 1      | 22        |                   |       |                                |
+| guardcancel | 0          | 16     | 5         | -14               | high  |                                |
+| VO          | 21 to 69   | 2      | 37        | -13               | high  |                                |
+| Afb (ball)  | 21(ground) |        |           | +8 to +17         | high  | 53f charge, disappear when hit |
+| Bfb         | 19(ground) |        |           | +19 to -6         | high  | 53f charge, disappear when hit |
+| EXfb        |            |        |           | ...               |       | 53f charge, disappear when hit |
+| A/D/EXfk    | 4          |        |           |                   |       | 53f charge, CS cancellable     |
+| Abeam       | 14         | 5      | 24(41air) | -3(-5 air)        |       | 53f charge, extra air action   |
+| Bbeam       | 15(17air)  | 5      | 21(41air) | 0(-20 to -10 air) |       | 53f charge, extra air action   |
+| EXbeam      | 8          | 25     | 54(?air)  | +7(+11air)        |       | 53f charge                     |
+| crystal     | 1          |        |           |                   |       | 61f charge                     |
+|             |            |        |           |                   |       |                                |
+|             |            |        |           |                   |       |                                |
+|             |            |        |           |                   |       |                                |
+|             |            |        |           |                   |       |                                |
+|             |            |        |           |                   |       |                                |
+|             |            |        |           |                   |       |                                |
+|             |            |        |           |                   |       |                                |
+|             |            |        |           |                   |       |                                |
+
+#### Gattling ("Passing Link")
+
+- standard anime gattling + reverse beat: can chain from any button to any button, cannot use the same button twice (save some exceptions like 5A5A5A into rest of your chain)
+- reverse beat (chain from a heavy to a light) is pretty useful to cancel the recovery of a slow move to a fast move to make your chain safe on block
+- all these rules are valid in the air too
+
+#### Autocombo ("Smart Steer")
+
+- 5A5A5A5A ... (test if it works with 4A and 6A! can we start charging during the autocombo???)
+- Useful in some cases because moves in autocombo do not count in gattling restrictions (similar to DBFZ)
+
+#### Recovery/Teching
 
 - Upon being hit and knocked down or knocked airborne, players can hold down a non-D button to recover at the earliest possible opportunity. Alternatively, players can choose to wait until they want to tech, at which point they can push a button to tech, assuming they are not stuck in an untechable state.
 - The D button can be used to tech, but will generally skip the first possible tech option and only tech on the next tech option.
@@ -87,17 +151,16 @@ We will assume that binding from now on.
 - Any form of ground teching causes players to recover in a standing state. However, doing any sort of move overrides this standing recovery state and immediately goes into the move.
 - - For example, waking up and pushing 2A will cause the recovering character to recover into a crouching state with their 2A starting up. This works with shielding as well.
 
-### Wall/Ground bounces
+#### Wall/Ground bounces
 
-- Many combos involve bouncing opponents off of walls or sticking them to the ground. This cannot happen more than 3 times in a single combo.
-- - After a third wall/ground slam, opponents immediately become invulnerable and can no longer be hit (even if they are also unable to tech).
+- 3 bounces max by combo, after the 3rd bounce the opponent becomes invulnerable (even if they do not tech recover)
 
-### Jump Cancels
+#### Jump Cancels (jc)
 
-- Players are limited to one jump cancel per combo, unless they have specific moves that allow for special jump cancels.
-- Players cannot jump cancel their moves on block, again unless they have specific moves that allow for special jump cancels.
+- no jc on block
+- 1 jc by combo (bar character specific stuff)
 
-### Shielding
+#### Shielding
 
 - Shielding locks players into high/low blocking if used in neutral, so players can get grd crushed because they can't switch to blocking the right way. They can also be grd crushed by throws (this can be avoided with a throw-tech OS, though--see the throw section for more info).
 - Guard shielding (denoted by a green flash around the defending character) does NOT lock players into high/low blocking, but does force them to keep shielding, meaning they can still get grd crushed from throws (unless they use the throw break option; see the bottom of the throw section for more info).
@@ -118,7 +181,7 @@ We will assume that binding from now on.
 - If a player shields a move right before it hits him (within a few frames) and holds the D button, the game will register the shield input twice, causing him to immediately guard shield after his first shield. This can be useful when shielding multi-hit moves that are difficult to shield normally, but is also terrible if it occurs when shielding a normal jump-in.
 - Aerial shielding, like all other aerial actions, counts as a move and therefore incurs landing recovery. Players mindlessly shielding in the air can allow opponents free landing punishes or grd crush opportunities.
 
-### Throws
+#### Throws
 
 - Non command throws universally have a 4 frame startup.
 - Throws have a 14 frame throwbreak window.
@@ -140,7 +203,7 @@ We will assume that binding from now on.
 - - If the opponent performs a normal throw during the throw counter window, the player will not suffer from grd crush, and will instead only suffer from a yellow counter throw. (remember, grd crush throws have increased damage, so this is quite useful!)
 - - If the opponent performs a command throw during that throw counter window, however, the player will still suffer grd crush.
 
-### Assault
+#### Assault
 
 - Players cannot block after performing assault until they touch the ground
 - Assaults, like jumps, are throw invulnerable on frame 1
@@ -158,7 +221,7 @@ We will assume that binding from now on.
 - Both aerial and grounded assaults suffer the same reduced starting penalties.
 - Assault has a 5 frame startup (likely universal, didn't test thoroughly, but it is true for Waldstein and a couple others)
 
-### Grid
+#### Grid
 
 - Players automatically generate some grd when not doing anything.
 - - Passive generation speed is directly related to how far a player's character's back is from the edge of the screen. The further away, the faster they generate.
@@ -187,7 +250,7 @@ We will assume that binding from now on.
 - Certain characters can gain and steal grd by hitting the opponents with special moves, like Gordeau's command throws and Byakuya's webs.
 - The more grd a player has, the less they will get for every action.
 
-### Concentration
+#### Concentration
 
 - Players can concentrate for up to 420f by holding the D button.
 - Concentrating for more than 30f will drain meter from the player, but can be done even even if a player has no meter.
@@ -204,7 +267,7 @@ We will assume that binding from now on.
 - In a mirror at the start of a round, if both players have meter and hold concentration, player 2 will fill their grd blocks slightly faster than player 1.
 - - Without meter, however, both players will tie for the vorpal cycle.
 
-### Vorpal
+#### Vorpal
 
 - When the grd transfer state ring is filled (every 17 seconds), the player with the most grd gauge will enter vorpal state.
 - If a player has no grd gauge, or if a player is grd crushed, he will not be able to enter vorpal state.
@@ -217,7 +280,7 @@ We will assume that binding from now on.
 - - Use IWEXS without getting grd crushed (200 meter and <30% health requirement remain the same).
 - Some characters gain special benefits from being in vorpal state. Carmine, for example, spends less health to perform his specials, and Eltnum gains the ability to whiff-cancel her A normals.
 
-### Veil Off
+#### Veil Off
 
 - Veil off is a fully invincible burst (except against Gordeau's 214B and rekka grab) that can be performed when a player has 100 or more meter available. Upon entering this mode, the player's meter will slowly drain until it reaches 0 and the mode ends.
 - Veil off can only be performed when the player is on the ground
@@ -236,7 +299,7 @@ We will assume that binding from now on.
 - Veil off is -13 on block and has 20 frames of startup if not held.
 - - If held fully, veil off is -14 on block and has 68 frames of startup.
 
-### Counters
+#### Counters
 
 - If a player attempts to perform a move but gets interrupted before the move comes out, they will be countered. There are three types of counters:
 - - Throw counter: If the move is interrupted by a throw, the throw becomes unbreakable and the player being thrown will flash red.
@@ -251,20 +314,20 @@ We will assume that binding from now on.
 - Multi-hit moves do not benefit from the effects of Counter or High Counter against aerial opponents, because only the first hit of a multi-hit move that connects with the opponent will get the untech benefit. Having said that, there are likely multi-hit moves in the game with special counterhit properties that circumvent this limitation. I haven't looked into it too much.
 - Counter and High Counter appear to have no effect on hitstop.
 
-### Superflash and Screen Freeze:
+#### Superflash and Screen Freeze:
 
 - EX moves (supers), chain shifts, and infinite worths all cause the game to pause momentarily.
 - - EX moves cause a 20 frame superflash (19 frame freeze).
 - - Chain shift causes a 40 frame superflash (39 frame freeze).
 - Superflash is throw invuln, even for non-reversal supers. This is generally useless information, unfortunately, because superflash technically only lasts for 1 frame.
 
-### Input Buffering
+#### Input Buffering
 
 - When the game pauses, input timers continue, so all inputs are lost during the duration of chain shift, EX move, and IW screen freezes. Players should buffer their inputs a second time during the flashes to make sure their moves occur.
 - The input buffer in the game doesn't last as long as screen freezes do, so players should re-buffer their inputs towards the end of the freeze in order to get their moves to occur!
 - (note!: this is a massive generalization) Inputs generally last for around 4 frames, so if a player wants to avoid getting 623 motions when they want 236 motions, returning to neutral for 4 frames will reset the input buffer.
 
-### Fuzzy Protection
+#### Fuzzy Protection
 
 - This game has two distinct forms of fuzzy protection:
 - - Rising overheads are not overheads. This means any aerial move that is normally an overhead will be treated as a mid until the character performing it reaches the apex of his or her jump. Notably, assaulting doesn't even allow characters to attack until they reach the apex of their jumps.
@@ -273,7 +336,7 @@ We will assume that binding from now on.
 - - - This penalty applies to any aerial move that makes the character rise, even if it is performed during the falling portion of a jump. This is clearly seen with Eltnum's j.[C] against a down-backing opponent.
 - - - This penalty can stack with the reduced assault normal proration and untech.
 
-### Crossup Protection
+#### Crossup Protection
 
 - This game has a system in place to protect players from very fast crossups.
 - - Players can always block attacks by blocking in the direction away from the opponent's character.
@@ -284,12 +347,12 @@ We will assume that binding from now on.
 - Each projectile (and attack, technically) in the game has a 'direction of facing', which players can always block away from. However, points of origins for projectiles do not always align with their visual cues. Most projectiles in the game have their directions set whenever their player performs them. Seth's orbs and Carmine's puddle-spawned pinwheels, however, set their direction when they fire, likely because of their homing property.
 - Players who are walking backwards prior to getting crossed up will have some amount of extended crossup protection against some moves.
 
-### Same Move Proration
+#### Same Move Proration
 
 - Using certain moves in a combo more than once will cause the combo to suffer reduced untech time (and perhaps damage).
 - There is no list at the moment of all moves that suffer from SMP, but it MIGHT be all special moves. It may even apply to all moves, but at minimal effect.
 
-### Dashing/Backdashing
+#### Dashing/Backdashing
 
 - Dashing and backdashing can be done with the A+B input. 6A+B is a dash and 4A+B is a backdash.
 - If a player inputs 6A+B, then holds the buttons down and flips the joystick to 4 within 2 frames, the startup of their dash will instantly become a backdash.
@@ -308,7 +371,7 @@ We will assume that binding from now on.
 - - Seth: 37f total (grounded), 1-7 invuln
 - - Merkava: 37f total, 1-10 invuln
 
-### Meter Gain
+#### Meter Gain
 
 - Meter is generated at a flat rate based on the damage a move deals on hit, not taking into account any proration.
 - On-hit:
@@ -321,13 +384,13 @@ We will assume that binding from now on.
 - - EX moves in neutral still cause this effect, even if they are blocked or whiffed, but CS in neutral does not.
 - - This penalty ends immediately when a penalized combo stops, or when the timer runs out, whichever occurs first.
 
-### Training Mode
+#### Training Mode
 
 - The game offers the ability to record dummies and have them play back when they recover from hitstun or blockstun, or after teching. This recording does not play on the first frame that a bot exits hitstun or blockstun.
 - - The game spends 1 frame determining that the bot has returned to neutral (ie: exited hitstun/blockstun) before playing its recording, causing the recording to play on the second frame after the bot recovers from hitstun/blockstun.
 - When counter/high counter is enabled, the game only assumes the first hit in a string of cancels that touches the dummy is a counterhit. This means that things like cancelling a 5A (CH) into a special that is slow enough to reset the combo counter will not provide a second counterhit for the reset. The player must actually return to neutral if they want to re-enable the counter/high counter mode.
 
-### Extra Info
+#### Extra Info
 
 - All aerial moves put players into a state of landing recovery (empty jumps do not). A normals have 2f recovery, B normals 3f, C normals 3f. Assault has 4f, assault normals have 2f. Air shield has 2f unless you land while shielding, which has 6f. Most special movement has its own landing recovery frames, but many can be cancelled into air normals for better recovery. Only the last air option performed before reaching the floor matters for landing recovery.
 
@@ -440,3 +503,622 @@ tip:
 close:
 
 How to charge partition blockstring into A/B drill
+
+>>>>
+
+## Raw data 1:
+
+Move Abbreviations
+[4]6X               →Stella
+[6]4X               →Beam
+[2]8X               →FK
+[8]2X                →Drill
+Button Hold      →Crystal (Standing Crystal: 5 Crystal, Crouching Crystal: 2 Crystal)
+(h)                    →Hold (ex: j.B(h) means to do a j.B and keep holding B down.)
+dl                     →Delay
+
+This guide is made for people who have just started learning Vatista. As such, some combos might be made a bit suboptimal to keep the routes easy to swap between, so keep that in mind. And since this is aimed at beginner and intermediate players, we'll only cover the most common combo starters you'll use.
+
+The first part includes an explanation of her combo theory, so feel free to skip it if you don't need it.
+
+(Feel free to share and repost. If you have any questions or want something clarified, feel free to Tweet me at @crazy_lemonmilk)
+[TL Note: In Japanese, preferably. If you have questions in English, the Vatista channel of the Under Night discord will probably help.]
+
+
+Vatista typically ends combos in:
+
+(etc.)>A Drill>(2C)>Crystal
+
+For oki, start by practicing 2 Crystal>Meaty 5A Detonate.
+
+
+[Here's where we get started!]
+
+(etc.)>2C>5C>JAJBJC>land>JAJB(h)>A Drill>2 Crystal
+
+Doing A Drill ender from your air combo is a common part of Vatista's combo routes. If you want to pick Vatista up and fight right away, mastering this will give you your first semblance of a real character. Even if you're used to Vatista, this is always a solid combo to go for if you're not sure which route to take.
+
+Keep in mind that if your combo prorarates too heavily, you can be minus when performing your oki*, so you need to be able to make snap decisions, like cutting out some aerial moves when possible.
+Getting used to this route's j.B(h)>A Drill part will make life easier, since 90% of Vatista's combos will follow that flow.
+
+*By which I mean that 2 Crystal ender>Meaty 5A can lose to mashing. Specifically, Vatista's 5A is 6F while the fastest jabs are 5F, so if you're not +2 after a Crystal ender, you can get beaten out. Fortunately, all routes in this document are made to be plus after your ender.
+
+
+[About Crystal Combos]
+
+Mid-combo Crystal>Detonate routes are essential to Vatista's high damage combos.
+
+<Sample>
+(etc.)>2C>5C>dlJB(h)>dlA Drill>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal>Detonate>JC(h)>A Drill>Crystal
+
+
+This got real complicated real quick, so let's break this down into parts.
+
+    Launcher (2C5C)
+    Use your aerial combo to start a button hold and then A Drill (JBh>A Drill) *First bounce
+    OTG into Crystal (2C>2 Crystal) *Second bounce
+    OTG into detonate into another crystal that's detonated by the first one's explosion (2A2B Detonate>5 Crystal)
+    Ender (JC>A Drill>Crystal)
+
+
+I recommend learning this by practicing 1-2 and 3-5 separately. For reference, I posted a video of this combo on Twitter, so look at that for reference.
+
+    2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>A Drill>Crystal
+    2C(h)>2 Crystal>2A>2B Detonate>2 Crystal>B Beam Detonate(h)>JA>A Drill>Crystal
+    2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>A Drill>Crystal
+
+
+1 can be done even after heavy proration.
+2 can be done when proration is a bit lighter, but if you want to be lazy with your combos, you can just forget about this for now.
+3 can be done when proration is very light, such as off B starters or higher. This is the strongest route you can use, when you can use it. Also known as the Double Beam route.
+
+If you can take 2 , you can also take 1 . If you can take 3 , you can take either 1 or 2 . So basically, if you can do 1 , you can go for a crystal combo, though you might be leaving some damage on the table. 2 doesn't even add that much more damage, so if you're practicing in order of importance, I'd recommend learning 1 > 3 > 2 .
+
+Deciding on a combo route typically comes during the crystal part, the latter half of your combo. As such, you could say that one of Vatista's strengths is that combo decision is relatively easy with her. It boils down to Launcher>A Drill>Crystal combo based on accumulated proration OR skip the crystal route and go straight into an ender.
+
+In addition, your methods of spending meter to increase your damage or ending in VO all happen after your second crystal, so it's easy to decide between them and a simple A Drill ender.
+
+(Example)
+
+    2nd Detonation>JA>A Drill>2 Crystal <Meterless Ender>
+    2nd Detonation>JC>[8]FF>C Drill (before final FF hit) <100% Meter Damage Increase>
+    2nd Detonation>IW/IWE <200% Meter Damage Increase>
+    2nd Detonation> VO <VO Ender>
+
+
+The combos themselves are difficult, but once you've got the muscle memory down, it's pretty easy to adapt them to whatever situation you find yourself in. Once you make it through the rough patch with this character, it's smooth sailing.
+Next, we'll look into some combos from different starters. I hope you'll notice that all of the routes these combos use seem rather familiar...
+
+
+Combo list will continue below. Prioritize the combos in bold.
+
+*[A Starter]*
+
+*A>(B)>2C>5C>dlJB(h)>dlA Drill>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>A Drill>Crystal*
+
+Your A button is a common starter, so its heavy proration makes Crystal combos a bit more difficult. Adding (B) to your starter pushes your opponent further away (which can cause JB to whiff) as well as increases the proration, so it should be easier if you confirm off of A>2C whenever you can. For the record, you can get away with route 2 if you omit (B), but this guide is all about keeping it simple. Giving up on the Crystal combo and just doing Aerial>A Drill>Crystal is also an option. If you start the confirm with 2 2As, you should definitely give up on the Crystal combo.
+
+
+5A>2C>2A Whiff>Dash 2A>JA>JB(h)>JC>Land 2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>Aドリル>Crystal
+
+A combo for when 5A hits at the tip. Being able to do the 2C>2A Whiff>Dash 2A pickup is useful, but you can put off practicing it until later. The Dash 2A OTG costs one of your bounces, so keep in mind that you can't do your typical A Drill>2C>2 Crystal route.
+
+[DROP POINT]
+5A>2C>2A Whiff>Dash 2A>JA>JB(h)>A Drill>2C>2 Crystal>2A
+＜Doing 2C>2A Whiff > A Drill > 2C>2 Crystal will cost you 3 bounces, so the following 2A OTG won't connect.＞
+
+
+5A(Antiair)>JA>JB(h)>A Drill> 2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>A Drill>Crystal
+
+5A Antiair starter. If you can confirm off of the first hit, you can go into 3 . Admittedly, this is less practical as an antiair and more as a punish on an opponent who blocks a projectile in the air. If you start with 5A5B, you'll have to do route 2.
+
+
+*[B / C Starter]*
+*B>2C>5C>dlJB(h)>dlA Drill> 2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>A Drill>Crystal*
+
+For any B starter or higher, you can go into route 3 for high damage.
+If you include too many moves before your launcher or in your aerial, you should play it safe and pick route 1 or 2. Starting this with 2C will give something close to your maximum meterless damage, so it makes a good reversal punisher. There are other routes that do just a bit more, but it's like 50 extra damage, so you don't have to worry about it too much.
+
+
+2B>2C>2A Whiff>Dash 2A>JA>JB>A Drill(h)>2C(h)>dl5B>2 Crystal>5A Detonate>2 Crystal>2C>B Beam Detonate>JA>A Drill>Crystal
+
+A bit of an unusual Crystal combo off of a 2C>A Whiff>Dash 2A starter. It might be a bit difficult since the button holds are different from the rest of her combos, but being able to net a lot of damage off of the tip of a poke like 2C is important. If it's too difficult, you can just use the 5A>2C>2A Whiff combo mentioned above instead. For reference, you can view a Twitter video of the combo here.
+
+
+*[JB / JC Starter]*
+
+*Assault JB/JC>5A>2C>5C>dlJB(h)>dlA Drill>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>A Drill>Crystal*
+
+Your A starter combo is also your Assault starter combo. Except the proration on an assault starter is even heavier than what it is on an A starter, so don't push it if you're not used to it. 2C can connect from an Assault JC without 5A, so if you can hit confirm it, it's best to drop it to make the combo easier.
+
+
+*(Assault JBch / Shield break)or(JCch/ Normal JC)*
+*>5A>2C>5C>dlJB(h)>dlA Drill>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>A Drill>Crystal*
+
+When your Assault JB breaks their crouching shield, your Assault JB/JC counter hits, or you just do a regular JC, you can go right into route 3 for big damage. Make sure you don't use the damaging route on regular Assault starters!
+
+[DROP POINT]
+Assault JB/JC>5A>2C>5C>dlJB(h)>dlA Drill>2C(h)>2 Crystal>2A>A Beam Detonate
+＜The proration is too heavy for A Beam Detonate to connect, allowing your opponent to tech out.＞
+
+*Assault JB / JC(Air Hit)>5A>JA>JB(h)>A Drill>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>A Drill>Crystal*
+
+If an Assault attack tags your opponent in the air, you can pick them back up with 5A for a Crystal combo. On counter hit or an air-to-air from a regular jump, you can use route 3 for big damage. JC is a good button to put in your opponent's face after an Assault or regular jump, so it's best to get used to how to confirm between aerial hits and counter hits.
+
+*【66B Starter】*
+
+66Bch>Microdash 5A>2C>5C>dlJB(h)>dlA Drill> 2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>A Drill>Crystal
+
+66B knocks an opponent on their butt on counter hit, which you can combo off of after a bit of a dash. If you're confident, you can skip the 5A and just pick up with dash 2C.
+
+
+*【66C Starter】*
+
+*66C>2FF>2A>JA>JB(h)>JC> 2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>A Drill>Crystal*
+
+Knock them down with 2FF and pick them up into an aerial>Crystal combo. Don't rush the 2FF - wait until you're at point blank range before cancelling into it. 2FF>2A uses one of your bounces, so make sure you don't use A Drill!
+[DROP POINT]
+66C>2FF>2A>JA>JB(h)>A Drill>2C>2 Crystal>2A
+＜2FF > Aドリル > 2C2 Crystal uses 3 bounces, so the following 2A won't connect.＞
+
+～For Advanced Players～
+
+66C>2FF>2A>JA>JB(h)>JC>Land 2C(h)>5 Crystal>2A>5B>B Beam Detonate> Dash 2 Crystal(h)>A Beam Detonate>JA>A Drill>Crystal
+
+The high damage route from a 66C>2FF starter. It's difficult, but worth it if you plan to master Vatista.
+
+
+*66C>(Crossup)A Stella>2C>5C>dlJB(h)>dlA Drill>2C(h)>2 Crystal>2A>2B Detonate>2 Crystal>B Beam Detonate(h)>JA>A Drill>Crystal*
+
+If you cross up with 66C, you can cancel into A Stella>2C for even more damage than the aforementioned 2FF routes. To do it, do a 66C while holding the final 6. Once you've crossed up, move to what used to be 4 and press A for a crossup Stella.
+
+*66C(Air hit)>5A>JA>JB(h)>A Drill>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>A Drill>Crystal*
+
+66C has a large upwards hitbox, so you'll catch jumping opponents with it more often than you might expect. You can pick up with 5A and go into the Double Beam route for high damage.
+
+
+【2FF Starter】
+
+Close 2FF>2A>JA>JB>A Drill(h)>2C(h)>dl5B>2 Crystal>5A Detonate>2 Crystal>2C>B Beam Detonate>JA>A Drill>Crystal
+
+Just like 2C>2A whiff, this starter costs one of your bounces, so you'll need to use that unusual Crystal combo from before. If it's too difficult, you can swap in the JAJBJC>Land 2C>2 Crystal route as well.
+【Crystal Detonation Starter】
+
+
+*Crystal Detonation>5A>JA>JB(h)>Aドリル>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>A Drill>Crystal*
+
+A route for combos that start in a Crystal explosion, such as when opponents try to mash out of 2 Crystal>5A oki. While the proration might be light, Route 1 is the only combo that will connect here. Crystal detonations have same move proration that drastically reduces the untech time after the first explosion, so B Beam detonations found in routes 2 and 3 won't connect. This doesn't just apply to detonation starters - if you happen to detonate a crystal anywhere in your combo, only route 1 will work, so be careful.
+
+[DROP POINT]
+Crystal Detonation>5A>JA>JB(h)>A Drill>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>B Beam
+＜Your second explosion is used up by the time you reach A Beam Detonate, so your opponent will be able to tech high in the air where B Beam won't connect.＞
+
+～STEP UP～
+
+(Corner)Crystal Detonation>5C>JB(h)>A Drill>2C>A Stella>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>A Drill>Crystal
+
+5C>JB(h) off of a detonation starter will do more damage anywhere on the screen. It's the same for JC air-to-airs, so if you're confident in your confirms, skip 5A and pick up with 5C instead.
+
+Also, when you're in the corner, you can slip in a 2C>A Stella after the A Drill. It's hard since it requires you to start charging in the opposite direction as to what you're used to, but it does increase your damage. A good route to learn once you're used to your base combos.
+*【B Drill Starter】*
+
+*B Drill>66C>5A>JA>JB>JC>Land JA>JB(h)>A Drill>2C>Crystal*
+
+A midscreen B Drill combo. It's easy and pretty much all you need to know about midscreen B drill. It's possible for this to drop if you don't microdash before the 66C or the 5A, so keep that in mind. You've got one more bounce, so end with 2C>Crystal. It leaves you at much more advantage than the A Drill>Crystal ender. Don't try to pick up with 2A into a Crystal combo!
+
+[DROP POINT]
+B Drill>66C>5A>JA>JB(h)>A Drill>2C>2 Crystal>2A
+＜B Drill>A Drill>2C2 Crystal uses three bounces, so 2A won't connect.＞
+
+
+*(Corner)B Drill(h)>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>A Drill>Crystal*
+
+A corner combo from B Drill. As you can tell by the font color, it's your same old Crystal combo.
+
+As an aside, B Drill is minus enough on block that certain characters can punish with B moves. However, you can react to their block and cancel into C Beam to turn make yourself +7 at the cost of some meter. As such, it's strongly recommended that you always hold forward whenever you do B Drill. On hit, your forward charge leaves you ready for your mid-combo A Beam, and you can make yourself safe with C Beam on block.
+
+
+*【B FK Starter】*
+
+*B FK>cs>*
+     *1) Assault dlJC>Land JA>JB(h)>dlA Drill>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>A Drill>Crystal*
+     *2) Assault dlJA>JC>Land JB(h)>dlA Drill>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>A Drill>Crystal*
+
+If you CS before the final hit of B Flash Kick slams your opponent to the ground, you can Assault for a full combo. The pickup has a bit of a timing to it, but there's not much difference in damage between the two given here, so just pick whichever is easier to do. You can find a Twitter video of the combo [here](https://twitter.com/crazy_lemonmilk/status/896269714686590976).
+
+>>>>
+
+## Raw data 2:
+
+Vatista has relatively few optimal combo routes, but many ways to reach them - you don't need to take screen position into account so much as you do starters/hitstun proration.
+
+Vatista's combos will generally follow a Starter > Aerial > Landing > Ender pattern. Familiarize yourself with her various routes so you can switch mid-combo when necessary.
+Combo Starters
+
+These starters all take the place of 2C > 5C in the above 2C combo.
+
+5A/2A > 2C > 5C
+
+    Hey, it's what we know and love. Just make sure you don't use 5/2B in between 5/2A and 2C.
+
+5B/2B > 2C > 5C
+
+    If you're careful that these don't whiff, they work great. 5[B] also works as a blockstring starter - 5[B] > 2C > 5C gives you time to confirm if you want to jC 5C on hit or release a Fragmentum on block. Alternatively, Reverse Beat to 5A, 5B (assuming you started 2B), 5AA (if you're close), etc.
+
+j.B/j.C > 2C > 5C
+
+    Jump-ins. What else can you say? If you use these off of an Assault, you'll need to use the j.B > (j.A >) [8]2A aerial route to get a Fragmentum combo.
+
+66C > [4]6A > 2C > 5C
+
+    If you hold 6 during all of 66C, it'll become a 4 on crossup and give you a [4]6A. Unprepared opponents may also block the 66C and not expect the crossed up [4]6A, still granting you the combo. If you don't cross up, you can burn Vorpal with 66C > FF > CS > 5C.
+
+5C > FF > CS > 5C
+
+    Useful if Vatista is too far away for 2C to punish in time, you want to CS for some meter, or you just weren't expecting to start with 5C. 5C > 2C > 5B can work for the latter as well if you don't have CS. 5C > 2C > FF > CS > Aerial will do slightly more damage, but works at shorter distances.
+
+66B (ch) > 2C > 5C
+
+    66B knocks the opponent down on counterhit, meaning you can follow up with this.
+
+Aerial Routes
+
+These all come after 5C in the standard Fragmentum combo and are more or less replaceable.
+
+j.[B] > j.C > [8]2A
+
+    Basic air combo. Works.
+
+j.[B] > j.C > land > j.A > [8]2A
+
+    The land > jA is important here in increasing the range at which Vatista can hit with [8]2A, thereby increasing the range at which she can combo from. Allows you to get more hits out of j.C and [8]2A, so it arguably does the most damage, too.
+
+j.[B] > [8]2A
+
+    Useful if you're worried about your hitstun proration - it lets you land full Fragment combos off of Assault j.B or j.C and is essential for reaching the double laser landing route explained further down. Fairly hard to pull off though, since the j.[B] must be done as late as possible on top of requiring you to charge [8] during the startup of 5C. You can use j.[B] > j.A > [8]2A or j.A > j.[B] > [8]2A for a bit more leniency on the timing with little apparent change to the hitstun proration.
+
+j.A > j.B > j.C > land > j.A > j.B > [8]2A
+
+    Yeah, she can still do this. You won't be able to get a Fragment combo off of this, though. You'll usually go for this off of 5A anti-air, like in the [8]2B > 66C > 5A combo.
+
+j.C > land > j.A > j.[B] > [8]2A
+
+    Only usable when j.C is done on the falling portion of Vatista's jump, and as such isn't usable off of your standard starters. It is usable for routes involving aerial CS ([2]8B > CS, FF > CS) as well as random j.C hits against airborne opponents. In the latter case, you may be better off using j.C > 5C > j.A > j.B > [8]2A to ensure it hits against opponents low to the ground for similar damage.
+
+Landing Routes
+
+The all are assumed to come after an aerial [8]2A. Any combo with 2]B[ assumes that you were already holding B before entering this route.
+
+2A / 2C > 2B
+
+    Basic landing route that can't lead into anything other than [2]8X. Based on your combo's proration, 2C may drop, requiring you to use 2A instead.
+
+2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B
+
+    The standard Fragmentum landing route. Get familiar with this, as this route is essential to reaching Vatista's optimal damage output.
+
+2[C] > 2]B[ > 2A > 2B > 2]C[
+
+    Same as the above, but time the 2]C[ release such that the second Fragmentum is popped by the first's explosion. Used primarily when you open with a Fragmentum, but also useful when one of your combos happens to run through a Fragmentum you previously set up.
+
+2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A/B
+
+    The double laser route - it does slightly more damage, but it's a bit more difficult to pull off both in terms of execution and proration - there's a larger gap between 2A > [6]4A than 2A > 2B, so hitstun proration makes this combo impossible sooner than the single laser variant. To reach this route, you'll need to use a good starter and either the j.B > (j.A >) [8]2A or j.C > land > j.A > j.B aerial routes.
+
+Combo Finishers
+
+[2]8B / [2]8C
+
+    [2]8B midscreen downs the opponent far away, but allows you enough time to set up a projectile, Fragmentum or Assault to gain GRD. [2]8 midscreen leaves the opponent about 1.5 character lengths away with much less time to set up anything. [2]8B in the corner puts Vatista at a perfect distance to start the repeated Fragmentum string, or just general Fragmentum oki. [2]8C in the corner puts you almost point blank to the opponent with little time to set up.
+
+j.C > FF > [8]2C
+
+    Usable in combos after an opponent has been hit by the second (or more) Fragmentum. Holding [8] during FF drags the opponent upward, letting you get more hits out of [8]2C. It (usually) does more damage than a [2]8C ender, but keep in mind that if this is ending a full combo, the wall slam will almost always be impossible to combo from - that is, if they don't tech out before [8]2C's final hit (you're safe either way).
+
+j.C > [8]2A
+
+    Any aerial sequence (jC jB jA, jB jC, etc.) into A drill after a second Fragmentum more or less works. A meterless ender that does similar/slightly more damage than [2]8B and ends with better oki positioning midscreen. Generally a 2]B[ or 2]C[ crystal is released after the A drill, but keep in mind that like all Frag setups midscreen, backtech avoids everything.
+
+Basic Combos
+
+    5A > 5B > 2C > 5C > j.B > j.C > [8]2A > 2C > 2B > [2]8B (2537)
+
+        Basic ground combo that gets you used to [8]2A and 2C OTG. Still a useful route to go to later on if you feel your starter has prorated your combo too much (Assault, especially).
+
+    5A > 5B > 2C > 5C > j.[B] > j.C > [8]2A > 2C > 2]B[ > [2]8B (2693)
+
+        Slightly stronger and more complicated ground combo. Uses a single Fragment to get you used to comboing with them.
+
+    5A (anti-air) > j.A > j.B > j.C > land > j.A > j.B > j.C > [8]2A > 2C > 2B > [2]8B (2215)
+
+        Basic anti-air combo that gets you used to j.C > land > j.A. Can connect off of many other moves, such as anti-air 66B/66C. You may need to replace 2C > 2B with 2A if used in a longer combo due to proration.
+
+Midscreen Combos
+
+Damage values indicate base damage. "+" values indicate bonus damage from Vorpal (CS combos only). Note that slight changes in timing can change the amount of hits your moves do, so expect values to vary in practice.
+
+2C
+
+    (2A/ 5B/ j.B/ j.C >) 2C > 5C > j.[B] > j.C > land > j.A > [8]2A > 2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B > ([2]8B (3240) / [2]8C (4059) / j.C > [8]2A (3308) / j.C > FF > [8]2C (4075))
+
+        The standard Fragment combo. The button holding required to use Fragments mid-combo may seem difficult, but they're no big deal once you get the motions into your muscle memory. The 2C and 2A OTGs are a little strict, however - hitstun proration can ruin this combo easily if you're not careful with your starter or don't get a counter-hit (though the j.[B] > [8]2A aerial route will make up for the former). Still, there are a LOT of starters not listed that can get to this route. The damage for [2]8B/C assumes you do it after [6]4B - it's difficult, but you can swap it for 2B instead for less damage.
+
+    (5B >) 2C > 5C > 5FF(whiff) > 9FF > CS > j.C > land > j.A > j.[B] > [8]2A > 2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A > ([2]8B (3973+162) / [2]8C (4923+162) / j.C > [8]2A (4040+162) / j.C > FF > [8]2C (4796+162))
+
+        A CS version. The trick is to whiff the grounded 5FF, but hold 9 to make the second (airborne) portion hit. This uses the double laser landing route for additional damage.
+
+Fragmentum
+
+    Explosion > 5C > j.[B] > j.C > land > j.A > [8]2A > 2[C] > 2]B[ > 2A > 2B > 2]C[ > ([2]8B (3171) / [2]8C (4127) / j.C > [8]2A (3262))
+
+        Standard Fragment combo that takes into account the fact that the opponent will tech after the first mid-combo Fragment by releasing the second mid-combo Fragment before they're knocked out of the first one's explosion. For the jC > [8]2A ender, you need to time the second Fragment's so it explodes from the first one's explosion - for either [2]8 ender, you can get away with being a little late since the Flash Kick will pop it.
+
+[8]2B All damage values assume the drill portion of [8]2B hits only once before the kick, as an instant overhead should.
+
+    [8]2B > 66C > 5A > j.A > j.B > j.C > land > j.A > j.B > [8]2A > 2C > 2B > [2]8B (2629) / [2]8C (3240)
+
+        Standard meterless combo from 66C. Hitstun proration makes 2C > 2B a bit difficult to connect from [8]2A, so you can use 2A instead.
+
+    [8]2B > 66C > FF > CS > j.C > land > j.A > j.B > [8]2A > 2C > 2B > [2]8B (2895+174) / [2]8C (3506+174)
+
+        A CS conversion for 0/100% bar.
+
+[2]8B
+
+    [2]8B > CS > 66 (delay) j.C > land > j.A > j.[B] > [8]2A > 2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A > ([2]8B (3644+152) / [2]8C (4416+152) / j.C > [8]2A (3629+152) / j.C > FF > [8]2C (4385+152))
+
+        Yes, Vatista can combo off of Flash Kick with CS. You'll need to delay the j.C after the CS > 66 to let j.A hit.
+
+Corner Combos
+
+[8]2B
+
+    [8]2[B] > 2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B > j.C ([8]2A (2780) / FF > [8]2C (3388))
+
+        Her standard Fragmentum route, but now in the corner. Just be sure to hold [B] from the beginning. 2C will whiff on Akatsuki, Byakuya, and Chaos.
+        
+## Raw data 3
+
+Vatista Combo Guide Video (Meterless)
+Original video (Youtube)
+Original Video (Niconico)
+
+(0:03)
+Hello. I had planned to make a combo theory video after the last national tournament, but I got distracted by thinking about Lily Hoshikawa. This video will mostly focus on combos that I personally use.
+
+(0:10)
+As the name suggests, this video focuses on meterless combos, but I’ll start with some general knowledge before we get to the combos. This video assumes some general familiarity with fighting game terminology, but if there’s anything you don’t understand, feel free to ask. [TL Note: If you speak Japanese, that is. If English is your primary language, please ask English-language players instead, such as the ones in the UNIST discord.]
+
+Changes
+(0:24)
+There have been a number of balance changes with the console release of [st], but the most important ones are the increase to 2C's hitbox size and the change to 2FF's frame advantage [TL Note: Or in our case, the mere addition of it as a move.].
+
+(0:32)
+2C Changes
+2C’s hitbox was raised in a way that doesn't really affect her neutral game, but it makes routes that used to be character specific (such as corner B drill > 2C) universal, makes 2C pickup routes more stable, and even gives her access to some new routes altogether.
+
+(0:53)
+2FF Changes
+2FF’s recovery was reduced from the previous arcade version, making it -3 on block and allowing you to combo from a raw hit with no resources. That second one means you can now combo from a 66C hit even when you can’t cancel into A orb.
+
+
+Combo Enders
+(1:10)
+Next, I’ll introduce her combo enders.
+
+(1:14)
+A Drill Ender
+Her classic combo ender. Ends in a knockdown and even lets you set up a gem at frame advantage if you mind your proration. Just like always, she can pick up with 2C after the first gem explosion for more better damage and stability.
+
+(1:24)
+2C Ender
+This is another classic ender, but the increase to 2C’s hitbox size means she now has more routes that can end with a 2C knockdown. For example:
+Explosion > 2 gem > 2C delay 5B(1hit) 5 gem > delay 2C gem
+You can go into that ender from just about any route. [TL Note: See combo at 4:06 for this example]
+(1:34)
+That said, keep in mind that it’s slightly more difficult on characters whose hurtboxes don’t reach low enough. Also, they can air tech and punish you if your combo prorates too highly.
+(1:43)
+You can also set two gems instead of one after a 2C ender, or even 2C > jump cancel > air gem set if you haven’t used your jump cancel yet.
+
+(2:00)
+Satellus Ender
+A viable ender as of [st]. If your combo hasn’t prorated much, you can pop the opponent up and get a lot of frame advantage. But if it has, your opponent will air tech and be at advantage. Try to avoid using 5B, 2B, 5C, or your jump normals more than once when going for this ender.
+
+(2:21)
+j.[FF] Ender
+With the buffs to C Orb, you can end with j.[FF] cancelled into C Orb, mostly in the corner. 2C > [6]4B > 5FF into j.[FF] > j.[4]6C would be the way to go. You can also link an FF after Satellus to build more meter, though it’s a bit more difficult to pull off.
+(2:31)
+You can do an air C Stella right after a Satellus ender, too. Go for the j.[FF] ender alone if you want damage, and use either the Satellus > j.[4]6C or Satellus > j.[FF] enders if you want to build meter.
+Just remember that you’re in trouble if you drop any of them.
+
+(2:42)
+VO Ender
+A combo ender that uses a universal mechanic to strip an opponent’s vorpal. Vatista can fit in a VO at the very end of her combo, so keep her damage untouched and end in VO, [6]4B Explosion > VO, 66B Explosion > VO, or Explosion > Gem set Explosion > VO.
+(3:03)
+In the corner, you can rack up damage and end in VO while still leaving a gem set for oki.
+
+(3:15)
+That about covers enders. They all have their strengths and weaknesses, so just choose based on what kind of oki you want to do and what the proration on your combo will let you get away with.
+
+
+Combos
+(3:21)
+Now we get to the combos. I’ll mainly focus on the new routes she has in [st], which largely consist of Satellus ender routes and a few 2C ender/VO ender routes. The previous explanation covered just about everything you need to know about A drill enders and jFF enders, so I’ll omit them here.
+(3:28)
+The following combos are mainly the ones I personally use, so I can’t promise that they’re optimal. Please keep that in mind.
+[TL Note: This translation has added button holds to the original combo notations, but you can also view the input history in the video for reference.]
+
+(3:36)
+5A 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2A 5[A] 2]C[~[C] > 5[B](1)/2[B](1) 5]A[ > ]C[ (Satellus) > ]B[
+Starter: A
+Midscreen
+Practicality: ☆☆☆
+Given the air combo, you should be fine fitting in a B normal, just make sure you don’t use the same one that you’ll use to detonate the second gem. Avoiding same move proration gives you a real knockdown and keeps damage high. Incidentally, if you didn’t use a B normal in your confirm, you can get a side switch by using 2A 5[A] 2]C[~[C] > Dash > 5[B] as your ground combo.
+
+(3:46)
+2AA 2C 5C > j.A [8]2[A] > 2[C] 2]A[ > 2A 5[A] 2]C[~[C] > 5[B](1)/2[B](1) 5]A[ > ]C[ (Satellus) > ]B[
+Starter: AA
+Midscreen
+Practicality: ☆
+A Satellus ender with two A starters. That said, it’s basically the previous combo with j.B switched for j.A. j.A has a lighter proration than j.B, so it’s useful for times like these.
+
+(3:56)
+2AAA 2C 5B > j.[B] j.[8]2A > 2[C] 2]B[~[B] > 2A 5[A] 2]C[~[C] > 2]B[~[B] > 5A ]C[ (Satellus) > ]B[
+Starter: AAA
+Midscreen
+Practicality: 
+A route that uses A three whole times. I completely forgot about this one, so it still hasn’t seen any use in a fight. Since all those 2As will push the opponent away, you’ll need to launch with something other than 5C.
+
+(4:06)
+Assault j.C > 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2[A] 2B 2]C[ > 2C delay 5[B](1) 5]A[ > delay 2C ]B[
+Starter: Assault j.C
+Midscreen/Corner
+Practicality: ☆☆☆
+Assault starters prorate pretty heavily, so there’s no need to force a Satellus ender out of them. Keep it simple and do a 2C gem set ender. This route is a good backup for other high proration starters or awkward confirms, so do a 2C ender for those as well.
+
+(4:15)
+Assault j.B > 5A 2C 5C > j.A [8]2[A] > 2[C] 2]A[ > 2[A] 2B 2]C[ > 2C delay 5[B](1) 5]A[ > delay 2C ]B[
+Starter: Assault j.B
+Midscreen/Corner
+Practicality: ☆
+Vatista will rarely get a hit starting from her assault j.B, but if she does, you’ll want to use j.A in your combo instead of j.B to avoid same move proration.
+
+(4: 23)
+A 2C 2B > j.[B] j.C land j.A j.[8]2A > 2[C] 2]B[ >2A 5[A] 2]C[ > 2C delay 5[B](1hit) 5]A[ > delay 2C ]B[
+Start: 5A/2A Tip
+Midscreen
+Practicality: ☆☆
+If you follow a hit with the edge of 2A with 2C, there are times when the 2C gets blocked even after your 2A hits. As such, I can’t recommend keeping that starter in your muscle memory, but I admit that I do it fairly often myself. You won’t find many practical starters that prorate more heavily than the one this combo uses, so if you’re ever midscreen and unsure of your route, just pick this one and end with 2C.
+
+(4:33)
+A 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2[A] 5[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
+Start: 5A/2A
+Corner
+Practicality: ☆☆
+A Satellus corner route from an A starter. The 2 gem > 2A > 5A route whiffs in the corner, so use this instead.
+
+(4:43)
+AA 2C 5C > j.A [8]2[A] > 2[C] 2]A[ > 2[A] 5[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
+Start: 5AA/2AA
+Corner
+Practicality: ☆
+Just like the midscreen version, you need to switch j.B with j.A to keep your proration light when you start with two A normals.
+
+(4:52)
+AAA 2C delay 5[B] > delay j.C > 2[C] 2]B[ > 2[A] 2[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
+Start: 5AAA/2AAA
+Corner
+Practicality: 
+I don’t use this myself, but I may as well put this here while we’re introducing routes. If you find yourself landing this starter, you might want to play it safe and just go for a 2C or FF ender.
+
+(5:01)
+2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2A [6]4[A] > 2]C[~[C] > 5[B](1hit)/2[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
+Start: 2C
+Midscreen/Corner
+Practicality: ☆☆☆
+Combo from a normal 2C starter. B normals, C normals, and jump normals all have fairly light proration, so you can fit in a laser and a Satellus ender after starting from them.
+
+(5:10)
+2C(ch) 5C > j.[B] j.[8]2A > 2[C] 5]B[ > 2[A] 5B [6]4[B] > dash 2]C[ > 2[C] 2[B](1hit) 2]A[ > dash ]C[ (Satellus) > ]B[
+Start: 2C counter hit
+Midscreen/Corner
+Practicality: ☆☆☆
+A route for when 2C counter hits. Use it for punishing DPs or beating option selects/mashes.
+
+(5:21)
+5B 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2A [6]4[A] > 2]C[ > 2[C] 5[B](1hit)/2[B](1hit) 2]A[ >]C[ (Satellus) > dash ]B[
+Start: 2B/5B
+Midscreen/Corner
+Practicality: ☆☆☆
+B starters have slightly more proration than 2C, so we add in a 2C pickup after the first gem explosion. If you find yourself using a B normal when confirming off of a 2C counter hit starter, go into this route.
+
+(5:32)
+Explosion > 2C 5C > j.[B]/j.A j.[8]2A >  2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+Start: 5A Explosion
+Midscreen
+Practicality: ☆☆☆
+Use 2B for starters with heavy proration like A normals, and use 5B for starters with lighter proration. You can also switch in j.B for j.A when you start a combo with j.B > explosion or B drill > explosion to avoid same move proration. For the Satellus after the chain explosions, keep in mind that your opponent will be shot upwards if you’re too slow, so try to hit that as soon as possible.
+
+(5:42)
+5A Explosion > 2C 5C > delay j.[B] delay j.C >  2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+Start: 5A Explosion
+Corner
+Practicality: ☆☆
+Your opponent is much closer to you in a corner combo than they would be midscreen, so your midscreen route would cause them to launch away before your Satellus could activate. Use this corner route instead.
+
+(5:50)
+Explosion > 2C 5C > j.[B]/j.A j.[8]2A > 2C [4]6A > 2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+Start: j.A Explosion
+Corner
+Practicality: ☆☆☆
+If you cause an explosion with any normal with lighter proration than an A normal (including, but not limited to, j.A), then use this route. Just like with the midscreen route, you’ll need to swap j.B with j.A for B drill or j.B explosion starters.
+
+(6:01)
+5C Explosion > j[AB] > j.[8]2A > 2C [4]6A > 2C 5B > j.A j.[B] j.C > 2[C] 2]B[ > 2[A] 5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+Start: 5C Explosion
+Corner
+Practicality: ☆
+If you immediately use your jump cancel after a raw 5C explosion hit, you can get a lot of damage from an A drill done from high in the air. Leave it for guaranteed punishes, though. Keep in mind that if your opponent isn’t between you and the gem, the explosion’s knockback will causes A drill to whiff.
+
+(6:11)
+[8]2B > delay 66C > dash 5A > j.A j.[B] j.C > dash 2[C] 2]B[ > 2A 5[A] 2]C[~[C] > 5[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
+Start: [8]2B
+Midscreen
+Practicality: ☆
+As of [st], Vatista can connect 2C after an air combo from B drill starters. Basically, you want to delay your jump normals to keep your opponent from rising too high… though that’s much easier said than done. This combo’s difficulty can vary wildly based on your opponent’s character and whiffing the 2C pickup puts you in a very unfavorable position, so if you don’t want to take the risk, stick with the classic double air combo route into 2C.
+
+(6:22)
+[8]2[B] > 2[C] 5]B[ > 2[A] 5B [6]4[B] > 2]C[ > 2[C] 2[B](1hit) 2]A[ > ]C[ (Satellus) > ]B[
+Start: [8]2B
+Corner
+Practicality: ☆☆☆
+Nothing special here.
+
+(6:31)
+2C Aw > dash 2A > j.A j.B [8]2[A] > 2[C] delay 5B 2]A[ > 5[A] 2]C[ > 2[C] 2[B](1hit)/5[B](1hit) 2]A[ > ]C[ (Satellus) > ]B[
+Start: Edge of 2C/2B
+Midscreen/Corner
+Practicality: ☆☆☆
+Comboing from 2C > A whiff > Dash > 2A as a starter already costs one of your ground bounces. You should use this route for 2FF or 66C > 2FF starters, too.
+
+(6:41)
+2C 5C > j.[B] j.[8]2A > 2[C] 2]B[~[B] > 2A [6]4[A] > 2 ]C[ > 66[C] 5]A[ > ]B[ (Satellus) > ]C[
+Start: 2C
+Corner (Facing away)
+Practicality: ☆☆
+To get a side switch, use 66C into chain explosions instead of B normals. If you can remember to 66C and the microdash 5B brought up earlier in your Satellus route, you’ll be fine.
+
+(6:50)
+66C 2FF > 2A > j.A j.[B] j.C > 2[C] 2]B[ > 2[A] 2B 2]C[~[C] > 5[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
+Start: 66C
+Midscreen/Corner
+Practicality: ☆☆
+This combo already comes off of a starter that costs a ground bounce, but if proration gets any dicier than that, just go into a typical crystal combo after 2C.
+
+(7:00)
+66C [4]6A > 2C 5C > j.[B] j.[8]2A > 2[C] 5]B[ > 2[A] 5B [6]4[B] > dash 2]C[ > 2C delay 2[B](1hit) 2]A[ > delay 2C ]B[
+Start: 66C
+Midscreen
+Practicality: ☆☆
+If you connect A orb after a 66C, you should go into the B laser route into 2C ender to get damage and maintain advantage.
+
+(7:12)
+5A 2C 5C > j.B j.[8]2A > 2C [4]6[A] > 2[C] delay 2BB 5]A[ > 5BB 2]C[ > walk back VO
+Start: A Normal
+Corner
+Practicality:
+A VO ender combo that leaves up a crystal. You can go straight for this route from even high proration starters like j.C. You just need to walk back for a moment. The crystal set > VO ender is something I only found recently so I haven’t done it in a match yet, but the route itself should be fine.
+
+(7:23)
+2C 5C > j.B j.[8]2A > 2C [4]6[A] > 2[C] delay 2BB 5]A[ > 5B [6]4B > 2]C[ > walk back VO
+Start: 2C
+Corner
+Practicality:
+Try not to leave too much of a delay between 2B > 2BB and 5B > [6]4B. This combo gets a bit less stable once you add in the B laser, so if you want something consistent, stick with the A starter route and use 5BB instead.
+
+(7:33)
+B 2C 5C > j.[B] j.[8]2A > 2C [4]6[A] > 2[C] 5]B[ > 2A 5B [6]4B > 2]C[ > walk back VO
+Start: B Normal
+Corner
+Practicality:
+The 2C starter route for this already uses all available B normals, so if you happen to use a B normal before you enter your air combo, your opponent will tech before your VO can hit. In that case, use either the 5A starter route or this one.
