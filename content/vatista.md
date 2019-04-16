@@ -14,14 +14,53 @@ in_search_index = true
 | [Koishi](https://twitter.com/crazy_lemonmilk) Vatista [combo guide](https://www.evernote.com/shard/s319/client/snv?noteGuid=66eb1d7d-7b1c-4c46-9462-4f8f1a5fb960&noteKey=c6b0f1e181b407f9111d70de7665480e&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs319%2Fsh%2F66eb1d7d-7b1c-4c46-9462-4f8f1a5fb960%2Fc6b0f1e181b407f9111d70de7665480e&title=UNIST%2Bv3.20%2BVatista%2BCombo%2BGuide) |
 | Dainiru [combo guide](https://docs.google.com/document/d/10S5xFq9PDQRTqYtVxs0P6tv2URhHsnl_bwed_l73Xx4/edit)                                                                                                                                                                                                                                                                              |
 | [Boruphen's charge partitioning guide](https://www.evernote.com/shard/s628/client/snv?noteGuid=ae0b78c4-cd9d-4917-a005-adc76820c93c&noteKey=28ded817c39ffe5b626230061e9668c2&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs628%2Fsh%2Fae0b78c4-cd9d-4917-a005-adc76820c93c%2F28ded817c39ffe5b626230061e9668c2&title=Boruphen%2527s%2BGuide%2Bto%2BCharge%2BPartitioning%2Bin%2BUNIST)     |
-| The [Mizuumi wiki!](http://wiki.mizuumi.net/w/Under_Night_In-Birth/UNIST/Vatista)                                                                                                                                                                                                                                                                                                            |
-| The [dustloop uniel system post](http://www.dustloop.com/forums/index.php?/forums/topic/9084-uniel-system-mechanics-updated-april-20th-2015/) (i hope it didn't change too much in unist)                                                                                                                                                                                                    |
+| The [Mizuumi wiki!](http://wiki.mizuumi.net/w/Under_Night_In-Birth/UNIST/Vatista)                                                                                                                                                                                                                                                                                                        |
+| The [dustloop uniel system post](http://www.dustloop.com/forums/index.php?/forums/topic/9084-uniel-system-mechanics-updated-april-20th-2015/) (i hope it didn't change too much in unist)                                                                                                                                                                                                |
+| [Nice doc on all chars!](https://www.evernote.com/shard/s454/client/snv?noteGuid=5f20d298-4eea-442d-91f4-2a6fcfa33e8c&noteKey=a032c800fd4a65b3&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs454%2Fsh%2F5f20d298-4eea-442d-91f4-2a6fcfa33e8c%2Fa032c800fd4a65b3&title=I%2BWant%2Bto%2BGet%2BStrong%2Bat%2BUNI.%2BVolume%2B9)                                                              |
 
 ### System
 
 Vatista cannot be counter hit, ever. It's a vatista thing.
 
-Ground moves cannot be air blocked. Some specials cannot be air blocked (character specific).
+The default is "ground moves cannot be air blocked", there are exceptions.
+
+Shieding overheads allow for 6f punish (jab).
+
+Many moves are high when not charged and mids when charged, be careful between charged mids and delayed lows...
+
+Many blockstrings are so tight you can't dp out, however you can still get hit high/low....
+
+Ways to CS in a blockstring, spam 1A+D, spam 3D (add a mapping for A+D?)
+
+①Baiting Veil Off (VO)
+This is a strong option select. In this game, you cannot cancel normals on whiff.
+By quickly chaining moves together like 5A>5B or 2A>2A and blocking as the opponent is getting up, if they do VO, your first button will whiff and you'll block and can punish them. If the opponent just blocks, your next moves chains and from there, you continue your pressure. This is an extremely strong technique against characters who don't have an invincible move and must rely on VO.
+
+③Dealing with Wakeup CS (Meaty'ing with a special move)
+Reversal CS is considered to be the strongest reversal option with its invincibility.
+If a character has both a invincible reversal and CS, players worried about CS>shoryu may hesitate to meaty on wake up allowing the opponent to choose from more defensive options on wakeup.
+We can deal with this by meaty'ing with a special move. In this game, you cannot whiff cancels normals, but you can whiff cancel special moves into EX moves. While it may be difficult to meaty with a special move, if you do, during the screen freeze, you can make a read.
+
+(Introduction)
+For UNI, when in close range, at a extremely basic level, there are 3 options.
+１，Throw (beats blocking)
+２，Assault (beats crouch teching)
+３，Stagger (beats mashing)
+Of course, there are exceptions outside of this, but generally speaking, these are the 3 major options. It is important to choose the right response against these three things.
+So, make sure to remember this.
+
+②Mixing in Jump Throw Tech (Fuzzy Jump) on Defense
+In UNI, the number of different defensive options you utilize is extremely important. For those who don't use fuzzy jump, please learn this. This technique is actually way too strong.
+The input is 71AD. Inputting this is easier than doing antiair throw tech.
+Jump throw tech has a lot of utility but is usually used to win against
+・Assault
+・Throw
+The input happens so fast that when doing this technique, you get a rising shield as illustrated above. Once the recovery of the shield is over, you are free to do whatever. For example, you can do Assault or falling JA.
+Because you're able to act immediately after recovery, this allows you to transition from defense straight into offense.
+You need to do a delayed antiair attack if you want to blow up jump throw tech. This will GRD Break the opponent if you hit them, but does not put them in a counter hit state. The opponent can air tech after they get GRD Broken.
+Of course, you can choose a non-counterhit antiair route, but you should remember that the opponent can air tech if you GRD Break them when they are in the air. Delay block strings used to catch jump startup or the opponent up backing are effective as well. 
+Just knowing about this will not change the outcome of a match, but it makes a big difference if your opponent knows you can use this.
+Summary: Use jump throw tech effectively.
 
 #### The buttons
 
@@ -53,7 +92,9 @@ For instance 2A would be "crouching light punch" (cLP) in SF parlance.
 | 5A5B     | 5A 5B chain (gattling)                                      |
 | 2A(1)    | down A one hit (do something on first hit of multihit move) |
 | 💥       | explosion (descriptive)                                     |
-| 💎       | crystal (descriptive)                                                            |
+| 💎       | crystal (descriptive)                                       |
+
+common specials
 
 | button  | name                | description                                                                                                                                                                                    |
 |---------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,59 +111,57 @@ For instance 2A would be "crouching light punch" (cLP) in SF parlance.
 | 1/4/7D  | Shield              | guard with special properties                                                                                                                                                                  |
 | 5D      | Concentration       | grid gain. startup is special cancellable. holding a backward direction will start shielding                                                                                                   |
 
+VO might not be throw invulnerable! VO should be able to be used multiple times (test).
+
+#### Special moves
+
+| shortname | fullname        | input             | description                                                                                                                                |
+|-----------|-----------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| fb        | Stella Lumen    | [4]6 A/B/C        | sonic boom (53f charge)                                                                                                                    |
+| beam      | Mikoluceo       | [6]4 A/B/C        | reverse sonic boom (53f charge)                                                                                                            |
+| fk        | Luvel Angelus   | [2]8 A/B/C        | flash kick                                                                                                                                 |
+| drill     | Transvorance    | [8]2 A/B/C        | reverse flash kick (43f charge)                                                                                                            |
+| crystal   | Deus Fragmentum | [A/B/C] ... ](2)A/B/C[ | button hold and release/birdie bull horn (61f charge), 1 crystal by button, position change with stand/crouch/air, explosion is untechable |
+
 #### Frame data
 
-| shortname | fullname        | input             | description                                                                                                                     |
-|-----------|-----------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| fb        | Stella Lumen    | [4]6 A/B/C        | sonic boom (53 charge)                                                                                                          |
-| beam      |                 | [6]4 A/B/C        | reverse sonic boom (53 charge)                                                                                                  |
-| fk        |                 | [2]8 A/B/C        | flash kick                                                                                                                      |
-| drill     | Transvorance    | [8]2 A/B/C        | reverse flash kick, 43f charge                                                                                                  |
-| crystal   | Deus Fragmentum | [A/B/C]](2)A/B/C[ | button hold and release (birdie bull horn), 1 crystal by button, position change with stand/crouch/air, explosion is untechable |
-    
-- fb = Stella Lumen = sonic boom (53f charge)
-- beam = ??? = reverse sonic boom (53f charge)
-- drill = ??? = Canon spike, reverse flash kick input (??f charge)
-- fk = Luvel Angelus = Flash Kick (??f charge)
-- Crystal = Deus Fragmentum = button hold and release (birdie bull horn)
-
-| button      | startup    | active | recovery  | on block          | level | note                                |
-|-------------|------------|--------|-----------|-------------------|-------|-------------------------------------|
-| 5A          | 6          | 3      | 12        | -3                | high  |                                     |
-| 2A          | 6          | 3      | 12        | -3                | high  |                                     |
-| 5B          | 12         | 9      | 18        | -2                | high  |                                     |
-| 5BB         | -          | 6      | 25        | -8                | high  | sucks                               |
-| 2B          | 10         | 9      | 29        | -13               | high  |                                     |
-| 2BB         | -          | 6      | 25        | -8                | high  |                                     |
-| 5C          | 12         | 5      | 22        | -11               | high  |                                     |
-| 2C          | 11         | 13     | 23        | -6 to -16         | low   |                                     |
-| jA          | 6          | 3      | 2land     | ?                 | mid   |                                     |
-| jB          | 11         | 6      | 3land     | ?                 | mid   |                                     |
-| jC          | 12         | 10     | 4land     | ?                 | high  |                                     |
-| jA+B        | 18         |        |           |                   |       | (floats)                            |
-| 66B         | 10         | 2      | 12        | -2                | high  | CS/EX cancel, counterhitKD          |
-| 66C         | 12         | 18     | 20        | -5                | high  | guruguruguru~, cancellable          |
-| groundFF    | 10         | 3      | 30        | -4/-6(held)       | high  |                                     |
-| airFF       | 14         | 6      | 9land     |                   | high  | CS/EX cancel                        |
-| throw       | 4          | 1      | 22        |                   |       |                                     |
-| guardcancel | 0          | 16     | 5         | -14               | high  |                                     |
-| VO          | 21 to 69   | 2      | 37        | -13               | high  |                                     |
-| Afb (ball)  | 21(ground) |        |           | +8 to +17         | high  | 53f charge, disappear when hit      |
-| Bfb         | 19(ground) |        |           | +19 to -6         | high  | 53f charge, disappear when hit      |
-| EXfb        |            |        |           | ...               |       | 53f charge, disappear when hit      |
-| A/D/EXfk    | 4          |        |           |                   |       | 53f charge, CS cancellable          |
-| Abeam       | 14         | 5      | 24(41air) | -3(-5 air)        |       | 53f charge, extra air action        |
-| Bbeam       | 15(17air)  | 5      | 21(41air) | 0(-20 to -10 air) |       | 53f charge, extra air action        |
-| EXbeam      | 8          | 25     | 54(?air)  | +7(+11air)        |       | 53f charge                          |
-| crystal     | 1          |        |           |                   |       | 61f charge, explosion is untechable |
-|             |            |        |           |                   |       |                                     |
-|             |            |        |           |                   |       |                                     |
-|             |            |        |           |                   |       |                                     |
-|             |            |        |           |                   |       |                                     |
-|             |            |        |           |                   |       |                                     |
-|             |            |        |           |                   |       |                                     |
-|             |            |        |           |                   |       |                                     |
-|             |            |        |           |                   |       |                                     |
+| button      | startup    | active | recovery  | on block          | level | note                                    |
+|-------------|------------|--------|-----------|-------------------|-------|-----------------------------------------|
+| 5A          | 6          | 3      | 12        | -3                | high  |                                         |
+| 2A          | 6          | 3      | 12        | -3                | high  |                                         |
+| 5B          | 12         | 9      | 18        | -2                | high  |                                         |
+| 5BB         | -          | 6      | 25        | -8                | high  | sucks                                   |
+| 2B          | 10         | 9      | 29        | -13               | high  |                                         |
+| 2BB         | -          | 6      | 25        | -8                | high  |                                         |
+| 5C          | 12         | 5      | 22        | -11               | high  |                                         |
+| 2C          | 11         | 13     | 23        | -6 to -16         | low   |                                         |
+| jA          | 6          | 3      | 2land     | ?                 | mid   |                                         |
+| jB          | 11         | 6      | 3land     | ?                 | mid   |                                         |
+| jC          | 12         | 10     | 4land     | ?                 | high  |                                         |
+| jA+B        | 18         |        |           |                   |       | (floats)                                |
+| 66B         | 10         | 2      | 12        | -2                | high  | CS/EX cancel, counterhitKD              |
+| 66C         | 12         | 18     | 20        | -5                | high  | guruguruguru~, cancellable              |
+| groundFF    | 10         | 3      | 30        | -4/-6(held)       | high  |                                         |
+| airFF       | 14         | 6      | 9land     |                   | high  | CS/EX cancel                            |
+| throw       | 4          | 1      | 22        |                   |       |                                         |
+| guardcancel | 0          | 16     | 5         | -14               | high  |                                         |
+| VO          | 21 to 69   | 2      | 37        | -13               | high  |                                         |
+| Afb (ball)  | 21(ground) |        |           | +8 to +17         | high  | 53f charge, disappear when hit          |
+| Bfb         | 19(ground) |        |           | +19 to -6         | high  | 53f charge, disappear when hit          |
+| EXfb        |            |        |           | ...               |       | 53f charge, disappear when hit          |
+| A/D/EXfk    | 4          |        |           |                   |       | 53f charge, CS cancellable              |
+| Abeam       | 14         | 5      | 24(41air) | -3(-5 air)        |       | 53f charge, extra air action            |
+| Bbeam       | 15(17air)  | 5      | 21(41air) | 0(-20 to -10 air) |       | 53f charge, extra air action            |
+| EXbeam      | 8          | 25     | 54(?air)  | +7(+11air)        |       | 53f charge                              |
+| crystal     | 1          |        |           |                   |       | 61f charge, 💥 untechable until landing |
+|             |            |        |           |                   |       |                                         |
+|             |            |        |           |                   |       |                                         |
+|             |            |        |           |                   |       |                                         |
+|             |            |        |           |                   |       |                                         |
+|             |            |        |           |                   |       |                                         |
+|             |            |        |           |                   |       |                                         |
+|             |            |        |           |                   |       |                                         |
+|             |            |        |           |                   |       |                                         |
 
 #### Gattling ("Passing Link")
 
@@ -1122,3 +1161,92 @@ Start: B Normal
 Corner
 Practicality:
 The 2C starter route for this already uses all available B normals, so if you happen to use a B normal before you enter your air combo, your opponent will tech before your VO can hit. In that case, use either the 5A starter route or this one.
+
+## Raw 3
+
+This serves as an introduction to charge partitioning as it applies to Vatista in Under Night In-Birth Exe:Late[st]. I will explain what this technique is and how it works. Then I will give some examples of how you can use partitioning with Vatista.
+
+I hope this guide will answer questions you may have about charge partitioning in Under Night. If you have any questions you can contact me on Twitter @boruphen or just ping me in the Discord. Feel free to offer suggestions to improve this guide, too.
+
+Let's get started.
+
+[Jan 26, 2019 Update: Added short demonstrations of charge partitioning for flash kick, lumen stella, beam, and drills.]
+
+Do you need to understand charge partitioning to play Vatista?
+You do not! Charge partitioning allows you to do many things, but only relatively few are practical. Partitioned B.drill set ups are good, but you can still do very well without them. It’s better to be as comfortable with Vatista’s combos, pressure, block strings, crystals, etc. as possible before moving on to charge partitioning. 
+
+Once you have the fundamentals down, charge partitioning is a way that you can make things complicated all over again.
+
+#### What is charge partitioning?
+Charge partitioning is when you split a move's charge time into multiple parts or partitions. This technique exists in various fighting games such as Street Fighter III: Third Strike and Under Night In-Birth Exe:Late[st]. With this technique, you can do a lot of things you could not do otherwise. For example, you can do dash > flash kick, double laser or fireball, and B.drill set ups (these will be discussed in detail later).
+
+Note: Charge partitioning is not to be confused with charge buffering, which is a technique that lets you begin charging again immediately after inputting the special move (i.e. [4] 6 [4]A). 
+
+#### How does charge partitioning work?
+Charge partitioning works because there is a duration of time during which you can keep your charge without holding in the direction you have to charge. This is allows you to do things like charge [2], 5B > 8B (flash kick) and down-back, st.lp x headbutt. You can also use this window to break your charge time into partitions. So you can charge, return stick to neutral, then quickly continue charging to segment your charge into two partitions. As long as the sum of your partitions does not exceed a time limit — as long as you don’t overcharge — you will be able to perform the move as you normally would.
+
+#### How does charge partitioning work in UNIST?
+In UNIST, the charge input for a special move can be split into no more than 4 partitions. This is why Vatista no longer has her machine gun mode like in Exe:Late. Partitions can be separated by no more than 11 frames. Once you stop charging for more than 10 frames, you will lose all charge you had accumulated.
+
+You will overcharge if the total charge across your current partitions goes over 10 + required charge. For example, say you charge 33 frames, break for 9 frames, then charge for another 33 frames. You would overcharge since the total charge is 66 frames, so your fireball/laser/flashkick won’t come out.
+
+When you perform a special move using charge partitioning, it seems like your first partition is consumed while you maintain the charge of your other partitions. This is what allows you to do double lumen or double beam. You charge the first lumen in two parts, then you charge a third part during animation of the first lumen. You use the charge of the first and second partitions to do lumen 1, and your first partition is consumed. Then you use your second and third partitions for lumen 2.
+
+Note that the animation of your special moves will affect your partitions. I will give an example of this. You need to charge 53 frames to be able to do [4]6A (Lumen Stella). You are allowed to overcharge by about 10 frames. So on paper you could have your partitions like 27 + 27 + 27. The problem is that the overall animation for Lumen Stella is 39 frames. That puts you at risk of overcharging, so it’s better to charge it like 35 + 20 + 35.
+
+Another thing that’s important to note is that Vatista’s special moves require different charge times.
+Lumen Stella, Beam, Flash Kick – 53 frames
+Dive Kick – 43 Frames
+Gem Set – 61 frames (However, you cannot partition with gems.)
+
+Waldstein has a charge move, but in UNIST he is no longer able to use charge partitioning. Sorry, Waldstein.
+
+How do I actually do charge partitioning?
+It might help to examine an example to get started. Let’s look at how you do double beam. I will go into great detail on how you can fire one A.beam followed immediately by another beam.
+
+Double Beam clip
+
+You’re going to want to be in training mode with input display turned on. You can use this to study your inputs and diagnose any problems you may experience.
+
+The input for double beam can be simplified to [6] 5 [6] 4A [6] 4A. The timing for your charges ([6] inputs), in order, should be approximately 40 frames, 15 frames, 40 frames. Since the animation for A.beam lasts for 43 frames, we will use this animation to time our last 40 frame charge. That way we only have to manually time the first two charges.
+
+What needs to happen for double beam to work:
+
+    Sum of first two partitions is between 53-63 frames, inclusive. The last two partitions need to add up to 53-63 as well. This ensures that you have enough charge for your beam without overcharging.
+    Breaks between partitions must be less than 11 frames.
+
+
+If done correctly, you should shoot the second beam as soon as you recover from shooting the first. It should look like this video.
+
+#### More examples of charge partitioning
+It’s important to note that this section is in no way exhaustive since no one has seen all of what can be done with charge partitioning. I hope my explanations thus far have been good enough that you can understand how it works. That way, you will be able to recognize and learn from other players' set ups as well as create some of your own. 
+
+This section will give a few examples of what Vatista can do with this technique. I’ll briefly describe each technique and how it is performed. These examples are listed in ascending order of both challenge and practicality.
+
+Dashing Flash Kick clip
+This may not be practical, but it sure is a thing you can do. You can partition your flash kick charge with a dash. You’ll probably want to use 4/6AB dash shortcut since it’s quicker. If you’re comfortable doing 44/66 during the 10 frame partition window, more power to you.
+
+Input: [2] dash [2]8B
+
+This is for hard reads only in my opinion, and maybe not even then. Partition timing depends on how far you want to dash with your flash kick. More charge before dash means less during the dash and vice-versa. 
+
+Double Lumen clip
+Double Lumen is similar to the double beam that was discussed earlier.
+
+Input: [4] 6 [4] 6A [4] 6A
+
+The key difference between beam and lumen for our purposes is the animation time. A.Lumen’s animation is slightly shorter (39 frames vs 43), so I like to split my charge like 35 20 35. This is the most consistent way I’ve found to do it, but you might find a timing that works better for you.
+
+A.drill > 2.gem > B.drill clip
+B.drill partitions are probably the most practical use of charge partitioning. They’re also pretty difficult. This is a set up that you can use any time you do A.drill 2.gem ender.
+
+Input: ... [8]2A [8] 2.gem [8]2B. 
+
+A tip for this one is to not start charging [8] again until closer to the end of the A.drill. If you start charging [8] as soon as you input the A.drill, you will almost always overcharge. 2.gem takes 26 frames total, leaving at minimum 17 frames to charge before setting the gem (17 + 26 = 43). You want the part charged during A.drill to be between 17-27 frames, so take advantage of the input display until you internalize the timing.
+
+
+More testing could be done on the timing requirements. The time between partitions has to be < 11 frames. The allowed overcharge time is around 10 frames. It’s hard to test one that manually. The allowed overcharge time might vary depending on the move. Someone needs to have their robot friend test this.
+
+#### References
+
+Below are links to videos you may find useful. The only thing that works in Exe:Late but not Exe:Late[st] is machine gun mode, which is when you see a lot of small partitions used to do rapid fire A.lumen. Any set up that uses more than 4 partitions must be modified to work in the current version.
