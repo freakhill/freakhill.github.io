@@ -8,42 +8,19 @@
         </url>
     
         <url>
-            <loc>https://www.johangall.com/clojure/</loc>
+            <loc>https://www.johangall.com/sfv/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/i-want-to-keep/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
+            <loc>https://www.johangall.com/</loc>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/jojolisp/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/lucy-the-game/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/ops/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/pending-and-ongoing/</loc>
+            <loc>https://www.johangall.com/things-to-remember/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -57,21 +34,28 @@
         </url>
     
         <url>
-            <loc>https://www.johangall.com/sfv/</loc>
+            <loc>https://www.johangall.com/ops/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/things-to-remember/</loc>
+            <loc>https://www.johangall.com/lucy-the-game/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/type-theory/</loc>
+            <loc>https://www.johangall.com/pending-and-ongoing/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/i-want-to-keep/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -84,10 +68,25 @@
             
         </url>
     
-    
         <url>
-            <loc>https://www.johangall.com/</loc>
+            <loc>https://www.johangall.com/jojolisp/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
         </url>
     
+        <url>
+            <loc>https://www.johangall.com/clojure/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/type-theory/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
     
 </urlset>
