@@ -22,9 +22,11 @@ in_search_index = true
 
 Basic wheel:
 - Throw > Block
+- Crouch tech > Throw
 - Assault > Crouch Tech (assault is frame 1 throw invul)
 - Abare > Assault
 - Stagger > Abare
+- Block > Stagger
 
 Main options selects:
 - Jump Throw Tech (Fuzzy Jump): 71A+D > Assault, Throw; loses to delayed AA (shouldn't it be 17A+D???)
