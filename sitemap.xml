@@ -1,7 +1,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
+            <loc>https://www.johangall.com/sfv/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>https://www.johangall.com/jojolisp/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/i-want-to-keep/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/art/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -15,14 +36,7 @@
         </url>
     
         <url>
-            <loc>https://www.johangall.com/clojure/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/type-theory/</loc>
+            <loc>https://www.johangall.com/things-to-remember/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -36,13 +50,6 @@
         </url>
     
         <url>
-            <loc>https://www.johangall.com/sfv/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
             <loc>https://www.johangall.com/lucy-the-game/</loc>
             
                 <lastmod>2019-03-17</lastmod>
@@ -50,7 +57,21 @@
         </url>
     
         <url>
-            <loc>https://www.johangall.com/art/</loc>
+            <loc>https://www.johangall.com/clojure/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/rust/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/type-theory/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -65,27 +86,6 @@
     
         <url>
             <loc>https://www.johangall.com/</loc>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/things-to-remember/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/i-want-to-keep/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/rust/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
             
         </url>
     
