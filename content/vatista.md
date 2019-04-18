@@ -25,8 +25,8 @@ Basic wheel:
 - Crouch tech > Throw
 - Assault > Crouch Tech (assault is frame 1 throw invul)
 - Abare > Assault
-- Stagger > Abare
-- Block > Stagger
+- Safe pressure > Abare
+- Block > Safe pressure
 
 Main options selects:
 - Jump Throw Tech (Fuzzy Jump): 71A+D > Assault, Throw; loses to delayed AA (shouldn't it be 17A+D???)
@@ -37,6 +37,8 @@ More:
 - Vatista cannot be counter hit, ever. It's a vatista thing.
 - The default is "ground moves cannot be air blocked", there are exceptions.
 - Shieding overheads allow for 6f punish (jab).
+- Basically every string that does not finish with an EX move is - on block.
+- tons of strings when shielded must be CS EX beam punishable, but we get no traditional punishes
 - Common: high become mid when charged, charged mid/delayed low is a strong mixup
 - Many blockstrings are so tight you can't dp out, however you can still get hit high/low
 - Ways to CS in a blockstring, spam 1A+D, spam 3D (add a mapping for A+D?)
