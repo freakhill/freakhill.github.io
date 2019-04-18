@@ -49,6 +49,85 @@ simple http client lib
 [github repo](https://docs.rs/reqwest/0.7.1/reqwest/)
 
 
+### Crossbeam
+
+set of tools for concurrent programming (atomic, queues, channels, exponential backoff, scoped threads)
+
+[github repo](https://github.com/crossbeam-rs/crossbeam)
+
+### bitflags
+
+library to manage bitflags much much better in rust
+
+[github repo](https://github.com/bitflags/bitflags)
+
+### byteorder
+
+library to manage endianness
+
+[github repo](https://github.com/BurntSushi/byteorder)
+
+### chrono
+
+date and time library
+
+[github repo](https://github.com/chronotope/chrono)
+
+### clap
+
+parsing command line arguments
+
+[github repo](https://github.com/clap-rs/clap)
+
+### encoding_rs
+
+manage string encoding, used by firefox gecko
+
+[github repo](https://github.com/hsivonen/encoding_rs)
+
+### fnv
+
+very fast hash function! (because no protection against some attacks)
+
+[github repo](https://github.com/servo/rust-fnv)
+
+### lazy-static
+
+laze evaluated statics for rust, we can initialize statics with runtime code!
+
+[github repo](https://github.com/rust-lang-nursery/lazy-static.rs)
+
+### memmap
+
+cross-platform memory mapped IO
+
+[github repo](https://github.com/danburkert/memmap-rs)
+
+### ndarray
+
+n-dimensional array library
+
+[github repo](https://github.com/rust-ndarray/ndarray)
+
+### num
+
+rational numbers, complex numbers, and others
+
+[github repo](https://github.com/rust-num/num)
+
+### num_cpus
+
+get the number of cpus
+
+[github repo](https://github.com/seanmonstar/num_cpus)
+
+### rayon
+
+parallel iterators, forkjoin on closures, a powerful concurrent processing model
+
+[github repo](https://github.com/rayon-rs/rayon)
+
+
 ### Building fast interpreters in Rust
 
 [slideshare](https://www.slideshare.net/RReverser/building-fast-interpreters-in-rust)

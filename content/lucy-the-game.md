@@ -12,6 +12,9 @@ in_search_index = true
 
 [crust, rust p2p library supporting hole punching](https://github.com/maidsafe/crust)
 
+
+[quinn, quic impl in rust](https://github.com/djc/quinn)
+
 [nrs netcode talk](https://www.youtube.com/watch?v=7jb0FOcImdg)
 
 ## Solo mode
