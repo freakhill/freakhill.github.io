@@ -20,55 +20,29 @@ in_search_index = true
 
 ### System
 
-Vatista cannot be counter hit, ever. It's a vatista thing.
+Basic wheel:
+- Throw > Block
+- Assault > Crouch Tech (assault is frame 1 throw invul)
+- Stagger > Abare
 
-The default is "ground moves cannot be air blocked", there are exceptions.
+More:
+- Vatista cannot be counter hit, ever. It's a vatista thing.
+- The default is "ground moves cannot be air blocked", there are exceptions.
+- Shieding overheads allow for 6f punish (jab).
+- Common: high become mid when charged, charged mid/delayed low is a strong mixup
+- Many blockstrings are so tight you can't dp out, however you can still get hit high/low
+- Ways to CS in a blockstring, spam 1A+D, spam 3D (add a mapping for A+D?)
 
-Shieding overheads allow for 6f punish (jab).
-
-Many moves are high when not charged and mids when charged, be careful between charged mids and delayed lows...
-
-Many blockstrings are so tight you can't dp out, however you can still get hit high/low....
-
-Ways to CS in a blockstring, spam 1A+D, spam 3D (add a mapping for A+D?)
-
-①Baiting Veil Off (VO)
-This is a strong option select. In this game, you cannot cancel normals on whiff.
-By quickly chaining moves together like 5A>5B or 2A>2A and blocking as the opponent is getting up, if they do VO, your first button will whiff and you'll block and can punish them. If the opponent just blocks, your next moves chains and from there, you continue your pressure. This is an extremely strong technique against characters who don't have an invincible move and must rely on VO.
-
-③Dealing with Wakeup CS (Meaty'ing with a special move)
-Reversal CS is considered to be the strongest reversal option with its invincibility.
-If a character has both a invincible reversal and CS, players worried about CS>shoryu may hesitate to meaty on wake up allowing the opponent to choose from more defensive options on wakeup.
-We can deal with this by meaty'ing with a special move. In this game, you cannot whiff cancels normals, but you can whiff cancel special moves into EX moves. While it may be difficult to meaty with a special move, if you do, during the screen freeze, you can make a read.
-
-(Introduction)
-For UNI, when in close range, at a extremely basic level, there are 3 options.
-１，Throw (beats blocking)
-２，Assault (beats crouch teching)
-３，Stagger (beats mashing)
-Of course, there are exceptions outside of this, but generally speaking, these are the 3 major options. It is important to choose the right response against these three things.
-So, make sure to remember this.
-
-②Mixing in Jump Throw Tech (Fuzzy Jump) on Defense
-In UNI, the number of different defensive options you utilize is extremely important. For those who don't use fuzzy jump, please learn this. This technique is actually way too strong.
-The input is 71AD. Inputting this is easier than doing antiair throw tech.
-Jump throw tech has a lot of utility but is usually used to win against
-・Assault
-・Throw
-The input happens so fast that when doing this technique, you get a rising shield as illustrated above. Once the recovery of the shield is over, you are free to do whatever. For example, you can do Assault or falling JA.
-Because you're able to act immediately after recovery, this allows you to transition from defense straight into offense.
-You need to do a delayed antiair attack if you want to blow up jump throw tech. This will GRD Break the opponent if you hit them, but does not put them in a counter hit state. The opponent can air tech after they get GRD Broken.
-Of course, you can choose a non-counterhit antiair route, but you should remember that the opponent can air tech if you GRD Break them when they are in the air. Delay block strings used to catch jump startup or the opponent up backing are effective as well. 
-Just knowing about this will not change the outcome of a match, but it makes a big difference if your opponent knows you can use this.
-Summary: Use jump throw tech effectively.
+Main options selects:
+- VO bait: Cannot cancel normal on which => quich chain 5A>5B, or 2A>2A on opponent wake-up, VO => whiff => no chain => can block, no VO => hit => chain => pressure
+- Anti Wakeup CS: You can whiff cancel special into EX, meaty with special, use the 40f of CS to cancel into EX (read)
+- Jump Throw Tech (Fuzzy Jump): 71A+D > Assault, Throw; loses to delayed AA (shouldn't it be 17A+D???)
 
 #### The buttons
 
-Buttons: A, B, C ,D
-
-Standard binding in (SFV notation): A->LP, B->MP, C->HP, D->LK
-
-EX moves are made with the C button and use 100% meter (half of your 200% gauge).
+- Buttons: A, B, C ,D
+- Standard binding in (SFV notation): A->LP, B->MP, C->HP, D->LK
+- EX moves are made with the C button and use half your meter
 
 Directions:
 
@@ -153,15 +127,12 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 | Abeam       | 14         | 5      | 24(41air) | -3(-5 air)        |       | 53f charge, extra air action            |
 | Bbeam       | 15(17air)  | 5      | 21(41air) | 0(-20 to -10 air) |       | 53f charge, extra air action            |
 | EXbeam      | 8          | 25     | 54(?air)  | +7(+11air)        |       | 53f charge                              |
-| crystal     | 1          |        |           |                   |       | 61f charge, 💥 untechable until landing |
-|             |            |        |           |                   |       |                                         |
-|             |            |        |           |                   |       |                                         |
-|             |            |        |           |                   |       |                                         |
-|             |            |        |           |                   |       |                                         |
-|             |            |        |           |                   |       |                                         |
-|             |            |        |           |                   |       |                                         |
-|             |            |        |           |                   |       |                                         |
-|             |            |        |           |                   |       |                                         |
+| crystal     | 1(7)       |        |           |                   |       | 61f charge, 💥 untechable until landing |
+| Adrill      | 7          | 13     | 18        | 2                 | high  | 43f charge                              |
+| Bdrill      | 20         | 9      | 48        | -7                | mid   | 43f charge, actually air unblockable    |
+| Cdrill      | 5          | ...    | 18        | -1                | mid   | 1-3f strike inv., 4-~f fb inv.          |
+| IW          | 12         | ...    | ...       | -33               | high  | 1-147f inv.                             |
+| IWEXS       | 15         | 6      | ...       | -25               | high  | 1-26f inv.                              |
 
 #### Gattling ("Passing Link")
 
@@ -176,19 +147,10 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 
 #### Recovery/Teching
 
-- Upon being hit and knocked down or knocked airborne, players can hold down a non-D button to recover at the earliest possible opportunity. Alternatively, players can choose to wait until they want to tech, at which point they can push a button to tech, assuming they are not stuck in an untechable state.
-- The D button can be used to tech, but will generally skip the first possible tech option and only tech on the next tech option.
-- - For example, getting knocked to the ground and holding the D button will cause a late ground tech, not an immediate/emergency tech. Getting hit in the air and holding the D button causes a ground tech.
-- After any form of recovery, for the first 8 frames after a player can perform actions, they are invulnerable to throws.
-- - This invulnerability is not lost even if the player pushes any buttons.
-- There are three primary forms of recovery:
-- - Air tech: Players can hold one of three directions (back/forward/neutral) and tech out of air combos in the direction of their choosing. The character will flash briefly as they tech.
-- - - Air techs are useful because of how far they launch teching players away from their opponents, but they have a major downside. Though teching players are invulnerable until they reach the floor, they also cannot perform any actions! This makes them VERY easy to oki for the opponent!
-- - Ground tech: Players can hold one of two directions (back/neutral) and flip off the ground and onto their feet. The character will flash briefly as they tech. The direction influences where players end up after they flip.
-- - - Players can delay their ground techs slightly to throw off opponent's oki timings.
-- - Delayed tech: Players who choose not to push any buttons after falling to the ground will eventually have their character stand up automatically. This form of recovery does not cause the character to flash.
-- Any form of ground teching causes players to recover in a standing state. However, doing any sort of move overrides this standing recovery state and immediately goes into the move.
-- - For example, waking up and pushing 2A will cause the recovering character to recover into a crouching state with their 2A starting up. This works with shielding as well.
+- Hold (or press) A/B/C + direction (air: forward neutral or back, ground: neutral or back, delayable)
+- D does delay tech, air ~> delay to ground, ground ~> delay ground
+- 8f throw invul
+- tech recovers standing, but reversal can skip that frame (ex. reversal low to avoid some hilda meaties)
 
 #### Wall/Ground bounces
 
@@ -201,41 +163,33 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 
 #### Shielding
 
-- Shielding locks players into high/low blocking if used in neutral, so players can get grd crushed because they can't switch to blocking the right way. They can also be grd crushed by throws (this can be avoided with a throw-tech OS, though--see the throw section for more info).
-- Guard shielding (denoted by a green flash around the defending character) does NOT lock players into high/low blocking, but does force them to keep shielding, meaning they can still get grd crushed from throws (unless they use the throw break option; see the bottom of the throw section for more info).
-- - From appearances, guard shielding does make it appear as though a player is locked into high/low blocking state, but this is similar to a blockstun effect. The player can actually block however they wish. If they choose to block low after guard shielding high, players risk being hit by overheads that only hit standing opponents, because their character remains in a standing position.
-- - Guard shielding occurs when players input guard while they are in blockstun, and it costs 10 meter (or anything in your gauge if you have less than 10 meter).
-- - Unsuccessful guard shielding costs 1 block of grd.
-- Any successful shield grants 1 block of grd gauge.
-- Successful ground shielding grants the defending player 3 frames of reduced blockstun.
-- Successful air shielding grants the defending player 6 frames of reduced blockstun.
-- Successful normal shielding causes slightly increased pushback.
-- Successful guard shielding causes significantly increased pushback, in addition to the normal benefits gained from shielding moves.
-- Air normals cannot be blocked by players in the air unless they shield them!
-- Air normals that get shielded (either by grounded or aerial defenders) can no longer be cancelled into anything, and the player performing the normal suffers from a flat 10 frames of landing recovery.
-- Air specials, ground specials, and ground normals that get shielded do not suffer from any sort of additional recovery or inability to be cancelled. They continue to act as normal. This also applies to ground normals that put the player airborne and aerial dive moves.
-- If a player shields and gets grd crushed, they lose the ability to use D-button moves (see above)!
-- Every hit in multi-hit moves must be shielded individually.
-- - Note that while players must shield the last hit in multi-hit aerial normals to get the 3 or 6 frames of reduced blockstun, the attacking player will suffer the increased landing recovery and lack of cancel routes regardless of which hit of their normal was shielded.
-- If a player shields a move right before it hits him (within a few frames) and holds the D button, the game will register the shield input twice, causing him to immediately guard shield after his first shield. This can be useful when shielding multi-hit moves that are difficult to shield normally, but is also terrible if it occurs when shielding a normal jump-in.
-- Aerial shielding, like all other aerial actions, counts as a move and therefore incurs landing recovery. Players mindlessly shielding in the air can allow opponents free landing punishes or grd crush opportunities.
+- locks player in stand/crouch => easier to get grid crushed
+- D during blockstun = "guard shielding" (green flash), does not stand/crouch lock but force to keep shielding
+- guard shielding costs 0-10 grd?? meter, consequent shield whiff = -1 grdblock, block = +1 grdblock
+- ground shield => -3f blockstun
+- air shield => -6f blockstun
+- successful shield = small pushback, succesful guardshield = big pushback
+- air guard requires shield
+- shield disable gattling for air moves and impose 10f of landing recovery
+- grd crush => cannot use D moves anymore (shield, assault, concentration)
+- every hit of multi-hit moves must be shielded individually
+- for air multi-hit moves, any hit shielded => 10f landed recovery, last hit shielded => -3f blockstun
+- "just shielding" will auto reapply shield after 1st block, good for multihit moves, super bad for air move shield (you lose your punish)
+- air shield is a move => landing recovery, you can get hit on landing
 
 #### Throws
 
-- Non command throws universally have a 4 frame startup.
-- Throws have a 14 frame throwbreak window.
-- Gold throws (throws performed on opponents who are still stuck in blockstun or hitstun) have a 28 frame throwbreak window
-- If a player whiffs a throw attempt, they lose 1 block of grd.
-- Players that exit blockstun or hitstun have an additional 7 frames of gold throw protection, meaning any throw performed on them will turn into a gold throw.
-- - Notably, there appears to be a somewhat odd situation where players actually become invulnerable to diving command throws during this window. It is unclear if this is intended.
-- Players who have just recovered from a ground or air tech are throw invulnerable for approximately 8 frames.
-- If players start to perform a move before being thrown, they will always be throw countered and be unable to break the throw, even if it shows up as a gold throw. A red flash on the player's character indicates a throw counter.
-- When players break throws, they gain two advantages:
-- - The player breaking the throw gains 2 blocks of grd, while the opponent loses 2 blocks of grd.
-- - The player breaking the throw has an 8 frame advantage over their opponent after breaking the throw.
-- If a player grd crushes an opponent with their throw, the throw and subsequent combo will do more damage than usual. There appears to be no extra untech time applied to the combo, however, so it will not become longer than usual.
-- If a normal throw and a hit go active on the same frame, the hit will win.
-- Throws can be kara-cancelled from B moves, if the throw is inputted within the first 2 frames of the B move's startup.
+- 4f startup
+- 14f tech window
+- can get thrown during hit/blockstun, 28f tech window
+- throw whiff => -1 grd block
+- 7f of gold throw protection out of hit/blockstun (28f tech window)
+- in some cases dive command throw invulnerability during that window (bug?)
+- 8f throw invul. after air/ground recov
+- counterthrow is untechable (red flash)
+- on throw tech, +2 grd block (ennemy -2), +8f advantage
+- throw&hit on same frame => throw wins
+- B button kara throw is a thing
 - If a player guard shields, they can input a throw break while they're locked into the guard shield state. This will put the player in a yellow throw break state instead for a few frames, and then subsequently into a throw counter state.
 - - If a defender uses this option, they will no longer be considered in a shield state, which means that if the attacker does not throw them and instead performs an attack, that attack will not be considered shielded. The defender will gain no vorpal and no frame advantage, and the attacker will suffer no penalties.
 - - Any throw the opponent performs during the yellow throw break window WILL be teched! This includes command throws!
