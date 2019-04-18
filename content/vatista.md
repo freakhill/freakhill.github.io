@@ -23,7 +23,13 @@ in_search_index = true
 Basic wheel:
 - Throw > Block
 - Assault > Crouch Tech (assault is frame 1 throw invul)
+- Abare > Assault
 - Stagger > Abare
+
+Main options selects:
+- Jump Throw Tech (Fuzzy Jump): 71A+D > Assault, Throw; loses to delayed AA (shouldn't it be 17A+D???)
+- VO bait: Cannot cancel normal on which => quich chain 5A>5B, or 2A>2A on opponent wake-up, VO => whiff => no chain => can block, no VO => hit => chain => pressure
+- Anti Wakeup CS: You can whiff cancel special into EX, meaty with special, use the 40f of CS to cancel into EX (read)
 
 More:
 - Vatista cannot be counter hit, ever. It's a vatista thing.
@@ -32,11 +38,6 @@ More:
 - Common: high become mid when charged, charged mid/delayed low is a strong mixup
 - Many blockstrings are so tight you can't dp out, however you can still get hit high/low
 - Ways to CS in a blockstring, spam 1A+D, spam 3D (add a mapping for A+D?)
-
-Main options selects:
-- VO bait: Cannot cancel normal on which => quich chain 5A>5B, or 2A>2A on opponent wake-up, VO => whiff => no chain => can block, no VO => hit => chain => pressure
-- Anti Wakeup CS: You can whiff cancel special into EX, meaty with special, use the 40f of CS to cancel into EX (read)
-- Jump Throw Tech (Fuzzy Jump): 71A+D > Assault, Throw; loses to delayed AA (shouldn't it be 17A+D???)
 
 #### The buttons
 
