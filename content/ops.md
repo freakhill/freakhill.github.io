@@ -1,8 +1,8 @@
 +++
-title = "Ops things for me"
+title = "Ops notes"
 description = "I don't want to forget these anymore"
 date = 2019-03-17
-weight = 30
+weight = 110
 draft = false
 in_search_index = true
 [extra]
@@ -54,4 +54,45 @@ how to get the socket?
 
 ```bash
 grep "stats socket" conf
+```
+
+## JVM
+
+[Adopt A JDK](https://adoptopenjdk.net/) to get a free JDK
+
+### jshell
+
+```java
+HttpURLConnection con = (HttpURLConnection) new URL("https://***").openConnection();
+con.setRequestMethod("GET"); con.getResponseCode();
+```
+
+To test whether the JVM can deal with the pointed server.
+
+### jmx stuff
+
+for quick debugging
+
+```shell
+ex -vnE /...java11.../conf/security/java.policy <<EOF
+/grant {/ a
+    permission java.security.AllPermission;
+.
+wq
+EOF
+# stuff that works for my start scripts
+ex -vnE ...startscript... <<EOF
+/Heap/ a
+-Dcom.sun.management.jmxremote !
+-Dcom.sun.management.jmxremote.ssl=false !
+-Dcom.sun.management.jmxremote.authenticate=false !
+-Dcom.sun.management.jmxremote.port=1098 !
+.
+%s/!/\\\\/
+wq
+EOF
+reset
+killall java
+unset JAVA_TOOL_OPTIONS
+jstatd -p ...whatever... &
 ```
