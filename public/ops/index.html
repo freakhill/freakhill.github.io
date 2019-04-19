@@ -54,7 +54,7 @@
         <div class="content container">
             
 <div class="post">
-  <h1 class="post-title">Ops things for me</h1>
+  <h1 class="post-title">Ops notes</h1>
   <span class="post-date">2019-03-17</span>
   <h2 id="riak">Riak<a class="zola-anchor" href="#riak" aria-label="Anchor link for: riak">🔗</a>
 </h2>
@@ -91,6 +91,41 @@
 <p>how to get the socket?</p>
 <pre style="background-color:#2b303b;">
 <span style="color:#bf616a;">grep </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">stats socket</span><span style="color:#c0c5ce;">&quot; conf
+</span></pre><h2 id="jvm">JVM<a class="zola-anchor" href="#jvm" aria-label="Anchor link for: jvm">🔗</a>
+</h2>
+<p><a href="https://adoptopenjdk.net/">Adopt A JDK</a> to get a free JDK</p>
+<h3 id="jshell">jshell<a class="zola-anchor" href="#jshell" aria-label="Anchor link for: jshell">🔗</a>
+</h3>
+<pre style="background-color:#2b303b;">
+<span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;"> con = (</span><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;">) </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">URL</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">https://***</span><span style="color:#c0c5ce;">&quot;).</span><span style="color:#bf616a;">openConnection</span><span style="color:#c0c5ce;">();
+con.</span><span style="color:#bf616a;">setRequestMethod</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">GET</span><span style="color:#c0c5ce;">&quot;); con.</span><span style="color:#bf616a;">getResponseCode</span><span style="color:#c0c5ce;">();
+</span></pre>
+<p>To test whether the JVM can deal with the pointed server.</p>
+<h3 id="jmx-stuff">jmx stuff<a class="zola-anchor" href="#jmx-stuff" aria-label="Anchor link for: jmx-stuff">🔗</a>
+</h3>
+<p>for quick debugging</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">ex -vnE /...java11.../conf/security/java.policy &lt;&lt;EOF
+/grant {/ a
+    permission java.security.AllPermission;
+.
+wq
+EOF
+# stuff that works for my start scripts
+ex -vnE ...startscript... &lt;&lt;EOF
+/Heap/ a
+-Dcom.sun.management.jmxremote !
+-Dcom.sun.management.jmxremote.ssl=false !
+-Dcom.sun.management.jmxremote.authenticate=false !
+-Dcom.sun.management.jmxremote.port=1098 !
+.
+%s/!/\\\\/
+wq
+EOF
+reset
+killall java
+unset JAVA_TOOL_OPTIONS
+jstatd -p ...whatever... &amp;
 </span></pre>
 </div>
 

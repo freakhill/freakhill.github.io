@@ -1,35 +1,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>http://127.0.0.1:1111/pending-and-ongoing/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>http://127.0.0.1:1111/vatista/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>http://127.0.0.1:1111/art/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>http://127.0.0.1:1111/clojure/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>http://127.0.0.1:1111/things-to-remember/</loc>
+            <loc>http://127.0.0.1:1111/ex/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -43,6 +15,13 @@
         </url>
     
         <url>
+            <loc>http://127.0.0.1:1111/bazaar/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>http://127.0.0.1:1111/rust/</loc>
             
                 <lastmod>2019-03-17</lastmod>
@@ -50,14 +29,7 @@
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/i-want-to-keep/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>http://127.0.0.1:1111/sfv/</loc>
+            <loc>http://127.0.0.1:1111/art/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -69,7 +41,7 @@
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/jojolisp/</loc>
+            <loc>http://127.0.0.1:1111/vatista/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -83,7 +55,35 @@
         </url>
     
         <url>
+            <loc>http://127.0.0.1:1111/jojolisp/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1111/clojure/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1111/sfv/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>http://127.0.0.1:1111/type-theory/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1111/pending-and-ongoing/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
