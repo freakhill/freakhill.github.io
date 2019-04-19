@@ -195,35 +195,24 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 - on throw tech, +2 grd block (ennemy -2), +8f advantage
 - throw&hit on same frame => throw wins
 - B button kara throw is a thing
-- If a player guard shields, they can input a throw break while they're locked into the guard shield state. This will put the player in a yellow throw break state instead for a few frames, and then subsequently into a throw counter state.
-- - If a defender uses this option, they will no longer be considered in a shield state, which means that if the attacker does not throw them and instead performs an attack, that attack will not be considered shielded. The defender will gain no vorpal and no frame advantage, and the attacker will suffer no penalties.
-- - Any throw the opponent performs during the yellow throw break window WILL be teched! This includes command throws!
-- - If the opponent performs a normal throw during the throw counter window, the player will not suffer from grd crush, and will instead only suffer from a yellow counter throw. (remember, grd crush throws have increased damage, so this is quite useful!)
-- - If the opponent performs a command throw during that throw counter window, however, the player will still suffer grd crush.
+- after guard shield (green shield), throw break =>
+  1. ?frames yellow break state: autotech normal&command, still block but no shield)
+  2. then throw counter state: no grd crush on normal throw, grd crush on command throw
 
 #### Assault
 
-- Players cannot block after performing assault until they touch the ground
-- Assaults, like jumps, are throw invulnerable on frame 1
-- Assault does not cause any special landing recovery penalty to be applied to aerial normals
-- - It should be noted that assault does count as a move, however, and therefore carries its own landing recovery, so empty assaults are punishable on landing.
-- Ground assault moves towards the opponent and homes in on them
-- Air assault moves towards the opponent in a set distance and arc, meaning players can jump well passed the opponent if too close
-- Any aerial normals performed from assault are overheads (note: this does not include special moves like Yuzu's stance-based j.6a/b/c)
-- Any normals performed during a grounded assault cannot be chained into other aerial normals
-- - In contrast, aerial assaults do not prevent players from chaining moves together for multiple overheads
-- Any combo started from a normal performed during assault suffers drastically reduced untech time, making the combos much shorter than normal
-- - This is negated if the assault overhead causes a counterhit or a grd crush.
-- Any combo started from an assault normal also suffers from slightly reduced damage (worse P2 value on starting move).
-- - This is also negated if the assault normal causes a counterhit or grd crush.
+- 5f startup
+- ground => homing move, air => fixed trajectory
+- cannot block until landing, has landing recovery frames
+- throw invul.
+- gattling disabled during ground assault, gattling enabled during air assault
+- combos from assault have heavily reduced untech time, and reduced damage
+- combos from counterhit/grd crush assault have regular untech time, and regular damage
 - Both aerial and grounded assaults suffer the same reduced starting penalties.
-- Assault has a 5 frame startup (likely universal, didn't test thoroughly, but it is true for Waldstein and a couple others)
 
-#### Grid
+#### Grd
 
-- Players automatically generate some grd when not doing anything.
-- - Passive generation speed is directly related to how far a player's character's back is from the edge of the screen. The further away, the faster they generate.
-- - - This means that players who corner their opponent not only have strong pressure options, they also passively are generating more grd!
+- passive generation, lower when closer to the corner
 - Actions that generate grd:
 - - Concentration (5D) (see next section for details)
 - - - Concentration drains the opponent's grd as well, and will drain it faster if a player spends meter during their concentration.
