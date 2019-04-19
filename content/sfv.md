@@ -1,8 +1,8 @@
 +++
-title = "My SFV notes"
+title = "SFV notes"
 description = "Centralize my SFV stuff!"
 date = 2019-03-17
-weight = 98
+weight = 80
 draft = false
 in_search_index = true
 [taxonomies]

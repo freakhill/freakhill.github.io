@@ -2,7 +2,7 @@
 title = "Pending and Ongoing - read and watch"
 description = "I'll get to it :)"
 date = 2019-03-17
-weight = 80
+weight = 50
 draft = false
 in_search_index = true
 [taxonomies]

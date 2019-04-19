@@ -2,7 +2,7 @@
 title = "I'm building a Lisp on the side"
 description = "random assortment of notes"
 date = 2019-03-17
-weight = 99
+weight = 100
 draft = false
 # slug = ""
 in_search_index = true

@@ -2,7 +2,7 @@
 title = "My study of type theory"
 description = "because these people like to make things confusing when there is absolutely no need to"
 date = 2019-03-17
-weight = 81
+weight = 70
 draft = false
 in_search_index = true
 [taxonomies]
