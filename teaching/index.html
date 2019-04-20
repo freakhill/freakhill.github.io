@@ -57,28 +57,62 @@
   <h1 class="post-title">Teach programming to my friend</h1>
   <span class="post-date">2019-03-17</span>
   <p>Teach by layers, from big general view to details!</p>
+<p>While teaching everything, use observability and test &quot;powertools&quot; to demonstrate the concepts on his own computer.</p>
+<p>He needs to make a simple website to explain his learnings &amp; share his anki cards</p>
+<p>https://apps.ankiweb.net/</p>
+<p>https://github.com/capaldo/ankARIO</p>
+<p>Share his anki cards on a git repo, and I can modify them too https://apps.ankiweb.net/docs/manual.html</p>
 <p>Big list of stuff to teach:</p>
 <ul>
 <li>How computers work</li>
+<li>What's an operating system</li>
 <li>How local networks works</li>
 <li>How internet works</li>
 <li>Markdown</li>
 <li>Git&amp;Github</li>
 <li>How to make a personal website (like this one), setup DNS, follow instructions etc.</li>
 <li>VScode</li>
-<li>Bash</li>
+<li>Powershell &amp; Bash</li>
 <li>cd, mv, cp, top, htop, ls, lsof, find, sed, vi</li>
 <li>Linux, Kernel, glibc, systemd, Centos, Ubuntu</li>
-<li>Haproxy, Docker</li>
+<li>Haproxy, Docker, ELK, Prometheus</li>
+<li>BIOS, MBR, Partitions, filesystems, LVM https://opensource.com/article/18/4/ext4-filesystem https://opensource.com/tags/linux</li>
+<li>Brush through the world of programming languages with &quot;Concepts, Techniques and Models of Computer Programming&quot;</li>
 <li>Clojure, Rust, C?, JS?, Typescript?, Python?, Go? (exercism, 4clojure, internet doc)</li>
-<li>Stuff programmers should know about concurrency/memory</li>
+<li>Stuff programmers should know about concurrency/memory https://assets.bitbashing.io/papers/concurrency-primer.pdf https://people.freebsd.org/~lstewart/articles/cpumemory.pdf</li>
 <li>JVM, debug stuff, read a dump file</li>
-<li>Algorithms &amp; Data Structures (Introduction to algorithms, Programming pearls, Functional data structures)</li>
+<li>Algorithms &amp; Data Structures (Introduction to algorithms, Programming pearls, Functional data structures) + impact of real hardware on real performance (Vectors... memory affinity)</li>
+<li>Finite State Machines, regexes, actual practical regexes (with backtracking etc.), DSLs</li>
+<li>Explain the power of abstraction and the power of restriction</li>
+<li>Explain how adding information restricting your domain of operation results in better/faster/smaller stuff (Programming Pearls?)</li>
 <li>ANSI isolation levels, SQL, https://use-the-index-luke.com/</li>
 <li>TDD,DDD (DDD book)</li>
 <li>Gang of 4 design patterns/refactoring/soa/clean code etc.</li>
 </ul>
 <p>Find lots of projects to make him code stuff all the time.</p>
+<h3 id="how-computers-work">How computers work<a class="zola-anchor" href="#how-computers-work" aria-label="Anchor link for: how-computers-work">🔗</a>
+</h3>
+<p>... earth how the books explaining how to build a computer from scratch at work ...
+Modern processors design book</p>
+<h3 id="how-internet-work">How Internet Work<a class="zola-anchor" href="#how-internet-work" aria-label="Anchor link for: how-internet-work">🔗</a>
+</h3>
+<table><thead><tr><th>layer       </th><th>protocols                                                                                                                       </th></tr></thead><tbody>
+<tr><td>Application </td><td>BGP DHCP DNS FTP HTTP HTTPS IMAP LDAP MGCP MQTT NNTP NTP POP ONC/RPC RTP RTSP RIP SIP SMTP SNMP SSH Telnet TLS/SSL XMPP more... </td></tr>
+<tr><td>Transport   </td><td>TCP UDP DCCP SCTP RSVP more...                                                                                                  </td></tr>
+<tr><td>Internet    </td><td>IP IPv4 IPv6 ICMP ICMPv6 ECN IGMP IPsec more...                                                                                 </td></tr>
+<tr><td>Link        </td><td>ARP NDP OSPF Tunnels L2TP PPP MAC Ethernet Wi-Fi DSL ISDN FDDI                                                                  </td></tr>
+</tbody></table>
+<table><thead><tr><th>n </th><th>name         </th><th>protocols                                                                                                                                                                        </th></tr></thead><tbody>
+<tr><td>7 </td><td>Application  </td><td>NNTP SIP SSI DNS FTP Gopher HTTP NFS NTP SMPP SMTP SNMP Telnet DHCP Netconf more....                                                                                             </td></tr>
+<tr><td>6 </td><td>Presentation </td><td>MIME XDR ASN.1                                                                                                                                                                   </td></tr>
+<tr><td>5 </td><td>Session      </td><td>Named pipe NetBIOS SAP PPTP RTP SOCKS SPDY                                                                                                                                       </td></tr>
+<tr><td>4 </td><td>Transport    </td><td>TCP UDP SCTP DCCP SPX                                                                                                                                                            </td></tr>
+<tr><td>3 </td><td>Network      </td><td>IP IPv4 IPv6 ICMP IPsec IGMP IPX AppleTalk X.25 PLP                                                                                                                              </td></tr>
+<tr><td>2 </td><td>Data link    </td><td>ATM ARP IS-IS SDLC HDLC CSLIP SLIP GFP PLIP IEEE 802.2 LLC MAC L2TP IEEE 802.3 Frame Relay ITU-T G.hn DLL PPP X.25 LAPB Q.921 LAPD Q.922 LAPF                                    </td></tr>
+<tr><td>1 </td><td>Physical     </td><td>EIA/TIA-232 EIA/TIA-449 ITU-T V-Series I.430 I.431 PDH SONET/SDH PON OTN DSL IEEE 802.3 IEEE 802.11 IEEE 802.15 IEEE 802.16 IEEE 1394 ITU-T G.hn PHY USB Bluetooth RS-232 RS-449 </td></tr>
+</tbody></table>
+<p>watch a bunch of vids on the net</p>
+<p>Go through all the layers and check out tools to explore the layers on his own computer!</p>
 
 </div>
 
