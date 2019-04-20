@@ -22,6 +22,8 @@ TODO: make this proper, rewrite stuff in my own words
 - [First order logic](https://en.wikipedia.org/wiki/First-order_logic)
 - [Second order logic](https://en.wikipedia.org/wiki/Second-order_logic)
 
+[Windows Operating System Fundamentals](https://1.cdn.edl.io/Ha5eym5sDQ2I8DZmruMnsUsZbIIIpDq3t32jz8XsvXlO4GxO.pdf)
+
 ### nice songs
 
 {{ youtube(id="rb2S0dTn0GQ") }}
