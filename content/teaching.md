@@ -16,9 +16,12 @@ We will run parallely through these courses, insisting on practical use of knowl
 
 We will start with practical use of industry tools before brushing the theory so that it is easier to anchor the student't knowledge in reality.
 
+My friend is on MacOS, so the current curriculum is a bit macos centric.
+
 Curriculum
 
 1. Basic use and knowledge of common Tools (git,vscode,docker,zola,markdown)
+   - brew
    - git
    - bash (powershell if windows)
    - vi
