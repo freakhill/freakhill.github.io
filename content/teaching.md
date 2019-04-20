@@ -9,6 +9,7 @@ in_search_index = true
 # tags = ["sfv"]
 [extra]
 +++
+lol
 
 We will run parallely through these courses, insisting on practical use of knowledge. Demonstrating the concepts on the student's computer and other electronic appliances (iphone? PS4?).
 
