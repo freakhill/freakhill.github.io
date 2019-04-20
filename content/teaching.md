@@ -68,15 +68,36 @@ TODO: add many projects and exercises in the curriculum
      - [Python documentation](https://docs.python.org/3/)
 2. Computers
    - ... todo ... how a computer works from scratch
+   - [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
+   - [Harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
+   - [Modified harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
+   - [Build and 8 bit computer from scratch](https://eater.net/8bit)
+   - checkout my "from scratch" books at the office...
+   - [BIOS](https://en.wikipedia.org/wiki/BIOS)
+   - [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
    - Ring level, BIOS, MBR, Partitions, Operating systems, filesystems...
+   - Computer Architecture
+     - [Study Tonight](https://www.studytonight.com/computer-architecture/introduction-to-history-of-computing)
+     - "Modern processor design" book
+   - Operating systems
+     - [StudyTonight - Introduction to Operating Systems](https://www.studytonight.com/operating-system/introduction-operating-systems)
+     - [Operating Systems 3 easy pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
+     - [GeeksForGeeks Operating Systems](https://www.geeksforgeeks.org/operating-systems/)
+     - "Formal development of a network-centric RTOS" book
+     - [Hack The Kernel - Harvard? OS course](https://www.ops-class.org/)
+   - Filesystems
+     - [Wikipedia](https://en.wikipedia.org/wiki/File_system)
+     - [Ext4 and other linux filesystems](https://opensource.com/article/18/4/ext4-filesystem)
    - [Programming from the Ground up / practical assembly](http://ftp.yzu.edu.tw/nongnu/pgubook/ProgrammingGroundUp-1-0-booksize.pdf)
    - [Assembly programming with Ubuntu](http://www.egr.unlv.edu/~ed/assembly64.pdf)
    - [Reverse engineering for beginners](https://beginners.re/dl.html)
    - everything a system programmer should know about /concurrency/memory/
      - [what every programmer should know about concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
      - [what every programmer should know about memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+     - **Deliverables**: Program a GameBoy emulator
 3. Networking
    - [Networking fundamentals](https://mva.microsoft.com/en-US/training-courses/networking-fundamentals-8249?l=zcmNgKKy_1704984382)
+   - [StudyTonight Computer Networks](https://www.studytonight.com/computer-networks/overview-of-computer-networks)
    - OSI 7 layers and tools to poke and probe
    - How internet works
    - More about the big protocols, TCP, IP, UDP, DNS, TLS, HTTP1.1, HTTP2
@@ -84,6 +105,7 @@ TODO: add many projects and exercises in the curriculum
    - VLAN
    - SDN
    - learn about curl, ping, wireshark, dig, netstat, ip, hostname, ifconfig, hosts file others...
+   - **Deliverables**: ???
 4. Databases
    - text files & bash
      - head,tail,cut,sed,tr,awk...
@@ -100,6 +122,7 @@ TODO: add many projects and exercises in the curriculum
      - [Redis doc](https://redis.io/documentation)
    - SQLite, MySQL & SQL
      - [SQLbolt - a nice interactive guide](https://sqlbolt.com/)
+     - [StudyTonight - overview of DBMS](https://www.studytonight.com/dbms/overview-of-dbms.php)
      - [SQL course for beginners](https://www.youtube.com/watch?v=HXV3zeQKqGY)
      - Popsql & MysqlWorkbench
      - [SQLite doc](https://sqlite.org/docs.html)
@@ -118,18 +141,30 @@ TODO: add many projects and exercises in the curriculum
    - MVCC, 2 phase commit, PAXOS, CAP theorem
    - RIAK
    - Eventual consistency
+   - **Deliverables**: ???
 5. Programming
    - ... todo ... ordering stuff
    - what is a program?
+   - really basic maths
+     - powers of 2
+     - modulo
+     - quadratic, exponential, ln, square
+     - elements of queue theory?
+     - distributions?
+     - basic stats and probabilities?
+   - Information & Compression (a quick way to "show" information)
    - A very brief over html5/css/js/the dom model
      - "HTML5 Up and Running" book
      - "HTML&CSS" book, "JAVASCRIPT&JQUERY" book
      - [30 days to learn HTML and CSS](https://www.youtube.com/playlist?list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F)
+   - [MIT's Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/)
+   - [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)
    - Go through the big families of languages with "Concepts, Techniques and Models of Computer Programming"
    - Assembly
    - C
      - [Learn X in Y minutes - C](https://learnxinyminutes.com/docs/c/)
      - debating getting "Learn C the hard way" book
+     - [Study Tonight - C programming language](https://www.studytonight.com/c/overview-of-c.php)
    - Clojure
    - Smalltalk
      - [Learn X in Y minutes - smalltalk](https://learnxinyminutes.com/docs/smalltalk/)
@@ -139,15 +174,14 @@ TODO: add many projects and exercises in the curriculum
    - more more more languages... 
    - Algorithms 
      - "Introduction to algorithms" book
-     - [MIT's Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/)
      - [Berkeley's Algorithms & Data Structures](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iDD4nnsfVIqPFORTgZi9xRp)
      - Princeton's [Algorithms, Part 1](https://www.coursera.org/learn/algorithms-part1?ranMID=40328&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-Z7RPjkUnAqM22ezTfFEpbg&siteID=jU79Zysihs4-Z7RPjkUnAqM22ezTfFEpbg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=jU79Zysihs4)
      - [GeeksForGeeks algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
      - [GeeksForGeeks data structures](https://www.geeksforgeeks.org/data-structures/)
-     
    - Data structure
    - Purely functional data structures
    - Programming pearls
+   - **Deliverables**: ???
 6. Engineering
    - "Clean Code: A Handbook of Agile Software Craftsmanship"
    - "Refactoring: Improving the Design of Existing Code (2nd Edition)"
@@ -155,6 +189,7 @@ TODO: add many projects and exercises in the curriculum
    - "Domain-Driven Design: Tackling Complexity in the Heart of Software"
    - "Design Patterns: Elements of Reusable Object-Oriented Software"
    - "SOA Patterns"
+   - **Deliverables**: ??
 7. Specialization to work in my team
    - ssh
    - Linux
@@ -200,9 +235,13 @@ TODO: add many projects and exercises in the curriculum
        - [Python Tutorial for Beginners](https://www.youtube.com/watch?v=yE9v9rt6ziw)
        - [Google Python Class](https://developers.google.com/edu/python/)
        - [Automating the boring stuff with Python](http://automatetheboringstuff.com/)
+       - [Introduction to Computer Science and Programming using Python](https://courses.edx.org/courses/course-v1:MITx+6.00.1x+1T2019/course/)
        - [Python documentation](https://docs.python.org/3/)
        - [exercism](https://exercism.io/)
      - Centos7 & SystemD
+     - **Deliverables**: ???
+8. Security, debugging, reverse engineering
+   ...
 8. Optional
    - Android dev.
      - [Stanford Android Development course](http://web.stanford.edu/class/cs193a/videos.shtml)
