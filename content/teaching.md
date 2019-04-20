@@ -10,11 +10,78 @@ in_search_index = true
 [extra]
 +++
 
-Teach by layers, from big general view to details!
+We will run parallely through these courses, insisting on practical use of knowledge. Demonstrating the concepts on the student's computer and other electronic appliances (iphone? PS4?).
 
-While teaching everything, use observability and test "powertools" to demonstrate the concepts on his own computer.
+We will start with practical use of industry tools before brushing the theory so that it is easier to anchor the student't knowledge in reality.
 
-He needs to make a simple website to explain his learnings & share his anki cards
+Curriculum
+
+1. Basic use and knowledge of common Tools (git,vscode,docker,zola,markdown)
+   - git
+   - bash (powershell if windows)
+   - vi
+   - vscode
+   - docker
+   - zola (or any other static website generator the teacher fancies)
+   - markdown
+   - github
+   - anki
+   + **Deliverables**: student github repositories, online book & anki cards and knowledge necessary to start editing
+2. Computers
+   - ... todo ... how a computer works from scratch
+   - Ring level, BIOS, MBR, Partitions, Operating systems, filesystems...
+   - everything a system programmer should know about /concurrency/memory/
+3. Networking
+   - OSI 7 layers and tools to poke and probe
+   - How internet works
+   - More about the big protocols, TCP, IP, UDP, DNS, TLS, HTTP1.1, HTTP2
+   - L4 load balancers, L7 load balancers
+   - VLAN
+   - SDN
+4. Databases
+   - text files & bash
+   - CSV files & ???
+   - Json file & jq
+   - Excel sheets
+   - Key Value storage (Redis)
+   - SQLite, MySQL
+   - SQL
+   - ANSI isolation model (and its critique)
+   - Relational model, and differences with SQL
+   - MVCC, 2 phase commit, PAXOS, CAP theorem
+   - RIAK
+   - Eventual consistency
+5. Programming
+   - ... todo ... ordering stuff
+   - Go through the big families of languages with "Concepts, Techniques and Models of Computer Programming"
+   - Assembly
+   - C
+   - Clojure
+   - Rust
+   - Algorithms 
+   - Data structure
+   - Purely functional data structures
+   - Programming pearls
+6. Engineering
+   - i need to brush out on clean code & 4 gang to make a curriculum here
+   - ... TDD,DDD,Agile,Refactoring,Design patterns?
+7. Specialization to work in my team
+    - ELK
+    - Prometheus
+    - Haproxy
+    - MySQL
+    - intermediate Clojure
+    - intermediate Rust
+    - intermediate Java
+    - intermediate Bash
+    - intermediate Python
+    - Centos7 & SystemD
+
+
+- The student will write an online book containing their acquired knowledge.
+- The student will write anki cards for the purpose of review
+
+The teacher will collaboratively edit the student's book and anki cards.
 
 https://apps.ankiweb.net/
 
