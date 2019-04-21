@@ -54,6 +54,9 @@ TODO: add many projects and exercises in the curriculum
        - ☮ Uploading your project to GitHub
        - ☮ Communicating using Markdown
        - ☮ Managing merge conflicts
+       - make a github account
+       - make a github pages repository
+       - make a github repository for anki cards
    - [Zola](https://www.getzola.org/documentation/getting-started/installation/) (or any other static website generator the teacher fancies)
    - docker
      1. [install](https://docs.docker.com/docker-for-mac/install/)
