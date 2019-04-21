@@ -34,7 +34,7 @@ TODO: add many projects and exercises in the curriculum
 
 1. Basic use and knowledge of common Tools (git,vscode,docker,zola,markdown)
    - ☮ update student's computer's OS
-   - ☮ brew, install git/tldr/bash4/iterm2
+   - ☮ brew, install git/tldr/bash4/iterm2/python3
    - ☮ [markdown](https://www.markdowntutorial.com)
    - git
      - ☮ [Tutorial](https://learngitbranching.js.org/)
@@ -64,9 +64,12 @@ TODO: add many projects and exercises in the curriculum
      6. or maybe 6 or 7 or 2... [Docker for beginners](https://docker-curriculum.com/)
    - man
    - ☮ anki
-   - ☮ A taste of programming: [Write Yourself a Git!](https://wyag.thb.lt/)
-     - ☮ [Learn X in Y minutes - Python 3](https://learnxinyminutes.com/docs/python3/)
-     - [Python documentation](https://docs.python.org/3/)
+   - ☮ A taste of programming: 
+     1. ☮ brew install python3
+     2. ☮ launch "python3" in iterm2
+     3. ☮ [Learn X in Y minutes - Python 3](https://learnxinyminutes.com/docs/python3/)
+     4. [Write Yourself a Git!](https://wyag.thb.lt/)
+     5. [Python documentation](https://docs.python.org/3/)
    - **Deliverables**: student github repositories, online book & anki cards and knowledge necessary to start editing
 2. Computers
    - [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
