@@ -33,27 +33,27 @@ TODO: add many projects and exercises in the curriculum
 ## Curriculum
 
 1. Basic use and knowledge of common Tools (git,vscode,docker,zola,markdown)
-   - update student's computer's OS
-   - brew, install git/tldr/bash4/iterm2
-   - [markdown](https://www.markdowntutorial.com)
+   - ☮ update student's computer's OS
+   - ☮ brew, install git/tldr/bash4/iterm2
+   - ☮ [markdown](https://www.markdowntutorial.com)
    - git
-     - [Tutorial](https://learngitbranching.js.org/)
-     - [Git simple Guide](http://rogerdudler.github.io/git-guide/)
-     - [Slightly more advanced guide](http://gitimmersion.com/lab_01.html)
+     - ☮ [Tutorial](https://learngitbranching.js.org/)
+     - ☮ [Git simple Guide](http://rogerdudler.github.io/git-guide/)
+     - ☮ [Slightly more advanced guide](http://gitimmersion.com/lab_01.html)
    - bash
-     - [bash academy](https://www.bash.academy/)
-     - [ryan's tutorials](https://ryanstutorials.net/bash-scripting-tutorial/)
+     - ☮ [bash academy](https://www.bash.academy/)
+     - ☮ [ryan's tutorials](https://ryanstutorials.net/bash-scripting-tutorial/)
      - [bash reference manual](https://www.gnu.org/software/bash/manual/bash.html)
      - [advanced bash scripting guide](http://www.tldp.org/LDP/abs/html/)
-   - vim (use vimtutor)
-   - vscode (get markdown plugins, get vim plugin) [doc](https://code.visualstudio.com/docs?start=true)
+   - ☮ vim (use vimtutor)
+   - ☮ install vscode (get markdown plugins, get vim plugin) [doc](https://code.visualstudio.com/docs?start=true)
    - github [lessons](https://lab.github.com/) run following courses:
-       - Introduction to GitHub
-       - Introduction to HTML
-       - GitHub pages
-       - Uploading your project to GitHub
-       - Communicating using Markdown
-       - Managing merge conflicts
+       - ☮ Introduction to GitHub
+       - ☮ Introduction to HTML
+       - ☮ GitHub pages
+       - ☮ Uploading your project to GitHub
+       - ☮ Communicating using Markdown
+       - ☮ Managing merge conflicts
    - [Zola](https://www.getzola.org/documentation/getting-started/installation/) (or any other static website generator the teacher fancies)
    - docker
      1. [install](https://docs.docker.com/docker-for-mac/install/)
@@ -63,9 +63,9 @@ TODO: add many projects and exercises in the curriculum
      5. [sysadmin crash course on docker](https://sysadmincasts.com/episodes/31-introduction-to-docker)
      6. or maybe 6 or 7 or 2... [Docker for beginners](https://docker-curriculum.com/)
    - man
-   - anki
-   - A taste of programming: [Write Yourself a Git!](https://wyag.thb.lt/)
-     - [Learn X in Y minutes - Python 3](https://learnxinyminutes.com/docs/python3/)
+   - ☮ anki
+   - ☮ A taste of programming: [Write Yourself a Git!](https://wyag.thb.lt/)
+     - ☮ [Learn X in Y minutes - Python 3](https://learnxinyminutes.com/docs/python3/)
      - [Python documentation](https://docs.python.org/3/)
    - **Deliverables**: student github repositories, online book & anki cards and knowledge necessary to start editing
 2. Computers
@@ -106,7 +106,7 @@ TODO: add many projects and exercises in the curriculum
      - [GameBoy CPU manual](http://marc.rawer.de/Gameboy/Docs/GBCPUman.pdf)
      - [PySQL2 Python SDL library for IO](https://pypi.org/project/PySDL2/)
 3. Networking
-   - [Networking fundamentals](https://mva.microsoft.com/en-US/training-courses/networking-fundamentals-8249?l=zcmNgKKy_1704984382)
+   - ☮ [Networking fundamentals](https://mva.microsoft.com/en-US/training-courses/networking-fundamentals-8249?l=zcmNgKKy_1704984382)
    - [StudyTonight Computer Networks](https://www.studytonight.com/computer-networks/overview-of-computer-networks)
    - OSI 7 layers and tools to poke and probe
    - How internet works
@@ -171,8 +171,8 @@ TODO: add many projects and exercises in the curriculum
      - "HTML5 Up and Running" book
      - "HTML&CSS" book, "JAVASCRIPT&JQUERY" book
      - [30 days to learn HTML and CSS](https://www.youtube.com/playlist?list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F)
-   - [MIT's Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/)
-   - [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)
+   - ☮ [MIT's Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/)
+   - ☮ [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)
    - Go through the big families of languages with "Concepts, Techniques and Models of Computer Programming"
    - Assembly
    - C
