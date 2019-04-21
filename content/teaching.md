@@ -71,6 +71,7 @@ TODO: add many projects and exercises in the curriculum
    - [Harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
    - [Modified harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
    - [Build and 8 bit computer from scratch](https://eater.net/8bit)
+   - Logical model & Physical reality - the power of abstractions!
    - checkout my "from scratch" books at the office...
    - [BIOS](https://en.wikipedia.org/wiki/BIOS)
    - [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
@@ -162,6 +163,8 @@ TODO: add many projects and exercises in the curriculum
      - distributions?
      - basic stats and probabilities?
    - Information & Compression (a quick way to "show" information)
+   - [The law of leaky abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction)
+   - The power of representation, moving a point in cartesian coordinate system, or in polar coordinate system
    - A very brief over html5/css/js/the dom model
      - "HTML5 Up and Running" book
      - "HTML&CSS" book, "JAVASCRIPT&JQUERY" book
@@ -181,6 +184,7 @@ TODO: add many projects and exercises in the curriculum
    - Haskell
      - [Learn you a haskell for great good](http://learnyouahaskell.com/)
    - more more more languages... 
+   - [Object relational impedance mismatch](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)
    - Algorithms 
      - "Introduction to algorithms" book
      - [Berkeley's Algorithms & Data Structures](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iDD4nnsfVIqPFORTgZi9xRp)
