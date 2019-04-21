@@ -198,7 +198,7 @@ TODO: add many projects and exercises in the curriculum
    - "Domain-Driven Design: Tackling Complexity in the Heart of Software"
    - "Design Patterns: Elements of Reusable Object-Oriented Software"
    - "SOA Patterns"
-   - **Deliverables**: ??
+   - **Deliverables**: ?? make a full web app for something ??
 7. Specialization to work in my team
    - ssh
    - Linux
