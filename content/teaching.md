@@ -276,5 +276,6 @@ OSI 7 layers
 | 2 | Data link    | ATM ARP IS-IS SDLC HDLC CSLIP SLIP GFP PLIP IEEE 802.2 LLC MAC L2TP IEEE 802.3 Frame Relay ITU-T G.hn DLL PPP X.25 LAPB Q.921 LAPD Q.922 LAPF                                    |
 | 1 | Physical     | EIA/TIA-232 EIA/TIA-449 ITU-T V-Series I.430 I.431 PDH SONET/SDH PON OTN DSL IEEE 802.3 IEEE 802.11 IEEE 802.15 IEEE 802.16 IEEE 1394 ITU-T G.hn PHY USB Bluetooth RS-232 RS-449 |
 
-Note: [GameMaker Studio 2](https://www.yoyogames.com/learn)
-[Nice ZFS video guide](https://sysadmincasts.com/episodes/35-zfs-on-linux-part-1-of-2)
+Notes:
+-[GameMaker Studio 2](https://www.yoyogames.com/learn)
+- [Nice ZFS video guide](https://sysadmincasts.com/episodes/35-zfs-on-linux-part-1-of-2)
