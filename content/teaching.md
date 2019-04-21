@@ -28,6 +28,8 @@ https://apps.ankiweb.net/
 
 TODO: add many projects and exercises in the curriculum
 
+☮ <- stuff to check out first
+
 ## Curriculum
 
 1. Basic use and knowledge of common Tools (git,vscode,docker,zola,markdown)
