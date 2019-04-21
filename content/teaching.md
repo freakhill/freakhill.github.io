@@ -62,12 +62,11 @@ TODO: add many projects and exercises in the curriculum
      6. or maybe 6 or 7 or 2... [Docker for beginners](https://docker-curriculum.com/)
    - man
    - anki
-   - **Deliverables**: student github repositories, online book & anki cards and knowledge necessary to start editing
    - A taste of programming: [Write Yourself a Git!](https://wyag.thb.lt/)
      - [Learn X in Y minutes - Python 3](https://learnxinyminutes.com/docs/python3/)
      - [Python documentation](https://docs.python.org/3/)
+   - **Deliverables**: student github repositories, online book & anki cards and knowledge necessary to start editing
 2. Computers
-   - ... todo ... how a computer works from scratch
    - [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
    - [Harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
    - [Modified harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
@@ -75,7 +74,8 @@ TODO: add many projects and exercises in the curriculum
    - checkout my "from scratch" books at the office...
    - [BIOS](https://en.wikipedia.org/wiki/BIOS)
    - [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
-   - Ring level, BIOS, MBR, Partitions, Operating systems, filesystems...
+   - [Protection levels](https://en.wikipedia.org/wiki/Protection_ring)
+   - [Virtualization](https://en.wikipedia.org/wiki/Virtualization)
    - Computer Architecture
      - [Study Tonight](https://www.studytonight.com/computer-architecture/introduction-to-history-of-computing)
      - "Modern processor design" book
@@ -94,7 +94,14 @@ TODO: add many projects and exercises in the curriculum
    - everything a system programmer should know about /concurrency/memory/
      - [what every programmer should know about concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
      - [what every programmer should know about memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
-     - **Deliverables**: Program a GameBoy emulator
+   - **Deliverables**: Program a GameBoy emulator
+     - [doc that will help](https://www.cl.cam.ac.uk/~pv273/slides/emulation.pdf)
+     - [Awesome GameBoy development](https://github.com/gbdev/awesome-gbdev)
+     - [GameBoy complete hardware reference](https://gekkio.fi/files/gb-docs/gbchr.pdf)
+     - [GameBoy complete technical reference](https://gekkio.fi/files/gb-docs/gbctr.pdf)
+     - [The ultimate GameBoy talk](https://media.ccc.de/v/33c3-8029-the_ultimate_game_boy_talk)
+     - [GameBoy CPU manual](http://marc.rawer.de/Gameboy/Docs/GBCPUman.pdf)
+     - [PySQL2 Python SDL library for IO](https://pypi.org/project/PySDL2/)
 3. Networking
    - [Networking fundamentals](https://mva.microsoft.com/en-US/training-courses/networking-fundamentals-8249?l=zcmNgKKy_1704984382)
    - [StudyTonight Computer Networks](https://www.studytonight.com/computer-networks/overview-of-computer-networks)
@@ -105,7 +112,9 @@ TODO: add many projects and exercises in the curriculum
    - VLAN
    - SDN
    - learn about curl, ping, wireshark, dig, netstat, ip, hostname, ifconfig, hosts file others...
-   - **Deliverables**: ???
+   - A little diving about mobile phones low level layers? LTE etc?
+   - **Deliverables**:
+     1. Implement GameBoy Game Link over network, LAN and Internet
 4. Databases
    - text files & bash
      - head,tail,cut,sed,tr,awk...
