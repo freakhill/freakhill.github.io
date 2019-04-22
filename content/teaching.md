@@ -215,18 +215,17 @@ https://apps.ankiweb.net/
 7. Specialization to work in my team
    - ssh
    - Linux
-     - Get access to a Linux machine on AWS or GCP or Azure or whatever...
+     1. Get access to a Linux machine on AWS or GCP or Azure or whatever...
        - [Amazon EC2 doc](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
-     - setup a docker image to work with for usual stuff
-     - [checkout all the courses on Linux basics](https://sysadmincasts.com/episode-guide)
-     - [sysadmin introduction to cgroups](https://sysadmincasts.com/episodes/14-introduction-to-linux-control-groups-cgroups)
-     - [The Linux Journey](https://linuxjourney.com/)
-     - "The Linux Programming Interface"book
-     - "Understanding Linux Network Internals"
-     - "Linux Kernel Networking" book
-     - [Linux System Administration Basics](https://www.linode.com/docs/tools-reference/linux-system-administration-basics/)
-     - [Introduction to Linux EDX guide](https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS101x+3T2018/course/)
-     - debating on buying "UNIX and Linux System AdministrationHandbook (5th edition)"
+     2. setup a CentOS7 docker image to work with for usual stuff
+     3. [The Linux Journey](https://linuxjourney.com/)
+     4. [Introduction to Linux EDX guide](https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS101x+3T2018/course/)
+     5. [Linux System Administration Basics](https://www.linode.com/docs/tools-reference/linux-system-administration-basics/)
+     6. [checkout all the courses on Linux basics](https://sysadmincasts.com/episode-guide)
+     7. [sysadmin introduction to cgroups](https://sysadmincasts.com/episodes/14-introduction-to-linux-control-groups-cgroups)
+     8. "The Linux Programming Interface"book
+     9. "Understanding Linux Network Internals"
+     10. "Linux Kernel Networking" book
    - ELK
    - Prometheus
    - Haproxy
