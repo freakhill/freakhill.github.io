@@ -201,7 +201,7 @@ https://apps.ankiweb.net/
    - Explain tradeoffs and hoe no concepts in the following books are absolute. Always look for the tradeoffs.
    - ☮ [Joe Armstrong's "The Mess we are in"](https://www.youtube.com/watch?v=lKXe3HUG2l4)
    - ☮ [Rich Hickey's greatest hits](https://changelog.com/posts/rich-hickeys-greatest-hits)
-   - @ [Object relational impedance mismatch](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)
+   - ☮ [Object relational impedance mismatch](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)
    - "Clean Code: A Handbook of Agile Software Craftsmanship"
    - "Refactoring: Improving the Design of Existing Code (2nd Edition)"
    - "Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions"
