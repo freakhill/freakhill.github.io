@@ -29,6 +29,11 @@ Concepts:
 - Each symbol has an API and a version, and a locality
 - do not export libraries/packages, but functions and static bundles each with api/version/and dependencies
 
+possibility to hint fix registers to store specific data
+(for instance when making a VM keep the virtual pc in a specific register to avoid spilling)
+
+when compiling/linking, possibility to hand tile the objects, keep the hotpaths close to each-other to be more I-cache friendly
+
 Think about:
 - How to do polymorphism?? in our multi-stage compiling system
 

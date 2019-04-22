@@ -18,6 +18,20 @@ Nice insight in the behaviour of the Hotspot JIT!
 
 Need to try this out to see how it works with clojure.
 
+### Netflix concurrency limits
+
+[github repo](https://github.com/Netflix/concurrency-limits)
+
+This is actually a Java library. Use classic TCP congestion libraries to manage a service (accept/reject requests).
+
+### Meander
+
+[github repo](https://github.com/noprompt/meander)
+
+Like Specter but with logic operators (more declarative).
+
+Declarative data transformation.
+
 ### Primitive maths
 
 [github repo](https://github.com/ztellman/primitive-math)

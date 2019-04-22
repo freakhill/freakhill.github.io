@@ -18,6 +18,7 @@ hyde_links = [
 {url = "https://github.com/freakhill/jojolisp", name = "Jojolisp's github repo"},
 {url = "https://www.twitch.tv/lucyjojo", name = "Twitch channel"},
 {url = "http://www.metro.tokyo.jp/english/guide/bosai/index.html", name = "Disaster preparedness Tokyo" },
+{url = "http://www.google.co.jp", name = "Ambulance = 119"}
 ]
 hyde_theme = "theme-base-0e"
 hyde_reverse = true

@@ -45,6 +45,8 @@
                         
                         <li class="sidebar-nav-item"><a href="http:&#x2f;&#x2f;www.metro.tokyo.jp&#x2f;english&#x2f;guide&#x2f;bosai&#x2f;index.html">Disaster preparedness Tokyo</a></li>
                         
+                        <li class="sidebar-nav-item"><a href="http:&#x2f;&#x2f;www.google.co.jp">Ambulance = 119</a></li>
+                        
                         
                     </ul>
                 </div>
@@ -68,6 +70,9 @@
 <li>Each symbol has an API and a version, and a locality</li>
 <li>do not export libraries/packages, but functions and static bundles each with api/version/and dependencies</li>
 </ul>
+<p>possibility to hint fix registers to store specific data
+(for instance when making a VM keep the virtual pc in a specific register to avoid spilling)</p>
+<p>when compiling/linking, possibility to hand tile the objects, keep the hotpaths close to each-other to be more I-cache friendly</p>
 <p>Think about:</p>
 <ul>
 <li>How to do polymorphism?? in our multi-stage compiling system</li>

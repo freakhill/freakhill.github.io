@@ -161,24 +161,17 @@ TODO: add many projects and exercises in the curriculum
    - Eventual consistency
    - **Deliverables**: ???
 5. Programming
-   - ... todo ... ordering stuff
-   - what is a program?
-   - really basic maths
-     - powers of 2
-     - modulo
-     - quadratic, exponential, ln, square
-     - elements of queue theory?
-     - distributions?
-     - basic stats and probabilities?
+   - ☮ [What is a programmer?](./handmade/programmer.md)
+   - ☮ [TODO: really basic maths](./handmade/maths.md)
    - Information & Compression (a quick way to "show" information)
+   - ☮ [MIT's Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/)
+   - ☮ [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)
    - [The law of leaky abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction)
    - The power of representation, moving a point in cartesian coordinate system, or in polar coordinate system
    - A very brief over html5/css/js/the dom model
      - "HTML5 Up and Running" book
      - "HTML&CSS" book, "JAVASCRIPT&JQUERY" book
      - [30 days to learn HTML and CSS](https://www.youtube.com/playlist?list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F)
-   - ☮ [MIT's Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/)
-   - ☮ [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)
    - Go through the big families of languages with "Concepts, Techniques and Models of Computer Programming"
    - Assembly
    - C
@@ -204,12 +197,15 @@ TODO: add many projects and exercises in the curriculum
    - Programming pearls
    - **Deliverables**: ???
 6. Engineering
+   - Explain tradeoffs and hoe no concepts in the following books are absolute. Always look for the tradeoffs.
+   - ☮ [Joe Armstrong's "The Mess we are in"](https://www.youtube.com/watch?v=lKXe3HUG2l4)
    - "Clean Code: A Handbook of Agile Software Craftsmanship"
    - "Refactoring: Improving the Design of Existing Code (2nd Edition)"
    - "Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions"
    - "Domain-Driven Design: Tackling Complexity in the Heart of Software"
    - "Design Patterns: Elements of Reusable Object-Oriented Software"
    - "SOA Patterns"
+   - [Rich Hickey's greatest hits](https://changelog.com/posts/rich-hickeys-greatest-hits)
    - **Deliverables**: ?? make a full web app for something ??
 7. Specialization to work in my team
    - ssh
@@ -289,5 +285,5 @@ OSI 7 layers
 | 1 | Physical     | EIA/TIA-232 EIA/TIA-449 ITU-T V-Series I.430 I.431 PDH SONET/SDH PON OTN DSL IEEE 802.3 IEEE 802.11 IEEE 802.15 IEEE 802.16 IEEE 1394 ITU-T G.hn PHY USB Bluetooth RS-232 RS-449 |
 
 Notes:
--[GameMaker Studio 2](https://www.yoyogames.com/learn)
+- [GameMaker Studio 2](https://www.yoyogames.com/learn)
 - [Nice ZFS video guide](https://sysadmincasts.com/episodes/35-zfs-on-linux-part-1-of-2)

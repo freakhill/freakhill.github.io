@@ -96,3 +96,11 @@ killall java
 unset JAVA_TOOL_OPTIONS
 jstatd -p ...whatever... &
 ```
+## Security
+
+- script for quick securing of servers: [github repo](https://github.com/marshyski/quick-secure)
+- non root port 80 binding: [link](https://wiki.apache.org/httpd/NonRootPortBinding)
+
+## TLS
+
+- [some certificate making example stuff](https://gist.github.com/ncw/9253562#file-makecert-sh)
