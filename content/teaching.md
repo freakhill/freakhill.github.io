@@ -5,30 +5,24 @@ date = 2019-03-17
 weight = 85
 draft = false
 in_search_index = true
-[taxonomies]
-# tags = ["sfv"]
-[extra]
 +++
 
-We will run parallely through these courses, insisting on practical use of knowledge. Demonstrating the concepts on the student's computer and other electronic appliances (iphone? PS4?).
-
-We will start with practical use of industry tools before brushing the theory so that it is easier to anchor the student't knowledge in reality.
+How to go through:
+1. Complete Part 1
+2. Go through Parts 2-6 in a non-linear way
+3. Go through Parts 7-9 in a non-linear way
 
 My friend is on MacOS, so the current curriculum is a bit macos centric.
 
-[hacker.io, resource to find courses and tutorials](https://hackr.io/)
+**Important!**
 
-- We will go through the content in a non-linear way.
-- We will code in bash until Python is introduced.
 - The student will write an online book containing their acquired knowledge.
 - The student will write anki cards for the purpose of review
 - The teacher will collaboratively edit the student's book and anki cards.
 
 https://apps.ankiweb.net/
 
-TODO: add many projects and exercises in the curriculum
-
-☮ <- stuff to check out first
+☮ <- stuff the student should be able to check out first, independently
 
 ## Curriculum
 
@@ -57,7 +51,7 @@ TODO: add many projects and exercises in the curriculum
        - make a github account
        - make a github pages repository
        - make a github repository for anki cards
-   - [Zola](https://www.getzola.org/documentation/getting-started/installation/) (or any other static website generator the teacher fancies)
+   - [Zola](https://www.getzola.org/documentation/getting-started/installation/)
    - docker
      1. [install](https://docs.docker.com/docker-for-mac/install/)
      2. [Docker in 12 minutes](https://www.youtube.com/watch?v=YFl2mCHdv24)
@@ -75,18 +69,18 @@ TODO: add many projects and exercises in the curriculum
      5. [Python documentation](https://docs.python.org/3/)
    - **Deliverables**: student github repositories, online book & anki cards and knowledge necessary to start editing
 2. Computers
-   - [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
-   - [Harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
-   - [Modified harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
-   - [Build and 8 bit computer from scratch](https://eater.net/8bit)
+   - ☮ [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
+   - ☮ [Harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
+   - ☮ [Modified harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
+   - ☮ [Build and 8 bit computer from scratch](https://eater.net/8bit)
    - Logical model & Physical reality - the power of abstractions!
    - checkout my "from scratch" books at the office...
-   - [BIOS](https://en.wikipedia.org/wiki/BIOS)
-   - [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
-   - [Protection levels](https://en.wikipedia.org/wiki/Protection_ring)
-   - [Virtualization](https://en.wikipedia.org/wiki/Virtualization)
+   - ☮ [BIOS](https://en.wikipedia.org/wiki/BIOS)
+   - ☮ [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
+   - ☮ [Protection levels](https://en.wikipedia.org/wiki/Protection_ring)
+   - ☮ [Virtualization](https://en.wikipedia.org/wiki/Virtualization)
    - Computer Architecture
-     - [Study Tonight](https://www.studytonight.com/computer-architecture/introduction-to-history-of-computing)
+     - ☮ [Study Tonight](https://www.studytonight.com/computer-architecture/introduction-to-history-of-computing)
      - "Modern processor design" book
    - Operating systems
      - [StudyTonight - Introduction to Operating Systems](https://www.studytonight.com/operating-system/introduction-operating-systems)
@@ -95,8 +89,8 @@ TODO: add many projects and exercises in the curriculum
      - "Formal development of a network-centric RTOS" book
      - [Hack The Kernel - Harvard? OS course](https://www.ops-class.org/)
    - Filesystems
-     - [Wikipedia](https://en.wikipedia.org/wiki/File_system)
-     - [Ext4 and other linux filesystems](https://opensource.com/article/18/4/ext4-filesystem)
+     - ☮ [Wikipedia](https://en.wikipedia.org/wiki/File_system)
+     - ☮ [Ext4 and other linux filesystems](https://opensource.com/article/18/4/ext4-filesystem)
    - [Programming from the Ground up / practical assembly](http://ftp.yzu.edu.tw/nongnu/pgubook/ProgrammingGroundUp-1-0-booksize.pdf)
    - [Assembly programming with Ubuntu](http://www.egr.unlv.edu/~ed/assembly64.pdf)
    - [Reverse engineering for beginners](https://beginners.re/dl.html)
@@ -127,16 +121,16 @@ TODO: add many projects and exercises in the curriculum
 4. Databases
    - text files & bash
      - head,tail,cut,sed,tr,awk...
-   - CSV files & ???
+   - CSV files
      - [csvtool, csv from bash](https://colin.maudry.com/csvtool-manual-page/)
      - [CSV from python](https://docs.python.org/3/library/csv.html)
-   - Json file
+   - Json files
      - [Learn X in Y minutes - json](https://learnxinyminutes.com/docs/json/)
      - [jq tutorial](https://stedolan.github.io/jq/tutorial/) 
      - [python json](https://docs.python.org/3/library/json.html)
    - Excel sheets
      - [Access excel files from python](https://openpyxl.readthedocs.io/en/stable/)
-   - Key Value storage (Redis)
+   - Redis
      - [Redis doc](https://redis.io/documentation)
    - SQLite, MySQL & SQL
      - [SQLbolt - a nice interactive guide](https://sqlbolt.com/)
@@ -156,9 +150,8 @@ TODO: add many projects and exercises in the curriculum
      - Mention AWS Aurora and its [limitations](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Replication.html)
    - Indexes
      - [Use The Index Luke!](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
-   - MVCC, 2 phase commit, PAXOS, CAP theorem
-   - RIAK
-   - Eventual consistency
+   - MVCC, 2PC etc. (find my book on databases systems at home)
+   - RIAK & Eventual consistency
    - **Deliverables**: ???
 5. Programming
    - ☮ [What is a programmer?](./handmade/programmer.md)
@@ -168,10 +161,17 @@ TODO: add many projects and exercises in the curriculum
    - ☮ [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)
    - [The law of leaky abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction)
    - The power of representation, moving a point in cartesian coordinate system, or in polar coordinate system
-   - A very brief over html5/css/js/the dom model
-     - "HTML5 Up and Running" book
-     - "HTML&CSS" book, "JAVASCRIPT&JQUERY" book
-     - [30 days to learn HTML and CSS](https://www.youtube.com/playlist?list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F)
+   - A quick passage on HTMK to start being able to make websites
+     - "HTML5 Up and Running"
+     - "HTML&CSS"
+     - "JAVASCRIPT&JQUERY"
+   - Algorithms 
+     - "Introduction to algorithms" book
+     - [Berkeley's Algorithms & Data Structures](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iDD4nnsfVIqPFORTgZi9xRp)
+     - Princeton's [Algorithms, Part 1](https://www.coursera.org/learn/algorithms-part1?ranMID=40328&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-Z7RPjkUnAqM22ezTfFEpbg&siteID=jU79Zysihs4-Z7RPjkUnAqM22ezTfFEpbg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=jU79Zysihs4)
+     - "Pearls of functional algorithm design" book
+     - [GeeksForGeeks algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
+     - [GeeksForGeeks data structures](https://www.geeksforgeeks.org/data-structures/)
    - Go through the big families of languages with "Concepts, Techniques and Models of Computer Programming"
    - Assembly
    - C
@@ -186,26 +186,22 @@ TODO: add many projects and exercises in the curriculum
      - [Learn you a haskell for great good](http://learnyouahaskell.com/)
    - more more more languages... 
    - [Object relational impedance mismatch](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)
-   - Algorithms 
-     - "Introduction to algorithms" book
-     - [Berkeley's Algorithms & Data Structures](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iDD4nnsfVIqPFORTgZi9xRp)
-     - Princeton's [Algorithms, Part 1](https://www.coursera.org/learn/algorithms-part1?ranMID=40328&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-Z7RPjkUnAqM22ezTfFEpbg&siteID=jU79Zysihs4-Z7RPjkUnAqM22ezTfFEpbg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=jU79Zysihs4)
-     - [GeeksForGeeks algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
-     - [GeeksForGeeks data structures](https://www.geeksforgeeks.org/data-structures/)
-   - Data structure
-   - Purely functional data structures
-   - Programming pearls
+   - "Purely functional data structures"
+   - "Pears of functional algorithm design"
    - **Deliverables**: ???
 6. Engineering
    - Explain tradeoffs and hoe no concepts in the following books are absolute. Always look for the tradeoffs.
    - ☮ [Joe Armstrong's "The Mess we are in"](https://www.youtube.com/watch?v=lKXe3HUG2l4)
+   - ☮ [Rich Hickey's greatest hits](https://changelog.com/posts/rich-hickeys-greatest-hits)
    - "Clean Code: A Handbook of Agile Software Craftsmanship"
    - "Refactoring: Improving the Design of Existing Code (2nd Edition)"
    - "Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions"
    - "Domain-Driven Design: Tackling Complexity in the Heart of Software"
    - "Design Patterns: Elements of Reusable Object-Oriented Software"
    - "SOA Patterns"
-   - [Rich Hickey's greatest hits](https://changelog.com/posts/rich-hickeys-greatest-hits)
+   - "Site reliability Engineering"
+   - "Systems Performance - Entreprise and the cloud"
+   - find my book on Queueing systems
    - **Deliverables**: ?? make a full web app for something ??
 7. Specialization to work in my team
    - ssh
@@ -216,7 +212,9 @@ TODO: add many projects and exercises in the curriculum
      - [checkout all the courses on Linux basics](https://sysadmincasts.com/episode-guide)
      - [sysadmin introduction to cgroups](https://sysadmincasts.com/episodes/14-introduction-to-linux-control-groups-cgroups)
      - [The Linux Journey](https://linuxjourney.com/)
-     - "The Linux Programming Interface" (lend him my book)
+     - "The Linux Programming Interface"book
+     - "Understanding Linux Network Internals"
+     - "Linux Kernel Networking" book
      - [Linux System Administration Basics](https://www.linode.com/docs/tools-reference/linux-system-administration-basics/)
      - [Introduction to Linux EDX guide](https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS101x+3T2018/course/)
      - debating on buying "UNIX and Linux System AdministrationHandbook (5th edition)"
@@ -258,8 +256,8 @@ TODO: add many projects and exercises in the curriculum
      - Centos7 & SystemD
      - **Deliverables**: ???
 8. Security, debugging, reverse engineering
-   ...
-8. Optional
+   ... lots of stuff i picked up organically there...
+9. Optional
    - Android dev.
      - [Stanford Android Development course](http://web.stanford.edu/class/cs193a/videos.shtml)
      
@@ -287,3 +285,4 @@ OSI 7 layers
 Notes:
 - [GameMaker Studio 2](https://www.yoyogames.com/learn)
 - [Nice ZFS video guide](https://sysadmincasts.com/episodes/35-zfs-on-linux-part-1-of-2)
+- [hacker.io, resource to find courses and tutorials](https://hackr.io/)
