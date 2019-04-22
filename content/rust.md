@@ -128,6 +128,36 @@ parallel iterators, forkjoin on closures, a powerful concurrent processing model
 [github repo](https://github.com/rayon-rs/rayon)
 
 
+### log-derive
+
+easy logging of function result when Result
+
+[github repo](https://github.com/elichai/log-derive)
+
+### shrinkwraprs
+
+better "newtype"
+
+[gitlab repo](https://gitlab.com/williamyaoh/shrinkwraprs)
+
+### metered
+
+metrics :p
+
+[github repo](https://github.com/magnet/metered-rs)
+
+### derive-new
+
+generate "new" methods, with nostd support
+
+[github repo](https://github.com/nrc/derive-new)
+
+### snafu
+
+'nother error management library
+
+[github repo](https://github.com/shepmaster/snafu)
+
 ### Building fast interpreters in Rust
 
 [slideshare](https://www.slideshare.net/RReverser/building-fast-interpreters-in-rust)

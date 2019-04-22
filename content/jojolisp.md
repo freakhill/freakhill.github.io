@@ -32,6 +32,10 @@ Concepts:
 possibility to hint fix registers to store specific data
 (for instance when making a VM keep the virtual pc in a specific register to avoid spilling)
 
+http://lua-users.org/lists/lua-l/2011-02/msg00742.html
+
+https://www.reddit.com/r/programming/comments/badl2/luajit_2_beta_3_is_out_support_both_x32_x64/c0lrus0/
+
 when compiling/linking, possibility to hand tile the objects, keep the hotpaths close to each-other to be more I-cache friendly
 
 Think about:
