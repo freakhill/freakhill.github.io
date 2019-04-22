@@ -33,4 +33,6 @@ Does the program need be unambiguous, I argue not.
 
 ## What is a computer?
 
-**An entity that can run a program to transform inputs into outputs.**
+**An entity that takes a set of inputs (including a program) and produces outputs in accordance to the transformation described in said program.**
+
+A cook would be the computer that would interpret a cooking recipe.
