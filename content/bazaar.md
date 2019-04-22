@@ -93,19 +93,20 @@ http://www.wikitract.com/sparseness-meets-deepness-3d-human-pose-estimation-from
 - [大川栄策　さざんかの宿 Sazanka no Yado](https://www.youtube.com/watch?v=oZyBmikEbV8)
 - [Flo Rida - Whistle](https://www.youtube.com/watch?v=cSnkWzZ7ZAA)
 - [Hito toshite Jiku ga Bureteiru - Sayonara Zetsubou Sensei Op 1](https://www.youtube.com/watch?v=ry5ljUeuyDQ)
-- 東京プリン
-- 携帯あいか
+- [Kuusou Runba - Zetsubou Sensei](https://www.youtube.com/watch?v=r6Kwn0VeUd4)
+- [Tsukuyomi moon phase - Op](https://www.youtube.com/watch?v=h23DPi1TG78)
+- [東京プリン-携帯あいか](https://www.youtube.com/watch?v=yrf-IPm-paw)
 - READY STEADY GO
-- Plastic girl
-- The song from aquarion
-- 椎名林檎
-- 歌舞伎町の女王
+- [Aqua - Barbie Girl](https://www.youtube.com/watch?v=ZyhrYis509A)
+- [Sousei No Aquarian OP](https://www.youtube.com/watch?v=MnBkbzHWRFs)
+- [椎名林檎 - 歌舞伎町の女王 Kabukicho no Joou](https://www.youtube.com/watch?v=krCk3EcsaxE)
 - Indestructible
-- 甲賀忍法帖 (basilisk time)
+- [甲賀忍法帖 (basilisk time)](https://www.youtube.com/watch?v=v86m2RdPSo8)
 - 津軽海峡冬景色
-- Find the cirno song
-- Double lariat (vocaloid song)
-- 酒よ
+- [チルノのパーフェクトさんすう教室 Cirno no perfect sansuu kyoushitsu](https://www.youtube.com/watch?v=5wFDWP5JwSM)
+- [Megurina Lula - Double lariat](https://www.youtube.com/watch?v=TY5cj3IRJow)
+- [吉幾三 - 酒よ](https://www.youtube.com/watch?v=8dClLW5tqHE)
+- [Susumu Hirasawa - Forces](https://www.youtube.com/watch?v=NkYYYew8CUI)
 
 ### Onsen
 
