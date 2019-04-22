@@ -69,34 +69,33 @@ https://apps.ankiweb.net/
      5. [Python documentation](https://docs.python.org/3/)
    - **Deliverables**: student github repositories, online book & anki cards and knowledge necessary to start editing
 2. Computers
-   - ☮ [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
-   - ☮ [Harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
-   - ☮ [Modified harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
-   - ☮ [Build and 8 bit computer from scratch](https://eater.net/8bit)
    - Logical model & Physical reality - the power of abstractions!
-   - checkout my "from scratch" books at the office...
-   - ☮ [BIOS](https://en.wikipedia.org/wiki/BIOS)
-   - ☮ [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
-   - ☮ [Protection levels](https://en.wikipedia.org/wiki/Protection_ring)
-   - ☮ [Virtualization](https://en.wikipedia.org/wiki/Virtualization)
-   - Computer Architecture
-     - ☮ [Study Tonight](https://www.studytonight.com/computer-architecture/introduction-to-history-of-computing)
-     - "Modern processor design" book
-   - Operating systems
-     - [StudyTonight - Introduction to Operating Systems](https://www.studytonight.com/operating-system/introduction-operating-systems)
-     - [Operating Systems 3 easy pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-     - [GeeksForGeeks Operating Systems](https://www.geeksforgeeks.org/operating-systems/)
-     - "Formal development of a network-centric RTOS" book
-     - [Hack The Kernel - Harvard? OS course](https://www.ops-class.org/)
-   - Filesystems
-     - ☮ [Wikipedia](https://en.wikipedia.org/wiki/File_system)
+   - Layer 1 of knowledge
+     - ☮ [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
+     - ☮ [Harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
+     - ☮ [Modified harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
+     - ☮ [Study Tonight - Computer Architecture](https://www.studytonight.com/computer-architecture/introduction-to-history-of-computing)
+     - ☮ [Study Tonight - Introduction to Operating Systems](https://www.studytonight.com/operating-system/introduction-operating-systems)
+   - Layer 2 of knowledge
+     - ☮ [Build and 8 bit computer from scratch](https://eater.net/8bit)
+     - ☮ [GeeksForGeeks Operating Systems](https://www.geeksforgeeks.org/operating-systems/)
+     - ☮ [BIOS](https://en.wikipedia.org/wiki/BIOS)
+     - ☮ [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
+     - ☮ [Protection levels](https://en.wikipedia.org/wiki/Protection_ring)
+     - ☮ [Virtualization](https://en.wikipedia.org/wiki/Virtualization)
+     - ☮ [File Systems (Wikipedia)](https://en.wikipedia.org/wiki/File_system)
      - ☮ [Ext4 and other linux filesystems](https://opensource.com/article/18/4/ext4-filesystem)
-   - [Programming from the Ground up / practical assembly](http://ftp.yzu.edu.tw/nongnu/pgubook/ProgrammingGroundUp-1-0-booksize.pdf)
-   - [Assembly programming with Ubuntu](http://www.egr.unlv.edu/~ed/assembly64.pdf)
-   - [Reverse engineering for beginners](https://beginners.re/dl.html)
-   - everything a system programmer should know about /concurrency/memory/
-     - [what every programmer should know about concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
-     - [what every programmer should know about memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+     - ☮ [what every programmer should know about memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf)
+     - ☮ [what every programmer should know about concurrency](https://assets.bitbashing.io/papers/concurrency-primer.pdf)
+   - Layer 3 of knowledge
+     - "Modern processor design" book
+     - "Formal development of a network-centric RTOS" book
+     - [Operating Systems 3 easy pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
+     - [Hack The Kernel - Harvard? OS course](https://www.ops-class.org/)
+   - Assembly
+     - [Programming from the Ground up / practical assembly](http://ftp.yzu.edu.tw/nongnu/pgubook/ProgrammingGroundUp-1-0-booksize.pdf)
+     - [Assembly programming with Ubuntu](http://www.egr.unlv.edu/~ed/assembly64.pdf)
+     - [Reverse engineering for beginners](https://beginners.re/dl.html)
    - **Deliverables**: Program a GameBoy emulator
      - [doc that will help](https://www.cl.cam.ac.uk/~pv273/slides/emulation.pdf)
      - [Awesome GameBoy development](https://github.com/gbdev/awesome-gbdev)
@@ -157,10 +156,10 @@ https://apps.ankiweb.net/
    - ☮ [What is a programmer?](./handmade/programmer.md)
    - ☮ [TODO: really basic maths](./handmade/maths.md)
    - Information & Compression (a quick way to "show" information)
-   - ☮ [MIT's Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/)
-   - ☮ [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)
-   - [The law of leaky abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction)
    - The power of representation, moving a point in cartesian coordinate system, or in polar coordinate system
+   - ☮ Speedrun through [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)
+   - ☮ [MIT's Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/)
+   - [The law of leaky abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction)
    - A quick passage on HTMK to start being able to make websites
      - "HTML5 Up and Running"
      - "HTML&CSS"
@@ -286,3 +285,4 @@ Notes:
 - [GameMaker Studio 2](https://www.yoyogames.com/learn)
 - [Nice ZFS video guide](https://sysadmincasts.com/episodes/35-zfs-on-linux-part-1-of-2)
 - [hacker.io, resource to find courses and tutorials](https://hackr.io/)
+- [blackshadows cheat sheets](https://github.com/black-shadows/Cheat-Sheets)
