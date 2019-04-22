@@ -64,9 +64,10 @@ https://apps.ankiweb.net/
    - ☮ A taste of programming: 
      1. ☮ brew install python3
      2. ☮ launch "python3" in iterm2
-     3. ☮ [Learn X in Y minutes - Python 3](https://learnxinyminutes.com/docs/python3/)
-     4. [Write Yourself a Git!](https://wyag.thb.lt/)
-     5. [Python documentation](https://docs.python.org/3/)
+     3. [Python Tutorial for Beginners](https://www.youtube.com/watch?v=yE9v9rt6ziw)
+     4. ☮ [Learn X in Y minutes - Python 3](https://learnxinyminutes.com/docs/python3/)
+     5. [Write Yourself a Git!](https://wyag.thb.lt/)
+     6. [Python documentation](https://docs.python.org/3/)
    - **Deliverables**: student github repositories, online book & anki cards and knowledge necessary to start editing
 2. Computers
    - Logical model & Physical reality - the power of abstractions!
@@ -164,8 +165,9 @@ https://apps.ankiweb.net/
    - The power of representation, moving a point in cartesian coordinate system, or in polar coordinate system
    - ☮ Speedrun through [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)
    - ☮ [MIT's Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/)
+   - ☮ [Introduction to Computer Science and Programming using Python](https://courses.edx.org/courses/course-v1:MITx+6.00.1x+1T2019/course/)
    - [The law of leaky abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction)
-   - We can make websites now!
+   - Websites!
      - "HTML5 Up and Running"
      - "HTML&CSS"
      - "JAVASCRIPT&JQUERY"
@@ -246,10 +248,8 @@ https://apps.ankiweb.net/
      - [exercism](https://exercism.io/)
    - intermediate Javascript
    - intermediate Python
-     - [Python Tutorial for Beginners](https://www.youtube.com/watch?v=yE9v9rt6ziw)
      - [Google Python Class](https://developers.google.com/edu/python/)
      - [Automating the boring stuff with Python](http://automatetheboringstuff.com/)
-     - [Introduction to Computer Science and Programming using Python](https://courses.edx.org/courses/course-v1:MITx+6.00.1x+1T2019/course/)
      - [Python documentation](https://docs.python.org/3/)
      - [exercism](https://exercism.io/)
    - Centos7 & SystemD
