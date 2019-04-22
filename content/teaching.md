@@ -235,26 +235,26 @@ https://apps.ankiweb.net/
      - [short video guide](https://www.youtube.com/watch?list=PL9ooVrP1hQOGM6eCsjnfAousUSvpqD8dW&v=Lxd6JMMxuwo)
      - [o'reilly book - Jenkins, the definitive guide](https://www.bogotobogo.com/DevOps/Jenkins/images/Intro_install/jenkins-the-definitive-guide.pdf)
      - Jenkinsfiles
-     - [Chef](https://learn.chef.io/#/)
-     - intermediate Clojure
-     - intermediate Rust
-       - [Learn X in Y minutes - rust](https://learnxinyminutes.com/docs/rust/)
-       - [The Rust Programming Language](https://doc.rust-lang.org/book/)
-       - [exercism](https://exercism.io/)
-     - intermediate Java
-       - [Learn X in Y minutes - Java](https://learnxinyminutes.com/docs/java/)
-       - [Oracle doc](https://docs.oracle.com/javase/tutorial/index.html)
-       - [exercism](https://exercism.io/)
-     - intermediate Javascript
-     - intermediate Python
-       - [Python Tutorial for Beginners](https://www.youtube.com/watch?v=yE9v9rt6ziw)
-       - [Google Python Class](https://developers.google.com/edu/python/)
-       - [Automating the boring stuff with Python](http://automatetheboringstuff.com/)
-       - [Introduction to Computer Science and Programming using Python](https://courses.edx.org/courses/course-v1:MITx+6.00.1x+1T2019/course/)
-       - [Python documentation](https://docs.python.org/3/)
-       - [exercism](https://exercism.io/)
-     - Centos7 & SystemD
-     - **Deliverables**: Reimplement previous stuff in Rust&Clojure, use Docker, Haproxy and ySQL storage, maybe the ELK stack
+   - [Chef](https://learn.chef.io/#/)
+   - intermediate Clojure
+   - intermediate Rust
+     - [Learn X in Y minutes - rust](https://learnxinyminutes.com/docs/rust/)
+     - [The Rust Programming Language](https://doc.rust-lang.org/book/)
+     - [exercism](https://exercism.io/)
+   - intermediate Java
+     - [Learn X in Y minutes - Java](https://learnxinyminutes.com/docs/java/)
+     - [Oracle doc](https://docs.oracle.com/javase/tutorial/index.html)
+     - [exercism](https://exercism.io/)
+   - intermediate Javascript
+   - intermediate Python
+     - [Python Tutorial for Beginners](https://www.youtube.com/watch?v=yE9v9rt6ziw)
+     - [Google Python Class](https://developers.google.com/edu/python/)
+     - [Automating the boring stuff with Python](http://automatetheboringstuff.com/)
+     - [Introduction to Computer Science and Programming using Python](https://courses.edx.org/courses/course-v1:MITx+6.00.1x+1T2019/course/)
+     - [Python documentation](https://docs.python.org/3/)
+     - [exercism](https://exercism.io/)
+   - Centos7 & SystemD
+   - **Deliverables**: Reimplement previous stuff in Rust&Clojure, use Docker, Haproxy and ySQL storage, maybe the ELK stack
 8. Security, debugging, reverse engineering
    ... lots of stuff i picked up organically there...
 9. Optional
