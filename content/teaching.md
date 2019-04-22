@@ -106,7 +106,7 @@ https://apps.ankiweb.net/
      - [PySQL2 Python SDL library for IO](https://pypi.org/project/PySDL2/)
 3. Networking
    - ☮ [Networking fundamentals](https://mva.microsoft.com/en-US/training-courses/networking-fundamentals-8249?l=zcmNgKKy_1704984382)
-   - @ [StudyTonight Computer Networks](https://www.studytonight.com/computer-networks/overview-of-computer-networks)
+   - ☮ [StudyTonight Computer Networks](https://www.studytonight.com/computer-networks/overview-of-computer-networks)
    - How internet works
      - ARP,IP,TCP,DNS
      - TLS, HTTP1.1, HTTP2
