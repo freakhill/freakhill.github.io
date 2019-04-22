@@ -106,15 +106,20 @@ https://apps.ankiweb.net/
      - [PySQL2 Python SDL library for IO](https://pypi.org/project/PySDL2/)
 3. Networking
    - ☮ [Networking fundamentals](https://mva.microsoft.com/en-US/training-courses/networking-fundamentals-8249?l=zcmNgKKy_1704984382)
-   - [StudyTonight Computer Networks](https://www.studytonight.com/computer-networks/overview-of-computer-networks)
-   - OSI 7 layers and tools to poke and probe
+   - @ [StudyTonight Computer Networks](https://www.studytonight.com/computer-networks/overview-of-computer-networks)
    - How internet works
-   - More about the big protocols, TCP, IP, UDP, DNS, TLS, HTTP1.1, HTTP2
+     - ARP,IP,TCP,DNS
+     - TLS, HTTP1.1, HTTP2
    - L4 load balancers, L7 load balancers
    - VLAN
    - SDN
    - learn about curl, ping, wireshark, dig, netstat, ip, hostname, ifconfig, hosts file others...
    - A little diving about mobile phones low level layers? LTE etc?
+   - C
+     - [Study Tonight - C programming language](https://www.studytonight.com/c/overview-of-c.php)
+     - [Learn X in Y minutes - C](https://learnxinyminutes.com/docs/c/)
+     - debating getting "Learn C the hard way" book
+   - "Linux Kernel Networking - Implementation and Theory"
    - **Deliverables**:
      1. Implement GameBoy Game Link over network, LAN and Internet
 4. Databases
@@ -168,30 +173,26 @@ https://apps.ankiweb.net/
      - "Introduction to algorithms" book
      - [Berkeley's Algorithms & Data Structures](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iDD4nnsfVIqPFORTgZi9xRp)
      - Princeton's [Algorithms, Part 1](https://www.coursera.org/learn/algorithms-part1?ranMID=40328&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-Z7RPjkUnAqM22ezTfFEpbg&siteID=jU79Zysihs4-Z7RPjkUnAqM22ezTfFEpbg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=jU79Zysihs4)
-     - "Pearls of functional algorithm design" book
+     - "Pearls of functional algorithm design"
+     - "Purely functional data structures"
      - [GeeksForGeeks algorithms](https://www.geeksforgeeks.org/fundamentals-of-algorithms/)
      - [GeeksForGeeks data structures](https://www.geeksforgeeks.org/data-structures/)
    - Go through the big families of languages with "Concepts, Techniques and Models of Computer Programming"
-   - Assembly
-   - C
-     - [Learn X in Y minutes - C](https://learnxinyminutes.com/docs/c/)
-     - debating getting "Learn C the hard way" book
-     - [Study Tonight - C programming language](https://www.studytonight.com/c/overview-of-c.php)
-   - Clojure
-   - Smalltalk
-     - [Learn X in Y minutes - smalltalk](https://learnxinyminutes.com/docs/smalltalk/)
-     - [pharo](http://pharo.org/web)
-   - Haskell
-     - [Learn you a haskell for great good](http://learnyouahaskell.com/)
-   - more more more languages... 
-   - [Object relational impedance mismatch](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)
-   - "Purely functional data structures"
-   - "Pears of functional algorithm design"
+     - Assembly (cf. the "Computers" part)
+     - C (cf. the "Networking" part)
+     - Clojure
+     - Smalltalk
+       - [pharo](http://pharo.org/web)
+       - [Learn X in Y minutes - smalltalk](https://learnxinyminutes.com/docs/smalltalk/)
+     - Haskell
+       - [Learn you a haskell for great good](http://learnyouahaskell.com/)
+     - more more more languages... 
    - **Deliverables**: ???
 6. Engineering
    - Explain tradeoffs and hoe no concepts in the following books are absolute. Always look for the tradeoffs.
    - ☮ [Joe Armstrong's "The Mess we are in"](https://www.youtube.com/watch?v=lKXe3HUG2l4)
    - ☮ [Rich Hickey's greatest hits](https://changelog.com/posts/rich-hickeys-greatest-hits)
+   - @ [Object relational impedance mismatch](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)
    - "Clean Code: A Handbook of Agile Software Craftsmanship"
    - "Refactoring: Improving the Design of Existing Code (2nd Edition)"
    - "Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions"
@@ -201,7 +202,7 @@ https://apps.ankiweb.net/
    - "Site reliability Engineering"
    - "Systems Performance - Entreprise and the cloud"
    - find my book on Queueing systems
-   - **Deliverables**: ?? make a full web app for something ??
+   - **Deliverables**: ?? make a full web app for something, maybe a ladderboard etc. for the gameboy project ??
 7. Specialization to work in my team
    - ssh
    - Linux
@@ -253,12 +254,13 @@ https://apps.ankiweb.net/
        - [Python documentation](https://docs.python.org/3/)
        - [exercism](https://exercism.io/)
      - Centos7 & SystemD
-     - **Deliverables**: ???
+     - **Deliverables**: Reimplement previous stuff in Rust&Clojure, use Docker, Haproxy and ySQL storage, maybe the ELK stack
 8. Security, debugging, reverse engineering
    ... lots of stuff i picked up organically there...
 9. Optional
    - Android dev.
      - [Stanford Android Development course](http://web.stanford.edu/class/cs193a/videos.shtml)
+   - **Deliverables**: Maybe make a UNIST frame data app?
      
 ### How Internet Work
 
