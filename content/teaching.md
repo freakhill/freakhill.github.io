@@ -165,10 +165,15 @@ https://apps.ankiweb.net/
    - ☮ Speedrun through [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)
    - ☮ [MIT's Introduction to algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/)
    - [The law of leaky abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction)
-   - A quick passage on HTMK to start being able to make websites
+   - We can make websites now!
      - "HTML5 Up and Running"
      - "HTML&CSS"
      - "JAVASCRIPT&JQUERY"
+     - [Eloquent JavaScript](http://eloquentjavascript.net/)
+     - [You don't know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/README.md)
+     - [JS the right way](http://jstherightway.org/)
+     - [MDN JS Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+     - [exercism](https://exercism.io/)
    - Algorithms 
      - "Introduction to algorithms" book
      - [Berkeley's Algorithms & Data Structures](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iDD4nnsfVIqPFORTgZi9xRp)
@@ -181,12 +186,16 @@ https://apps.ankiweb.net/
      - Assembly (cf. the "Computers" part)
      - C (cf. the "Networking" part)
      - Clojure
+       - [Learn X in Y minutes - Clojure](https://learnxinyminutes.com/docs/clojure/)
+       - [official doc](https://clojure.org/guides/learn/syntax)
+       - [4clojure](http://www.4clojure.com/)
+       - [exercism](https://exercism.io/)
      - Smalltalk
        - [pharo](http://pharo.org/web)
        - [Learn X in Y minutes - smalltalk](https://learnxinyminutes.com/docs/smalltalk/)
      - Haskell
        - [Learn you a haskell for great good](http://learnyouahaskell.com/)
-     - more more more languages... 
+     - more more more languages (prolog? erlang?)... 
    - **Deliverables**: ???
 6. Engineering
    - Explain tradeoffs and hoe no concepts in the following books are absolute. Always look for the tradeoffs.
@@ -228,10 +237,6 @@ https://apps.ankiweb.net/
      - Jenkinsfiles
      - [Chef](https://learn.chef.io/#/)
      - intermediate Clojure
-       - [Learn X in Y minutes - Clojure](https://learnxinyminutes.com/docs/clojure/)
-       - [official doc](https://clojure.org/guides/learn/syntax)
-       - [4clojure](http://www.4clojure.com/)
-       - [exercism](https://exercism.io/)
      - intermediate Rust
        - [Learn X in Y minutes - rust](https://learnxinyminutes.com/docs/rust/)
        - [The Rust Programming Language](https://doc.rust-lang.org/book/)
@@ -241,11 +246,6 @@ https://apps.ankiweb.net/
        - [Oracle doc](https://docs.oracle.com/javase/tutorial/index.html)
        - [exercism](https://exercism.io/)
      - intermediate Javascript
-       - [Eloquent JavaScript](http://eloquentjavascript.net/)
-       - [You don't know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/README.md)
-       - [JS the right way](http://jstherightway.org/)
-       - [MDN JS Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
-       - [exercism](https://exercism.io/)
      - intermediate Python
        - [Python Tutorial for Beginners](https://www.youtube.com/watch?v=yE9v9rt6ziw)
        - [Google Python Class](https://developers.google.com/edu/python/)
