@@ -25,7 +25,7 @@ This is all but my own definition...
 
 Well...
 
-**~ a record of information describing a transformation**
+**~ an interpretable record of information describing a transformation**
 
 Does the program need be runnable? Debatable
 
