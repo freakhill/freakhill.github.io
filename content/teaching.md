@@ -237,6 +237,7 @@ https://apps.ankiweb.net/
      - [o'reilly book - Jenkins, the definitive guide](https://www.bogotobogo.com/DevOps/Jenkins/images/Intro_install/jenkins-the-definitive-guide.pdf)
      - Jenkinsfiles
    - [Chef](https://learn.chef.io/#/)
+   - Unicode
    - intermediate Clojure
    - intermediate Rust
      - [Learn X in Y minutes - rust](https://learnxinyminutes.com/docs/rust/)
