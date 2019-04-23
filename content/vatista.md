@@ -208,51 +208,47 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 - gattling disabled during ground assault, gattling enabled during air assault
 - combos from assault have heavily reduced untech time, and reduced damage
 - combos from counterhit/grd crush assault have regular untech time, and regular damage
-- Both aerial and grounded assaults suffer the same reduced starting penalties.
+- air assount penalties = ground assault penalties
 
 #### Grd
 
 - passive generation, lower when closer to the corner
+- grd gain scales down with grd
+- some moves steal grd (ie. gordeau command throw, byakuya webs)
 - Actions that generate grd:
-- - Concentration (5D) (see next section for details)
-- - - Concentration drains the opponent's grd as well, and will drain it faster if a player spends meter during their concentration.
-- - Moving forward (walking, running, jumping, etc.)
-- - Using assault (generates ~0.5 grd)
-- - Blocking/Shielding attacks (successfully shielding an attack generates 1 grd)
-- - Aerial forward teching
-- - If the opponent does an immediate ground tech from a combo
-- - The opponent moving backwards
-- - - If the opponent cannot actually move backwards (ie: is stuck on the edge of the screen), no grd will be gained
-- - - This includes both grounded and aerial back teching
+  - Concentration
+  - Any forward movement (assault = ~+0.5grd)
+  - Any opponent backward movement
+  - Aerial forward tech
+  - Opponent immediate ground tech
+  - Blocking/Shielding attacks (shield connection = +1grd)
 - Actions that lose grd:
-- - Opponent using concentration (5D) for longer than 30 frames
-- - Moving backwards (walking, backdashing, jumping, etc.)
-- - - (backdashing costs 1 grd)
-- - Using guard shield and not blocking anything (costs 1 grd)
-- - Being thrown or having a throw broken (costs 2 grd either way)
-- - Whiffing a throw
-- - Ground back teching (costs 1 grd)
-- - The opponent moving forwards
-- - - If the defender is stuck with their back against the corner, no grd will be lost
-- Certain characters can gain and steal grd by hitting the opponents with special moves, like Gordeau's command throws and Byakuya's webs.
-- The more grd a player has, the less they will get for every action.
+  - Opponent concentration >30f (faster when using grd)
+  - Any backward movement (backdash = ~-1grd)
+  - Any opponent forward movement
+  - Guard shield whiff (green shield) = -1grd
+  - being thrown/having a throw teched = -2grd
+  - throw whiff
+  - Ground back teching = -1grd
 
 #### Concentration
 
-- Players can concentrate for up to 420f by holding the D button.
+- up to 420f
+- generate grid from frame 1
 - Concentrating for more than 30f will drain meter from the player, but can be done even even if a player has no meter.
 - - During the meter drain, players will drain opponent's grd significantly faster than normal. Without meter, this faster drain effect will not occur.
-- Concentration starts generating grd on the first frame a player pushes the D button.
-- Each character has a specific concentration modifier that controls how fast they can generate grd AND how fast they drain opponent's grd when spending meter. The higher the modifier, the faster.
-- - 1x: Eltnum, Nanase
-- - 2x: Orie
-- - 3x: Yuzuriha, Seth, Gordeau, Carmine, Merkava, Hyde, Linne, Vatista, Byakuya, Akatsuki
-- - 4x: Waldstein
-- - 5x: Hilda, Chaos
 - In a concentration battle, the amount of grd that can be drain from the opponent when spending meter will always outweigh the difference in amount gained from the concentration itself.
 - - In other words, even Eltnum can out-generate Hilda in a concentration battle if Eltnum spends meter and Hilda has no meter to spend.
 - In a mirror at the start of a round, if both players have meter and hold concentration, player 2 will fill their grd blocks slightly faster than player 1.
-- - Without meter, however, both players will tie for the vorpal cycle.
+- when nobody has meter, nobody gets vorpal and the timer reset
+
+| character                                                                         | grid gain/drain modifier (high is better) |
+|-----------------------------------------------------------------------------------|-------------------------------------------|
+| Eltnum,Nanase                                                                     | 1x                                        |
+| Orie                                                                              | 2x                                        |
+| Yuzuriha,Seth,Gordeau,<br>Carmine,Merkava,Hyde,<br>Linne,Vatista,Byakuya,Akatsuki | 3x                                        |
+| Waldstein                                                                         | 4x                                        |
+| Hilda,Chaos                                                                       | 5x                                        |
 
 #### Vorpal
 
@@ -303,16 +299,15 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 
 #### Superflash and Screen Freeze:
 
-- EX moves (supers), chain shifts, and infinite worths all cause the game to pause momentarily.
-- - EX moves cause a 20 frame superflash (19 frame freeze).
-- - Chain shift causes a 40 frame superflash (39 frame freeze).
-- Superflash is throw invuln, even for non-reversal supers. This is generally useless information, unfortunately, because superflash technically only lasts for 1 frame.
+- EX moves => 20f freeze (1f superflash + 19f freeze)
+- CS => 40f freeze (1f superflash + 39f freeze)
+- IW => ??f freeze
+- superflash frame is throw invulnerable
 
 #### Input Buffering
 
-- When the game pauses, input timers continue, so all inputs are lost during the duration of chain shift, EX move, and IW screen freezes. Players should buffer their inputs a second time during the flashes to make sure their moves occur.
-- The input buffer in the game doesn't last as long as screen freezes do, so players should re-buffer their inputs towards the end of the freeze in order to get their moves to occur!
-- (note!: this is a massive generalization) Inputs generally last for around 4 frames, so if a player wants to avoid getting 623 motions when they want 236 motions, returning to neutral for 4 frames will reset the input buffer.
+- input timers continue during frozen frames
+- inputs are buffered for ~4f, to avoid dp on walk forward hadou, insert 4f of neutral
 
 #### Fuzzy Protection
 
@@ -336,27 +331,29 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 
 #### Same Move Proration
 
-- Using certain moves in a combo more than once will cause the combo to suffer reduced untech time (and perhaps damage).
-- There is no list at the moment of all moves that suffer from SMP, but it MIGHT be all special moves. It may even apply to all moves, but at minimal effect.
+- Using the certain moves twice in a combo reduce untech time
+- Might be all special moves, might be all moves more (specials) or less (normals), nobody knows
 
 #### Dashing/Backdashing
 
-- Dashing and backdashing can be done with the A+B input. 6A+B is a dash and 4A+B is a backdash.
-- If a player inputs 6A+B, then holds the buttons down and flips the joystick to 4 within 2 frames, the startup of their dash will instantly become a backdash.
-- Dashes have around a 2 frame startup before they start moving, but doing micro-dash moves is still possible.
-- Dashes can be cancelled out of at any point by blocking, backdashing, doing a move, etc.
-- Backdash frame data:
-- - Akatsuki, Hyde, Gordeau: 22f total, 1-8 invuln
-- - Eltnum: 25f total, 1-8 invuln
-- - Linne: 26f total, 1-8 invuln
-- - Vatista, Yuzuriha, Carmine: 27f total, 1-8 invuln
-- - Nanase, Chaos: 28f total, 1-8 invuln
-- - Byakuya: 29f total, 1-8 invuln
-- - Waldstein: 32f total, 1-10 invuln
-- - Hilda: 36f total, 1-9 invuln
-- - Orie: 36f total, 1-8 invuln (no foot hitbox until frame 15)
-- - Seth: 37f total (grounded), 1-7 invuln
-- - Merkava: 37f total, 1-10 invuln
+- 6A+B dash, 4A+B backdash, or forwardx2, backwardx2
+- 6A+B>4 within 2 frames becomes a backdash
+- dash movement start after ~2f
+- dash can be cancelled at any point
+
+| character                | backdash total | backdash invul                      |
+|--------------------------|----------------|-------------------------------------|
+| Akatsuki,Hyde,Gordeau    | 22f            | 8f                                  |
+| Eltnum                   | 25f            | 8f                                  |
+| Linne                    | 26f            | 8f                                  |
+| Vatista,Yuzuriha,Carmine | 27f            | 8f                                  |
+| Nanase,Chaos             | 28f            | 8f                                  |
+| Byakuya                  | 29f            | 8f                                  |
+| Waldstein                | 32f            | 10f                                 |
+| Hilda                    | 36f            | 9f                                  |
+| Orie                     | 36f            | 8f (no foot hurtbox until frame 15) |
+| Seth                     | 37f (grounded) | 7f                                  |
+| Merkava                  | 37f            | 10f                                 |
 
 #### Meter Gain
 
