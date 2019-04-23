@@ -235,12 +235,9 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 
 - up to 420f
 - generate grid from frame 1
-- Concentrating for more than 30f will drain meter from the player, but can be done even even if a player has no meter.
-- - During the meter drain, players will drain opponent's grd significantly faster than normal. Without meter, this faster drain effect will not occur.
-- In a concentration battle, the amount of grd that can be drain from the opponent when spending meter will always outweigh the difference in amount gained from the concentration itself.
-- - In other words, even Eltnum can out-generate Hilda in a concentration battle if Eltnum spends meter and Hilda has no meter to spend.
-- In a mirror at the start of a round, if both players have meter and hold concentration, player 2 will fill their grd blocks slightly faster than player 1.
-- when nobody has meter, nobody gets vorpal and the timer reset
+- after 30f, concentration will burn your meter to gain extra grd
+- when you burn meter, draining grid from your opponent gets a huge boost (does not happen if you have no meter to burn)
+- gain from drain >>> concentration drain
 
 | character                                                                         | grid gain/drain modifier (high is better) |
 |-----------------------------------------------------------------------------------|-------------------------------------------|
@@ -250,18 +247,23 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 | Waldstein                                                                         | 4x                                        |
 | Hilda,Chaos                                                                       | 5x                                        |
 
+- gain from drain >>> concentration drain => if eltnum has meter and hilda does not, even with a terrible modifier eltnum will outdrain hilda in a concentration war
+
+also
+
+- In a mirror, with meter, hold 5D at same frame => Player 2 wins
+
 #### Vorpal
 
-- When the grd transfer state ring is filled (every 17 seconds), the player with the most grd gauge will enter vorpal state.
-- If a player has no grd gauge, or if a player is grd crushed, he will not be able to enter vorpal state.
-- - If both players cannot enter vorpal, then the meter simply resets with neither player gaining any benefits.
-- Vorpal grants players an extra 10% in damage output throughout its duration.
-- Players in vorpal can consume their vorpal state (and all their grd blocks) to perform one of the following actions:
-- - Using chain shift to cancel their moves and convert all their grd gauge into EXS meter. This will carry over the vorpal damage bonus for a brief moment (see CS section).
-- - Performing a guard thrust (guard cancel) attack without spending meter or being grd crushed. Outside of vorpal, this normally costs all your meter to perform (with a minimum of 100 meter required), as well as grd crushes you.
-- - - There is a special property on grd thrusts when performed immediately after a chain shift. As long a player is still in vorpal carryover state, the player can spend all of their meter and remaining vorpal carryover bar to perform a grd thrusts without grd crushing themselves.
-- - Use IWEXS without getting grd crushed (200 meter and <30% health requirement remain the same).
-- Some characters gain special benefits from being in vorpal state. Carmine, for example, spends less health to perform his specials, and Eltnum gains the ability to whiff-cancel her A normals.
+- timer = 17s
+- player with the most grd gets vorpal
+- grd crush or 0grd => no vorpal
+- nobody can get vorpal => timer reset
+- vorpal => +10%dmg and character specific stuff
+- at the cost of vorpal + all grd you can:
+  - CS and convert all your meter into EXS meter (will carryover VO for a little bit)
+  - Guard cancel without spending meter or getting grd crushed (note, during CS carryover VO, guard cancel will still not guard crush you but you it will eat your meter)
+  - IWEXS without getting grd crushed (keep requirements: 200 meter and <30% health)
 
 #### Veil Off
 
