@@ -27,6 +27,10 @@ I need to repack the video to remove all the blanks when I have time.
 
 #### VT1
 
+Key on following setup is neutral jump fHP vs forward jump fHP.
+
+fHP has a visual artifact that moves Fang's body forward so it is hard to distinguish the two.
+
 {{ twitch(id="BitterReliableMouseANELE") }}
 
 {{ twitch(id="SmokyHumbleNeanderthalRitzMitz") }}
