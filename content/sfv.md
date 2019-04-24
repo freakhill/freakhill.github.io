@@ -36,6 +36,14 @@ It's my compilation of Zangief data!
 
 {{ twitch(id="BitterReliableMouseANELE") }}
 
+{{ twitch(id="SmokyHumbleNeanderthalRitzMitz") }}
+
+{{ twitch(id="EnticingTriangularVanillaTBTacoLeft") }}
+
+{{ twitch(id="AveragePatientCiderWutFace") }}
+
+{{ twitch(id="ClearCautiousGooseCclamChamp") }}
+
 ### 2D and 3D Games - difference
 
 #### 3D Games

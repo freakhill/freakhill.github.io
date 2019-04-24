@@ -262,219 +262,74 @@
 <li>gattling disabled during ground assault, gattling enabled during air assault</li>
 <li>combos from assault have heavily reduced untech time, and reduced damage</li>
 <li>combos from counterhit/grd crush assault have regular untech time, and regular damage</li>
-<li>Both aerial and grounded assaults suffer the same reduced starting penalties.</li>
+<li>air assount penalties = ground assault penalties</li>
 </ul>
 <h4 id="grd">Grd<a class="zola-anchor" href="#grd" aria-label="Anchor link for: grd">🔗</a>
 </h4>
 <ul>
 <li>passive generation, lower when closer to the corner</li>
-<li>Actions that generate grd:</li>
-<li>
+<li>grd gain scales down with grd</li>
+<li>some moves steal grd (ie. gordeau command throw, byakuya webs)</li>
+<li>Actions that generate grd:
 <ul>
-<li>Concentration (5D) (see next section for details)</li>
+<li>Concentration</li>
+<li>Any forward movement (assault = ~+0.5grd)</li>
+<li>Any opponent backward movement</li>
+<li>Aerial forward tech</li>
+<li>Opponent immediate ground tech</li>
+<li>Blocking/Shielding attacks (shield connection = +1grd)</li>
 </ul>
 </li>
-<li>
+<li>Actions that lose grd:
 <ul>
-<li>
-<ul>
-<li>Concentration drains the opponent's grd as well, and will drain it faster if a player spends meter during their concentration.</li>
+<li>Opponent concentration &gt;30f (faster when using grd)</li>
+<li>Any backward movement (backdash = ~-1grd)</li>
+<li>Any opponent forward movement</li>
+<li>Guard shield whiff (green shield) = -1grd</li>
+<li>being thrown/having a throw teched = -2grd</li>
+<li>throw whiff</li>
+<li>Ground back teching = -1grd</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Moving forward (walking, running, jumping, etc.)</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Using assault (generates ~0.5 grd)</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Blocking/Shielding attacks (successfully shielding an attack generates 1 grd)</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Aerial forward teching</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>If the opponent does an immediate ground tech from a combo</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>The opponent moving backwards</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>
-<ul>
-<li>If the opponent cannot actually move backwards (ie: is stuck on the edge of the screen), no grd will be gained</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>
-<ul>
-<li>This includes both grounded and aerial back teching</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Actions that lose grd:</li>
-<li>
-<ul>
-<li>Opponent using concentration (5D) for longer than 30 frames</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Moving backwards (walking, backdashing, jumping, etc.)</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>
-<ul>
-<li>(backdashing costs 1 grd)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Using guard shield and not blocking anything (costs 1 grd)</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Being thrown or having a throw broken (costs 2 grd either way)</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Whiffing a throw</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Ground back teching (costs 1 grd)</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>The opponent moving forwards</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>
-<ul>
-<li>If the defender is stuck with their back against the corner, no grd will be lost</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Certain characters can gain and steal grd by hitting the opponents with special moves, like Gordeau's command throws and Byakuya's webs.</li>
-<li>The more grd a player has, the less they will get for every action.</li>
 </ul>
 <h4 id="concentration">Concentration<a class="zola-anchor" href="#concentration" aria-label="Anchor link for: concentration">🔗</a>
 </h4>
 <ul>
-<li>Players can concentrate for up to 420f by holding the D button.</li>
-<li>Concentrating for more than 30f will drain meter from the player, but can be done even even if a player has no meter.</li>
-<li>
-<ul>
-<li>During the meter drain, players will drain opponent's grd significantly faster than normal. Without meter, this faster drain effect will not occur.</li>
+<li>up to 420f</li>
+<li>generate grid from frame 1</li>
+<li>after 30f, concentration will burn your meter to gain extra grd</li>
+<li>when you burn meter, draining grid from your opponent gets a huge boost (does not happen if you have no meter to burn)</li>
+<li>gain from drain &gt;&gt;&gt; concentration drain</li>
 </ul>
-</li>
-<li>Concentration starts generating grd on the first frame a player pushes the D button.</li>
-<li>Each character has a specific concentration modifier that controls how fast they can generate grd AND how fast they drain opponent's grd when spending meter. The higher the modifier, the faster.</li>
-<li>
+<table><thead><tr><th>character                                                                         </th><th>grid gain/drain modifier (high is better) </th></tr></thead><tbody>
+<tr><td>Eltnum,Nanase                                                                     </td><td>1x                                        </td></tr>
+<tr><td>Orie                                                                              </td><td>2x                                        </td></tr>
+<tr><td>Yuzuriha,Seth,Gordeau,<br>Carmine,Merkava,Hyde,<br>Linne,Vatista,Byakuya,Akatsuki </td><td>3x                                        </td></tr>
+<tr><td>Waldstein                                                                         </td><td>4x                                        </td></tr>
+<tr><td>Hilda,Chaos                                                                       </td><td>5x                                        </td></tr>
+</tbody></table>
 <ul>
-<li>1x: Eltnum, Nanase</li>
+<li>gain from drain &gt;&gt;&gt; concentration drain =&gt; if eltnum has meter and hilda does not, even with a terrible modifier eltnum will outdrain hilda in a concentration war</li>
 </ul>
-</li>
-<li>
+<p>also</p>
 <ul>
-<li>2x: Orie</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>3x: Yuzuriha, Seth, Gordeau, Carmine, Merkava, Hyde, Linne, Vatista, Byakuya, Akatsuki</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>4x: Waldstein</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>5x: Hilda, Chaos</li>
-</ul>
-</li>
-<li>In a concentration battle, the amount of grd that can be drain from the opponent when spending meter will always outweigh the difference in amount gained from the concentration itself.</li>
-<li>
-<ul>
-<li>In other words, even Eltnum can out-generate Hilda in a concentration battle if Eltnum spends meter and Hilda has no meter to spend.</li>
-</ul>
-</li>
-<li>In a mirror at the start of a round, if both players have meter and hold concentration, player 2 will fill their grd blocks slightly faster than player 1.</li>
-<li>
-<ul>
-<li>Without meter, however, both players will tie for the vorpal cycle.</li>
-</ul>
-</li>
+<li>In a mirror, with meter, hold 5D at same frame =&gt; Player 2 wins</li>
 </ul>
 <h4 id="vorpal">Vorpal<a class="zola-anchor" href="#vorpal" aria-label="Anchor link for: vorpal">🔗</a>
 </h4>
 <ul>
-<li>When the grd transfer state ring is filled (every 17 seconds), the player with the most grd gauge will enter vorpal state.</li>
-<li>If a player has no grd gauge, or if a player is grd crushed, he will not be able to enter vorpal state.</li>
-<li>
+<li>timer = 17s</li>
+<li>player with the most grd gets vorpal</li>
+<li>grd crush or 0grd =&gt; no vorpal</li>
+<li>nobody can get vorpal =&gt; timer reset</li>
+<li>vorpal =&gt; +10%dmg and character specific stuff</li>
+<li>at the cost of vorpal + all grd you can:
 <ul>
-<li>If both players cannot enter vorpal, then the meter simply resets with neither player gaining any benefits.</li>
+<li>CS and convert all your meter into EXS meter (will carryover VO for a little bit)</li>
+<li>Guard cancel without spending meter or getting grd crushed (note, during CS carryover VO, guard cancel will still not guard crush you but you it will eat your meter)</li>
+<li>IWEXS without getting grd crushed (keep requirements: 200 meter and &lt;30% health)</li>
 </ul>
 </li>
-<li>Vorpal grants players an extra 10% in damage output throughout its duration.</li>
-<li>Players in vorpal can consume their vorpal state (and all their grd blocks) to perform one of the following actions:</li>
-<li>
-<ul>
-<li>Using chain shift to cancel their moves and convert all their grd gauge into EXS meter. This will carry over the vorpal damage bonus for a brief moment (see CS section).</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Performing a guard thrust (guard cancel) attack without spending meter or being grd crushed. Outside of vorpal, this normally costs all your meter to perform (with a minimum of 100 meter required), as well as grd crushes you.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>
-<ul>
-<li>There is a special property on grd thrusts when performed immediately after a chain shift. As long a player is still in vorpal carryover state, the player can spend all of their meter and remaining vorpal carryover bar to perform a grd thrusts without grd crushing themselves.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Use IWEXS without getting grd crushed (200 meter and &lt;30% health requirement remain the same).</li>
-</ul>
-</li>
-<li>Some characters gain special benefits from being in vorpal state. Carmine, for example, spends less health to perform his specials, and Eltnum gains the ability to whiff-cancel her A normals.</li>
 </ul>
 <h4 id="veil-off">Veil Off<a class="zola-anchor" href="#veil-off" aria-label="Anchor link for: veil-off">🔗</a>
 </h4>
@@ -563,25 +418,16 @@
 <h4 id="superflash-and-screen-freeze">Superflash and Screen Freeze:<a class="zola-anchor" href="#superflash-and-screen-freeze" aria-label="Anchor link for: superflash-and-screen-freeze">🔗</a>
 </h4>
 <ul>
-<li>EX moves (supers), chain shifts, and infinite worths all cause the game to pause momentarily.</li>
-<li>
-<ul>
-<li>EX moves cause a 20 frame superflash (19 frame freeze).</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Chain shift causes a 40 frame superflash (39 frame freeze).</li>
-</ul>
-</li>
-<li>Superflash is throw invuln, even for non-reversal supers. This is generally useless information, unfortunately, because superflash technically only lasts for 1 frame.</li>
+<li>EX moves =&gt; 20f freeze (1f superflash + 19f freeze)</li>
+<li>CS =&gt; 40f freeze (1f superflash + 39f freeze)</li>
+<li>IW =&gt; ??f freeze</li>
+<li>superflash frame is throw invulnerable</li>
 </ul>
 <h4 id="input-buffering">Input Buffering<a class="zola-anchor" href="#input-buffering" aria-label="Anchor link for: input-buffering">🔗</a>
 </h4>
 <ul>
-<li>When the game pauses, input timers continue, so all inputs are lost during the duration of chain shift, EX move, and IW screen freezes. Players should buffer their inputs a second time during the flashes to make sure their moves occur.</li>
-<li>The input buffer in the game doesn't last as long as screen freezes do, so players should re-buffer their inputs towards the end of the freeze in order to get their moves to occur!</li>
-<li>(note!: this is a massive generalization) Inputs generally last for around 4 frames, so if a player wants to avoid getting 623 motions when they want 236 motions, returning to neutral for 4 frames will reset the input buffer.</li>
+<li>input timers continue during frozen frames</li>
+<li>inputs are buffered for ~4f, to avoid dp on walk forward hadou, insert 4f of neutral</li>
 </ul>
 <h4 id="fuzzy-protection">Fuzzy Protection<a class="zola-anchor" href="#fuzzy-protection" aria-label="Anchor link for: fuzzy-protection">🔗</a>
 </h4>
@@ -660,73 +506,30 @@
 <h4 id="same-move-proration">Same Move Proration<a class="zola-anchor" href="#same-move-proration" aria-label="Anchor link for: same-move-proration">🔗</a>
 </h4>
 <ul>
-<li>Using certain moves in a combo more than once will cause the combo to suffer reduced untech time (and perhaps damage).</li>
-<li>There is no list at the moment of all moves that suffer from SMP, but it MIGHT be all special moves. It may even apply to all moves, but at minimal effect.</li>
+<li>Using the certain moves twice in a combo reduce untech time</li>
+<li>Might be all special moves, might be all moves more (specials) or less (normals), nobody knows</li>
 </ul>
 <h4 id="dashing-backdashing">Dashing/Backdashing<a class="zola-anchor" href="#dashing-backdashing" aria-label="Anchor link for: dashing-backdashing">🔗</a>
 </h4>
 <ul>
-<li>Dashing and backdashing can be done with the A+B input. 6A+B is a dash and 4A+B is a backdash.</li>
-<li>If a player inputs 6A+B, then holds the buttons down and flips the joystick to 4 within 2 frames, the startup of their dash will instantly become a backdash.</li>
-<li>Dashes have around a 2 frame startup before they start moving, but doing micro-dash moves is still possible.</li>
-<li>Dashes can be cancelled out of at any point by blocking, backdashing, doing a move, etc.</li>
-<li>Backdash frame data:</li>
-<li>
-<ul>
-<li>Akatsuki, Hyde, Gordeau: 22f total, 1-8 invuln</li>
+<li>6A+B dash, 4A+B backdash, or forwardx2, backwardx2</li>
+<li>6A+B&gt;4 within 2 frames becomes a backdash</li>
+<li>dash movement start after ~2f</li>
+<li>dash can be cancelled at any point</li>
 </ul>
-</li>
-<li>
-<ul>
-<li>Eltnum: 25f total, 1-8 invuln</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Linne: 26f total, 1-8 invuln</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Vatista, Yuzuriha, Carmine: 27f total, 1-8 invuln</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Nanase, Chaos: 28f total, 1-8 invuln</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Byakuya: 29f total, 1-8 invuln</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Waldstein: 32f total, 1-10 invuln</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Hilda: 36f total, 1-9 invuln</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Orie: 36f total, 1-8 invuln (no foot hitbox until frame 15)</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Seth: 37f total (grounded), 1-7 invuln</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Merkava: 37f total, 1-10 invuln</li>
-</ul>
-</li>
-</ul>
+<table><thead><tr><th>character                </th><th>backdash total </th><th>backdash invul                      </th></tr></thead><tbody>
+<tr><td>Akatsuki,Hyde,Gordeau    </td><td>22f            </td><td>8f                                  </td></tr>
+<tr><td>Eltnum                   </td><td>25f            </td><td>8f                                  </td></tr>
+<tr><td>Linne                    </td><td>26f            </td><td>8f                                  </td></tr>
+<tr><td>Vatista,Yuzuriha,Carmine </td><td>27f            </td><td>8f                                  </td></tr>
+<tr><td>Nanase,Chaos             </td><td>28f            </td><td>8f                                  </td></tr>
+<tr><td>Byakuya                  </td><td>29f            </td><td>8f                                  </td></tr>
+<tr><td>Waldstein                </td><td>32f            </td><td>10f                                 </td></tr>
+<tr><td>Hilda                    </td><td>36f            </td><td>9f                                  </td></tr>
+<tr><td>Orie                     </td><td>36f            </td><td>8f (no foot hurtbox until frame 15) </td></tr>
+<tr><td>Seth                     </td><td>37f (grounded) </td><td>7f                                  </td></tr>
+<tr><td>Merkava                  </td><td>37f            </td><td>10f                                 </td></tr>
+</tbody></table>
 <h4 id="meter-gain">Meter Gain<a class="zola-anchor" href="#meter-gain" aria-label="Anchor link for: meter-gain">🔗</a>
 </h4>
 <ul>
