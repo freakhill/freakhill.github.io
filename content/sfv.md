@@ -10,25 +10,17 @@ in_search_index = true
 [extra]
 +++
 
-[sc6 astaroth FR19GF](https://youtu.be/xBvVvCLx7Q4?t=6570)
-
-### [Twitch channel](https://www.twitch.tv/lucyjojo)
-
-Need to:
-- Redo my lights
-- Switch to windows at some point T_T
+- [sc6 astaroth FR19GF](https://youtu.be/xBvVvCLx7Q4?t=6570)
+- [Twitch channel](https://www.twitch.tv/lucyjojo)
+- [The Red Binder - ZANGIEF NOTES!](https://docs.google.com/document/d/1In7xSy_Gm_yr8HkQdpDs_I3F0NZPZZYHc2Mv8w_OyCU/edit#)
 
 ### Ultra beginner guide
 
 {{ youtube(id="NYgq75uIMUk") }}
 
-[And the text notes are here](https://docs.google.com/document/d/1BMXvcioX0iI8Ec8DyVX2xy6i8_wlnShpv1THkJDcMgU/edit#)
+[some notes](https://docs.google.com/document/d/1BMXvcioX0iI8Ec8DyVX2xy6i8_wlnShpv1THkJDcMgU/edit#)
 
 I need to repack the video to remove all the blanks when I have time.
-
-### [The Red Binder](https://docs.google.com/document/d/1In7xSy_Gm_yr8HkQdpDs_I3F0NZPZZYHc2Mv8w_OyCU/edit#)
-
-It's my compilation of Zangief data!
 
 ### FANG
 
