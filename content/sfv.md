@@ -33,7 +33,11 @@ fHP has a visual artifact that moves Fang's body forward so it is hard to distin
 
 {{ twitch(id="BitterReliableMouseANELE") }}
 
+On this one, you can block, or you can shimmy with fHK.
+
 {{ twitch(id="SmokyHumbleNeanderthalRitzMitz") }}
+
+and lots of extensions!
 
 {{ twitch(id="EnticingTriangularVanillaTBTacoLeft") }}
 
