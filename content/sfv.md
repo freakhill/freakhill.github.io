@@ -30,6 +30,12 @@ I need to repack the video to remove all the blanks when I have time.
 
 It's my compilation of Zangief data!
 
+### FANG
+
+#### VT1
+
+{{ twitch(id="BitterReliableMouseANELE") }}
+
 ### 2D and 3D Games - difference
 
 #### 3D Games
