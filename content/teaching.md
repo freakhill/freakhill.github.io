@@ -239,6 +239,10 @@ https://apps.ankiweb.net/
      - Jenkinsfiles
    - [Chef](https://learn.chef.io/#/)
    - Unicode
+   - Do not use floating points until you read:
+     1. [first this "Floating Point Demystified"](http://blog.reverberate.org/2014/09/what-every-computer-programmer-should.html)
+     2. [then this](https://floating-point-gui.de/)
+     3. [and then if necessary "what every programmer should know about floating points"](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
    - intermediate Clojure
    - intermediate Rust
      - [Learn X in Y minutes - rust](https://learnxinyminutes.com/docs/rust/)
