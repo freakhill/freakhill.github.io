@@ -18,6 +18,8 @@ I want to make a lisp to develop games on PC and consoles.
 
 Use F-Expr and pervasive full program optimization, partial interpreter & LLVM code generation.
 
+partial evaluator + effect system + "collapse tower of interpreters" paper?
+
 First order locality, packing, static & dynamic environments.
 
 No GC, support for rust Pin/Unpin (build up support of gc as a library)
