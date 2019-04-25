@@ -62,6 +62,7 @@ our language.
 - [Heliotrope](https://github.com/halgari/heliotrope)
 - [Pink](https://github.com/namin/pink)
 - [Collapsing towers of interpreters](http://lampwww.epfl.ch/~amin/pub/collapsing-towers.pdf)
+- [Egison language](https://github.com/egison/egison) and its great pattern matching
 - [Learn ADA/Spark]()
 - look for the source for rust's lifetime checker
 - [implementing functional languages](https://www.microsoft.com/en-us/research/wp-content/uploads/1992/01/student.pdf)

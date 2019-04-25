@@ -173,6 +173,7 @@ https://apps.ankiweb.net/
      - "JAVASCRIPT&JQUERY"
      - [Eloquent JavaScript](http://eloquentjavascript.net/)
      - [You don't know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/README.md)
+     - [Javascript allonge](https://leanpub.com/javascriptallongesix/read#leanpub-auto-reducing-coupling)
      - [JS the right way](http://jstherightway.org/)
      - [MDN JS Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
      - [exercism](https://exercism.io/)
