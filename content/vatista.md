@@ -201,14 +201,15 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 
 #### Assault
 
+- throw invul.
 - 5f startup
 - ground => homing move, air => fixed trajectory
 - cannot block until landing, has landing recovery frames
-- throw invul.
 - gattling disabled during ground assault, gattling enabled during air assault
 - combos from assault have heavily reduced untech time, and reduced damage
 - combos from counterhit/grd crush assault have regular untech time, and regular damage
 - air assount penalties = ground assault penalties
+- can be kara in the first 2frames, ie. assault kara throw = 2f throw invul. into throw
 
 #### Grd
 
@@ -353,31 +354,35 @@ also
 
 #### Training Mode
 
-- The game offers the ability to record dummies and have them play back when they recover from hitstun or blockstun, or after teching. This recording does not play on the first frame that a bot exits hitstun or blockstun.
-- - The game spends 1 frame determining that the bot has returned to neutral (ie: exited hitstun/blockstun) before playing its recording, causing the recording to play on the second frame after the bot recovers from hitstun/blockstun.
-- When counter/high counter is enabled, the game only assumes the first hit in a string of cancels that touches the dummy is a counterhit. This means that things like cancelling a 5A (CH) into a special that is slow enough to reset the combo counter will not provide a second counterhit for the reset. The player must actually return to neutral if they want to re-enable the counter/high counter mode.
+- training mode recording does no the play on the first frame a bot exits hit/block stun, there is 1 frame of delay...
+- when counter is enabled, only the 1st hit of a string will counter, even if there are gaps in the string...
 
 #### Extra Info
 
-- All aerial moves put players into a state of landing recovery (empty jumps do not). A normals have 2f recovery, B normals 3f, C normals 3f. Assault has 4f, assault normals have 2f. Air shield has 2f unless you land while shielding, which has 6f. Most special movement has its own landing recovery frames, but many can be cancelled into air normals for better recovery. Only the last air option performed before reaching the floor matters for landing recovery.
+Landing recovery
 
-- Certain anti-air moves in the game have 'jump-in invulnerability,' meaning that any aerial move will whiff through the player doing the anti-air as long as that invuln is in effect. For example, Orie's 623A/B are anti-airs with jump-in invuln starting on frame 1, and her 3B anti-air normal has jump-in invuln starting from frame 5 or so. Not all characters have dedicated anti-air moves like these, though.
+| air normal         | landing recovery                    |
+|--------------------|-------------------------------------|
+| A                  | 2f                                  |
+| B                  | 3f                                  |
+| C                  | 3f                                  |
+| Assault            | 4f                                  |
+| Air shield         | 2f                                  |
+| Air shield landing | 6f                                  |
+| Special moves      | lots~ (cancel into normal for less) |
 
-- Jump startup is between 4-6 frames (varies from character to character, with Waldstein having the slowest startup at 6 frames) and is throw invulnerable. Most of the cast has 4 frame startups. Hilda, Merkava, Carmine, and Gordeau have 5f jumps, while Waldstein has a 6f jump.
+Jump startup
 
-- Assault startup is 5 frames, and appears to be universally true. Assault startup is also throw invulnerable.
+| character                        | frames |
+|----------------------------------|--------|
+| Waldstein                        | 6f     |
+| Hilda, Merkava, Carmine, Gordeau | 5f     |
+| others..                         | 4f     |
 
-- Notably, assault startup can be kara-cancelled into throw within the first two frames, which allows players to have up to 2 frames of throw invuln before their throw occurs. While generally not very useful, it can be rather funny for a defender to invuln through a command throw and throw the attacker instead.
-
-- Most specials can be cancelled directly in EX moves on whiff.
-
-- All IWEXS are invulnerable during their startup to hits, but are only throw invuln on their first startup frame. They also lose all invuln after the initial hit, and can trade with projectiles during the period between the hit and the cinematic. Any trade will cause the IWEXS to prematurely end before dealing its damage.
-
-- Some special moves in this game can gain new cancel properties based on what comes before them. It is unclear if this is a feature or a leftover from mechanics that are no longer in the game. See Yuzuriha's stance cancels and Byakuya's force function cancels(patched out), for example.
-
-- Hitstop appears to be 8 frames for some A moves. I've seen hitstop go up to 12 frames in duration for some moves. Unsure if there are moves with even more or even less hitstop.
-
-- After setting a default color for your character, it won't carry over into player lobbies.(patched out) If you switch places with another player in an online lobby, you will not have your default color equipped (instead, you'll have the previous player's color). However, if you simply move the cursor off of your character and then back to your character, it will equip your default color.
+- hitstop seems to be 8f for A move, up to 12 frames... (not well known)
+- Most specials can be cancelled directly in EX moves on whiff
+- IWEXS throw invul. only frame 1, strike/fb invul. until hit but can get hit after first hit, can trade with fireballs between hit and cinematic
+- some special moves can get new cancels based on what comes before them (don't know if bug)
 
 ## Combos
 
