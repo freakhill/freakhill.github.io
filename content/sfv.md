@@ -2,7 +2,7 @@
 title = "SFV notes"
 description = "Centralize my SFV stuff!"
 date = 2019-03-17
-weight = 80
+weight = 90
 draft = false
 in_search_index = true
 [taxonomies]
