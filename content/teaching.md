@@ -199,7 +199,7 @@ https://apps.ankiweb.net/
      - Haskell
        - [Learn you a haskell for great good](http://learnyouahaskell.com/)
      - more more more languages (prolog? erlang?)... 
-     - [Is parallel programming hard and, if so, what can you do about it](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.2016.07.31a.pdf)
+   - [Is parallel programming hard and, if so, what can you do about it](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.2016.07.31a.pdf)
    - **Deliverables**: ???
 6. Engineering
    - Explain tradeoffs and hoe no concepts in the following books are absolute. Always look for the tradeoffs.
