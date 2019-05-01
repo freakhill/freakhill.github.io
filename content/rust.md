@@ -158,6 +158,14 @@ generate "new" methods, with nostd support
 
 [github repo](https://github.com/shepmaster/snafu)
 
+### Timely-dataflow
+
+Low-latency cyclic dataflow computational model
+
+[github repo](https://github.com/TimelyDataflow/timely-dataflow)
+
+[example of join with underlying moving data thanks to dataflow](https://github.com/frankmcsherry/dataflow-join)
+
 ### Building fast interpreters in Rust
 
 [slideshare](https://www.slideshare.net/RReverser/building-fast-interpreters-in-rust)
