@@ -166,6 +166,18 @@ Low-latency cyclic dataflow computational model
 
 [example of join with underlying moving data thanks to dataflow](https://github.com/frankmcsherry/dataflow-join)
 
+### Spongedown - markdown to html with asciiart to svg support
+
+[Github repo](https://github.com/ivanceras/spongedown)
+
+### Flamer - flame graphs for rust
+
+[Github repo](https://github.com/llogiq/flamer)
+
+### Cargo-flamegraph - Other flame graphs for rust!
+
+[Github repo](https://github.com/ferrous-systems/flamegraph)
+
 ### Building fast interpreters in Rust
 
 [slideshare](https://www.slideshare.net/RReverser/building-fast-interpreters-in-rust)
@@ -356,18 +368,6 @@ Ok(unsafe { ::std::mem::transmute(module.get_finalized_function(id)) })
 // type FinalizedFunction = *const u8 -> code and data in memory
 // type FinalizedData = (*mut u8, usize) -> complete output artifact for a data object
 ```
-
-### Spongedown - markdown to html with asciiart to svg support
-
-[Github repo](https://github.com/ivanceras/spongedown)
-
-### Flamer - flame graphs for rust
-
-[Github repo](https://github.com/llogiq/flamer)
-
-### Cargo-flamegraph - Other flame graphs for rust!
-
-[Github repo](https://github.com/ferrous-systems/flamegraph)
 
 ### READ!
 
