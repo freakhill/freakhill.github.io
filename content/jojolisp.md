@@ -56,6 +56,11 @@ our language.
 // sizes ...
 // packing tilling x align x size
 
+## Stuff i checked out
+#### quasi static variables
+
+variables whose binding is determined by user level code. at definition point the variables are unbound, at use point a compile-time binding resolution code is provided. [paper](https://www.cs.indiana.edu/ftp/techreports/TR365.pdf)
+
 ## Stuff to check out
 
 - [Spiral language](https://github.com/mrakgr/The-Spiral-Language)
