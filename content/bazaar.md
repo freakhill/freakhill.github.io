@@ -10,12 +10,18 @@ in_search_index = true
 
 [FetiFes](https://www.fetifes.com/)
 
-### where to buy hardware
+### where to buy
+
+#### PC
 
 - puri.sm
 - system76.com
 
-### Where to get nice bread
+#### Glasses
+
+[Zenni Optical](https://www.zennioptical.com/b/all-men-glasses/_/N-1341992444)
+
+#### Bread
 
 - Bricolage - Roppongi
 - Truffle bakery - Honzen Nakajo
