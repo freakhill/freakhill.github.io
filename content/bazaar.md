@@ -19,7 +19,8 @@ in_search_index = true
 
 #### Glasses
 
-[Zenni Optical](https://www.zennioptical.com/b/all-men-glasses/_/N-1341992444)
+- [Zenni Optical](https://www.zennioptical.com/b/all-men-glasses/_/N-1341992444)
+- [Warby Parker](https://www.warbyparker.com/)
 
 #### Bread
 
