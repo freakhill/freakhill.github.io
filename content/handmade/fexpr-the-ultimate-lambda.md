@@ -13,7 +13,7 @@ Lisp construction called ["Fexpr"](https://en.wikipedia.org/wiki/Fexpr) under th
 
 I rewrote its code in clojure for (self)educational purpose, and added comments here and there
 to make it more understandable for the common folk (mainly myself). Only libs used are core.async
-and core.match!
+and core.match! I also added a dumb parser and some logging facilities to help understanding.
 
 I find the subject quite interesting and I hope my small contribution will be of interest to somebody!
 
