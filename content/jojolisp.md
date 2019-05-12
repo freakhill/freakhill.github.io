@@ -138,6 +138,8 @@ BIG POINT : LOOPS ARE IMPLICIT IN HALIDE
 
 ...
 
+## ONGOING CONTENT DIGESTION BELOW!!!
+
 ### Midori
 
 Research project at microsoft about programming languages, compilers, OS, services, application, programming model etc. etc.
