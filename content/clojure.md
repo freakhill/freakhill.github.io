@@ -75,3 +75,6 @@ This library provides high-quality Java implementations of mutable and immutable
 
 Rather than using the existing collection interfaces in java.util such as List or Map, it provides its own interfaces (IList, IMap, ISet) that provide functional semantics - each update to a collection returns a reference to a new collection. Each interface provides a method (toList, toMap, toSet) for coercing the collection to a read-only version of the standard Java interfaces.
 
+## Stuff i made
+
+- [fexpr the ultimate lambda rewrite](./handmade/fexpr-the-ultimate-lambda.md)
