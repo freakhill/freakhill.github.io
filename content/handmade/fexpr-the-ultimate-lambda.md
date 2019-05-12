@@ -7,7 +7,7 @@ draft = false
 in_search_index = true
 +++
 
-[This article](http://www.dalnefre.com/wp/2011/11/fexpr-the-ultimate-lambda/) introduces an antique
+[This article](http://www.dalnefre.com/wp/2011/11/fexpr-the-ultimate-lambda/) introduces an ancestral
 Lisp construction called ["Fexpr"](https://en.wikipedia.org/wiki/Fexpr) under the prism of the
 [Vau calculus](http://lisp.esthlos.com/papers/jshutt.pdf).
 
