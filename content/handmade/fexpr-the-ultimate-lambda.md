@@ -9,10 +9,11 @@ in_search_index = true
 
 [This article](http://www.dalnefre.com/wp/2011/11/fexpr-the-ultimate-lambda/) introduces an ancestral
 Lisp construction called ["Fexpr"](https://en.wikipedia.org/wiki/Fexpr) under the prism of the
-[Vau calculus](http://lisp.esthlos.com/papers/jshutt.pdf).
+[Vau calculus](http://lisp.esthlos.com/papers/jshutt.pdf) and actors.
 
 I rewrote its code in clojure for (self)educational purpose, and added comments here and there
-to make it more understandable for the common folk (mainly myself).
+to make it more understandable for the common folk (mainly myself). Only libs used are core.async
+and core.match!
 
 I find the subject quite interesting and I hope my small contribution will be of interest to somebody!
 
