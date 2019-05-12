@@ -1,28 +1,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://www.johangall.com/sfv/</loc>
+            <loc>https://www.johangall.com/handmade/programmer/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/handmade/maths/</loc>
+            <loc>https://www.johangall.com/art/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/clojure/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/ex/</loc>
+            <loc>https://www.johangall.com/handmade/2d3d/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -36,6 +29,20 @@
         </url>
     
         <url>
+            <loc>https://www.johangall.com/type-theory/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/handmade/maths/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
             <loc>https://www.johangall.com/teaching/</loc>
             
                 <lastmod>2019-03-17</lastmod>
@@ -43,7 +50,47 @@
         </url>
     
         <url>
-            <loc>https://www.johangall.com/handmade/fexpr-the-ultimate-lambda/</loc>
+            <loc>https://www.johangall.com/ex/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/sfv/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/handmade/kikaku/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/ops/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/rust/</loc>
+            
+                <lastmod>2019-03-17</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>https://www.johangall.com/bazaar/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -64,14 +111,14 @@
         </url>
     
         <url>
-            <loc>https://www.johangall.com/handmade/programmer/</loc>
+            <loc>https://www.johangall.com/handmade/fexpr-the-ultimate-lambda/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/type-theory/</loc>
+            <loc>https://www.johangall.com/clojure/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
@@ -79,53 +126,6 @@
     
         <url>
             <loc>https://www.johangall.com/vatista/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/handmade/2d3d/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/handmade/kikaku/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/ops/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/</loc>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/rust/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/bazaar/</loc>
-            
-                <lastmod>2019-03-17</lastmod>
-            
-        </url>
-    
-        <url>
-            <loc>https://www.johangall.com/art/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
