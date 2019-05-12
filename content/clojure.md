@@ -24,6 +24,12 @@ Need to try this out to see how it works with clojure.
 
 This is actually a Java library. Use classic TCP congestion libraries to manage a service (accept/reject requests).
 
+### Resilience4clj
+
+[github repo](https://github.com/luchiniatwork/resilience4clj-circuitbreaker)
+
+circuit breakers etc. for clojure (from resilience4j lib)
+
 ### Meander
 
 [github repo](https://github.com/noprompt/meander)
