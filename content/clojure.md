@@ -10,6 +10,8 @@ in_search_index = true
 [extra]
 +++
 
+[How to build a graalvm binary](https://github.com/BrunoBonacci/graalvm-clojure/blob/master/doc/clojure-graalvm-native-binary.md)
+
 ### JIT Watch
 
 [github repo](https://github.com/AdoptOpenJDK/jitwatch)
