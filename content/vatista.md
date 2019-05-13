@@ -386,7 +386,7 @@ Jump startup
 
 ## Combos
 
-Can I cancel beam into crystal?
+Can I cancel beam into crystal? Nope ~
 
 combo from:
 
@@ -489,19 +489,13 @@ Button Hold      →Crystal (Standing Crystal: 5 Crystal, Crouching Crystal: 2 C
 (h)                    →Hold (ex: j.B(h) means to do a j.B and keep holding B down.)
 dl                     →Delay
 
-This guide is made for people who have just started learning Vatista. As such, some combos might be made a bit suboptimal to keep the routes easy to swap between, so keep that in mind. And since this is aimed at beginner and intermediate players, we'll only cover the most common combo starters you'll use.
+beginner supoptimal combos
 
-The first part includes an explanation of her combo theory, so feel free to skip it if you don't need it.
+Ender:
+- (etc.)>A Drill>(2C)>Crystal
 
-(Feel free to share and repost. If you have any questions or want something clarified, feel free to Tweet me at @crazy_lemonmilk)
-[TL Note: In Japanese, preferably. If you have questions in English, the Vatista channel of the Under Night discord will probably help.]
-
-
-Vatista typically ends combos in:
-
-(etc.)>A Drill>(2C)>Crystal
-
-For oki, start by practicing 2 Crystal>Meaty 5A Detonate.
+Oki:
+- 2 crystal > 5A (detonate is meaty)
 
 
 [Here's where we get started!]
