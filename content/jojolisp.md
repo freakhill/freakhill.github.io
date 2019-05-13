@@ -2,7 +2,7 @@
 title = "I'm building a Lisp on the side"
 description = "random assortment of notes"
 date = 2019-03-17
-weight = 100
+weight = 80
 draft = false
 # slug = ""
 in_search_index = true
@@ -55,6 +55,11 @@ our language.
 // align ...
 // sizes ...
 // packing tilling x align x size
+
+## Stuff i checked out
+#### quasi static variables
+
+variables whose binding is determined by user level code. at definition point the variables are unbound, at use point a compile-time binding resolution code is provided. [paper](https://www.cs.indiana.edu/ftp/techreports/TR365.pdf)
 
 ## Stuff to check out
 
@@ -132,6 +137,8 @@ BIG POINT : LOOPS ARE IMPLICIT IN HALIDE
 ### Vau/KLisp/Kernel
 
 ...
+
+## ONGOING CONTENT DIGESTION BELOW!!!
 
 ### Midori
 

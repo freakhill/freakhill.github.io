@@ -10,12 +10,19 @@ in_search_index = true
 
 [FetiFes](https://www.fetifes.com/)
 
-### where to buy hardware
+### where to buy
+
+#### PC
 
 - puri.sm
 - system76.com
 
-### Where to get nice bread
+#### Glasses
+
+- [Zenni Optical](https://www.zennioptical.com/b/all-men-glasses/_/N-1341992444)
+- [Warby Parker](https://www.warbyparker.com/)
+
+#### Bread
 
 - Bricolage - Roppongi
 - Truffle bakery - Honzen Nakajo
@@ -44,6 +51,7 @@ Frontside 360, olly 360
 - [Second order logic](https://en.wikipedia.org/wiki/Second-order_logic)
 - [Windows Operating System Fundamentals](https://1.cdn.edl.io/Ha5eym5sDQ2I8DZmruMnsUsZbIIIpDq3t32jz8XsvXlO4GxO.pdf)
 - some novel from Tsutsuya Yasutaka
+- [use qemu to run executables for easy cross platform unit tests](https://www.chromium.org/chromium-os/testing/qemu-unittests)
 
 
 ### nice songs

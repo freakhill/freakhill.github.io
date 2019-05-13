@@ -10,6 +10,8 @@ in_search_index = true
 [extra]
 +++
 
+[How to build a graalvm binary](https://github.com/BrunoBonacci/graalvm-clojure/blob/master/doc/clojure-graalvm-native-binary.md)
+
 ### JIT Watch
 
 [github repo](https://github.com/AdoptOpenJDK/jitwatch)
@@ -23,6 +25,12 @@ Need to try this out to see how it works with clojure.
 [github repo](https://github.com/Netflix/concurrency-limits)
 
 This is actually a Java library. Use classic TCP congestion libraries to manage a service (accept/reject requests).
+
+### Resilience4clj
+
+[github repo](https://github.com/luchiniatwork/resilience4clj-circuitbreaker)
+
+circuit breakers etc. for clojure (from resilience4j lib)
 
 ### Meander
 
@@ -67,3 +75,6 @@ This library provides high-quality Java implementations of mutable and immutable
 
 Rather than using the existing collection interfaces in java.util such as List or Map, it provides its own interfaces (IList, IMap, ISet) that provide functional semantics - each update to a collection returns a reference to a new collection. Each interface provides a method (toList, toMap, toSet) for coercing the collection to a read-only version of the standard Java interfaces.
 
+## Stuff i made
+
+- [fexpr the ultimate lambda rewrite](./handmade/fexpr-the-ultimate-lambda.md)

@@ -72,6 +72,7 @@ https://apps.ankiweb.net/
 2. Computers
    - Logical model & Physical reality - the power of abstractions!
    - Layer 1 of knowledge
+     - ☮ [Evolution of CPU processing power](https://www.youtube.com/playlist?list=PLC7a8fNahjQ8IkiD5f7blIYrro9oeIfJU)
      - ☮ [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
      - ☮ [Harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
      - ☮ [Modified harvard architecture](https://en.wikipedia.org/wiki/Harvard_architecture)
@@ -199,6 +200,7 @@ https://apps.ankiweb.net/
      - Haskell
        - [Learn you a haskell for great good](http://learnyouahaskell.com/)
      - more more more languages (prolog? erlang?)... 
+   - [Is parallel programming hard and, if so, what can you do about it](https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.2016.07.31a.pdf)
    - **Deliverables**: ???
 6. Engineering
    - Explain tradeoffs and hoe no concepts in the following books are absolute. Always look for the tradeoffs.
