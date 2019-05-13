@@ -10,15 +10,21 @@ in_search_index = true
 [extra]
 +++
 
-### Books
+## Books
 
-Currently reading: [The book of Numbers](https://www.springer.com/us/book/9780387979939)
+Currently reading: [Hidden order](https://www.amazon.com/Hidden-Order-Adaptation-Builds-Complexity/dp/0201442302)
 
-### Book I finished reading since 17th of march 2019
+## Mini book reviews, starting from the 17th of march 2019
 
-Trying to read books a bit more again :)
+#### [The book of numbers](https://mennohenselmans.com/the-myth-of-1glb-optimal-protein-intake-for-bodybuilders/)
 
-### Music
+Some interesting parts about finding what sequences of numbers are?
+
+Most of it was not too interesting to me...
+
+I don't remember the result exactly but there was something really interesting, there are only 7 (or 9? or another random number) bases possible to cleanly factorize numbers with gaussian primes (primes in the complex plane). I found that fascinating when I read it! There are some numbers like that, that are not 1, or 2, or some prime, or e, or pi, or a humonguous number, just a 7 or a 9! That was the most fascinating math stuff I has read for a while.
+
+## Music
 
 - [Music theory](https://en.wikipedia.org/wiki/Music_theory)
 - [Tonality](https://en.wikipedia.org/wiki/Tonality)
