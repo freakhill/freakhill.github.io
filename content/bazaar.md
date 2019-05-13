@@ -17,6 +17,10 @@ in_search_index = true
 - puri.sm
 - system76.com
 
+### Vegan stuff
+
+- [iHerb](https://jp.iherb.com)
+
 #### Glasses
 
 - [Zenni Optical](https://www.zennioptical.com/b/all-men-glasses/_/N-1341992444)
