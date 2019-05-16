@@ -102,7 +102,7 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 | beam      | Mikoluceo       | [6]4 A/B/C        | reverse sonic boom (53f charge)                                                                                                            |
 | fk        | Luvel Angelus   | [2]8 A/B/C        | flash kick                                                                                                                                 |
 | drill     | Transvorance    | [8]2 A/B/C        | reverse flash kick (43f charge)                                                                                                            |
-| crystal   | Deus Fragmentum | [A/B/C] ... ](2)A/B/C[ | button hold and release/birdie bull horn (61f charge), 1 crystal by button, position change with stand/crouch/air, explosion is untechable |
+| 💎   | Deus Fragmentum | [A/B/C] ... ](2)A/B/C[ | button hold and release/birdie bull horn (61f charge), 1 💎 by button, position change with stand/crouch/air, 💥 is untechable |
 
 #### Frame data
 
@@ -134,7 +134,7 @@ VO might not be throw invulnerable! VO should be able to be used multiple times 
 | Abeam       | 14         | 5      | 24(41air) | -3(-5 air)      |       | 53f charge, extra air action                 |
 | Bbeam       | 15(17air)  | 5      | 21(41air) | 0 (-10~-20 air) |       | 53f charge, extra air action                 |
 | EXbeam      | 8          | 25     | 54(?air)  | +7(+11air)      |       | 53f charge                                   |
-| crystal     | 1(7)       |        |           |                 |       | 61f charge, 💥 untechable until landing      |
+| 💎     | 1(7)       |        |           |                 |       | 61f charge, 💥 untechable until landing      |
 | Adrill      | 7          | 13     | 18        | 2               | high  | 43f charge                                   |
 | Bdrill      | 20         | 9      | 48        | -7              | mid   | 43f charge, air unblockable, exBeam on block |
 | Cdrill      | 5          | ...    | 18        | -1              | mid   | 1-3f strike inv., 4-~f fb inv.               |
@@ -390,7 +390,7 @@ Jump startup
 
 ## Combos
 
-Can I cancel beam into crystal? Nope ~
+Can I cancel beam into 💎? Nope ~
 
 combo from:
 
@@ -418,11 +418,11 @@ close:
 tip:
 close:
 
-- Crystal high explosion
+- 💎 high 💥
 tip:
 close:
 
-- Crystal low explosion
+- 💎 low 💥
 tip:
 close:
 
@@ -487,7 +487,7 @@ close:
 | [6]4X       | Beam                                                                |
 | [2]8X       | Fk                                                                  |
 | [8]2X       | Drill                                                               |
-| Button Hold | Crystal (Standing Crystal: 5 Crystal, Crouching Crystal: 2 Crystal) |
+| Button Hold | 💎 (Standing 💎: 5 💎, Crouching 💎: 2 💎) |
 | (h)         | Hold (ex: j.B(h) means to do a j.B and keep holding B down.)        |
 | dl          | Delay                                                               |
 
@@ -496,14 +496,14 @@ beginner supoptimal combos
 
 Starter -> Meat -> Ender ~ Oki
 
-big proration can make enders minus (cannot detonate the crystal to start pressure). be aware and cut moves if necessary
+big proration can make enders minus (cannot detonate the 💎 to start pressure). be aware and cut moves if necessary
 
-[About Crystal Combos]
+[About 💎 Combos]
 
-Mid-combo Crystal>Detonate routes are essential to Vatista's high damage combos.
+Mid-combo 💎>💥 routes are essential to Vatista's high damage combos.
 
 <Sample>
-Starter>2C>5C>dlJB(h)>dlAdrill>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal>Detonate>JC(h)>Adrill>Crystal
+Starter>2C>5C>dlJB(h)>dlAdrill>2C(h)>2 💎>2A>2B(1) 💥>5 💎>💥>JC(h)>Adrill>💎
 
 Starter Launchers: 2C, 5BB
 
@@ -511,454 +511,346 @@ Meat part: after 2C bounce:
 
 | proration | combo                                                                                   |
 |-----------|-----------------------------------------------------------------------------------------|
-| heavy     | 2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>Adrill>Crystal              |
-| mid       | 2C(h)>2 Crystal>2A>2B Detonate>2 Crystal>B Beam Detonate(h)>JA>Adrill>Crystal          |
-| light     | 2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>Adrill>Crystal |
+| heavy     | 2C(h)>2 💎>2A>2B(1) 💥>5 💎 💥>JC(h)>Adrill>💎              |
+| mid       | 2C(h)>2 💎>2A>2B 💥>2 💎>B Beam 💥(h)>JA>Adrill>💎          |
+| light     | 2C(h)>2 💎>2A>A Beam 💥>2 💎>(2C)>B Beam 💥(h)>JA>Adrill>💎 |
 
-confirm from 2x?A => Give up crystal combos, if you want crystal from A, A>2C>5C or A>2C>5C
+confirm from 2x?A => Give up 💎 combos, if you want 💎 from A, A>2C>5C or A>2C>5C
 
 Meter spend:
 
 | meter     | ender                                                 |
 |-----------|-------------------------------------------------------|
-| meterless | 2nd Detonation>JA>Adrill>2 Crystal                   |
-| 100%      | 2nd Detonation>JC>[8]FF>C Drill (before final FF hit) |
-| 200%      | 2nd Detonation>IW/IWE                                 |
-| VO        | 2nd Detonation> VO <VO Ender>                         |
+| meterless | 2nd 💥>JA>Adrill>2 💎                   |
+| 100%      | 2nd 💥>JC>[8]FF>C Drill (before final FF hit) |
+| 200%      | 2nd 💥>IW/IWE                                 |
+| VO        | 2nd 💥> VO <VO Ender>                         |
 
 
-| starter               | combo                                                                                                                                       | note                                                               |
-|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| A                     | A>(B)>2C>5C>dlJB(h)>dlAdrill>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>Adrill>Crystal                                      |                                                                    |
-| A                     | 5A>2C>2A Whiff>Dash 2A>JA>JB(h)>JC>Land 2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>Adrill>Crystal                           | when too far for a normal pick use 2C bounce to dash pick up       |
-| A                     | 5A(Antiair)>JA>JB(h)>Adrill> 2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>Adrill>Crystal                         | AA                                                                 |
-| B/C                   | B>2C>5C>dlJB(h)>dlAdrill> 2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>Adrill>Crystal                            | light proration combo, be ready to switch to mid or heavy at times |
-| B/C                   | 2B>2C>2A Whiff>Dash 2A>JA>JB>Adrill(h)>2C(h)>dl5B>2 Crystal>5A Detonate>2 Crystal>2C>B Beam Detonate>JA>Adrill>Crystal                      | sliiightly more damage but harder                                  |
-| assault B/C           | Assault JB/JC>5A>2C>5C>dlJB(h)>dlAdrill>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>Adrill>Crystal                           | it's a A combo, proration is super heavy so it's tight             |
-| jC/grd brk/counterhit | >5A>2C>5C>dlJB(h)>dlAdrill>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>Adrill>Crystal                           |                                                                    |
-| assault B/C AA        | >5A>JA>JB(h)>Adrill>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>Adrill>Crystal                                               | on Air to air jC or CH assault AA you can go light protation combo |
-| 66B CH                | 66Bch>Microdash 5A>2C>5C>dlJB(h)>dlAdrill> 2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>Adrill>Crystal           | microdash 2C is possible                                           |
-| GuruGuru              | 66C>2FF>2A>JA>JB(h)>JC> 2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>Adrill>Crystal                                           | wait to be point blank for 2FF                                     |
-| GuruGuru              | 66C>2FF>2A>JA>JB(h)>JC>Land 2C(h)>5 Crystal>2A>5B>B Beam Detonate> Dash 2 Crystal(h)>A Beam Detonate>JA>Adrill>Crystal                      | Hard, more damage                                                  |
-| Crossup GuruGuru      | 66C>(Crossup)A Fb>2C>5C>dlJB(h)>dlAdrill>2C(h)>2 Crystal>2A>2B Detonate>2 Crystal>B Beam Detonate(h)>JA>Adrill>Crystal                      |                                                                    |
-| AA GuruGuru           | 66C(Air hit)>5A>JA>JB(h)>Adrill>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>Adrill>Crystal                      |                                                                    |
-| Close 2FF             | Close 2FF>2A>JA>JB>Adrill(h)>2C(h)>dl5B>2 Crystal>5A Detonate>2 Crystal>2C>B Beam Detonate>JA>Adrill>Crystal                                |                                                                    |
-| detonation            | Crystal Detonation>5A>JA>JB(h)>Aドリル>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>Adrill>Crystal                            | crystal combos are very peculiar...                                |
-| corner detonation     | (Corner)Crystal Detonation>5C>JB(h)>Adrill>2C>A Fb>2C(h)>2 Crystal>2A>2B(1) Detonate>5 Crystal Detonate>JC(h)>Adrill>Crystal                | (harder)                                                           |
-| Bdrill                | Bdrill>66C>5A>JA>JB>JC>Land JA>JB(h)>Adrill>2C>Crystal                                                                                      |                                                                    |
-| corner Bdrill         | (Corner)Bdrill(h)>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>Adrill>Crystal                                    |                                                                    |
-| B Fk                  | B Fk>CS(preslam)>Assault dlJC>Land JA>JB(h)>dlAdrill>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>Adrill>Crystal |                                                                    |
-| B Fk                  | B Fk>CS(preslam)>Assault dlJA>JC>Land JB(h)>dlAdrill>2C(h)>2 Crystal>2A>A Beam Detonate>2 Crystal>(2C)>B Beam Detonate(h)>JA>Adrill>Crystal |                                                                    |
+| starter               | combo                                                                                                    | note                                      |
+|-----------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------|
+| A                     | A>(B)>2C>5C>dlj[B]>dlAdrill>2[C]>2💎>2A>2B(1)>💥>5💎>💥>j[C]>Adrill>💎                                   |                                           |
+| A                     | 5A>2C>2A Whiff>Dash 2A>jA>j[B]>jC>Land 2[C]>2💎>2A>2B(1)>💥>5💎>💥>j[C]>Adrill>💎                        | when far, use 2C bounce to dash pick up   |
+| A                     | 5A(Antiair)>jA>j[B]>Adrill> 2[C]>2💎>2A>Abeam>💥>2💎>(2C)>[Bbeam]>💥>jA>Adrill>💎                        | AA                                        |
+| B/C                   | B>2C>5C>dlj[B]>dlAdrill>2[C]>2💎>2A>Abeam>💥>2💎>(2C)>[Bbeam]>💥>jA>Adrill>💎                            | very tight                                |
+| B/C                   | 2B>2C>2A Whiff>Dash 2A>jA>jB>Adrill(h)>2[C]>dl5B>2💎>5A>💥>2💎>2C>Bbeam>💥>jA>Adrill>💎                  | sliiightly more damage but harder         |
+| assault B/C           | Assault jB/jC>5A>2C>5C>dlj[B]>dlAdrill>2[C]>2💎>2A>2B(1)>💥>5💎>💥>j[C]>Adrill>💎                        | vveeeeery tight                           |
+| jC/grd brk/counterhit | >5A>2C>5C>dlj[B]>dlAdrill>2[C]>2💎>2A>Abeam>💥>2💎>(2C)>[Bbeam]>💥>jA>Adrill>💎                          |                                           |
+| assault B/C AA        | >5A>jA>j[B]>Adrill>2[C]>2💎>2A>2B(1)>💥>5💎>💥>j[C]>Adrill>💎                                            | on AA jC or CH assault AA you can do more |
+| 66B CH                | 66Bch>Microdash 5A>2C>5C>dlj[B]>dlAdrill> 2[C]>2💎>2A>Abeam>💥>2💎>(2C)>[Bbeam]>💥>jA>Adrill>💎          | microdash 2C is possible                  |
+| GuruGuru              | 66C>2FF>2A>jA>j[B]>jC> 2[C]>2💎>2A>2B(1)>💥>5💎>💥>j[C]>Adrill>💎                                        | wait to be point blank for 2FF            |
+| GuruGuru              | 66C>2FF>2A>jA>j[B]>jC>Land 2[C]>5💎>2A>5B>Bbeam>💥> Dash 2💎(h)>Abeam>💥>jA>Adrill>💎                    | Hard, more damage                         |
+| Crossup GuruGuru      | 66C>(Crossup)A Fb>2C>5C>dlj[B]>dlAdrill>2[C]>2💎>2A>2B>💥>2💎>[Bbeam]>💥>jA>Adrill>💎                    |                                           |
+| AA GuruGuru           | 66C(Air hit)>5A>jA>j[B]>Adrill>2[C]>2💎>2A>Abeam>💥>2💎>(2C)>[Bbeam]>💥>jA>Adrill>💎                     |                                           |
+| Close 2FF             | Close 2FF>2A>jA>jB>Adrill(h)>2[C]>dl5B>2💎>5A>💥>2💎>2C>Bbeam>💥>jA>Adrill>💎                            |                                           |
+| >💥                   | >💥>5A>jA>j[B]>Adrill>2[C]>2💎>2A>2B(1)>💥>5💎>💥>j[C]>Adrill>💎                                         | 💎 combos are very peculiar...            |
+| corner>💥             | (Corner)💎💥>5C>j[B]>Adrill>2C>A Fb>2[C]>2💎>2A>2B(1)💥>5💎>💥>j[C]>Adrill>💎                            | (harder)                                  |
+| Bdrill                | Bdrill>66C>5A>jA>jB>jC>Land jA>j[B]>Adrill>2C>💎                                                         |                                           |
+| corner Bdrill         | (Corner)Bdrill(h)>2[C]>2💎>2A>Abeam>💥>2💎>(2C)>[Bbeam]>💥>jA>Adrill>💎                                  |                                           |
+| B Fk                  | B Fk>CS(preslam)>Assault dljC>Land jA>j[B]>dlAdrill>2[C]>2💎>2A>Abeam>💥>2💎>(2C)>[Bbeam]💥>jA>Adrill>💎 |                                           |
+| B Fk                  | B Fk>CS(preslam)>Assault dljA>jC>Land j[B]>dlAdrill>2[C]>2💎>2A>Abeam>💥>2💎>(2C)>[Bbeam]💥>jA>Adrill>💎 |                                           |
 
 ## Raw data 2:
 
-Vatista has relatively few optimal combo routes, but many ways to reach them - you don't need to take screen position into account so much as you do starters/hitstun proration.
+Starter > Aerial > Landing > Ender
 
-Vatista's combos will generally follow a Starter > Aerial > Landing > Ender pattern. Familiarize yourself with her various routes so you can switch mid-combo when necessary.
-Combo Starters
+### Starters
 
 These starters all take the place of 2C > 5C in the above 2C combo.
 
-5A/2A > 2C > 5C
+| starter               | note                                                                                                                          |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| 5A/2A > 2C > 5C       | standard, don't add a B                                                                                                       |
+| 5B/2B > 2C > 5C       |                                                                                                                               |
+| jB/jC > 2C > 5C     | if Assault, you'll need to use the jB > (jA >) Adrill aerial route to get a 💎 combo.                                        |
+| 66C > [4]6A > 2C > 5C | If you hold 6(4?) during 66C, will be 4 on crossup and give you a [4]6A. when no cross up, 66C > FF > CS > 5C.                |
+| 5C > FF > CS > 5C     | if Vatista is too far for 2C punish, or unexpected hit. 5C > 2C > 5B can work. 5C > 2C > FF > CS > Aerial more dmg less range |
+| 66B (ch) > 2C > 5C    | 66B knocks the opponent down on counterhit, meaning you can follow up with this.                                              |
 
-    Hey, it's what we know and love. Just make sure you don't use 5/2B in between 5/2A and 2C.
+### Aerial Routes
 
-5B/2B > 2C > 5C
+These all come after 5C in the standard 💎 combo and are more or less replaceable.
 
-    If you're careful that these don't whiff, they work great. 5[B] also works as a blockstring starter - 5[B] > 2C > 5C gives you time to confirm if you want to jC 5C on hit or release a Fragmentum on block. Alternatively, Reverse Beat to 5A, 5B (assuming you started 2B), 5AA (if you're close), etc.
+j[B] > jC > Adrill
+- Basic air combo. Works.
 
-j.B/j.C > 2C > 5C
+j[B] > jC > land > jA > Adrill
+- land > jA increases combo range
 
-    Jump-ins. What else can you say? If you use these off of an Assault, you'll need to use the j.B > (j.A >) [8]2A aerial route to get a Fragmentum combo.
+dl j[B] > dl Adrill
+- low proration use, useful for 💎 combos off of assault, or double beam.
+    
+j[B] > jA > Adrill or jA > j[B] > Adrill
+- a bit more leniency than previous, not much more proration
 
-66C > [4]6A > 2C > 5C
+jA > jB > jC > land > jA > jB > Adrill
+- no fragment, good for AA 5A hits.
 
-    If you hold 6 during all of 66C, it'll become a 4 on crossup and give you a [4]6A. Unprepared opponents may also block the 66C and not expect the crossed up [4]6A, still granting you the combo. If you don't cross up, you can burn Vorpal with 66C > FF > CS > 5C.
+late jC > land > jA > j[B] > Adrill
+- used for aerial CS combos ([2]8B > CS, FF > CS) and random hits
 
-5C > FF > CS > 5C
+jC > 5C > jA > jB > Adrill
+- safe for random air hits
 
-    Useful if Vatista is too far away for 2C to punish in time, you want to CS for some meter, or you just weren't expecting to start with 5C. 5C > 2C > 5B can work for the latter as well if you don't have CS. 5C > 2C > FF > CS > Aerial will do slightly more damage, but works at shorter distances.
+### Landing
 
-66B (ch) > 2C > 5C
-
-    66B knocks the opponent down on counterhit, meaning you can follow up with this.
-
-Aerial Routes
-
-These all come after 5C in the standard Fragmentum combo and are more or less replaceable.
-
-j.[B] > j.C > [8]2A
-
-    Basic air combo. Works.
-
-j.[B] > j.C > land > j.A > [8]2A
-
-    The land > jA is important here in increasing the range at which Vatista can hit with [8]2A, thereby increasing the range at which she can combo from. Allows you to get more hits out of j.C and [8]2A, so it arguably does the most damage, too.
-
-j.[B] > [8]2A
-
-    Useful if you're worried about your hitstun proration - it lets you land full Fragment combos off of Assault j.B or j.C and is essential for reaching the double laser landing route explained further down. Fairly hard to pull off though, since the j.[B] must be done as late as possible on top of requiring you to charge [8] during the startup of 5C. You can use j.[B] > j.A > [8]2A or j.A > j.[B] > [8]2A for a bit more leniency on the timing with little apparent change to the hitstun proration.
-
-j.A > j.B > j.C > land > j.A > j.B > [8]2A
-
-    Yeah, she can still do this. You won't be able to get a Fragment combo off of this, though. You'll usually go for this off of 5A anti-air, like in the [8]2B > 66C > 5A combo.
-
-j.C > land > j.A > j.[B] > [8]2A
-
-    Only usable when j.C is done on the falling portion of Vatista's jump, and as such isn't usable off of your standard starters. It is usable for routes involving aerial CS ([2]8B > CS, FF > CS) as well as random j.C hits against airborne opponents. In the latter case, you may be better off using j.C > 5C > j.A > j.B > [8]2A to ensure it hits against opponents low to the ground for similar damage.
-
-Landing Routes
-
-The all are assumed to come after an aerial [8]2A. Any combo with 2]B[ assumes that you were already holding B before entering this route.
+The all are assumed to come after an aerial Adrill. Any combo with 2]B[ assumes that you were already holding B before entering this route.
 
 2A / 2C > 2B
-
-    Basic landing route that can't lead into anything other than [2]8X. Based on your combo's proration, 2C may drop, requiring you to use 2A instead.
+- Basic landing route that can't lead into anything other than [2]8X. Based on your combo's proration, 2C may drop, requiring you to use 2A instead.
 
 2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B
+- standard 💎 landing route
 
-    The standard Fragmentum landing route. Get familiar with this, as this route is essential to reaching Vatista's optimal damage output.
-
-2[C] > 2]B[ > 2A > 2B > 2]C[
-
-    Same as the above, but time the 2]C[ release such that the second Fragmentum is popped by the first's explosion. Used primarily when you open with a Fragmentum, but also useful when one of your combos happens to run through a Fragmentum you previously set up.
+2[C] > 2]B[ > 2A > 2B(1) > 2]C[
+- 2]C[ 💎 popped by first 💥. Used for 💎 starters, or when a combo pops a random 💎
 
 2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A/B
+- double beam route. 2A Abeam has a big gap so mind the proration
 
-    The double laser route - it does slightly more damage, but it's a bit more difficult to pull off both in terms of execution and proration - there's a larger gap between 2A > [6]4A than 2A > 2B, so hitstun proration makes this combo impossible sooner than the single laser variant. To reach this route, you'll need to use a good starter and either the j.B > (j.A >) [8]2A or j.C > land > j.A > j.B aerial routes.
+### Ender
 
-Combo Finishers
+B/C Fk
+- far oki mid screen, can do lots of safe stuff. B Fk great in the corner, C Fk meh in the corner.
 
-[2]8B / [2]8C
+jC > FF > [8]2C
+- after 2+ 💎 hits. Holding [8] during FF drags the opponent upward, letting you get more hits out of [8]2C. It (usually) does more damage than a [2]8C ender, cannot combo from wall slam but always safe (even on pre-slam tech)
 
-    [2]8B midscreen downs the opponent far away, but allows you enough time to set up a projectile, Fragmentum or Assault to gain GRD. [2]8 midscreen leaves the opponent about 1.5 character lengths away with much less time to set up anything. [2]8B in the corner puts Vatista at a perfect distance to start the repeated Fragmentum string, or just general Fragmentum oki. [2]8C in the corner puts you almost point blank to the opponent with little time to set up.
+jC > Adrill
+- Any aerial sequence (jC jB jA, jB jC, etc.) into Adrill after a second 💎 more or less works. A meterless ender that does similar/slightly more damage than [2]8B and ends with better oki positioning midscreen. Generally a 2]B[ or 2]C[ 💎 is released after the Adrill, but keep in mind that like all Frag setups midscreen, backtech avoids everything.
 
-j.C > FF > [8]2C
+### Basic Combos
 
-    Usable in combos after an opponent has been hit by the second (or more) Fragmentum. Holding [8] during FF drags the opponent upward, letting you get more hits out of [8]2C. It (usually) does more damage than a [2]8C ender, but keep in mind that if this is ending a full combo, the wall slam will almost always be impossible to combo from - that is, if they don't tech out before [8]2C's final hit (you're safe either way).
+5A > 5B > 2C > 5C > jB > jC > Adrill > 2C > 2B > [2]8B (2537)
+- Basic ground combo that gets you used to Adrill and 2C OTG. Still a useful route to go to later on if you feel your starter has prorated your combo too much (Assault, especially).
 
-j.C > [8]2A
+5A > 5B > 2C > 5C > j[B] > jC > Adrill > 2C > 2]B[ > [2]8B (2693)
+- Slightly stronger and more complicated ground combo. Uses a single Fragment to get you used to comboing with them.
 
-    Any aerial sequence (jC jB jA, jB jC, etc.) into Adrill after a second Fragmentum more or less works. A meterless ender that does similar/slightly more damage than [2]8B and ends with better oki positioning midscreen. Generally a 2]B[ or 2]C[ crystal is released after the Adrill, but keep in mind that like all Frag setups midscreen, backtech avoids everything.
+5A (anti-air) > jA > jB > jC > land > jA > jB > jC > Adrill > 2C > 2B > [2]8B (2215)
+- Basic anti-air combo that gets you used to jC > land > jA. Can connect off of many other moves, such as anti-air 66B/66C. You may need to replace 2C > 2B with 2A if used in a longer combo due to proration.
 
-Basic Combos
-
-    5A > 5B > 2C > 5C > j.B > j.C > [8]2A > 2C > 2B > [2]8B (2537)
-
-        Basic ground combo that gets you used to [8]2A and 2C OTG. Still a useful route to go to later on if you feel your starter has prorated your combo too much (Assault, especially).
-
-    5A > 5B > 2C > 5C > j.[B] > j.C > [8]2A > 2C > 2]B[ > [2]8B (2693)
-
-        Slightly stronger and more complicated ground combo. Uses a single Fragment to get you used to comboing with them.
-
-    5A (anti-air) > j.A > j.B > j.C > land > j.A > j.B > j.C > [8]2A > 2C > 2B > [2]8B (2215)
-
-        Basic anti-air combo that gets you used to j.C > land > j.A. Can connect off of many other moves, such as anti-air 66B/66C. You may need to replace 2C > 2B with 2A if used in a longer combo due to proration.
-
-Midscreen Combos
+### Midscreen Combos
 
 Damage values indicate base damage. "+" values indicate bonus damage from Vorpal (CS combos only). Note that slight changes in timing can change the amount of hits your moves do, so expect values to vary in practice.
 
-2C
+#### 2C
 
-    (2A/ 5B/ j.B/ j.C >) 2C > 5C > j.[B] > j.C > land > j.A > [8]2A > 2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B > ([2]8B (3240) / [2]8C (4059) / j.C > [8]2A (3308) / j.C > FF > [8]2C (4075))
+(2A/ 5B/ jB/ jC >) 2C > 5C > j[B] > jC > land > jA > Adrill > 2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B > ([2]8B (3240) / [2]8C (4059) / jC > Adrill (3308) / jC > FF > [8]2C (4075))
+- The standard Fragment combo. The button holding required to use Fragments mid-combo may seem difficult, but they're no big deal once you get the motions into your muscle memory. The 2C and 2A OTGs are a little strict, however - hitstun proration can ruin this combo easily if you're not careful with your starter or don't get a counter-hit (though the j[B] > Adrill aerial route will make up for the former). Still, there are a LOT of starters not listed that can get to this route. The damage for [2]8B/C assumes you do it after [6]4B - it's difficult, but you can swap it for 2B instead for less damage.
 
-        The standard Fragment combo. The button holding required to use Fragments mid-combo may seem difficult, but they're no big deal once you get the motions into your muscle memory. The 2C and 2A OTGs are a little strict, however - hitstun proration can ruin this combo easily if you're not careful with your starter or don't get a counter-hit (though the j.[B] > [8]2A aerial route will make up for the former). Still, there are a LOT of starters not listed that can get to this route. The damage for [2]8B/C assumes you do it after [6]4B - it's difficult, but you can swap it for 2B instead for less damage.
+(5B >) 2C > 5C > 5FF(whiff) > 9FF > CS > jC > land > jA > j[B] > Adrill > 2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A > ([2]8B (3973+162) / [2]8C (4923+162) / jC > Adrill (4040+162) / jC > FF > [8]2C (4796+162))
+- A CS version. The trick is to whiff the grounded 5FF, but hold 9 to make the second (airborne) portion hit. This uses the double laser landing route for additional damage.
 
-    (5B >) 2C > 5C > 5FF(whiff) > 9FF > CS > j.C > land > j.A > j.[B] > [8]2A > 2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A > ([2]8B (3973+162) / [2]8C (4923+162) / j.C > [8]2A (4040+162) / j.C > FF > [8]2C (4796+162))
+#### 💎
 
-        A CS version. The trick is to whiff the grounded 5FF, but hold 9 to make the second (airborne) portion hit. This uses the double laser landing route for additional damage.
+💥 > 5C > j[B] > jC > land > jA > Adrill > 2[C] > 2]B[ > 2A > 2B > 2]C[ > ([2]8B (3171) / [2]8C (4127) / jC > Adrill (3262))
+- Standard Fragment combo that takes into account the fact that the opponent will tech after the first mid-combo Fragment by releasing the second mid-combo Fragment before they're knocked out of the first one's 💥. For the jC > Adrill ender, you need to time the second Fragment's so it explodes from the first one's 💥 - for either [2]8 ender, you can get away with being a little late since the Flash Kick will pop it.
 
-Fragmentum
+#### Bdrill
 
-    Explosion > 5C > j.[B] > j.C > land > j.A > [8]2A > 2[C] > 2]B[ > 2A > 2B > 2]C[ > ([2]8B (3171) / [2]8C (4127) / j.C > [8]2A (3262))
+All damage values assume the drill portion of Bdrill hits only once before the kick, as an instant overhead should.
 
-        Standard Fragment combo that takes into account the fact that the opponent will tech after the first mid-combo Fragment by releasing the second mid-combo Fragment before they're knocked out of the first one's explosion. For the jC > [8]2A ender, you need to time the second Fragment's so it explodes from the first one's explosion - for either [2]8 ender, you can get away with being a little late since the Flash Kick will pop it.
+Bdrill > 66C > 5A > jA > jB > jC > land > jA > jB > Adrill > 2C > 2B > [2]8B (2629) / [2]8C (3240)
+- Standard meterless combo from 66C. Hitstun proration makes 2C > 2B a bit difficult to connect from Adrill, so you can use 2A instead.
 
-[8]2B All damage values assume the drill portion of [8]2B hits only once before the kick, as an instant overhead should.
+Bdrill > 66C > FF > CS > jC > land > jA > jB > Adrill > 2C > 2B > [2]8B (2895+174) / [2]8C (3506+174)
+- A CS conversion for 0/100% bar.
 
-    [8]2B > 66C > 5A > j.A > j.B > j.C > land > j.A > j.B > [8]2A > 2C > 2B > [2]8B (2629) / [2]8C (3240)
+#### [2]8B
 
-        Standard meterless combo from 66C. Hitstun proration makes 2C > 2B a bit difficult to connect from [8]2A, so you can use 2A instead.
+[2]8B > CS > 66 (delay) jC > land > jA > j[B] > Adrill > 2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A > ([2]8B (3644+152) / [2]8C (4416+152) / jC > Adrill (3629+152) / jC > FF > [8]2C (4385+152))
+- Yes, Vatista can combo off of Flash Kick with CS. You'll need to delay the jC after the CS > 66 to let jA hit.
 
-    [8]2B > 66C > FF > CS > j.C > land > j.A > j.B > [8]2A > 2C > 2B > [2]8B (2895+174) / [2]8C (3506+174)
+### Corner Combos
 
-        A CS conversion for 0/100% bar.
+#### Bdrill
 
-[2]8B
-
-    [2]8B > CS > 66 (delay) j.C > land > j.A > j.[B] > [8]2A > 2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A > ([2]8B (3644+152) / [2]8C (4416+152) / j.C > [8]2A (3629+152) / j.C > FF > [8]2C (4385+152))
-
-        Yes, Vatista can combo off of Flash Kick with CS. You'll need to delay the j.C after the CS > 66 to let j.A hit.
-
-Corner Combos
-
-[8]2B
-
-    [8]2[B] > 2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B > j.C ([8]2A (2780) / FF > [8]2C (3388))
-
-        Her standard Fragmentum route, but now in the corner. Just be sure to hold [B] from the beginning. 2C will whiff on Akatsuki, Byakuya, and Chaos.
+[Bdrill] > 2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B > jC (Adrill (2780) / FF > [8]2C (3388))
+- standard 💎 route, but in the corner. 2C will whiff on Akatsuki, Byakuya, and Chaos.
         
-## Raw data 3
+## Raw data 3 - meterless combos
 
-Vatista Combo Guide Video (Meterless)
-Original video (Youtube)
-Original Video (Niconico)
+### Combo enders
 
-(0:03)
-Hello. I had planned to make a combo theory video after the last national tournament, but I got distracted by thinking about Lily Hoshikawa. This video will mostly focus on combos that I personally use.
+#### Adrill
+Her classic combo ender. Ends in a knockdown and even lets you set up a gem at frame advantage if you mind your proration. Just like always, she can pick up with 2C after the first gem 💥 for more better damage and stability.
 
-(0:10)
-As the name suggests, this video focuses on meterless combos, but I’ll start with some general knowledge before we get to the combos. This video assumes some general familiarity with fighting game terminology, but if there’s anything you don’t understand, feel free to ask. [TL Note: If you speak Japanese, that is. If English is your primary language, please ask English-language players instead, such as the ones in the UNIST discord.]
-
-Changes
-(0:24)
-There have been a number of balance changes with the console release of [st], but the most important ones are the increase to 2C's hitbox size and the change to 2FF's frame advantage [TL Note: Or in our case, the mere addition of it as a move.].
-
-(0:32)
-2C Changes
-2C’s hitbox was raised in a way that doesn't really affect her neutral game, but it makes routes that used to be character specific (such as corner Bdrill > 2C) universal, makes 2C pickup routes more stable, and even gives her access to some new routes altogether.
-
-(0:53)
-2FF Changes
-2FF’s recovery was reduced from the previous arcade version, making it -3 on block and allowing you to combo from a raw hit with no resources. That second one means you can now combo from a 66C hit even when you can’t cancel into A orb.
-
-
-Combo Enders
-(1:10)
-Next, I’ll introduce her combo enders.
-
-(1:14)
-Adrill Ender
-Her classic combo ender. Ends in a knockdown and even lets you set up a gem at frame advantage if you mind your proration. Just like always, she can pick up with 2C after the first gem explosion for more better damage and stability.
-
-(1:24)
-2C Ender
+#### 2C
 This is another classic ender, but the increase to 2C’s hitbox size means she now has more routes that can end with a 2C knockdown. For example:
-Explosion > 2 gem > 2C delay 5B(1hit) 5 gem > delay 2C gem
-You can go into that ender from just about any route. [TL Note: See combo at 4:06 for this example]
-(1:34)
+- 💥 > 2 gem > 2C delay 5B(1hit) 5 gem > delay 2C gem
+You can go into that ender from just about any route.
 That said, keep in mind that it’s slightly more difficult on characters whose hurtboxes don’t reach low enough. Also, they can air tech and punish you if your combo prorates too highly.
-(1:43)
 You can also set two gems instead of one after a 2C ender, or even 2C > jump cancel > air gem set if you haven’t used your jump cancel yet.
 
-(2:00)
-Satellus Ender
-A viable ender as of [st]. If your combo hasn’t prorated much, you can pop the opponent up and get a lot of frame advantage. But if it has, your opponent will air tech and be at advantage. Try to avoid using 5B, 2B, 5C, or your jump normals more than once when going for this ender.
+#### Satellus Ender
 
-(2:21)
-j.[FF] Ender
+Try to avoid using 5B, 2B, 5C, or your jump normals more than once when going for this ender.
+
+#### j.[FF]
 With the buffs to C Orb, you can end with j.[FF] cancelled into C Orb, mostly in the corner. 2C > [6]4B > 5FF into j.[FF] > j.[4]6C would be the way to go. You can also link an FF after Satellus to build more meter, though it’s a bit more difficult to pull off.
-(2:31)
+
 You can do an air C Fb right after a Satellus ender, too. Go for the j.[FF] ender alone if you want damage, and use either the Satellus > j.[4]6C or Satellus > j.[FF] enders if you want to build meter.
 Just remember that you’re in trouble if you drop any of them.
 
-(2:42)
-VO Ender
-A combo ender that uses a universal mechanic to strip an opponent’s vorpal. Vatista can fit in a VO at the very end of her combo, so keep her damage untouched and end in VO, [6]4B Explosion > VO, 66B Explosion > VO, or Explosion > Gem set Explosion > VO.
-(3:03)
+#### VO
+A combo ender that uses a universal mechanic to strip an opponent’s vorpal. Vatista can fit in a VO at the very end of her combo, so keep her damage untouched and end in VO, [6]4B 💥 > VO, 66B 💥 > VO, or 💥 > Gem set 💥 > VO.
+
 In the corner, you can rack up damage and end in VO while still leaving a gem set for oki.
 
-(3:15)
-That about covers enders. They all have their strengths and weaknesses, so just choose based on what kind of oki you want to do and what the proration on your combo will let you get away with.
+### Combos
 
-
-Combos
-(3:21)
-Now we get to the combos. I’ll mainly focus on the new routes she has in [st], which largely consist of Satellus ender routes and a few 2C ender/VO ender routes. The previous explanation covered just about everything you need to know about Adrill enders and jFF enders, so I’ll omit them here.
-(3:28)
-The following combos are mainly the ones I personally use, so I can’t promise that they’re optimal. Please keep that in mind.
-[TL Note: This translation has added button holds to the original combo notations, but you can also view the input history in the video for reference.]
-
-(3:36)
 5A 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2A 5[A] 2]C[~[C] > 5[B](1)/2[B](1) 5]A[ > ]C[ (Satellus) > ]B[
-Starter: A
-Midscreen
-Practicality: ☆☆☆
-Given the air combo, you should be fine fitting in a B normal, just make sure you don’t use the same one that you’ll use to detonate the second gem. Avoiding same move proration gives you a real knockdown and keeps damage high. Incidentally, if you didn’t use a B normal in your confirm, you can get a side switch by using 2A 5[A] 2]C[~[C] > Dash > 5[B] as your ground combo.
+- Starter: A
+- Midscreen
+- Practicality: ☆☆☆
+- Given the air combo, you should be fine fitting in a B normal, just make sure you don’t use the same one that you’ll use to detonate the second gem. Avoiding same move proration gives you a real knockdown and keeps damage high. Incidentally, if you didn’t use a B normal in your confirm, you can get a side switch by using 2A 5[A] 2]C[~[C] > Dash > 5[B] as your ground combo.
 
-(3:46)
 2AA 2C 5C > j.A [8]2[A] > 2[C] 2]A[ > 2A 5[A] 2]C[~[C] > 5[B](1)/2[B](1) 5]A[ > ]C[ (Satellus) > ]B[
-Starter: AA
-Midscreen
-Practicality: ☆
-A Satellus ender with two A starters. That said, it’s basically the previous combo with j.B switched for j.A. j.A has a lighter proration than j.B, so it’s useful for times like these.
+- Starter: AA
+- Midscreen
+- Practicality: ☆
+- A Satellus ender with two A starters. That said, it’s basically the previous combo with j.B switched for j.A. j.A has a lighter proration than j.B, so it’s useful for times like these.
 
-(3:56)
 2AAA 2C 5B > j.[B] j.[8]2A > 2[C] 2]B[~[B] > 2A 5[A] 2]C[~[C] > 2]B[~[B] > 5A ]C[ (Satellus) > ]B[
-Starter: AAA
-Midscreen
-Practicality: 
-A route that uses A three whole times. I completely forgot about this one, so it still hasn’t seen any use in a fight. Since all those 2As will push the opponent away, you’ll need to launch with something other than 5C.
+- Starter: AAA
+- Midscreen
+- Practicality: 
+- A route that uses A three whole times. I completely forgot about this one, so it still hasn’t seen any use in a fight. Since all those 2As will push the opponent away, you’ll need to launch with something other than 5C.
 
-(4:06)
 Assault j.C > 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2[A] 2B 2]C[ > 2C delay 5[B](1) 5]A[ > delay 2C ]B[
-Starter: Assault j.C
-Midscreen/Corner
-Practicality: ☆☆☆
-Assault starters prorate pretty heavily, so there’s no need to force a Satellus ender out of them. Keep it simple and do a 2C gem set ender. This route is a good backup for other high proration starters or awkward confirms, so do a 2C ender for those as well.
+- Starter: Assault j.C
+- Midscreen/Corner
+- Practicality: ☆☆☆
+- Assault starters prorate pretty heavily, so there’s no need to force a Satellus ender out of them. Keep it simple and do a 2C gem set ender. This route is a good backup for other high proration starters or awkward confirms, so do a 2C ender for those as well.
 
-(4:15)
 Assault j.B > 5A 2C 5C > j.A [8]2[A] > 2[C] 2]A[ > 2[A] 2B 2]C[ > 2C delay 5[B](1) 5]A[ > delay 2C ]B[
-Starter: Assault j.B
-Midscreen/Corner
-Practicality: ☆
-Vatista will rarely get a hit starting from her assault j.B, but if she does, you’ll want to use j.A in your combo instead of j.B to avoid same move proration.
+- Starter: Assault j.B
+- Midscreen/Corner
+- Practicality: ☆
+- Vatista will rarely get a hit starting from her assault j.B, but if she does, you’ll want to use j.A in your combo instead of j.B to avoid same move proration.
 
-(4: 23)
 A 2C 2B > j.[B] j.C land j.A j.[8]2A > 2[C] 2]B[ >2A 5[A] 2]C[ > 2C delay 5[B](1hit) 5]A[ > delay 2C ]B[
-Start: 5A/2A Tip
-Midscreen
-Practicality: ☆☆
-If you follow a hit with the edge of 2A with 2C, there are times when the 2C gets blocked even after your 2A hits. As such, I can’t recommend keeping that starter in your muscle memory, but I admit that I do it fairly often myself. You won’t find many practical starters that prorate more heavily than the one this combo uses, so if you’re ever midscreen and unsure of your route, just pick this one and end with 2C.
+- Start: 5A/2A Tip
+- Midscreen
+- Practicality: ☆☆
+- If you follow a hit with the edge of 2A with 2C, there are times when the 2C gets blocked even after your 2A hits. As such, I can’t recommend keeping that starter in your muscle memory, but I admit that I do it fairly often myself. You won’t find many practical starters that prorate more heavily than the one this combo uses, so if you’re ever midscreen and unsure of your route, just pick this one and end with 2C.
 
-(4:33)
 A 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2[A] 5[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
-Start: 5A/2A
-Corner
-Practicality: ☆☆
-A Satellus corner route from an A starter. The 2 gem > 2A > 5A route whiffs in the corner, so use this instead.
+- Start: 5A/2A
+- Corner
+- Practicality: ☆☆
+- A Satellus corner route from an A starter. The 2 gem > 2A > 5A route whiffs in the corner, so use this instead.
 
-(4:43)
 AA 2C 5C > j.A [8]2[A] > 2[C] 2]A[ > 2[A] 5[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
-Start: 5AA/2AA
-Corner
-Practicality: ☆
-Just like the midscreen version, you need to switch j.B with j.A to keep your proration light when you start with two A normals.
+- Start: 5AA/2AA
+- Corner
+- Practicality: ☆
+- Just like the midscreen version, you need to switch j.B with j.A to keep your proration light when you start with two A normals.
 
-(4:52)
 AAA 2C delay 5[B] > delay j.C > 2[C] 2]B[ > 2[A] 2[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
-Start: 5AAA/2AAA
-Corner
-Practicality: 
-I don’t use this myself, but I may as well put this here while we’re introducing routes. If you find yourself landing this starter, you might want to play it safe and just go for a 2C or FF ender.
+- Start: 5AAA/2AAA
+- Corner
+- Practicality: 
+- I don’t use this myself, but I may as well put this here while we’re introducing routes. If you find yourself landing this starter, you might want to play it safe and just go for a 2C or FF ender.
 
-(5:01)
 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2A [6]4[A] > 2]C[~[C] > 5[B](1hit)/2[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
-Start: 2C
-Midscreen/Corner
-Practicality: ☆☆☆
-Combo from a normal 2C starter. B normals, C normals, and jump normals all have fairly light proration, so you can fit in a laser and a Satellus ender after starting from them.
+- Start: 2C
+- Midscreen/Corner
+- Practicality: ☆☆☆
+- Combo from a normal 2C starter. B normals, C normals, and jump normals all have fairly light proration, so you can fit in a laser and a Satellus ender after starting from them.
 
-(5:10)
 2C(ch) 5C > j.[B] j.[8]2A > 2[C] 5]B[ > 2[A] 5B [6]4[B] > dash 2]C[ > 2[C] 2[B](1hit) 2]A[ > dash ]C[ (Satellus) > ]B[
-Start: 2C counter hit
-Midscreen/Corner
-Practicality: ☆☆☆
-A route for when 2C counter hits. Use it for punishing DPs or beating option selects/mashes.
+- Start: 2C counter hit
+- Midscreen/Corner
+- Practicality: ☆☆☆
+- A route for when 2C counter hits. Use it for punishing DPs or beating option selects/mashes.
 
-(5:21)
 5B 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2A [6]4[A] > 2]C[ > 2[C] 5[B](1hit)/2[B](1hit) 2]A[ >]C[ (Satellus) > dash ]B[
-Start: 2B/5B
-Midscreen/Corner
-Practicality: ☆☆☆
-B starters have slightly more proration than 2C, so we add in a 2C pickup after the first gem explosion. If you find yourself using a B normal when confirming off of a 2C counter hit starter, go into this route.
+- Start: 2B/5B
+- Midscreen/Corner
+- Practicality: ☆☆☆
+- B starters have slightly more proration than 2C, so we add in a 2C pickup after the first gem 💥. If you find yourself using a B normal when confirming off of a 2C counter hit starter, go into this route.
 
-(5:32)
-Explosion > 2C 5C > j.[B]/j.A j.[8]2A >  2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
-Start: 5A Explosion
-Midscreen
-Practicality: ☆☆☆
-Use 2B for starters with heavy proration like A normals, and use 5B for starters with lighter proration. You can also switch in j.B for j.A when you start a combo with j.B > explosion or Bdrill > explosion to avoid same move proration. For the Satellus after the chain explosions, keep in mind that your opponent will be shot upwards if you’re too slow, so try to hit that as soon as possible.
+💥 > 2C 5C > j.[B]/j.A j.[8]2A >  2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+- Start: 5A 💥
+- Midscreen
+- Practicality: ☆☆☆
+- Use 2B for starters with heavy proration like A normals, and use 5B for starters with lighter proration. You can also switch in j.B for j.A when you start a combo with j.B > 💥 or Bdrill > 💥 to avoid same move proration. For the Satellus after the chain 💥, keep in mind that your opponent will be shot upwards if you’re too slow, so try to hit that as soon as possible.
 
-(5:42)
-5A Explosion > 2C 5C > delay j.[B] delay j.C >  2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
-Start: 5A Explosion
-Corner
-Practicality: ☆☆
-Your opponent is much closer to you in a corner combo than they would be midscreen, so your midscreen route would cause them to launch away before your Satellus could activate. Use this corner route instead.
+5A 💥 > 2C 5C > delay j.[B] delay j.C >  2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+- Start: 5A 💥
+- Corner
+- Practicality: ☆☆
+- Your opponent is much closer to you in a corner combo than they would be midscreen, so your midscreen route would cause them to launch away before your Satellus could activate. Use this corner route instead.
 
-(5:50)
-Explosion > 2C 5C > j.[B]/j.A j.[8]2A > 2C [4]6A > 2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
-Start: j.A Explosion
-Corner
-Practicality: ☆☆☆
-If you cause an explosion with any normal with lighter proration than an A normal (including, but not limited to, j.A), then use this route. Just like with the midscreen route, you’ll need to swap j.B with j.A for Bdrill or j.B explosion starters.
+💥 > 2C 5C > j.[B]/j.A j.[8]2A > 2C [4]6A > 2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+- Start: j.A 💥
+- Corner
+- Practicality: ☆☆☆
+- If you cause an 💥 with any normal with lighter proration than an A normal (including, but not limited to, j.A), then use this route. Just like with the midscreen route, you’ll need to swap j.B with j.A for Bdrill or j.B 💥 starters.
 
-(6:01)
-5C Explosion > j[AB] > j.[8]2A > 2C [4]6A > 2C 5B > j.A j.[B] j.C > 2[C] 2]B[ > 2[A] 5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
-Start: 5C Explosion
-Corner
-Practicality: ☆
-If you immediately use your jump cancel after a raw 5C explosion hit, you can get a lot of damage from an Adrill done from high in the air. Leave it for guaranteed punishes, though. Keep in mind that if your opponent isn’t between you and the gem, the explosion’s knockback will causes Adrill to whiff.
+5C 💥 > j[AB] > j.[8]2A > 2C [4]6A > 2C 5B > j.A j.[B] j.C > 2[C] 2]B[ > 2[A] 5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+- Start: 5C 💥
+- Corner
+- Practicality: ☆
+- If you immediately use your jump cancel after a raw 5C 💥 hit, you can get a lot of damage from an Adrill done from high in the air. Leave it for guaranteed punishes, though. Keep in mind that if your opponent isn’t between you and the gem, the 💥’s knockback will causes Adrill to whiff.
 
-(6:11)
 [8]2B > delay 66C > dash 5A > j.A j.[B] j.C > dash 2[C] 2]B[ > 2A 5[A] 2]C[~[C] > 5[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
-Start: [8]2B
-Midscreen
-Practicality: ☆
-As of [st], Vatista can connect 2C after an air combo from Bdrill starters. Basically, you want to delay your jump normals to keep your opponent from rising too high… though that’s much easier said than done. This combo’s difficulty can vary wildly based on your opponent’s character and whiffing the 2C pickup puts you in a very unfavorable position, so if you don’t want to take the risk, stick with the classic double air combo route into 2C.
+- Start: [8]2B
+- Midscreen
+- Practicality: ☆
+- Vatista can connect 2C after an air combo from Bdrill starters. Basically, you want to delay your jump normals to keep your opponent from rising too high… though that’s much easier said than done. This combo’s difficulty can vary wildly based on your opponent’s character and whiffing the 2C pickup puts you in a very unfavorable position, so if you don’t want to take the risk, stick with the classic double air combo route into 2C.
 
-(6:22)
 [8]2[B] > 2[C] 5]B[ > 2[A] 5B [6]4[B] > 2]C[ > 2[C] 2[B](1hit) 2]A[ > ]C[ (Satellus) > ]B[
-Start: [8]2B
-Corner
-Practicality: ☆☆☆
-Nothing special here.
+- Start: [8]2B
+- Corner
+- Practicality: ☆☆☆
+- Nothing special here.
 
-(6:31)
 2C Aw > dash 2A > j.A j.B [8]2[A] > 2[C] delay 5B 2]A[ > 5[A] 2]C[ > 2[C] 2[B](1hit)/5[B](1hit) 2]A[ > ]C[ (Satellus) > ]B[
-Start: Edge of 2C/2B
-Midscreen/Corner
-Practicality: ☆☆☆
-Comboing from 2C > A whiff > Dash > 2A as a starter already costs one of your ground bounces. You should use this route for 2FF or 66C > 2FF starters, too.
+- Start: Edge of 2C/2B
+- Midscreen/Corner
+- Practicality: ☆☆☆
+- Comboing from 2C > A whiff > Dash > 2A as a starter already costs one of your ground bounces. You should use this route for 2FF or 66C > 2FF starters, too.
 
-(6:41)
 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[~[B] > 2A [6]4[A] > 2 ]C[ > 66[C] 5]A[ > ]B[ (Satellus) > ]C[
-Start: 2C
-Corner (Facing away)
-Practicality: ☆☆
-To get a side switch, use 66C into chain explosions instead of B normals. If you can remember to 66C and the microdash 5B brought up earlier in your Satellus route, you’ll be fine.
+- Start: 2C
+- Corner (Facing away)
+- Practicality: ☆☆
+- To get a side switch, use 66C into chain 💥 instead of B normals. If you can remember to 66C and the microdash 5B brought up earlier in your Satellus route, you’ll be fine.
 
-(6:50)
 66C 2FF > 2A > j.A j.[B] j.C > 2[C] 2]B[ > 2[A] 2B 2]C[~[C] > 5[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
-Start: 66C
-Midscreen/Corner
-Practicality: ☆☆
-This combo already comes off of a starter that costs a ground bounce, but if proration gets any dicier than that, just go into a typical crystal combo after 2C.
+- Start: 66C
+- Midscreen/Corner
+- Practicality: ☆☆
+- This combo already comes off of a starter that costs a ground bounce, but if proration gets any dicier than that, just go into a typical 💎 combo after 2C.
 
-(7:00)
 66C [4]6A > 2C 5C > j.[B] j.[8]2A > 2[C] 5]B[ > 2[A] 5B [6]4[B] > dash 2]C[ > 2C delay 2[B](1hit) 2]A[ > delay 2C ]B[
-Start: 66C
-Midscreen
-Practicality: ☆☆
-If you connect A orb after a 66C, you should go into the B laser route into 2C ender to get damage and maintain advantage.
+- Start: 66C
+- Midscreen
+- Practicality: ☆☆
+- If you connect A orb after a 66C, you should go into the B laser route into 2C ender to get damage and maintain advantage.
 
-(7:12)
 5A 2C 5C > j.B j.[8]2A > 2C [4]6[A] > 2[C] delay 2BB 5]A[ > 5BB 2]C[ > walk back VO
-Start: A Normal
-Corner
-Practicality:
-A VO ender combo that leaves up a crystal. You can go straight for this route from even high proration starters like j.C. You just need to walk back for a moment. The crystal set > VO ender is something I only found recently so I haven’t done it in a match yet, but the route itself should be fine.
+- Start: A Normal
+- Corner
+- Practicality:
+- A VO ender combo that leaves up a 💎. You can go straight for this route from even high proration starters like j.C. You just need to walk back for a moment. The 💎 set > VO ender is something I only found recently so I haven’t done it in a match yet, but the route itself should be fine.
 
-(7:23)
 2C 5C > j.B j.[8]2A > 2C [4]6[A] > 2[C] delay 2BB 5]A[ > 5B [6]4B > 2]C[ > walk back VO
-Start: 2C
-Corner
-Practicality:
-Try not to leave too much of a delay between 2B > 2BB and 5B > [6]4B. This combo gets a bit less stable once you add in the B laser, so if you want something consistent, stick with the A starter route and use 5BB instead.
+- Start: 2C
+- Corner
+- Practicality:
+- Try not to leave too much of a delay between 2B > 2BB and 5B > [6]4B. This combo gets a bit less stable once you add in the B laser, so if you want something consistent, stick with the A starter route and use 5BB instead.
 
-(7:33)
 B 2C 5C > j.[B] j.[8]2A > 2C [4]6[A] > 2[C] 5]B[ > 2A 5B [6]4B > 2]C[ > walk back VO
-Start: B Normal
-Corner
-Practicality:
-The 2C starter route for this already uses all available B normals, so if you happen to use a B normal before you enter your air combo, your opponent will tech before your VO can hit. In that case, use either the 5A starter route or this one.
+- Start: B Normal
+- Corner
+- Practicality:
+- The 2C starter route for this already uses all available B normals, so if you happen to use a B normal before you enter your air combo, your opponent will tech before your VO can hit. In that case, use either the 5A starter route or this one.
 
-## Raw 3
-
-This serves as an introduction to charge partitioning as it applies to Vatista in Under Night In-Birth Exe:Late[st]. I will explain what this technique is and how it works. Then I will give some examples of how you can use partitioning with Vatista.
-
-I hope this guide will answer questions you may have about charge partitioning in Under Night. If you have any questions you can contact me on Twitter @boruphen or just ping me in the Discord. Feel free to offer suggestions to improve this guide, too.
-
-Let's get started.
-
-[Jan 26, 2019 Update: Added short demonstrations of charge partitioning for flash kick, lumen stella, beam, and drills.]
-
-Do you need to understand charge partitioning to play Vatista?
-You do not! Charge partitioning allows you to do many things, but only relatively few are practical. Partitioned B.drill set ups are good, but you can still do very well without them. It’s better to be as comfortable with Vatista’s combos, pressure, block strings, crystals, etc. as possible before moving on to charge partitioning. 
-
-Once you have the fundamentals down, charge partitioning is a way that you can make things complicated all over again.
+### Raw 4 - partitioning
 
 #### What is charge partitioning?
 Charge partitioning is when you split a move's charge time into multiple parts or partitions. This technique exists in various fighting games such as Street Fighter III: Third Strike and Under Night In-Birth Exe:Late[st]. With this technique, you can do a lot of things you could not do otherwise. For example, you can do dash > flash kick, double laser or fireball, and B.drill set ups (these will be discussed in detail later).
