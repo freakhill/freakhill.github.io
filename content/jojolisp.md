@@ -14,7 +14,7 @@ in_search_index = true
 [extra]
 +++
 
-I want to make a lisp to develop games on PC and consoles.
+I want to make a lisp to develop games on PC and consoles!
 
 Use F-Expr and pervasive full program optimization, partial interpreter & LLVM code generation.
 
