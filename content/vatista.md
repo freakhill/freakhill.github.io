@@ -9,6 +9,11 @@ in_search_index = true
 #tags = [ "clojure" ]
 [extra]
 +++
+
+- [SYSTEM](#system)
+- [COMBOS](#combos)
+- [FRAME DATA](#frame-data)
+
 | Data from                                                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Koishi](https://twitter.com/crazy_lemonmilk) Vatista [combo guide](https://www.evernote.com/shard/s319/client/snv?noteGuid=66eb1d7d-7b1c-4c46-9462-4f8f1a5fb960&noteKey=c6b0f1e181b407f9111d70de7665480e&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs319%2Fsh%2F66eb1d7d-7b1c-4c46-9462-4f8f1a5fb960%2Fc6b0f1e181b407f9111d70de7665480e&title=UNIST%2Bv3.20%2BVatista%2BCombo%2BGuide) |
@@ -392,94 +397,7 @@ Jump startup
 
 Can I cancel beam into 💎? Nope ~
 
-combo from:
-
-- 5A
-tip:
-close:
-
-- 5A 5A
-tip:
-close:
-
-- 5A 5A 5A
-tip:
-close:
-
-- 2A
-tip:
-close:
-
-- 2A 2A
-tip:
-close:
-
-- 2A 2A 2A
-tip:
-close:
-
-- 💎 high 💥
-tip:
-close:
-
-- 💎 low 💥
-tip:
-close:
-
-- 2C 5A
-tip:
-close:
-
-- 2C no gateling
-tip:
-close:
-
-- 2C counter no gateling
-tip:
-close:
-
-- 5C
-tip:
-close:
-
-- 5C counter
-tip:
-close:
-
-- 5C counter no gateling
-tip:
-close:
-
-- AA 5A
-tip:
-close:
-
-- AA 5C
-tip:
-close:
-
-- Assault B
-tip:
-close:
-
-- Assault C
-tip:
-close:
-
-- 66C orb
-tip:
-close:
-
-- 66C FF
-tip:
-close:
-
-- AA 66C
-tip:
-close:
-
-
-## Raw data 1:
+## Comboo guide 1
 
 | input       | command                                                             |
 |-------------|---------------------------------------------------------------------|
@@ -509,8 +427,8 @@ Starter Launchers: 2C, 5BB
 
 Meat part: after 2C bounce:
 
-| proration | combo                                                                                   |
-|-----------|-----------------------------------------------------------------------------------------|
+| proration | combo                                                       |
+|-----------|-------------------------------------------------------------|
 | heavy     | 2C(h)>2 💎>2A>2B(1) 💥>5 💎 💥>JC(h)>Adrill>💎              |
 | mid       | 2C(h)>2 💎>2A>2B 💥>2 💎>B Beam 💥(h)>JA>Adrill>💎          |
 | light     | 2C(h)>2 💎>2A>A Beam 💥>2 💎>(2C)>B Beam 💥(h)>JA>Adrill>💎 |
@@ -519,9 +437,9 @@ confirm from 2x?A => Give up 💎 combos, if you want 💎 from A, A>2C>5C or A>
 
 Meter spend:
 
-| meter     | ender                                                 |
-|-----------|-------------------------------------------------------|
-| meterless | 2nd 💥>JA>Adrill>2 💎                   |
+| meter     | ender                                         |
+|-----------|-----------------------------------------------|
+| meterless | 2nd 💥>JA>Adrill>2 💎                         |
 | 100%      | 2nd 💥>JC>[8]FF>C Drill (before final FF hit) |
 | 200%      | 2nd 💥>IW/IWE                                 |
 | VO        | 2nd 💥> VO <VO Ender>                         |
@@ -550,7 +468,7 @@ Meter spend:
 | B Fk                  | B Fk>CS(preslam)>Assault dljC>Land jA>j[B]>dlAdrill>2[C]>2💎>2A>Abeam>💥>2💎>(2C)>[Bbeam]💥>jA>Adrill>💎 |                                           |
 | B Fk                  | B Fk>CS(preslam)>Assault dljA>jC>Land j[B]>dlAdrill>2[C]>2💎>2A>Abeam>💥>2💎>(2C)>[Bbeam]💥>jA>Adrill>💎 |                                           |
 
-## Raw data 2:
+## Combo guide 2
 
 Starter > Aerial > Landing > Ender
 
@@ -669,7 +587,7 @@ Bdrill > 66C > FF > CS > jC > land > jA > jB > Adrill > 2C > 2B > [2]8B (2895+17
 [Bdrill] > 2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B > jC (Adrill (2780) / FF > [8]2C (3388))
 - standard 💎 route, but in the corner. 2C will whiff on Akatsuki, Byakuya, and Chaos.
         
-## Raw data 3 - meterless combos
+## Combo guide 3 (meterless)
 
 ### Combo enders
 
@@ -850,17 +768,17 @@ B 2C 5C > j.[B] j.[8]2A > 2C [4]6[A] > 2[C] 5]B[ > 2A 5B [6]4B > 2]C[ > walk bac
 - Practicality:
 - The 2C starter route for this already uses all available B normals, so if you happen to use a B normal before you enter your air combo, your opponent will tech before your VO can hit. In that case, use either the 5A starter route or this one.
 
-### Raw 4 - partitioning
+## Partitioning!
 
-#### What is charge partitioning?
+### What is charge partitioning?
 Charge partitioning is when you split a move's charge time into multiple parts or partitions. This technique exists in various fighting games such as Street Fighter III: Third Strike and Under Night In-Birth Exe:Late[st]. With this technique, you can do a lot of things you could not do otherwise. For example, you can do dash > flash kick, double laser or fireball, and B.drill set ups (these will be discussed in detail later).
 
 Note: Charge partitioning is not to be confused with charge buffering, which is a technique that lets you begin charging again immediately after inputting the special move (i.e. [4] 6 [4]A). 
 
-#### How does charge partitioning work?
+### How does charge partitioning work?
 Charge partitioning works because there is a duration of time during which you can keep your charge without holding in the direction you have to charge. This is allows you to do things like charge [2], 5B > 8B (flash kick) and down-back, st.lp x headbutt. You can also use this window to break your charge time into partitions. So you can charge, return stick to neutral, then quickly continue charging to segment your charge into two partitions. As long as the sum of your partitions does not exceed a time limit — as long as you don’t overcharge — you will be able to perform the move as you normally would.
 
-#### How does charge partitioning work in UNIST?
+### How does charge partitioning work in UNIST?
 In UNIST, the charge input for a special move can be split into no more than 4 partitions. This is why Vatista no longer has her machine gun mode like in Exe:Late. Partitions can be separated by no more than 11 frames. Once you stop charging for more than 10 frames, you will lose all charge you had accumulated.
 
 You will overcharge if the total charge across your current partitions goes over 10 + required charge. For example, say you charge 33 frames, break for 9 frames, then charge for another 33 frames. You would overcharge since the total charge is 66 frames, so your fireball/laser/flashkick won’t come out.
@@ -893,7 +811,7 @@ What needs to happen for double beam to work:
 
 If done correctly, you should shoot the second beam as soon as you recover from shooting the first. It should look like this video.
 
-#### More examples of charge partitioning
+### More examples of charge partitioning
 It’s important to note that this section is in no way exhaustive since no one has seen all of what can be done with charge partitioning. I hope my explanations thus far have been good enough that you can understand how it works. That way, you will be able to recognize and learn from other players' set ups as well as create some of your own. 
 
 This section will give a few examples of what Vatista can do with this technique. I’ll briefly describe each technique and how it is performed. These examples are listed in ascending order of both challenge and practicality.
@@ -922,6 +840,6 @@ A tip for this one is to not start charging [8] again until closer to the end of
 
 More testing could be done on the timing requirements. The time between partitions has to be < 11 frames. The allowed overcharge time is around 10 frames. It’s hard to test one that manually. The allowed overcharge time might vary depending on the move. Someone needs to have their robot friend test this.
 
-#### References
+### References
 
 Below are links to videos you may find useful. The only thing that works in Exe:Late but not Exe:Late[st] is machine gun mode, which is when you see a lot of small partitions used to do rapid fire A.lumen. Any set up that uses more than 4 partitions must be modified to work in the current version.
