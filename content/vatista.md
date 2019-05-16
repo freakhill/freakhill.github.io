@@ -11,8 +11,8 @@ in_search_index = true
 +++
 
 - [SYSTEM](#system)
-- [COMBOS](#combos)
 - [FRAME DATA](#frame-data)
+- [COMBOS](#combos)
 
 | Data from                                                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -395,54 +395,40 @@ Jump startup
 
 ## Combos
 
-Can I cancel beam into 💎? Nope ~
+- Can I cancel beam into 💎? Nope ~
+- big proration can make enders minus (cannot detonate the oki 💎 safely)
+- Akatsuki, Byakuya, and Chaos <- make delayed 2C pickups whiff
 
 ## Comboo guide 1
 
-| input       | command                                                             |
-|-------------|---------------------------------------------------------------------|
-| [4]6X       | Fb                                                                  |
-| [6]4X       | Beam                                                                |
-| [2]8X       | Fk                                                                  |
-| [8]2X       | Drill                                                               |
-| Button Hold | 💎 (Standing 💎: 5 💎, Crouching 💎: 2 💎) |
-| (h)         | Hold (ex: j.B(h) means to do a j.B and keep holding B down.)        |
-| dl          | Delay                                                               |
+| input       | command                                |
+|-------------|----------------------------------------|
+| [4]6X       | Fb                                     |
+| [6]4X       | Beam                                   |
+| [2]8X       | Fk                                     |
+| [8]2X       | Drill                                  |
+| Button Hold | 💎 (Standing💎: 5💎, Crouching💎: 2💎) |
+| [X]         | hold X                                 |
+| dl          | Delay                                  |
 
-beginner supoptimal combos
+Starter -> Meat -> Ender
 
+| proration | combo                                                    |
+|-----------|----------------------------------------------------------|
+| heavy     | 2[C]>2💎>2A>2B(1) 💥>5💎 💥>J[C]>Adrill>💎               |
+| mid       | 2[C]>2💎>2A>2B 💥>2💎>B Beam 💥(h)>JA>Adrill>💎          |
+| light     | 2[C]>2💎>2A>A Beam 💥>2💎>(2C)>B Beam 💥(h)>JA>Adrill>💎 |
 
-Starter -> Meat -> Ender ~ Oki
-
-big proration can make enders minus (cannot detonate the 💎 to start pressure). be aware and cut moves if necessary
-
-[About 💎 Combos]
-
-Mid-combo 💎>💥 routes are essential to Vatista's high damage combos.
-
-<Sample>
-Starter>2C>5C>dlJB(h)>dlAdrill>2C(h)>2 💎>2A>2B(1) 💥>5 💎>💥>JC(h)>Adrill>💎
-
-Starter Launchers: 2C, 5BB
-
-Meat part: after 2C bounce:
-
-| proration | combo                                                       |
-|-----------|-------------------------------------------------------------|
-| heavy     | 2C(h)>2 💎>2A>2B(1) 💥>5 💎 💥>JC(h)>Adrill>💎              |
-| mid       | 2C(h)>2 💎>2A>2B 💥>2 💎>B Beam 💥(h)>JA>Adrill>💎          |
-| light     | 2C(h)>2 💎>2A>A Beam 💥>2 💎>(2C)>B Beam 💥(h)>JA>Adrill>💎 |
-
-confirm from 2x?A => Give up 💎 combos, if you want 💎 from A, A>2C>5C or A>2C>5C
+confirm from 2 As => Give up💎 combos, if you want💎 from A, A>2C>5C or A>2C>5C
 
 Meter spend:
 
-| meter     | ender                                         |
-|-----------|-----------------------------------------------|
-| meterless | 2nd 💥>JA>Adrill>2 💎                         |
-| 100%      | 2nd 💥>JC>[8]FF>C Drill (before final FF hit) |
-| 200%      | 2nd 💥>IW/IWE                                 |
-| VO        | 2nd 💥> VO <VO Ender>                         |
+| meter     | ender                                        |
+|-----------|----------------------------------------------|
+| meterless | 2nd💥>JA>Adrill>2💎                          |
+| 100%      | 2nd💥>JC>[8]FF>C Drill (before final FF hit) |
+| 200%      | 2nd💥>IW/IWE                                 |
+| VO        | 2nd💥> VO <VO Ender>                         |
 
 
 | starter               | combo                                                                                                    | note                                      |
@@ -480,14 +466,14 @@ These starters all take the place of 2C > 5C in the above 2C combo.
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | 5A/2A > 2C > 5C       | standard, don't add a B                                                                                                       |
 | 5B/2B > 2C > 5C       |                                                                                                                               |
-| jB/jC > 2C > 5C     | if Assault, you'll need to use the jB > (jA >) Adrill aerial route to get a 💎 combo.                                        |
+| jB/jC > 2C > 5C       | if Assault, you'll need to use the jB > (jA >) Adrill aerial route to get a💎 combo.                                          |
 | 66C > [4]6A > 2C > 5C | If you hold 6(4?) during 66C, will be 4 on crossup and give you a [4]6A. when no cross up, 66C > FF > CS > 5C.                |
 | 5C > FF > CS > 5C     | if Vatista is too far for 2C punish, or unexpected hit. 5C > 2C > 5B can work. 5C > 2C > FF > CS > Aerial more dmg less range |
 | 66B (ch) > 2C > 5C    | 66B knocks the opponent down on counterhit, meaning you can follow up with this.                                              |
 
 ### Aerial Routes
 
-These all come after 5C in the standard 💎 combo and are more or less replaceable.
+These all come after 5C in the standard💎 combo and are more or less replaceable.
 
 j[B] > jC > Adrill
 - Basic air combo. Works.
@@ -496,7 +482,7 @@ j[B] > jC > land > jA > Adrill
 - land > jA increases combo range
 
 dl j[B] > dl Adrill
-- low proration use, useful for 💎 combos off of assault, or double beam.
+- low proration use, useful for💎 combos off of assault, or double beam.
     
 j[B] > jA > Adrill or jA > j[B] > Adrill
 - a bit more leniency than previous, not much more proration
@@ -518,10 +504,10 @@ The all are assumed to come after an aerial Adrill. Any combo with 2]B[ assumes 
 - Basic landing route that can't lead into anything other than [2]8X. Based on your combo's proration, 2C may drop, requiring you to use 2A instead.
 
 2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B
-- standard 💎 landing route
+- standard💎 landing route
 
 2[C] > 2]B[ > 2A > 2B(1) > 2]C[
-- 2]C[ 💎 popped by first 💥. Used for 💎 starters, or when a combo pops a random 💎
+- 2]C[💎 popped by first 💥. Used for💎 starters, or when a combo pops a random💎
 
 2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A/B
 - double beam route. 2A Abeam has a big gap so mind the proration
@@ -532,10 +518,10 @@ B/C Fk
 - far oki mid screen, can do lots of safe stuff. B Fk great in the corner, C Fk meh in the corner.
 
 jC > FF > [8]2C
-- after 2+ 💎 hits. Holding [8] during FF drags the opponent upward, letting you get more hits out of [8]2C. It (usually) does more damage than a [2]8C ender, cannot combo from wall slam but always safe (even on pre-slam tech)
+- after 2+💎 hits. Holding [8] during FF drags the opponent upward, letting you get more hits out of [8]2C. It (usually) does more damage than a [2]8C ender, cannot combo from wall slam but always safe (even on pre-slam tech)
 
 jC > Adrill
-- Any aerial sequence (jC jB jA, jB jC, etc.) into Adrill after a second 💎 more or less works. A meterless ender that does similar/slightly more damage than [2]8B and ends with better oki positioning midscreen. Generally a 2]B[ or 2]C[ 💎 is released after the Adrill, but keep in mind that like all Frag setups midscreen, backtech avoids everything.
+- Any aerial sequence (jC jB jA, jB jC, etc.) into Adrill after a second💎 more or less works. A meterless ender that does similar/slightly more damage than [2]8B and ends with better oki positioning midscreen. Generally a 2]B[ or 2]C[💎 is released after the Adrill, but keep in mind that like all Frag setups midscreen, backtech avoids everything.
 
 ### Basic Combos
 
@@ -577,26 +563,26 @@ Bdrill > 66C > FF > CS > jC > land > jA > jB > Adrill > 2C > 2B > [2]8B (2895+17
 
 #### [2]8B
 
-[2]8B > CS > 66 (delay) jC > land > jA > j[B] > Adrill > 2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A > ([2]8B (3644+152) / [2]8C (4416+152) / jC > Adrill (3629+152) / jC > FF > [8]2C (4385+152))
-- Yes, Vatista can combo off of Flash Kick with CS. You'll need to delay the jC after the CS > 66 to let jA hit.
+[2]8B > CS > 66 (dl) jC > land > jA > j[B] > Adrill > 2[C] > 2]B[ > 2A > [6]4A > 2]C[ > [6]4A > ([2]8B (3644+152) / [2]8C (4416+152) / jC > Adrill (3629+152) / jC > FF > [8]2C (4385+152))
+- Yes, Vatista can combo off of Flash Kick with CS. You'll need to dl the jC after the CS > 66 to let jA hit.
 
 ### Corner Combos
 
 #### Bdrill
 
 [Bdrill] > 2[C] > 2]B[ > 2A > 2B > 2]C[ > [6]4B > jC (Adrill (2780) / FF > [8]2C (3388))
-- standard 💎 route, but in the corner. 2C will whiff on Akatsuki, Byakuya, and Chaos.
+- standard💎 route, but in the corner. 2C will whiff on Akatsuki, Byakuya, and Chaos.
         
 ## Combo guide 3 (meterless)
 
-### Combo enders
+### Enders
 
 #### Adrill
 Her classic combo ender. Ends in a knockdown and even lets you set up a gem at frame advantage if you mind your proration. Just like always, she can pick up with 2C after the first gem 💥 for more better damage and stability.
 
 #### 2C
 This is another classic ender, but the increase to 2C’s hitbox size means she now has more routes that can end with a 2C knockdown. For example:
-- 💥 > 2 gem > 2C delay 5B(1hit) 5 gem > delay 2C gem
+- 💥 > 2 gem > 2C dl 5B(1hit) 5 gem > dl 2C gem
 You can go into that ender from just about any route.
 That said, keep in mind that it’s slightly more difficult on characters whose hurtboxes don’t reach low enough. Also, they can air tech and punish you if your combo prorates too highly.
 You can also set two gems instead of one after a 2C ender, or even 2C > jump cancel > air gem set if you haven’t used your jump cancel yet.
@@ -605,10 +591,10 @@ You can also set two gems instead of one after a 2C ender, or even 2C > jump can
 
 Try to avoid using 5B, 2B, 5C, or your jump normals more than once when going for this ender.
 
-#### j.[FF]
-With the buffs to C Orb, you can end with j.[FF] cancelled into C Orb, mostly in the corner. 2C > [6]4B > 5FF into j.[FF] > j.[4]6C would be the way to go. You can also link an FF after Satellus to build more meter, though it’s a bit more difficult to pull off.
+#### j[FF]
+With the buffs to C Orb, you can end with j[FF] cancelled into C Orb, mostly in the corner. 2C > [6]4B > 5FF into j[FF] > j[4]6C would be the way to go. You can also link an FF after Satellus to build more meter, though it’s a bit more difficult to pull off.
 
-You can do an air C Fb right after a Satellus ender, too. Go for the j.[FF] ender alone if you want damage, and use either the Satellus > j.[4]6C or Satellus > j.[FF] enders if you want to build meter.
+You can do an air C Fb right after a Satellus ender, too. Go for the j[FF] ender alone if you want damage, and use either the Satellus > j[4]6C or Satellus > j[FF] enders if you want to build meter.
 Just remember that you’re in trouble if you drop any of them.
 
 #### VO
@@ -618,107 +604,107 @@ In the corner, you can rack up damage and end in VO while still leaving a gem se
 
 ### Combos
 
-5A 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2A 5[A] 2]C[~[C] > 5[B](1)/2[B](1) 5]A[ > ]C[ (Satellus) > ]B[
+5A 2C 5C > j[B] j[8]2A > 2[C] 2]B[ > 2A 5[A] 2]C[~[C] > 5[B](1)/2[B](1) 5]A[ > ]C[ (Satellus) > ]B[
 - Starter: A
 - Midscreen
 - Practicality: ☆☆☆
 - Given the air combo, you should be fine fitting in a B normal, just make sure you don’t use the same one that you’ll use to detonate the second gem. Avoiding same move proration gives you a real knockdown and keeps damage high. Incidentally, if you didn’t use a B normal in your confirm, you can get a side switch by using 2A 5[A] 2]C[~[C] > Dash > 5[B] as your ground combo.
 
-2AA 2C 5C > j.A [8]2[A] > 2[C] 2]A[ > 2A 5[A] 2]C[~[C] > 5[B](1)/2[B](1) 5]A[ > ]C[ (Satellus) > ]B[
+2AA 2C 5C > jA [8]2[A] > 2[C] 2]A[ > 2A 5[A] 2]C[~[C] > 5[B](1)/2[B](1) 5]A[ > ]C[ (Satellus) > ]B[
 - Starter: AA
 - Midscreen
 - Practicality: ☆
-- A Satellus ender with two A starters. That said, it’s basically the previous combo with j.B switched for j.A. j.A has a lighter proration than j.B, so it’s useful for times like these.
+- A Satellus ender with two A starters. That said, it’s basically the previous combo with jB switched for jA. jA has a lighter proration than jB, so it’s useful for times like these.
 
-2AAA 2C 5B > j.[B] j.[8]2A > 2[C] 2]B[~[B] > 2A 5[A] 2]C[~[C] > 2]B[~[B] > 5A ]C[ (Satellus) > ]B[
+2AAA 2C 5B > j[B] j[8]2A > 2[C] 2]B[~[B] > 2A 5[A] 2]C[~[C] > 2]B[~[B] > 5A ]C[ (Satellus) > ]B[
 - Starter: AAA
 - Midscreen
 - Practicality: 
 - A route that uses A three whole times. I completely forgot about this one, so it still hasn’t seen any use in a fight. Since all those 2As will push the opponent away, you’ll need to launch with something other than 5C.
 
-Assault j.C > 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2[A] 2B 2]C[ > 2C delay 5[B](1) 5]A[ > delay 2C ]B[
-- Starter: Assault j.C
+Assault jC > 2C 5C > j[B] j[8]2A > 2[C] 2]B[ > 2[A] 2B 2]C[ > 2C dl 5[B](1) 5]A[ > dl 2C ]B[
+- Starter: Assault jC
 - Midscreen/Corner
 - Practicality: ☆☆☆
 - Assault starters prorate pretty heavily, so there’s no need to force a Satellus ender out of them. Keep it simple and do a 2C gem set ender. This route is a good backup for other high proration starters or awkward confirms, so do a 2C ender for those as well.
 
-Assault j.B > 5A 2C 5C > j.A [8]2[A] > 2[C] 2]A[ > 2[A] 2B 2]C[ > 2C delay 5[B](1) 5]A[ > delay 2C ]B[
-- Starter: Assault j.B
+Assault jB > 5A 2C 5C > jA [8]2[A] > 2[C] 2]A[ > 2[A] 2B 2]C[ > 2C dl 5[B](1) 5]A[ > dl 2C ]B[
+- Starter: Assault jB
 - Midscreen/Corner
 - Practicality: ☆
-- Vatista will rarely get a hit starting from her assault j.B, but if she does, you’ll want to use j.A in your combo instead of j.B to avoid same move proration.
+- Vatista will rarely get a hit starting from her assault jB, but if she does, you’ll want to use jA in your combo instead of jB to avoid same move proration.
 
-A 2C 2B > j.[B] j.C land j.A j.[8]2A > 2[C] 2]B[ >2A 5[A] 2]C[ > 2C delay 5[B](1hit) 5]A[ > delay 2C ]B[
+A 2C 2B > j[B] jC land jA j[8]2A > 2[C] 2]B[ >2A 5[A] 2]C[ > 2C dl 5[B](1hit) 5]A[ > dl 2C ]B[
 - Start: 5A/2A Tip
 - Midscreen
 - Practicality: ☆☆
 - If you follow a hit with the edge of 2A with 2C, there are times when the 2C gets blocked even after your 2A hits. As such, I can’t recommend keeping that starter in your muscle memory, but I admit that I do it fairly often myself. You won’t find many practical starters that prorate more heavily than the one this combo uses, so if you’re ever midscreen and unsure of your route, just pick this one and end with 2C.
 
-A 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2[A] 5[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
+A 2C 5C > j[B] j[8]2A > 2[C] 2]B[ > 2[A] 5[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
 - Start: 5A/2A
 - Corner
 - Practicality: ☆☆
 - A Satellus corner route from an A starter. The 2 gem > 2A > 5A route whiffs in the corner, so use this instead.
 
-AA 2C 5C > j.A [8]2[A] > 2[C] 2]A[ > 2[A] 5[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
+AA 2C 5C > jA [8]2[A] > 2[C] 2]A[ > 2[A] 5[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
 - Start: 5AA/2AA
 - Corner
 - Practicality: ☆
-- Just like the midscreen version, you need to switch j.B with j.A to keep your proration light when you start with two A normals.
+- Just like the midscreen version, you need to switch jB with jA to keep your proration light when you start with two A normals.
 
-AAA 2C delay 5[B] > delay j.C > 2[C] 2]B[ > 2[A] 2[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
+AAA 2C dl 5[B] > dl jC > 2[C] 2]B[ > 2[A] 2[B] 2]C[ > 2]A[ > 5[A] ]B[ (Satellus) > ]A[
 - Start: 5AAA/2AAA
 - Corner
 - Practicality: 
 - I don’t use this myself, but I may as well put this here while we’re introducing routes. If you find yourself landing this starter, you might want to play it safe and just go for a 2C or FF ender.
 
-2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2A [6]4[A] > 2]C[~[C] > 5[B](1hit)/2[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
+2C 5C > j[B] j[8]2A > 2[C] 2]B[ > 2A [6]4[A] > 2]C[~[C] > 5[B](1hit)/2[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
 - Start: 2C
 - Midscreen/Corner
 - Practicality: ☆☆☆
 - Combo from a normal 2C starter. B normals, C normals, and jump normals all have fairly light proration, so you can fit in a laser and a Satellus ender after starting from them.
 
-2C(ch) 5C > j.[B] j.[8]2A > 2[C] 5]B[ > 2[A] 5B [6]4[B] > dash 2]C[ > 2[C] 2[B](1hit) 2]A[ > dash ]C[ (Satellus) > ]B[
+2C(ch) 5C > j[B] j[8]2A > 2[C] 5]B[ > 2[A] 5B [6]4[B] > dash 2]C[ > 2[C] 2[B](1hit) 2]A[ > dash ]C[ (Satellus) > ]B[
 - Start: 2C counter hit
 - Midscreen/Corner
 - Practicality: ☆☆☆
 - A route for when 2C counter hits. Use it for punishing DPs or beating option selects/mashes.
 
-5B 2C 5C > j.[B] j.[8]2A > 2[C] 2]B[ > 2A [6]4[A] > 2]C[ > 2[C] 5[B](1hit)/2[B](1hit) 2]A[ >]C[ (Satellus) > dash ]B[
+5B 2C 5C > j[B] j[8]2A > 2[C] 2]B[ > 2A [6]4[A] > 2]C[ > 2[C] 5[B](1hit)/2[B](1hit) 2]A[ >]C[ (Satellus) > dash ]B[
 - Start: 2B/5B
 - Midscreen/Corner
 - Practicality: ☆☆☆
 - B starters have slightly more proration than 2C, so we add in a 2C pickup after the first gem 💥. If you find yourself using a B normal when confirming off of a 2C counter hit starter, go into this route.
 
-💥 > 2C 5C > j.[B]/j.A j.[8]2A >  2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+💥 > 2C 5C > j[B]/jA j[8]2A >  2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
 - Start: 5A 💥
 - Midscreen
 - Practicality: ☆☆☆
-- Use 2B for starters with heavy proration like A normals, and use 5B for starters with lighter proration. You can also switch in j.B for j.A when you start a combo with j.B > 💥 or Bdrill > 💥 to avoid same move proration. For the Satellus after the chain 💥, keep in mind that your opponent will be shot upwards if you’re too slow, so try to hit that as soon as possible.
+- Use 2B for starters with heavy proration like A normals, and use 5B for starters with lighter proration. You can also switch in jB for jA when you start a combo with jB > 💥 or Bdrill > 💥 to avoid same move proration. For the Satellus after the chain 💥, keep in mind that your opponent will be shot upwards if you’re too slow, so try to hit that as soon as possible.
 
-5A 💥 > 2C 5C > delay j.[B] delay j.C >  2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+5A 💥 > 2C 5C > dl j[B] dl jC >  2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
 - Start: 5A 💥
 - Corner
 - Practicality: ☆☆
 - Your opponent is much closer to you in a corner combo than they would be midscreen, so your midscreen route would cause them to launch away before your Satellus could activate. Use this corner route instead.
 
-💥 > 2C 5C > j.[B]/j.A j.[8]2A > 2C [4]6A > 2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
-- Start: j.A 💥
+💥 > 2C 5C > j[B]/jA j[8]2A > 2C [4]6A > 2[C] 2]B[ > 2[A] 2[B](1hit)/5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+- Start: jA 💥
 - Corner
 - Practicality: ☆☆☆
-- If you cause an 💥 with any normal with lighter proration than an A normal (including, but not limited to, j.A), then use this route. Just like with the midscreen route, you’ll need to swap j.B with j.A for Bdrill or j.B 💥 starters.
+- If you cause an 💥 with any normal with lighter proration than an A normal (including, but not limited to, jA), then use this route. Just like with the midscreen route, you’ll need to swap jB with jA for Bdrill or jB 💥 starters.
 
-5C 💥 > j[AB] > j.[8]2A > 2C [4]6A > 2C 5B > j.A j.[B] j.C > 2[C] 2]B[ > 2[A] 5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
+5C 💥 > j[AB] > j[8]2A > 2C [4]6A > 2C 5B > jA j[B] jC > 2[C] 2]B[ > 2[A] 5[B](1hit) 2]C[ > ]A[ (Satellus) > ]B[
 - Start: 5C 💥
 - Corner
 - Practicality: ☆
 - If you immediately use your jump cancel after a raw 5C 💥 hit, you can get a lot of damage from an Adrill done from high in the air. Leave it for guaranteed punishes, though. Keep in mind that if your opponent isn’t between you and the gem, the 💥’s knockback will causes Adrill to whiff.
 
-[8]2B > delay 66C > dash 5A > j.A j.[B] j.C > dash 2[C] 2]B[ > 2A 5[A] 2]C[~[C] > 5[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
+[8]2B > dl 66C > dash 5A > jA j[B] jC > dash 2[C] 2]B[ > 2A 5[A] 2]C[~[C] > 5[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
 - Start: [8]2B
 - Midscreen
 - Practicality: ☆
-- Vatista can connect 2C after an air combo from Bdrill starters. Basically, you want to delay your jump normals to keep your opponent from rising too high… though that’s much easier said than done. This combo’s difficulty can vary wildly based on your opponent’s character and whiffing the 2C pickup puts you in a very unfavorable position, so if you don’t want to take the risk, stick with the classic double air combo route into 2C.
+- Vatista can connect 2C after an air combo from Bdrill starters. Basically, you want to dl your jump normals to keep your opponent from rising too high… though that’s much easier said than done. This combo’s difficulty can vary wildly based on your opponent’s character and whiffing the 2C pickup puts you in a very unfavorable position, so if you don’t want to take the risk, stick with the classic double air combo route into 2C.
 
 [8]2[B] > 2[C] 5]B[ > 2[A] 5B [6]4[B] > 2]C[ > 2[C] 2[B](1hit) 2]A[ > ]C[ (Satellus) > ]B[
 - Start: [8]2B
@@ -726,43 +712,43 @@ AAA 2C delay 5[B] > delay j.C > 2[C] 2]B[ > 2[A] 2[B] 2]C[ > 2]A[ > 5[A] ]B[ (Sa
 - Practicality: ☆☆☆
 - Nothing special here.
 
-2C Aw > dash 2A > j.A j.B [8]2[A] > 2[C] delay 5B 2]A[ > 5[A] 2]C[ > 2[C] 2[B](1hit)/5[B](1hit) 2]A[ > ]C[ (Satellus) > ]B[
+2C Aw > dash 2A > jA jB [8]2[A] > 2[C] dl 5B 2]A[ > 5[A] 2]C[ > 2[C] 2[B](1hit)/5[B](1hit) 2]A[ > ]C[ (Satellus) > ]B[
 - Start: Edge of 2C/2B
 - Midscreen/Corner
 - Practicality: ☆☆☆
 - Comboing from 2C > A whiff > Dash > 2A as a starter already costs one of your ground bounces. You should use this route for 2FF or 66C > 2FF starters, too.
 
-2C 5C > j.[B] j.[8]2A > 2[C] 2]B[~[B] > 2A [6]4[A] > 2 ]C[ > 66[C] 5]A[ > ]B[ (Satellus) > ]C[
+2C 5C > j[B] j[8]2A > 2[C] 2]B[~[B] > 2A [6]4[A] > 2 ]C[ > 66[C] 5]A[ > ]B[ (Satellus) > ]C[
 - Start: 2C
 - Corner (Facing away)
 - Practicality: ☆☆
 - To get a side switch, use 66C into chain 💥 instead of B normals. If you can remember to 66C and the microdash 5B brought up earlier in your Satellus route, you’ll be fine.
 
-66C 2FF > 2A > j.A j.[B] j.C > 2[C] 2]B[ > 2[A] 2B 2]C[~[C] > 5[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
+66C 2FF > 2A > jA j[B] jC > 2[C] 2]B[ > 2[A] 2B 2]C[~[C] > 5[B](1hit) 5]A[ > ]C[ (Satellus) > ]B[
 - Start: 66C
 - Midscreen/Corner
 - Practicality: ☆☆
-- This combo already comes off of a starter that costs a ground bounce, but if proration gets any dicier than that, just go into a typical 💎 combo after 2C.
+- This combo already comes off of a starter that costs a ground bounce, but if proration gets any dicier than that, just go into a typical💎 combo after 2C.
 
-66C [4]6A > 2C 5C > j.[B] j.[8]2A > 2[C] 5]B[ > 2[A] 5B [6]4[B] > dash 2]C[ > 2C delay 2[B](1hit) 2]A[ > delay 2C ]B[
+66C [4]6A > 2C 5C > j[B] j[8]2A > 2[C] 5]B[ > 2[A] 5B [6]4[B] > dash 2]C[ > 2C dl 2[B](1hit) 2]A[ > dl 2C ]B[
 - Start: 66C
 - Midscreen
 - Practicality: ☆☆
 - If you connect A orb after a 66C, you should go into the B laser route into 2C ender to get damage and maintain advantage.
 
-5A 2C 5C > j.B j.[8]2A > 2C [4]6[A] > 2[C] delay 2BB 5]A[ > 5BB 2]C[ > walk back VO
+5A 2C 5C > jB j[8]2A > 2C [4]6[A] > 2[C] dl 2BB 5]A[ > 5BB 2]C[ > walk back VO
 - Start: A Normal
 - Corner
 - Practicality:
-- A VO ender combo that leaves up a 💎. You can go straight for this route from even high proration starters like j.C. You just need to walk back for a moment. The 💎 set > VO ender is something I only found recently so I haven’t done it in a match yet, but the route itself should be fine.
+- A VO ender combo that leaves up a💎. You can go straight for this route from even high proration starters like jC. You just need to walk back for a moment. The💎 set > VO ender is something I only found recently so I haven’t done it in a match yet, but the route itself should be fine.
 
-2C 5C > j.B j.[8]2A > 2C [4]6[A] > 2[C] delay 2BB 5]A[ > 5B [6]4B > 2]C[ > walk back VO
+2C 5C > jB j[8]2A > 2C [4]6[A] > 2[C] dl 2BB 5]A[ > 5B [6]4B > 2]C[ > walk back VO
 - Start: 2C
 - Corner
 - Practicality:
-- Try not to leave too much of a delay between 2B > 2BB and 5B > [6]4B. This combo gets a bit less stable once you add in the B laser, so if you want something consistent, stick with the A starter route and use 5BB instead.
+- Try not to leave too much of a dl between 2B > 2BB and 5B > [6]4B. This combo gets a bit less stable once you add in the B laser, so if you want something consistent, stick with the A starter route and use 5BB instead.
 
-B 2C 5C > j.[B] j.[8]2A > 2C [4]6[A] > 2[C] 5]B[ > 2A 5B [6]4B > 2]C[ > walk back VO
+B 2C 5C > j[B] j[8]2A > 2C [4]6[A] > 2[C] 5]B[ > 2A 5B [6]4B > 2]C[ > walk back VO
 - Start: B Normal
 - Corner
 - Practicality:
@@ -770,76 +756,21 @@ B 2C 5C > j.[B] j.[8]2A > 2C [4]6[A] > 2[C] 5]B[ > 2A 5B [6]4B > 2]C[ > walk bac
 
 ## Partitioning!
 
-### What is charge partitioning?
-Charge partitioning is when you split a move's charge time into multiple parts or partitions. This technique exists in various fighting games such as Street Fighter III: Third Strike and Under Night In-Birth Exe:Late[st]. With this technique, you can do a lot of things you could not do otherwise. For example, you can do dash > flash kick, double laser or fireball, and B.drill set ups (these will be discussed in detail later).
+- no more than 4 partitions
+- partitions separated by no more than 11 frames
+- cannot overcharge for more than 10 frames
+- after a partitioned move, the first partition is used but the others are still there (thus double beam/fb)
 
-Note: Charge partitioning is not to be confused with charge buffering, which is a technique that lets you begin charging again immediately after inputting the special move (i.e. [4] 6 [4]A). 
+| move       | charge time |
+|------------|-------------|
+| fb/beam/fk | 53          |
+| drill      | 43          |
 
-### How does charge partitioning work?
-Charge partitioning works because there is a duration of time during which you can keep your charge without holding in the direction you have to charge. This is allows you to do things like charge [2], 5B > 8B (flash kick) and down-back, st.lp x headbutt. You can also use this window to break your charge time into partitions. So you can charge, return stick to neutral, then quickly continue charging to segment your charge into two partitions. As long as the sum of your partitions does not exceed a time limit — as long as you don’t overcharge — you will be able to perform the move as you normally would.
+crystal is 61, but cannot partition it anyway.
 
-### How does charge partitioning work in UNIST?
-In UNIST, the charge input for a special move can be split into no more than 4 partitions. This is why Vatista no longer has her machine gun mode like in Exe:Late. Partitions can be separated by no more than 11 frames. Once you stop charging for more than 10 frames, you will lose all charge you had accumulated.
+examples:
+- double beam/fb
+- dash fk
+- Adrill 2💎 Bdrill
 
-You will overcharge if the total charge across your current partitions goes over 10 + required charge. For example, say you charge 33 frames, break for 9 frames, then charge for another 33 frames. You would overcharge since the total charge is 66 frames, so your fireball/laser/flashkick won’t come out.
-
-When you perform a special move using charge partitioning, it seems like your first partition is consumed while you maintain the charge of your other partitions. This is what allows you to do double lumen or double beam. You charge the first lumen in two parts, then you charge a third part during animation of the first lumen. You use the charge of the first and second partitions to do lumen 1, and your first partition is consumed. Then you use your second and third partitions for lumen 2.
-
-Note that the animation of your special moves will affect your partitions. I will give an example of this. You need to charge 53 frames to be able to do [4]6A (Lumen Fb). You are allowed to overcharge by about 10 frames. So on paper you could have your partitions like 27 + 27 + 27. The problem is that the overall animation for Lumen Fb is 39 frames. That puts you at risk of overcharging, so it’s better to charge it like 35 + 20 + 35.
-
-Another thing that’s important to note is that Vatista’s special moves require different charge times.
-Lumen Fb, Beam, Flash Kick – 53 frames
-Dive Kick – 43 Frames
-Gem Set – 61 frames (However, you cannot partition with gems.)
-
-Waldstein has a charge move, but in UNIST he is no longer able to use charge partitioning. Sorry, Waldstein.
-
-How do I actually do charge partitioning?
-It might help to examine an example to get started. Let’s look at how you do double beam. I will go into great detail on how you can fire one A.beam followed immediately by another beam.
-
-Double Beam clip
-
-You’re going to want to be in training mode with input display turned on. You can use this to study your inputs and diagnose any problems you may experience.
-
-The input for double beam can be simplified to [6] 5 [6] 4A [6] 4A. The timing for your charges ([6] inputs), in order, should be approximately 40 frames, 15 frames, 40 frames. Since the animation for A.beam lasts for 43 frames, we will use this animation to time our last 40 frame charge. That way we only have to manually time the first two charges.
-
-What needs to happen for double beam to work:
-
-    Sum of first two partitions is between 53-63 frames, inclusive. The last two partitions need to add up to 53-63 as well. This ensures that you have enough charge for your beam without overcharging.
-    Breaks between partitions must be less than 11 frames.
-
-
-If done correctly, you should shoot the second beam as soon as you recover from shooting the first. It should look like this video.
-
-### More examples of charge partitioning
-It’s important to note that this section is in no way exhaustive since no one has seen all of what can be done with charge partitioning. I hope my explanations thus far have been good enough that you can understand how it works. That way, you will be able to recognize and learn from other players' set ups as well as create some of your own. 
-
-This section will give a few examples of what Vatista can do with this technique. I’ll briefly describe each technique and how it is performed. These examples are listed in ascending order of both challenge and practicality.
-
-Dashing Flash Kick clip
-This may not be practical, but it sure is a thing you can do. You can partition your flash kick charge with a dash. You’ll probably want to use 4/6AB dash shortcut since it’s quicker. If you’re comfortable doing 44/66 during the 10 frame partition window, more power to you.
-
-Input: [2] dash [2]8B
-
-This is for hard reads only in my opinion, and maybe not even then. Partition timing depends on how far you want to dash with your flash kick. More charge before dash means less during the dash and vice-versa. 
-
-Double Lumen clip
-Double Lumen is similar to the double beam that was discussed earlier.
-
-Input: [4] 6 [4] 6A [4] 6A
-
-The key difference between beam and lumen for our purposes is the animation time. A.Lumen’s animation is slightly shorter (39 frames vs 43), so I like to split my charge like 35 20 35. This is the most consistent way I’ve found to do it, but you might find a timing that works better for you.
-
-A.drill > 2.gem > B.drill clip
-B.drill partitions are probably the most practical use of charge partitioning. They’re also pretty difficult. This is a set up that you can use any time you do A.drill 2.gem ender.
-
-Input: ... [8]2A [8] 2.gem [8]2B. 
-
-A tip for this one is to not start charging [8] again until closer to the end of the A.drill. If you start charging [8] as soon as you input the A.drill, you will almost always overcharge. 2.gem takes 26 frames total, leaving at minimum 17 frames to charge before setting the gem (17 + 26 = 43). You want the part charged during A.drill to be between 17-27 frames, so take advantage of the input display until you internalize the timing.
-
-
-More testing could be done on the timing requirements. The time between partitions has to be < 11 frames. The allowed overcharge time is around 10 frames. It’s hard to test one that manually. The allowed overcharge time might vary depending on the move. Someone needs to have their robot friend test this.
-
-### References
-
-Below are links to videos you may find useful. The only thing that works in Exe:Late but not Exe:Late[st] is machine gun mode, which is when you see a lot of small partitions used to do rapid fire A.lumen. Any set up that uses more than 4 partitions must be modified to work in the current version.
+2💎 takes 26 frames, 43-26=17, so very little charge during Adrill.
