@@ -8,7 +8,7 @@ in_search_index = true
 [extra]
 +++
 
-maintain safety 1.82g of protein by kg
+maintain safety 1.61g of protein by kg (0.73g/lb)
 
 started my diet at the end of the golden week ~3rd of may (3/5)
 
@@ -25,7 +25,8 @@ started my diet at the end of the golden week ~3rd of may (3/5)
 
 ### data
 
-| week | day | weight | protein intake to keep | weekly average |
-|------|-----|--------|------------------------|----------------|
-| 0    | 3/5 | ?      | ?                      | ?              |
-|      |     |        |                        |                |
+| week | day  | weight (kg) | protein intake to keep (g) | weekly average weight |
+|------|------|-------------|----------------------------|-----------------------|
+| -    | 16/4 | 87.7        | ?                          | ?                     |
+| 0    | 3/5  | ?           | ?                          | ?                     |
+| 2    | 15/5 | 86.6        | 139                        | ?                      |
