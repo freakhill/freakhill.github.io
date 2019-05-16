@@ -104,3 +104,7 @@ jstatd -p ...whatever... &
 ## TLS
 
 - [some certificate making example stuff](https://gist.github.com/ncw/9253562#file-makecert-sh)
+
+## Networking
+
+- [Reminder about TIME_WAIT state](https://vincent.bernat.ch/en/blog/2014-tcp-time-wait-state-linux)
