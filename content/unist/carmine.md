@@ -163,10 +163,10 @@ This is a good confirm combo if you catch the opponent during their pre-jump fra
 
 ##### Afb/B Starters
 
-- Afb/B, dash jC, dl jB, 2C, 6B, 2C xx Afb OTG, dash j[C], dash 2B OTG, slight dl 2C
-- Afb/B, j[C], dash 2B OTG, jA, jB, jC, 3B, 2C
+- Afb/B, dash jC, dl jB, 2C, 6B, 2C xx Afb OTG, dash jdl[C], dash 2B OTG, slight dl 2C
+- Afb/B, j[C], dash 2B OTG, jA, jB, jC, 3B, 2C (when far, or in the air)
 
-The dissolve will knock the opponent down but the 236X picks them up before they completely fall. This is the standard confirm combos if 236X hits either meaty or during the neutral game. During the first combo, aim to land the jC at the peak of 236X. If you hit 2C too high and you chain into 6B the opponent will be too high for the second 2C to hit. You can compensate by delaying the 6B slightly. The first combo is if you're close enough to get the dash in. The second combo is if you're too far or are already in the air when 236X hits since j[C] extends the hit box.
+standard fb pickup combo
 
 ##### Adp/B Starters
 
@@ -261,10 +261,10 @@ nj6B is required so that VO does not hit during Cfb (or else IW does not connect
 
 ##### Assault Starters
 
-- Assault jC, 5A, 2C, 3C xx Alaunch, 3B xx Adp, j6B, 66C xx Afb OTG, dl jump back j[C], 66C
+- Assault jC, 5A, 2C, 3C xx Alaunch, 3B xx Adp, j6B, 66C xx Afb OTG, jump back jdl[C], 66C
 - Assault j6B, 5B, 2C xx Afb OTG, walk back 66C xx Afb OTG, walk back dl nj[C], jB, 2C xx Adp, 66C 
 
-Practical corner combos off of assault starters but have tricky juggle timings throughout. The j6B in the first combo needs to be delayed so that it hits low to the ground otherwise the opponent will tech before 66C can hit. Time the j[C] during the descent of Carmine's jump so that he lands first allowing the 66C to hit. The jump back j[C] sets up the appropriate spacing for 66C to hit. During the second combo, you need to walk back after Afb OTG so that you give enough time for Afb to complete, as well as spacing yourself appropriately for 66C to hit. During the second Afb, you want to time your neutral jump [C] just when Afb ends so the j[C] hits at the peak of the opponents height. You'll also want to start charging the C during Carmine's jump animation so that it hits at the peak of his jump. Hitting at the peak is important otherwise the jB or 2C whiffs.
+tricky
 
 ##### 5B Starters
 
@@ -272,8 +272,6 @@ Practical corner combos off of assault starters but have tricky juggle timings t
 - 5B, 2C, 6B, 2C xx Afb OTG, dl 66C xx Afb OTG, walk back nj[C], jB, 2C xx Adp, 66C
 - 5B, 2C, 6B, 2C xx Afb OTG, dl 66C xx Xset, 5B, ]X[, nj[C], jB, 2C
 - 5B, 2C, 3C xx Alaunch, 5BB xx Adp, walk back j6B, 66C xx Afb OTG, dl jump back j[C] xx jAfb OTG, 66C
-
-The first combo is the easier base for Carmine's corner combos but doesn't give optimal damage output. You can walk forward then jump back j[C] as a timing trick so that Afb ends in time for jAfb cancel to work. It also perfectly spaces you for the 66C to hit because if you're too close to the corner 66C will whiff. In the second combo, you can charge D as a timing trick for the Afb to finish when 66C hits. You'll also steal some GRD from the opponent. During the second Afb you need to walk back so that the 66C hits at the end. Again, you can do a slight D charge for timing and GRD. Aim the nj[C] at the peak of the opponents and Carmine's height. In the third combo, you want to jump cancel immediately after 5B hits and charge the C during the jump animation so that it hits at the peak of Carmine's jump.
 
 ##### 2C Starters
 
@@ -293,14 +291,13 @@ The first combo is the easier base for Carmine's corner combos but doesn't give 
 
 - 6[C], Alaunch/B, 5BB xx Adp, walk back j6B, 66C xx Afb OTG, dl jump back j[C] xx jAfb OTG, 66C
 
-Corner overhead combo utilizing the timing tricks in the previous listed corner combos. The Alaunch/B after the overhead also leaves you positive frames if the opponent manages to block the overhead.
-
 ##### 236X Starters
 
 - 236X, 3C xx Adp, dl 6B, 2C xx Afb OTG, walk back 66 xx Aset, 5B, ]A[, nj[C], jB, 3B, 2C
 
-Your timing the 3C to hit just as 236X ends so that 236X leaves a dissolve for Adp to launch the opponent.
-0% Meter (Dissolve)
+3C hits just as Xfb ends so that leaves a dissolve for Adp to launch
+
+#### 0% Meter (Dissolve)
 
 ##### 5A/B Starters
 
