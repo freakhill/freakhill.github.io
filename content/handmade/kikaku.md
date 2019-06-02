@@ -65,6 +65,9 @@ in_search_index = true
 - 囲碁ボード
 - キャラクターステッカー（コマにはる）（簡単に作れます）
 
+EXTRA RULE TO ALLOW ZERGING:
+- After a fight, a character cannot initiate an attack, or join a defense for 2 rounds, it can be attacked though ("FATIGUE" state)
+
 # 動画コンペ
 
 ジコケンかBeastTVの録画された画像を使ってコンテンツを作っていくコンペ。
