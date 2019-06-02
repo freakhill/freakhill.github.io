@@ -77,3 +77,4 @@ EXTRA RULE TO ALLOW ZERGING:
 プロゲーマー運動会！
 
 新宿区か港区のスポーツセンターでできそうです。
+
