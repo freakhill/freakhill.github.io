@@ -113,4 +113,11 @@ jstatd -p ...whatever... &
 
 [Cloudflare + AWS S3](https://medium.com/pixelpoint/99-9-uptime-static-site-deployment-with-cloudflare-and-aws-s3-388e82b4b9b6)
 
+Extra stuff to do because moving stands... (2019/06/04):
+1. Click on bucket
+2. Click on permission
+3. Click on "Block public access"
+4. Untick "Block all public access"
+5. Set "Block public access to buckets and objects granted through new access control lists (ACLs) as "OFF"
+
 Try Cloudflare workers for serverless?
