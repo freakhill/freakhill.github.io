@@ -108,3 +108,9 @@ jstatd -p ...whatever... &
 ## Networking
 
 - [Reminder about TIME_WAIT state](https://vincent.bernat.ch/en/blog/2014-tcp-time-wait-state-linux)
+
+## Static website
+
+[Cloudflare + AWS S3](https://medium.com/pixelpoint/99-9-uptime-static-site-deployment-with-cloudflare-and-aws-s3-388e82b4b9b6)
+
+Try Cloudflare workers for serverless?
