@@ -118,6 +118,7 @@ Extra stuff to do because moving stands... (2019/06/04):
 2. Click on permission
 3. Click on "Block public access"
 4. Untick "Block all public access"
-5. Set "Block public access to buckets and objects granted through new access control lists (ACLs) as "OFF"
+5. Set "Block public access to buckets and objects granted through new access control lists (ACLs)" as "OFF"
+6. Set "Block public access to buckets and objects granted through any access control lists (ACLs)" as "OFF" 
 
 Try Cloudflare workers for serverless?
