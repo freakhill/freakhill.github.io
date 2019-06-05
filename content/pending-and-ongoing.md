@@ -10,6 +10,13 @@ in_search_index = true
 [extra]
 +++
 
+toread:
+- [what is reagemt](https://purelyfunctional.tv/guide/reagent/)
+- [react lifecycle for reframe](https://purelyfunctional.tv/guide/re-frame-lifecycle/)
+- [reframe doc](https://github.com/Day8/re-frame/blob/master/docs/README.md)
+- recom doc somewhere
+
+
 ## Books
 
 Currently reading: [Hidden order](https://www.amazon.com/Hidden-Order-Adaptation-Builds-Complexity/dp/0201442302)
