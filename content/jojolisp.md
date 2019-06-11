@@ -56,6 +56,8 @@ our language.
 // sizes ...
 // packing tilling x align x size
 
+- [reactive compilers by niko](https://www.youtube.com/watch?v=N6b44kMS6OM)
+
 ## Stuff i checked out
 #### quasi static variables
 
