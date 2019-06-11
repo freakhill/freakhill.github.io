@@ -38,3 +38,4 @@ started my diet at the end of the golden week ~3rd of may (3/5)
 | 5    | 6/6  | 83.9        | 135                        |
 | 5    | 8/6  | 83.6        | 135                        |
 | 6    | 10/6 | 83.4        | 134                        |
+| 6    | 11/6 | 83.2        | 134                        |
