@@ -122,3 +122,11 @@ Extra stuff to do because moving stands... (2019/06/04):
 6. Set "Block public access to buckets and objects granted through any access control lists (ACLs)" as "OFF" 
 
 Try Cloudflare workers for serverless?
+
+## Netflix suddenly fucking up (loads but won'y play)
+
+```chrome://settings/clearBrowserData```
+
+and remove 1h or so
+
+
