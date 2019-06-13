@@ -40,6 +40,7 @@ in_search_index = true
 - [pachon](http://www.pachon.co.jp/jpn/pachon/index_main.html)
 - [lugdunum](https://tabelog.com/en/tokyo/A1309/A130905/13043985/)
 - [paul bocuse](https://www.hiramatsurestaurant.jp/eng/paulbocuse-maison/)
+- [carthago (good couscous in nakano)](https://www.tripadvisor.com/Restaurant_Review-g14134438-d7491828-Reviews-Carthago-Nakano_Nakano_Tokyo_Tokyo_Prefecture_Kanto.html)
 
 ### snowboard
 
