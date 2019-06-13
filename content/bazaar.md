@@ -35,6 +35,12 @@ in_search_index = true
 
 - [nuryl](ttps://www.nuryl.com/)
 
+### good french cuisine tokyo
+
+- [pachon](http://www.pachon.co.jp/jpn/pachon/index_main.html)
+- [lugdunum](https://tabelog.com/en/tokyo/A1309/A130905/13043985/)
+- [paul bocuse](https://www.hiramatsurestaurant.jp/eng/paulbocuse-maison/)
+
 ### snowboard
 
 - [snow state](http://www.powderportal.net/)
