@@ -173,3 +173,9 @@ Right under, left above
 | when | what          |
 |------|---------------|
 | ???  | 목포 and 광주 |
+
+### SEO
+
+eventually do that for my games
+
+https://backlinko.com/seo-checklist
