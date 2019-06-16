@@ -178,4 +178,4 @@ Right under, left above
 
 eventually do that for my games
 
-https://backlinko.com/seo-checklist
+- [backlinko SEO checklist](https://backlinko.com/seo-checklist)
