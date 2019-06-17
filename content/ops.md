@@ -123,7 +123,7 @@ Extra stuff to do because moving stands... (2019/06/04):
 
 Try Cloudflare workers for serverless?
 
-## Netflix suddenly fucking up (loads but won'y play)
+## Netflix suddenly fucking up (loads but won't play)
 
 ```chrome://settings/clearBrowserData```
 
