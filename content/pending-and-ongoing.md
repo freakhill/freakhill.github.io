@@ -12,7 +12,7 @@ in_search_index = true
 
 ## Books
 
-Currently reading: [Hidden order](https://www.amazon.com/Hidden-Order-Adaptation-Builds-Complexity/dp/0201442302)
+Currently reading: [Notes on the synthesis of form](https://www.amazon.com/Notes-Synthesis-Form-Harvard-Paperbacks/dp/0674627512) (there is also a pdf out there)
 
 ## Mini book reviews, starting from the 17th of march 2019
 
@@ -23,6 +23,12 @@ Some interesting parts about finding what sequences of numbers are?
 Most of it was not too interesting to me...
 
 I don't remember the result exactly but there was something really interesting, there are only 7 (or 9? or another random number) bases possible to cleanly factorize numbers with gaussian primes (primes in the complex plane). I found that fascinating when I read it! There are some numbers like that, that are not 1, or 2, or some prime, or e, or pi, or a humonguous number, just a 7 or a 9! That was the most fascinating math stuff I has read for a while.
+
+#### [Hidden order](https://www.amazon.com/Hidden-Order-Adaptation-Builds-Complexity/dp/0201442302)
+
+Building a model to simulate what is pompuously called "cas", which is pretty much emerging complex behaviours from simple agents. Lots of quite interesting parts about biology! Relatively light in bulshit even though it has its part.
+
+It has pretty nice content on what might be the beginnings of the discipline. Might be worth a reread when I get to my MMO game!
 
 ## Music
 
