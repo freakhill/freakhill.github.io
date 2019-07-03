@@ -10,6 +10,8 @@ in_search_index = true
 [extra]
 +++
 
+for work checkout this https://calcite.apache.org/docs/tutorial.html
+
 ## Books
 
 Currently reading: [Notes on the synthesis of form](https://www.amazon.com/Notes-Synthesis-Form-Harvard-Paperbacks/dp/0674627512) (there is also a pdf out there)
