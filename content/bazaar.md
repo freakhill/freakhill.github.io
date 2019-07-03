@@ -10,6 +10,16 @@ in_search_index = true
 
 [FetiFes](https://www.fetifes.com/)
 
+### Configure a machine
+
+Lxde was great, last time I used lxqt, it was shit.
+
+From now on use Xubuntu, if using Lubuntu use Lxterminal for terminal
+
+Install "typecatcher" to get fonts, then install "inconsolata" (14)
+
+Theme solarized dark
+
 ### where to buy
 
 #### 3D printing
