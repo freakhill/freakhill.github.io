@@ -15,3 +15,6 @@ in_search_index = true
 [coloring with clip studio paint](https://graphixly.com/blogs/webinars/webinar-recording-clip-studio-paint-realistic-coloring-and-shading-with-ubisoft-senior-concept-artist-magdalena-proszowska?utm_source=newsletter&utm_medium=email&utm_campaign=clip_studio_paint_coloring_webinar_recording_now_available&utm_term=2019-03-02)
 
 [looplabs](https://looplabs.com/beta)
+
+[drawing material](https://twitter.com/Manga_Materials)
+
