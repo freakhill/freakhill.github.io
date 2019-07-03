@@ -12,6 +12,18 @@ in_search_index = true
 
 ### where to buy
 
+#### 3D printing
+
+- [online printing](https://all3dp.com/1/best-online-3d-printing-service-3d-print-services/)
+- [FDM printers](https://all3dp.com/1/best-3d-printer-reviews-top-3d-printers-home-3-d-printer-3d/)
+- [resin printers](https://all3dp.com/1/best-resin-dlp-sla-3d-printer-kit-stereolithography/)
+
+soft FreeCAD - Free
+
+Fusion360 500$/year
+
+SketchUp free / 120$/year /  300$/year
+
 #### PC
 
 - puri.sm
