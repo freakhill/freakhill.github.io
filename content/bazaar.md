@@ -12,7 +12,7 @@ in_search_index = true
 
 ### Configure a machine
 
-Lxde was great, last time I used lxqt, it was shit.
+Lxde was great, last time I used lxqt, it was shit. the new lxqt terminal fucks up emacs hard. binding configuration is terrible. UX here and there is horrendously broken.
 
 From now on use Xubuntu, if using Lubuntu use Lxterminal for terminal
 
