@@ -10,9 +10,9 @@
       <title>Johan Gall</title>
 
       <!-- CSS -->
-      <link rel="stylesheet" href="https:&#x2f;&#x2f;www.johangall.com&#x2f;print.css" media="print">
-      <link rel="stylesheet" href="https:&#x2f;&#x2f;www.johangall.com&#x2f;poole.css">
-      <link rel="stylesheet" href="https:&#x2f;&#x2f;www.johangall.com&#x2f;hyde.css">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;www.johangall.com&#x2F;print.css" media="print">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;www.johangall.com&#x2F;poole.css">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;www.johangall.com&#x2F;hyde.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
       
@@ -27,7 +27,7 @@
                 <div class="container sidebar-sticky">
                     <div class="sidebar-about">
                         
-                            <a href="https:&#x2f;&#x2f;www.johangall.com"><h1>Johan Gall</h1></a>
+                            <a href="https:&#x2F;&#x2F;www.johangall.com"><h1>Johan Gall</h1></a>
                             
                             <p class="lead">aka jojo, lucyjojo, freakhill, seku</p>
                             
@@ -37,15 +37,15 @@
                     <ul class="sidebar-nav">
                         
                         
-                        <li class="sidebar-nav-item"><a href="https:&#x2f;&#x2f;www.youtube.com&#x2f;watch?v=NYgq75uIMUk">SFV beginner guide</a></li>
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=NYgq75uIMUk">SFV beginner guide</a></li>
                         
-                        <li class="sidebar-nav-item"><a href="https:&#x2f;&#x2f;github.com&#x2f;freakhill&#x2f;jojolisp">Jojolisp&#x27;s github repo</a></li>
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;github.com&#x2F;freakhill&#x2F;jojolisp">Jojolisp&#x27;s github repo</a></li>
                         
-                        <li class="sidebar-nav-item"><a href="https:&#x2f;&#x2f;www.twitch.tv&#x2f;lucyjojo">Twitch channel</a></li>
+                        <li class="sidebar-nav-item"><a href="https:&#x2F;&#x2F;www.twitch.tv&#x2F;lucyjojo">Twitch channel</a></li>
                         
-                        <li class="sidebar-nav-item"><a href="http:&#x2f;&#x2f;www.metro.tokyo.jp&#x2f;english&#x2f;guide&#x2f;bosai&#x2f;index.html">Disaster preparedness Tokyo</a></li>
+                        <li class="sidebar-nav-item"><a href="http:&#x2F;&#x2F;www.metro.tokyo.jp&#x2F;english&#x2F;guide&#x2F;bosai&#x2F;index.html">Disaster preparedness Tokyo</a></li>
                         
-                        <li class="sidebar-nav-item"><a href="http:&#x2f;&#x2f;www.google.co.jp">Ambulance = 119</a></li>
+                        <li class="sidebar-nav-item"><a href="http:&#x2F;&#x2F;www.google.co.jp">Ambulance = 119</a></li>
                         
                         
                     </ul>
@@ -182,7 +182,7 @@ our language.</p>
 <p>Language-based safety =&gt; type system &amp; local checks, prohibits categories of behaviours, safety holes avoided while writing code instead of at runtime. still some optional runtime checks (ex: array bound). however, if the type system is unsound there is no software fault isolation safety net...</p>
 <p>Use a mix of these for defense in depth.</p>
 <p>Example: runtime approach =&gt; google c++ sanitizers and microsoft's &quot;/guard&quot; feature. language approach =&gt; anything non C pretty much, careful of the escape hatches like the &quot;unsafe&quot; keyword in C#.
-
+<br />
 As small as possible amount of encapsulated unsafe code, isolated by component (&quot;Trusted Computing Base&quot;). OS scheduler, memory manager, all applications etc. were written in 100% safe code. Reliance on type safety =&gt; compiler part of the TCP. Limit the compiler related risks with &quot;proof carrying code&quot; and &quot;typed assembly language&quot; (TAL). Some amount of runtime checks will lessen the risk.</p>
 <p>The cost? There is some stuff you can't dfo without pointer arithmetic, data races, etc. Their research was about how to minimize those costs. They were pretty succesful. They could unlock things like no blocking IO/lightweight processes.fine frained concurrency/asynchonous message passing etc. in a pervasive way which in the end offset the costs.</p>
 <pre style="background-color:#2b303b;">
