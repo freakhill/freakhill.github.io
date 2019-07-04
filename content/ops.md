@@ -129,4 +129,10 @@ Try Cloudflare workers for serverless?
 
 and remove 1h or so
 
+## Gems for immutable ruby
 
+- [Hamster - immutable data structures](https://github.com/hamstergem/hamster)
+- [Ice nine - deep freeze objects](https://github.com/dkubb/ice_nine)
+- [adamantium - create immutable objects](https://github.com/dkubb/adamantium) (with memoization support)
+- [anima - create value objects](https://github.com/mbj/anima) (with some_obj.with(differing params) and value equality) (depends on adamantium and "equalizer")
+- [values - like anima, without equality support and with no deps](https://github.com/tcrayford/values)
