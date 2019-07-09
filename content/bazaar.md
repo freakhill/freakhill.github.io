@@ -8,6 +8,8 @@ in_search_index = true
 [extra]
 +++
 
+[buy when i buy my own windows pc - lazy nezumi](https://lazynezumi.com/buy)
+
 [FetiFes](https://www.fetifes.com/)
 
 ### Configure a machine
