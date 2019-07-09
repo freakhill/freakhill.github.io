@@ -17,6 +17,8 @@ in_search_index = true
 
 [nrs netcode talk](https://www.youtube.com/watch?v=7jb0FOcImdg)
 
+[not for lucy the game, but an eventual mmo, uber H3 GIS system](https://eng.uber.com/visualizing-city-cores-with-h3/)
+
 ## Solo mode
 
 ...
