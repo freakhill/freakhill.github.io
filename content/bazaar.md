@@ -8,9 +8,11 @@ in_search_index = true
 [extra]
 +++
 
-[buy when i buy my own windows pc - lazy nezumi](https://lazynezumi.com/buy)
+- [buy when i buy my own windows pc - lazy nezumi](https://lazynezumi.com/buy)
+- [FetiFes](https://www.fetifes.com/)
+- word for "theme song" 主題歌
 
-[FetiFes](https://www.fetifes.com/)
+
 
 ### Configure a machine
 
