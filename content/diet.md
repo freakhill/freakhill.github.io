@@ -27,7 +27,7 @@ started my diet at the end of the golden week ~3rd of may (3/5)
 
 | week | day  | weight (kg) | protein intake to keep (g)    |
 |------|------|-------------|-------------------------------|
-| -    | 16/4 | 87.7        | ?                             |
+| -    | 16/4 | 87.7        | ?, measured at company check  |
 | 0    | 3/5  | ?           | ?                             |
 | 2    | 15/5 | 86.6        | 139                           |
 | 2    | 18/5 | 85.6        | 138                           |
@@ -44,3 +44,4 @@ started my diet at the end of the golden week ~3rd of may (3/5)
 | 7    | 20/6 | 80.6        | 130                           |
 | ?    |      |             | so many parties, hard to diet |
 | ?    | 14/7 | 80.1        | 129, more parties to come...  |
+| ?    | 15/7 | 79.5        | 128, party tomorrow...        |
