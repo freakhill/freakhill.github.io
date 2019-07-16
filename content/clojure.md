@@ -40,6 +40,12 @@ Like Specter but with logic operators (more declarative).
 
 Declarative data transformation.
 
+### Pathom
+
+[github repo](https://github.com/wilkerlucio/pathom)
+
+Parses EQL queries.
+
 ### Primitive maths
 
 [github repo](https://github.com/ztellman/primitive-math)
