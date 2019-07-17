@@ -12,7 +12,9 @@ in_search_index = true
 - [FetiFes](https://www.fetifes.com/)
 - word for "theme song" 主題歌
 
+### Online backup tool
 
+[Tarsnap](http://www.tarsnap.com/)
 
 ### Configure a machine
 
@@ -23,6 +25,8 @@ From now on use Xubuntu, if using Lubuntu use Lxterminal for terminal
 Install "typecatcher" to get fonts, then install "inconsolata" (14)
 
 Theme solarized dark
+
+ps: windows 10 virtualbox vm -> activate the harddrive cache bypass, some stuff to do inside the vm too, i forgot, google it
 
 ### where to buy
 
