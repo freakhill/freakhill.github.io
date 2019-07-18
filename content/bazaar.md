@@ -28,7 +28,7 @@ Theme solarized dark
 
 ps: windows 10 virtualbox vm -> activate the harddrive cache bypass, some stuff to do inside the vm too, i forgot, google it
 
-### where to buy
+### where to buy/get
 
 #### 3D printing
 
@@ -44,8 +44,28 @@ SketchUp free / 120$/year /  300$/year
 
 #### PC
 
-- puri.sm
-- system76.com
+- [puri.sm](https://www.puri.sm)
+- [system76](https://www.system76.com)
+- [pogolinux](https://www.pogolinux.com/)
+
+who delivers to japan????
+
+#### Secure OS
+
+- [Qubes OS](https://www.qubes-os.org/) easy isolation VMs - need to check if can run a windows VM with GPU passthrough
+
+nVidia has antivirtualization on consumer level graphic cards stuff which might make it hard...
+
+seems unreasonable hard...
+
+- [ParrotSec](https://www.parrotsec.org/) for pentesting/reverse engineering etc.
+
+will probably use windows 10 with WSL2 and separate VMs for sensitive stuff...
+
+1. one VM for porn and shit
+2. one VM for usual browsing
+3. one VM for banking, AWS stuff etc.
+4. dev on WSL and host with locked down rights (UE4 editor, VStudio, Emacs etc.)
 
 ### Vegan stuff
 
