@@ -92,6 +92,10 @@ will probably use windows 10 with WSL2 and separate VMs for sensitive stuff...
 - [paul bocuse](https://www.hiramatsurestaurant.jp/eng/paulbocuse-maison/)
 - [carthago (good couscous in nakano)](https://www.tripadvisor.com/Restaurant_Review-g14134438-d7491828-Reviews-Carthago-Nakano_Nakano_Tokyo_Tokyo_Prefecture_Kanto.html)
 
+### podiatry in tokyo
+
+https://tokyopodiatry.jp
+
 ### snowboard
 
 - [snow state](http://www.powderportal.net/)
@@ -113,7 +117,6 @@ Frontside 360, olly 360
 - [Windows Operating System Fundamentals](https://1.cdn.edl.io/Ha5eym5sDQ2I8DZmruMnsUsZbIIIpDq3t32jz8XsvXlO4GxO.pdf)
 - some novel from Tsutsuya Yasutaka
 - [use qemu to run executables for easy cross platform unit tests](https://www.chromium.org/chromium-os/testing/qemu-unittests)
-
 
 ### nice songs
 
