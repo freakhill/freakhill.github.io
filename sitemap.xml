@@ -1,152 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     
         <url>
-            <loc>https://www.johangall.com/</loc>
+            <loc>https%3A//www.johangall.com/</loc>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/art/</loc>
+            <loc>https%3A//www.johangall.com/art/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/bazaar/</loc>
+            <loc>https%3A//www.johangall.com/bazaar/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/clojure/</loc>
+            <loc>https%3A//www.johangall.com/clojure/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/diet/</loc>
+            <loc>https%3A//www.johangall.com/diet/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/ex/</loc>
+            <loc>https%3A//www.johangall.com/ex/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/handmade/2d3d/</loc>
+            <loc>https%3A//www.johangall.com/handmade/2d3d/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/handmade/fexpr-the-ultimate-lambda/</loc>
+            <loc>https%3A//www.johangall.com/handmade/fexpr-the-ultimate-lambda/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/handmade/kikaku/</loc>
+            <loc>https%3A//www.johangall.com/handmade/kikaku/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/handmade/maths/</loc>
+            <loc>https%3A//www.johangall.com/handmade/maths/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/handmade/programmer/</loc>
+            <loc>https%3A//www.johangall.com/handmade/programmer/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/jojolisp/</loc>
+            <loc>https%3A//www.johangall.com/jojolisp/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/lucy-the-game/</loc>
+            <loc>https%3A//www.johangall.com/lucy-the-game/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/ops/</loc>
+            <loc>https%3A//www.johangall.com/ops/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/pending-and-ongoing/</loc>
+            <loc>https%3A//www.johangall.com/pending-and-ongoing/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/rust/</loc>
+            <loc>https%3A//www.johangall.com/rust/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/sfv/</loc>
+            <loc>https%3A//www.johangall.com/sfv/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/teaching/</loc>
+            <loc>https%3A//www.johangall.com/teaching/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/type-theory/</loc>
+            <loc>https%3A//www.johangall.com/type-theory/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/unist/</loc>
+            <loc>https%3A//www.johangall.com/unist/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/unist/carmine/</loc>
+            <loc>https%3A//www.johangall.com/unist/carmine/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
         </url>
     
         <url>
-            <loc>https://www.johangall.com/unist/vatista/</loc>
+            <loc>https%3A//www.johangall.com/unist/vatista/</loc>
             
                 <lastmod>2019-03-17</lastmod>
             
