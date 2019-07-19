@@ -42,6 +42,7 @@ started my diet at the end of the golden week ~3rd of may (3/5)
 | 6    | 12/6 | 82.4        | 133                           |
 | 6    | 15/6 | 82.1        | 133                           |
 | 7    | 20/6 | 80.6        | 130                           |
-| ?    |      |             | so many parties, hard to diet |
+| ?    | ?    | ?           | so many parties, hard to diet |
 | ?    | 14/7 | 80.1        | 129, more parties to come...  |
 | ?    | 15/7 | 79.5        | 128, party tomorrow...        |
+| ?    | 19/7 | 79.2        | 128                           |
