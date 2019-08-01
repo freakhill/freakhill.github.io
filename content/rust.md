@@ -36,6 +36,12 @@ container libraries for rust, ie bitset, lru-cache, ordered iterators, bitvec, v
 
 [github repo](https://github.com/contain-rs)
 
+## Cactus harvesting
+
+Cycle aware reference counting
+
+[blog](https://hyperbo.la/w/cactus-harvesting/)
+
 ### Quickcheck
 
 well.. quickcheck

@@ -10,6 +10,28 @@ in_search_index = true
 [extra]
 +++
 
+## To share at work
+
+- [Multi-stage builds #3: Why your build is surprisingly slow, and how to speed it up](https://pythonspeed.com/articles/faster-multi-stage-builds/)
+- [features are faults redux](https://flak.tedunangst.com/post/features-are-faults-redux)
+- [Methods and techniques to making a good UI](https://www.youtube.com/watch?v=7OSkB4BCx00)
+
+## To read online
+
+- [The Ideal Versus the Real: Revisiting the History of Virtual Machines andContainers](https://arxiv.org/pdf/1904.12226.pdf)
+- [Gradual Typing from Theory to Practice](https://blog.sigplan.org/2019/07/12/gradual-typing-theory-practice/)
+- [Demystifying Containers - Part I: Kernel Space](https://medium.com/@saschagrunert/demystifying-containers-part-i-kernel-space-2c53d6979504)
+- [Demystifying Containers - Part II: Container Runtimes](https://medium.com/@saschagrunert/demystifying-containers-part-ii-container-runtimes-e363aa378f25)
+- [No Compromises: Distributed Transactions with Consistency, Availability, and Performance](https://blog.acolyer.org/2016/01/14/no-compromises/)
+- [Blurred Persistence: Efficient Transactions in Persistent Memory](https://blog.acolyer.org/2016/01/21/blurred-persistence/)
+- [A Critique of ANSI SQL Isolation Levels](https://blog.acolyer.org/2016/02/24/a-critique-of-ansi-sql-isolation-levels/)
+- [Exploring NUMA on Amazon Cloud Instances](http://techblog.cloudperf.net/2016/09/exploring-numa-on-amazon-cloud-instances.html)
+- [Experience with Rules-Based Programming for Distributed Concurrent Fault-Tolerant Code](https://blog.acolyer.org/2016/01/19/dcft/)
+- [Consensus on Transaction Commit](https://blog.acolyer.org/2016/01/13/consensus-on-transaction-commit/)
+- [Blade: A data center garbage collector](https://blog.acolyer.org/2015/05/06/blade-a-data-center-garbage-collector/)
+- [Firmament: Fast, centralized cluster scheduling at scale](https://blog.acolyer.org/2016/11/30/firmament-fast-centralized-cluster-scheduling-at-scale/)
+- [Large-scale cluster management at Google with Borg](https://blog.acolyer.org/2015/05/07/large-scale-cluster-management-at-google-with-borg/)
+
 ## Books
 
 Currently reading: [Notes on the synthesis of form](https://www.amazon.com/Notes-Synthesis-Form-Harvard-Paperbacks/dp/0674627512) (there is also a pdf out there)
