@@ -36,6 +36,8 @@ in_search_index = true
 
 Currently reading: [Notes on the synthesis of form](https://www.amazon.com/Notes-Synthesis-Form-Harvard-Paperbacks/dp/0674627512) (there is also a pdf out there)
 
+Currently reading: [SOA Patterns](https://www.amazon.com/SOA-Patterns-Arnon-Rotem-Gal-Oz/dp/1933988266)
+
 ## Mini book reviews, starting from the 17th of march 2019
 
 #### [The book of numbers](https://mennohenselmans.com/the-myth-of-1glb-optimal-protein-intake-for-bodybuilders/)
