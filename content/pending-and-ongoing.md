@@ -10,12 +10,6 @@ in_search_index = true
 [extra]
 +++
 
-## To share at work
-
-- [Multi-stage builds #3: Why your build is surprisingly slow, and how to speed it up](https://pythonspeed.com/articles/faster-multi-stage-builds/)
-- [features are faults redux](https://flak.tedunangst.com/post/features-are-faults-redux)
-- [Methods and techniques to making a good UI](https://www.youtube.com/watch?v=7OSkB4BCx00)
-
 ## To read online
 
 - [The Ideal Versus the Real: Revisiting the History of Virtual Machines andContainers](https://arxiv.org/pdf/1904.12226.pdf)
