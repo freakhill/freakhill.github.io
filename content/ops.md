@@ -136,3 +136,10 @@ and remove 1h or so
 - [adamantium - create immutable objects](https://github.com/dkubb/adamantium) (with memoization support)
 - [anima - create value objects](https://github.com/mbj/anima) (with some_obj.with(differing params) and value equality) (depends on adamantium and "equalizer")
 - [values - like anima, without equality support and with no deps](https://github.com/tcrayford/values)
+
+## Modeling server response time!
+
+- [StackExchange answer](https://stats.stackexchange.com/questions/25709/what-distribution-is-most-commonly-used-to-model-server-response-time)
+- [more detailed blog!](https://blog.simiacryptus.com/2015/10/modeling-network-latency.html)
+- [sum of lognormal distributions](https://stats.stackexchange.com/questions/238529/the-sum-of-independent-lognormal-random-variables-appears-lognormal)
+- [the lognormal central limit theorem](http://lognormalscheduling.blogspot.com/2011/11/fenton-wilkinson-approximation-and.html)

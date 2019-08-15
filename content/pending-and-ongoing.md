@@ -28,10 +28,28 @@ in_search_index = true
 
 ## Books
 
-Currently reading:
+### Currently reading:
+
 - [Notes on the synthesis of form](https://www.amazon.com/Notes-Synthesis-Form-Harvard-Paperbacks/dp/0674627512) (there is also a pdf out there)
 - [SOA Patterns](https://www.amazon.com/SOA-Patterns-Arnon-Rotem-Gal-Oz/dp/1933988266)
 - [Papert - Mindstorms 1st ed](http://worrydream.com/refs/Papert%20-%20Mindstorms%201st%20ed.pdf)
+
+### To buy
+What Is a Masterpiece? (Walter Neurath Memorial Lectures, No 11)
+
+- Envisioning Information
+- Innovation and Entrepreneurship
+- Instead of Education
+- Lateral Thinking: Creativity Step by Step
+- Man and His Symbols
+- Nurtured by Love: The Classic Approach to Talent Education
+- Teach Your Own: A Hopeful Path for Education
+- Technology, Management and Society
+- The Origin of Consciousness in the Breakdown of the Bicameral Mind
+- The disappearance of childhood
+- Understanding Media: The Extensions of Man : Critical Edition
+- Visual Thinking
+- The psychology of the child
 
 ## Mini book reviews, starting from the 17th of march 2019
 
