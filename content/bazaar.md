@@ -12,6 +12,8 @@ in_search_index = true
 - [FetiFes](https://www.fetifes.com/)
 - word for "theme song" 主題歌
 
+Web Framework Benchmark https://www.techempower.com/benchmarks/#section=test&runid=26a79c95-5eec-4572-8c94-dd710df659d7&hw=ph&test=plaintext
+
 ### Online backup tool
 
 [Tarsnap](http://www.tarsnap.com/)
@@ -27,6 +29,10 @@ Install "typecatcher" to get fonts, then install "inconsolata" (14)
 Theme solarized dark
 
 ps: windows 10 virtualbox vm -> activate the harddrive cache bypass, some stuff to do inside the vm too, i forgot, google it
+
+nice font, ["lotion"](https://font.nina.coffee/)
+
+MacOS terminal iterm2 or hyper
 
 ### where to buy/get
 
