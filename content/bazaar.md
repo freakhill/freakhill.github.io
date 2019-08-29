@@ -14,6 +14,10 @@ in_search_index = true
 
 Web Framework Benchmark https://www.techempower.com/benchmarks/#section=test&runid=26a79c95-5eec-4572-8c94-dd710df659d7&hw=ph&test=plaintext
 
+link to matsumoto san later:
+- https://www.reddit.com/r/programming/comments/cwk9hl/modern_continuous_delivery_with_ken_mugrage/
+- and the doc about namespaces
+
 ### Online backup tool
 
 [Tarsnap](http://www.tarsnap.com/)
