@@ -15,6 +15,10 @@ in_search_index = true
 - [sc6 astaroth FR19GF](https://youtu.be/xBvVvCLx7Q4?t=6570)
 - [difference between 2d and 3d games](./handmade/2d3d.md)
 
+### Good videos for beginner
+
+- [Mago lessons, 1mn to 12mn](https://www.youtube.com/watch?v=fFkFLS7F65s&t=1m)
+
 ### Ultra beginner guide
 
 {{ youtube(id="NYgq75uIMUk") }}
