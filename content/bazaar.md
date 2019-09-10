@@ -38,6 +38,8 @@ nice font, ["lotion"](https://font.nina.coffee/)
 
 MacOS terminal iterm2 or hyper
 
+Windows 10 tiling window manager https://github.com/microsoft/PowerToys
+
 ### where to buy/get
 
 #### 3D printing
