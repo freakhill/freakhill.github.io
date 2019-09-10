@@ -16,7 +16,7 @@ Web Framework Benchmark https://www.techempower.com/benchmarks/#section=test&run
 
 link to matsumoto san later:
 - https://www.reddit.com/r/programming/comments/cwk9hl/modern_continuous_delivery_with_ken_mugrage/
-- and the doc about namespaces
+- [A deep dive into Linux namespaces](http://ifeanyi.co/)
 
 ### Online backup tool
 
