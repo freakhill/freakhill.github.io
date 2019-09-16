@@ -18,6 +18,40 @@ in_search_index = true
 
 High-performance serialization library for Clojure
 
+### Uniontypes
+
+[github repo](https://github.com/lambdaisland/uniontypes)
+
+Union Types (Algebraic Data Types) for Clojure and ClojureScript, based on clojure.spec.
+
+Provides a case-of macro, which does case matching based on which branch in an or spec a value conforms to.
+
+case-of checks at compile time that all cases are handled, and if not throws an exception.
+
+### specmonstah
+
+[github repo](https://github.com/reifyhealth/specmonstah)
+
+Generate semantically correct data with core.spec and some "table definition" stuff (foreign keys/constraints)
+
+### pinpointer
+
+[github repo](https://github.com/athos/Pinpointer)
+
+clojure.spec error reporter
+
+### orchestra 
+
+[github repo](https://github.com/jeaye/orchestra)
+
+better instrumentation for function specs (wait for spec2 before trying to play with this...)
+
+### spec-tools
+
+[github repo](https://github.com/metosin/spec-tools)
+
+lots of core.spec extra stuff, data coercion, swagger spec generation etc. (wait for spec2 before trying to play with this...)
+
 ### asynctor
 
 [github repo](https://github.com/ertugrulcetin/asynctor)

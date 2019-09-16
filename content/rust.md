@@ -12,6 +12,12 @@ in_search_index = true
 
 [Rust container cheat sheet](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit#slide=id.p)
 
+### Static_assertions
+
+[github repo](https://docs.rs/static_assertions/0.3.4/static_assertions/)
+
+compile time assertions
+
 ### Microprofile
 
 [reddit thread](https://www.reddit.com/r/rust/comments/b1iwnc/microprofile_for_rust/)
