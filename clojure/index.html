@@ -59,6 +59,18 @@
   <h1 class="post-title">Clojure stuff!</h1>
   <span class="post-date">2019-03-17</span>
   <p><a href="https://github.com/BrunoBonacci/graalvm-clojure/blob/master/doc/clojure-graalvm-native-binary.md">How to build a graalvm binary</a></p>
+<h3 id="nippy">Nippy<a class="zola-anchor" href="#nippy" aria-label="Anchor link for: nippy">🔗</a>
+</h3>
+<p><a href="https://github.com/ptaoussanis/nippy">github repo</a></p>
+<p>High-performance serialization library for Clojure</p>
+<h3 id="asynctor">asynctor<a class="zola-anchor" href="#asynctor" aria-label="Anchor link for: asynctor">🔗</a>
+</h3>
+<p><a href="https://github.com/ertugrulcetin/asynctor">github repo</a></p>
+<p>Minimal core.async inspector library for Clojure(Script)</p>
+<h3 id="methodical">methodical<a class="zola-anchor" href="#methodical" aria-label="Anchor link for: methodical">🔗</a>
+</h3>
+<p><a href="https://github.com/camsaul/methodical">github repo</a></p>
+<p>CL multimethods in Clojure. apparently more performant than default clojure ones, why??</p>
 <h3 id="jit-watch">JIT Watch<a class="zola-anchor" href="#jit-watch" aria-label="Anchor link for: jit-watch">🔗</a>
 </h3>
 <p><a href="https://github.com/AdoptOpenJDK/jitwatch">github repo</a></p>
@@ -108,6 +120,12 @@
 <li>performance equivalent to, or better than, existing alternatives</li>
 </ul>
 <p>Rather than using the existing collection interfaces in java.util such as List or Map, it provides its own interfaces (IList, IMap, ISet) that provide functional semantics - each update to a collection returns a reference to a new collection. Each interface provides a method (toList, toMap, toSet) for coercing the collection to a read-only version of the standard Java interfaces.</p>
+<h3 id="igusharray-java-port">IgushArray java port<a class="zola-anchor" href="#igusharray-java-port" aria-label="Anchor link for: igusharray-java-port">🔗</a>
+</h3>
+<p><a href="https://github.com/StoneT2000/IgushArray-Java">github repo</a></p>
+<p>An implementation of the IgushArray in Java, with O(1) access and O(N^1/2) insertion and removal</p>
+<p>(ArrayList interface, constant get time (slower constant than real array, probably amortized)
+and square(n) time insertion/removal, much much much faster than with a real array).</p>
 <h2 id="stuff-i-made">Stuff i made<a class="zola-anchor" href="#stuff-i-made" aria-label="Anchor link for: stuff-i-made">🔗</a>
 </h2>
 <ul>
