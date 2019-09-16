@@ -18,6 +18,12 @@ in_search_index = true
 
 High-performance serialization library for Clojure
 
+### truss
+
+[github repo](https://github.com/ptaoussanis/truss)
+
+Better assertions for clojure
+
 ### Uniontypes
 
 [github repo](https://github.com/lambdaisland/uniontypes)
@@ -63,6 +69,12 @@ Minimal core.async inspector library for Clojure(Script)
 [github repo](https://github.com/camsaul/methodical)
 
 CL multimethods in Clojure. apparently more performant than default clojure ones, why??
+
+### tufte
+
+[github repo](https://github.com/ptaoussanis/tufte)
+
+clojure profiling
 
 ### JIT Watch
 
