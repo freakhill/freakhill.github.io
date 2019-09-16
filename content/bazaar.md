@@ -18,6 +18,23 @@ link to matsumoto san later:
 - https://www.reddit.com/r/programming/comments/cwk9hl/modern_continuous_delivery_with_ken_mugrage/
 - [A deep dive into Linux namespaces](http://ifeanyi.co/)
 
+### git whitelist instad of blacklist!
+
+gitignore file example
+
+```
+*
+*/**
+!.gitignore
+!public
+!public/db_client/*.php
+!public/**/*.php
+```
+
+tool to look for secrets in repository
+
+https://github.com/techgaun/github-dorks
+
 ### Online backup tool
 
 [Tarsnap](http://www.tarsnap.com/)

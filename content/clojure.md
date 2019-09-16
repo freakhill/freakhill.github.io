@@ -12,6 +12,24 @@ in_search_index = true
 
 [How to build a graalvm binary](https://github.com/BrunoBonacci/graalvm-clojure/blob/master/doc/clojure-graalvm-native-binary.md)
 
+### Nippy
+
+[github repo](https://github.com/ptaoussanis/nippy)
+
+High-performance serialization library for Clojure
+
+### asynctor
+
+[github repo](https://github.com/ertugrulcetin/asynctor)
+
+Minimal core.async inspector library for Clojure(Script)
+
+### methodical
+
+[github repo](https://github.com/camsaul/methodical)
+
+CL multimethods in Clojure. apparently more performant than default clojure ones, why??
+
 ### JIT Watch
 
 [github repo](https://github.com/AdoptOpenJDK/jitwatch)
@@ -80,6 +98,15 @@ This library provides high-quality Java implementations of mutable and immutable
 - performance equivalent to, or better than, existing alternatives
 
 Rather than using the existing collection interfaces in java.util such as List or Map, it provides its own interfaces (IList, IMap, ISet) that provide functional semantics - each update to a collection returns a reference to a new collection. Each interface provides a method (toList, toMap, toSet) for coercing the collection to a read-only version of the standard Java interfaces.
+
+### IgushArray java port
+
+[github repo](https://github.com/StoneT2000/IgushArray-Java)
+
+An implementation of the IgushArray in Java, with O(1) access and O(N^1/2) insertion and removal
+
+(ArrayList interface, constant get time (slower constant than real array, probably amortized)
+and square(n) time insertion/removal, much much much faster than with a real array).
 
 ## Stuff i made
 
