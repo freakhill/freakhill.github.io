@@ -19,6 +19,8 @@ in_search_index = true
 
 [not for lucy the game, but an eventual mmo, uber H3 GIS system](https://eng.uber.com/visualizing-city-cores-with-h3/)
 
+[laminar, rust udp network library for games](https://github.com/amethyst/laminar)
+
 ## Solo mode
 
 ...
