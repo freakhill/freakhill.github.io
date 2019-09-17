@@ -10,17 +10,11 @@ in_search_index = true
 [extra]
 +++
 
-## Show to Wien-san
-
-- [Netdata](https://github.com/netdata/netdata/blob/master/README.md#features)
-
 ## To read online
 
 - [Ensuring parity between Build and Production environments using Jenkins and Docker](https://engineering.klarna.com/ensuring-parity-between-build-and-production-environments-using-jenkins-and-docker-2695f758b549)
 - [The origin of complexity](https://itnext.io/the-origin-of-complexity-8ecb39130fc)
 - [BLUF: The Military Standard That Can Make Your Writing More Powerful](https://www.animalz.co/blog/bottom-line-up-front/)
-
-
 - [The Ideal Versus the Real: Revisiting the History of Virtual Machines and Containers](https://arxiv.org/pdf/1904.12226.pdf)
 - [Gradual Typing from Theory to Practice](https://blog.sigplan.org/2019/07/12/gradual-typing-theory-practice/)
 - [Demystifying Containers - Part I: Kernel Space](https://medium.com/@saschagrunert/demystifying-containers-part-i-kernel-space-2c53d6979504)
