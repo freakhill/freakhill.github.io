@@ -261,3 +261,7 @@ Right under, left above
 eventually do that for my games
 
 - [backlinko SEO checklist](https://backlinko.com/seo-checklist)
+
+### Graceful-close for HTTP/2 servers
+
+https://kazu-yamamoto.hatenablog.jp/entry/2019/09/20/165939
