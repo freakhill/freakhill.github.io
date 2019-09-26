@@ -12,6 +12,12 @@ in_search_index = true
 
 [How to build a graalvm binary](https://github.com/BrunoBonacci/graalvm-clojure/blob/master/doc/clojure-graalvm-native-binary.md)
 
+### SALT
+
+[github repo](https://github.com/Viasat/salt)
+
+An experimental tool to convert a subset of Clojure into TLA+. Although it is experimental it has been used to produce real, useful TLA+ specifications
+
 ### Nippy
 
 [github repo](https://github.com/ptaoussanis/nippy)
