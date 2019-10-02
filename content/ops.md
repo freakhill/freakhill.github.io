@@ -56,6 +56,8 @@ how to get the socket?
 grep "stats socket" conf
 ```
 
+[Haproxy & Websockets](https://www.haproxy.com/blog/websockets-load-balancing-with-haproxy/)
+
 ## JVM
 
 [Adopt A JDK](https://adoptopenjdk.net/) to get a free JDK
