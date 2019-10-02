@@ -22,6 +22,9 @@ link to matsumoto san later:
 - [testing in production](https://medium.com/@copyconstruct/testing-in-production-the-hard-parts-3f06cefaf592) great article as usual
 - [10 years with AWS](https://www.allthingsdistributed.com/2016/03/10-lessons-from-10-years-of-aws.html)
 - [dealing with unanticipated needs](https://www.youtube.com/watch?v=xYqWREPb3Lc)
+- [minimize blast radius](https://www.youtube.com/watch?v=swQbA4zub20)
+
+mentioned jsonistas in some perf improv but should actually mention nippy https://github.com/ptaoussanis/nippy
 
 ### git whitelist instad of blacklist!
 
