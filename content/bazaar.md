@@ -12,12 +12,16 @@ in_search_index = true
 - [FetiFes](https://www.fetifes.com/)
 - word for "theme song" 主題歌
 
+- [Library to parse/optimize queries from SQL](https://calcite.apache.org/)
+
 Web Framework Benchmark https://www.techempower.com/benchmarks/#section=test&runid=26a79c95-5eec-4572-8c94-dd710df659d7&hw=ph&test=plaintext
 
 link to matsumoto san later:
 - https://www.reddit.com/r/programming/comments/cwk9hl/modern_continuous_delivery_with_ken_mugrage/
 - [A deep dive into Linux namespaces](http://ifeanyi.co/)
 - [testing in production](https://medium.com/@copyconstruct/testing-in-production-the-hard-parts-3f06cefaf592) great article as usual
+- [10 years with AWS](https://www.allthingsdistributed.com/2016/03/10-lessons-from-10-years-of-aws.html)
+- [dealing with unanticipated needs](https://www.youtube.com/watch?v=xYqWREPb3Lc)
 
 ### git whitelist instad of blacklist!
 
