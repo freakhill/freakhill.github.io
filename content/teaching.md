@@ -160,8 +160,8 @@ https://apps.ankiweb.net/
    - RIAK & Eventual consistency
    - **Deliverables**: ???
 5. Programming
-   - ☮ [What is a programmer?](./handmade/programmer.md)
-   - ☮ [TODO: really basic maths](./handmade/maths.md)
+   - ☮ [What is a programmer?](@/handmade/programmer.md)
+   - ☮ [TODO: really basic maths](@/handmade/maths.md)
    - Information & Compression (a quick way to "show" information)
    - The power of representation, moving a point in cartesian coordinate system, or in polar coordinate system
    - ☮ Speedrun through [Harvard Introduction to computer sciences](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/)

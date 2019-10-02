@@ -13,7 +13,7 @@ in_search_index = true
 - [Twitch channel](https://www.twitch.tv/lucyjojo)
 - [The Red Binder - ZANGIEF NOTES!](https://docs.google.com/document/d/1In7xSy_Gm_yr8HkQdpDs_I3F0NZPZZYHc2Mv8w_OyCU/edit#)
 - [sc6 astaroth FR19GF](https://youtu.be/xBvVvCLx7Q4?t=6570)
-- [difference between 2d and 3d games](./handmade/2d3d.md)
+- [difference between 2d and 3d games](@/handmade/2d3d.md)
 
 ### Good videos for beginner
 

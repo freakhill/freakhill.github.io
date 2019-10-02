@@ -10,8 +10,8 @@ in_search_index = true
 [extra]
 +++
 
-- [VATISTA](./unist/vatista.md)
-- [CARMINE](./unist/carmine.md)
+- [VATISTA](@/unist/vatista.md)
+- [CARMINE](@/unist/carmine.md)
 
 - [SYSTEM](#system)
 - [PLUSMINUS](#plusminus)
