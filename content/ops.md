@@ -56,9 +56,9 @@ how to get the socket?
 grep "stats socket" conf
 ```
 
-[Haproxy & Websockets](https://www.haproxy.com/blog/websockets-load-balancing-with-haproxy/)
-
-[Haproxy traffic mirroring](https://www.haproxy.com/blog/haproxy-traffic-mirroring-for-real-world-testing/)
+- [Haproxy & Websockets](https://www.haproxy.com/blog/websockets-load-balancing-with-haproxy/)
+- [Haproxy traffic mirroring](https://www.haproxy.com/blog/haproxy-traffic-mirroring-for-real-world-testing/)
+- [Haproxy SPOE filters](https://www.haproxy.com/blog/extending-haproxy-with-the-stream-processing-offload-engine/)
 
 ## JVM
 
