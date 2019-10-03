@@ -58,7 +58,8 @@
 <div class="post">
   <h1 class="post-title">Ops notes</h1>
   <span class="post-date">2019-03-17</span>
-  <h2 id="riak">Riak<a class="zola-anchor" href="#riak" aria-label="Anchor link for: riak">🔗</a></h2>
+  <h2 id="riak">Riak<a class="zola-anchor" href="#riak" aria-label="Anchor link for: riak">🔗</a>
+</h2>
 <p>attach to running riak node</p>
 <pre style="background-color:#2b303b;">
 <span style="color:#c0c5ce;">riak attach
@@ -74,7 +75,8 @@
 <p>get info about a process</p>
 <pre style="background-color:#2b303b;">
 <span style="color:#ebcb8b;">erlang</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">process_info</span><span style="color:#c0c5ce;">(</span><span style="color:#ebcb8b;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)).
-</span></pre><h2 id="haproxy">Haproxy<a class="zola-anchor" href="#haproxy" aria-label="Anchor link for: haproxy">🔗</a></h2>
+</span></pre><h2 id="haproxy">Haproxy<a class="zola-anchor" href="#haproxy" aria-label="Anchor link for: haproxy">🔗</a>
+</h2>
 <p><a href="https://cbonte.github.io/haproxy-dconv/1.9/configuration.html">Haproxy doc (1.9)</a></p>
 <p>use the runtime api to get some info</p>
 <pre style="background-color:#2b303b;">
@@ -92,17 +94,23 @@
 <pre style="background-color:#2b303b;">
 <span style="color:#bf616a;">grep </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">stats socket</span><span style="color:#c0c5ce;">&quot; conf
 </span></pre>
-<p><a href="https://www.haproxy.com/blog/websockets-load-balancing-with-haproxy/">Haproxy &amp; Websockets</a></p>
-<p><a href="https://www.haproxy.com/blog/haproxy-traffic-mirroring-for-real-world-testing/">Haproxy traffic mirroring</a></p>
-<h2 id="jvm">JVM<a class="zola-anchor" href="#jvm" aria-label="Anchor link for: jvm">🔗</a></h2>
+<ul>
+<li><a href="https://www.haproxy.com/blog/websockets-load-balancing-with-haproxy/">Haproxy &amp; Websockets</a></li>
+<li><a href="https://www.haproxy.com/blog/haproxy-traffic-mirroring-for-real-world-testing/">Haproxy traffic mirroring</a></li>
+<li><a href="https://www.haproxy.com/blog/extending-haproxy-with-the-stream-processing-offload-engine/">Haproxy SPOE filters</a></li>
+</ul>
+<h2 id="jvm">JVM<a class="zola-anchor" href="#jvm" aria-label="Anchor link for: jvm">🔗</a>
+</h2>
 <p><a href="https://adoptopenjdk.net/">Adopt A JDK</a> to get a free JDK</p>
-<h3 id="jshell">jshell<a class="zola-anchor" href="#jshell" aria-label="Anchor link for: jshell">🔗</a></h3>
+<h3 id="jshell">jshell<a class="zola-anchor" href="#jshell" aria-label="Anchor link for: jshell">🔗</a>
+</h3>
 <pre style="background-color:#2b303b;">
 <span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;"> con = (</span><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;">) </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">URL</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">https://***</span><span style="color:#c0c5ce;">&quot;).</span><span style="color:#bf616a;">openConnection</span><span style="color:#c0c5ce;">();
 con.</span><span style="color:#bf616a;">setRequestMethod</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">GET</span><span style="color:#c0c5ce;">&quot;); con.</span><span style="color:#bf616a;">getResponseCode</span><span style="color:#c0c5ce;">();
 </span></pre>
 <p>To test whether the JVM can deal with the pointed server.</p>
-<h3 id="jmx-stuff">jmx stuff<a class="zola-anchor" href="#jmx-stuff" aria-label="Anchor link for: jmx-stuff">🔗</a></h3>
+<h3 id="jmx-stuff">jmx stuff<a class="zola-anchor" href="#jmx-stuff" aria-label="Anchor link for: jmx-stuff">🔗</a>
+</h3>
 <p>for quick debugging</p>
 <pre style="background-color:#2b303b;">
 <span style="color:#c0c5ce;">ex -vnE /...java11.../conf/security/java.policy &lt;&lt;EOF
@@ -126,20 +134,24 @@ reset
 killall java
 unset JAVA_TOOL_OPTIONS
 jstatd -p ...whatever... &amp;
-</span></pre><h2 id="security">Security<a class="zola-anchor" href="#security" aria-label="Anchor link for: security">🔗</a></h2>
+</span></pre><h2 id="security">Security<a class="zola-anchor" href="#security" aria-label="Anchor link for: security">🔗</a>
+</h2>
 <ul>
 <li>script for quick securing of servers: <a href="https://github.com/marshyski/quick-secure">github repo</a></li>
 <li>non root port 80 binding: <a href="https://wiki.apache.org/httpd/NonRootPortBinding">link</a></li>
 </ul>
-<h2 id="tls">TLS<a class="zola-anchor" href="#tls" aria-label="Anchor link for: tls">🔗</a></h2>
+<h2 id="tls">TLS<a class="zola-anchor" href="#tls" aria-label="Anchor link for: tls">🔗</a>
+</h2>
 <ul>
 <li><a href="https://gist.github.com/ncw/9253562#file-makecert-sh">some certificate making example stuff</a></li>
 </ul>
-<h2 id="networking">Networking<a class="zola-anchor" href="#networking" aria-label="Anchor link for: networking">🔗</a></h2>
+<h2 id="networking">Networking<a class="zola-anchor" href="#networking" aria-label="Anchor link for: networking">🔗</a>
+</h2>
 <ul>
 <li><a href="https://vincent.bernat.ch/en/blog/2014-tcp-time-wait-state-linux">Reminder about TIME_WAIT state</a></li>
 </ul>
-<h2 id="static-website">Static website<a class="zola-anchor" href="#static-website" aria-label="Anchor link for: static-website">🔗</a></h2>
+<h2 id="static-website">Static website<a class="zola-anchor" href="#static-website" aria-label="Anchor link for: static-website">🔗</a>
+</h2>
 <p><a href="https://medium.com/pixelpoint/99-9-uptime-static-site-deployment-with-cloudflare-and-aws-s3-388e82b4b9b6">Cloudflare + AWS S3</a></p>
 <p>Extra stuff to do because moving stands... (2019/06/04):</p>
 <ol>
@@ -151,10 +163,12 @@ jstatd -p ...whatever... &amp;
 <li>Set &quot;Block public access to buckets and objects granted through any access control lists (ACLs)&quot; as &quot;OFF&quot; </li>
 </ol>
 <p>Try Cloudflare workers for serverless?</p>
-<h2 id="netflix-suddenly-fucking-up-loads-but-won-t-play">Netflix suddenly fucking up (loads but won't play)<a class="zola-anchor" href="#netflix-suddenly-fucking-up-loads-but-won-t-play" aria-label="Anchor link for: netflix-suddenly-fucking-up-loads-but-won-t-play">🔗</a></h2>
+<h2 id="netflix-suddenly-fucking-up-loads-but-won-t-play">Netflix suddenly fucking up (loads but won't play)<a class="zola-anchor" href="#netflix-suddenly-fucking-up-loads-but-won-t-play" aria-label="Anchor link for: netflix-suddenly-fucking-up-loads-but-won-t-play">🔗</a>
+</h2>
 <p><code>chrome://settings/clearBrowserData</code></p>
 <p>and remove 1h or so</p>
-<h2 id="gems-for-immutable-ruby">Gems for immutable ruby<a class="zola-anchor" href="#gems-for-immutable-ruby" aria-label="Anchor link for: gems-for-immutable-ruby">🔗</a></h2>
+<h2 id="gems-for-immutable-ruby">Gems for immutable ruby<a class="zola-anchor" href="#gems-for-immutable-ruby" aria-label="Anchor link for: gems-for-immutable-ruby">🔗</a>
+</h2>
 <ul>
 <li><a href="https://github.com/hamstergem/hamster">Hamster - immutable data structures</a></li>
 <li><a href="https://github.com/dkubb/ice_nine">Ice nine - deep freeze objects</a></li>
@@ -162,7 +176,8 @@ jstatd -p ...whatever... &amp;
 <li><a href="https://github.com/mbj/anima">anima - create value objects</a> (with some_obj.with(differing params) and value equality) (depends on adamantium and &quot;equalizer&quot;)</li>
 <li><a href="https://github.com/tcrayford/values">values - like anima, without equality support and with no deps</a></li>
 </ul>
-<h2 id="modeling-server-response-time">Modeling server response time!<a class="zola-anchor" href="#modeling-server-response-time" aria-label="Anchor link for: modeling-server-response-time">🔗</a></h2>
+<h2 id="modeling-server-response-time">Modeling server response time!<a class="zola-anchor" href="#modeling-server-response-time" aria-label="Anchor link for: modeling-server-response-time">🔗</a>
+</h2>
 <ul>
 <li><a href="https://stats.stackexchange.com/questions/25709/what-distribution-is-most-commonly-used-to-model-server-response-time">StackExchange answer</a></li>
 <li><a href="https://blog.simiacryptus.com/2015/10/modeling-network-latency.html">more detailed blog!</a></li>
