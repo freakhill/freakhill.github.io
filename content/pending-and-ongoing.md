@@ -70,6 +70,10 @@ Building a model to simulate what is pompuously called "cas", which is pretty mu
 
 It has pretty nice content on what might be the beginnings of the discipline. Might be worth a reread when I get to my MMO game!
 
+#### [SOA Patterns](https://www.amazon.com/SOA-Patterns-Arnon-Rotem-Gal-Oz/dp/1933988266)
+
+This book has good informative content! But it is written in an extremely laborious way... This was a huge bore to read, painful... Many parts did not resist the test of time. We can probably extract a very good 40p books out of this ~250p book.
+
 ## Music
 
 - [Music theory](https://en.wikipedia.org/wiki/Music_theory)
