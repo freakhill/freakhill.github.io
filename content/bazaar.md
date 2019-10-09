@@ -120,7 +120,7 @@ will probably use windows 10 with WSL2 and separate VMs for sensitive stuff...
 
 ### baby education
 
-- [nuryl](ttps://www.nuryl.com/)
+- [nuryl](https://www.nuryl.com/)
 
 ### good french cuisine tokyo
 
