@@ -72,7 +72,7 @@ It has pretty nice content on what might be the beginnings of the discipline. Mi
 
 #### [SOA Patterns](https://www.amazon.com/SOA-Patterns-Arnon-Rotem-Gal-Oz/dp/1933988266)
 
-This book has good informative content! But it is written in an extremely laborious way... This was a huge bore to read, painful... Many parts did not resist the test of time. We can probably extract a very good 40p books out of this ~250p book.
+This book has good informative content! But it is written in an extremely laborious way... This was a huge bore to read, painful... Many parts did not resist the test of time. We can probably extract a relevant and relatively timeless 40p books out of this ~250p book.
 
 ### [The craft of scientific presentations](https://www.amazon.com/Craft-Scientific-Presentations-Critical-Succeed/dp/1441982787/ref=sr_1_1?crid=1NQPC0QH5UH98&keywords=the+craft+of+scientific+presentations&qid=1573460610&sprefix=the+craft+of+scientif%2Caps%2C324&sr=8-1)
 
