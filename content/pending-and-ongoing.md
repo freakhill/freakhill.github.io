@@ -74,6 +74,12 @@ It has pretty nice content on what might be the beginnings of the discipline. Mi
 
 This book has good informative content! But it is written in an extremely laborious way... This was a huge bore to read, painful... Many parts did not resist the test of time. We can probably extract a very good 40p books out of this ~250p book.
 
+### [The craft of scientific presentations](https://www.amazon.com/Craft-Scientific-Presentations-Critical-Succeed/dp/1441982787/ref=sr_1_1?crid=1NQPC0QH5UH98&keywords=the+craft+of+scientific+presentations&qid=1573460610&sprefix=the+craft+of+scientif%2Caps%2C324&sr=8-1)
+
+Excellent content! Very practical advices on how to prepare and deliver slide based presentations, valid for not only scientists, but also engineers (and maybe/probable others). However the book repeat itself so much that I think it could easily be cut in half. I understand repeating yourself a little, but that much repeating should be reserved for 500+ p. books... The author also has a passion for namedropping. Honestly you could cut that book by 2/3rd and keep the content intent, some limited repeating included.
+
+Still I recommend the read!
+
 ## Music
 
 - [Music theory](https://en.wikipedia.org/wiki/Music_theory)
