@@ -67,6 +67,13 @@ Windows 10 tiling window manager https://github.com/microsoft/PowerToys
 
 ### where to buy/get
 
+#### recommended humidifier
+
+by the zangiline people
+
+https://www.amazon.co.jp/gp/offer-listing/B075D9VQ6C/ref=dp_olp_all_mbc?ie=UTF8&condition=all
+
+
 #### 3D printing
 
 - [online printing](https://all3dp.com/1/best-online-3d-printing-service-3d-print-services/)
