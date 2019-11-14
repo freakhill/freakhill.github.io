@@ -12,6 +12,18 @@ in_search_index = true
 
 [Rust container cheat sheet](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit#slide=id.p)
 
+### Quiche
+
+[github](https://github.com/cloudflare/quiche)
+
+QUIC library
+
+### Bastion
+
+[website](https://bastion.rs/)
+
+actor system
+
 ### Static_assertions
 
 [github repo](https://docs.rs/static_assertions/0.3.4/static_assertions/)
