@@ -59,8 +59,7 @@
   <h1 class="post-title">ex - batch text editing</h1>
   <span class="post-date">2019-03-17</span>
   <p><a href="http://archive.oreilly.com/pub/a/linux/excerpts/9780596529833/the-vi-ex-and-vim-editors.html">reference</a></p>
-<h3 id="basics">Basics<a class="zola-anchor" href="#basics" aria-label="Anchor link for: basics">🔗</a>
-</h3>
+<h3 id="basics">Basics<a class="zola-anchor" href="#basics" aria-label="Anchor link for: basics">🔗</a></h3>
 <p>ex is the base of vi</p>
 <pre style="background-color:#2b303b;">
 <span style="color:#c0c5ce;">ex -vnE /some/text/file &lt;&lt;EOF
@@ -72,11 +71,9 @@ EOF
 # -v verbose
 # -n no temporary buffer
 # -E extended ex mode (vi -E, ex -E, vim -E, exim are the same)
-</span></pre><h3 id="syntax">Syntax<a class="zola-anchor" href="#syntax" aria-label="Anchor link for: syntax">🔗</a>
-</h3>
+</span></pre><h3 id="syntax">Syntax<a class="zola-anchor" href="#syntax" aria-label="Anchor link for: syntax">🔗</a></h3>
 <p>[address] command [options]</p>
-<h3 id="addresses">Addresses<a class="zola-anchor" href="#addresses" aria-label="Anchor link for: addresses">🔗</a>
-</h3>
+<h3 id="addresses">Addresses<a class="zola-anchor" href="#addresses" aria-label="Anchor link for: addresses">🔗</a></h3>
 <ul>
 <li>x,y,z = number or symbol</li>
 <li>n,m = number</li>
@@ -102,8 +99,7 @@ EOF
 <tr><td>?pattern?</td><td>backward to line matching pattern</td></tr>
 </tbody></table>
 <p>(there is a lot to learn about patterns...)</p>
-<h3 id="options">Options<a class="zola-anchor" href="#options" aria-label="Anchor link for: options">🔗</a>
-</h3>
+<h3 id="options">Options<a class="zola-anchor" href="#options" aria-label="Anchor link for: options">🔗</a></h3>
 <p>&quot;command<strong>n</strong>&quot; repeats command n times.</p>
 <ul>
 <li>3d = deletes line 3</li>
@@ -115,8 +111,7 @@ EOF
 <li>&quot;#&quot; = previous file</li>
 </ul>
 <p><strong>!</strong> indicates a variant of the command. (&quot;command&quot; variant = &quot;command**!**&quot;), cf. commands for description of variants.</p>
-<h3 id="commands">Commands<a class="zola-anchor" href="#commands" aria-label="Anchor link for: commands">🔗</a>
-</h3>
+<h3 id="commands">Commands<a class="zola-anchor" href="#commands" aria-label="Anchor link for: commands">🔗</a></h3>
 <table><thead><tr><th>full name</th><th>abbreviation</th><th>description</th></tr></thead><tbody>
 <tr><td>abbreviate</td><td>ab [string text]</td><td>Define string when typed to be translated into text. If string and text are not specified, list all current abbreviations.<br>Note: ^M appears when you type ^V followed by ENTER.<br>:ab ora O'Reilly Media, Inc.<br>:ab id Name:^MRank:^MPhone:</td></tr>
 <tr><td>append</td><td>[address] a[!]</td><td>text<br>.<br><br>Append new text at specified address, or at present address if none is specified.<br>:a <br>Append this line<br>and this line too.<br>.</td></tr>
