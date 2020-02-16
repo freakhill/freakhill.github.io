@@ -16,16 +16,6 @@ in_search_index = true
 
 Web Framework Benchmark https://www.techempower.com/benchmarks/#section=test&runid=26a79c95-5eec-4572-8c94-dd710df659d7&hw=ph&test=plaintext
 
-link to matsumoto san later:
-- https://www.reddit.com/r/programming/comments/cwk9hl/modern_continuous_delivery_with_ken_mugrage/
-- [A deep dive into Linux namespaces](http://ifeanyi.co/)
-- [testing in production](https://medium.com/@copyconstruct/testing-in-production-the-hard-parts-3f06cefaf592) great article as usual
-- [10 years with AWS](https://www.allthingsdistributed.com/2016/03/10-lessons-from-10-years-of-aws.html)
-- [dealing with unanticipated needs](https://www.youtube.com/watch?v=xYqWREPb3Lc)
-- [minimize blast radius](https://www.youtube.com/watch?v=swQbA4zub20)
-
-mentioned jsonistas in some perf improv but should actually mention nippy https://github.com/ptaoussanis/nippy
-
 ### git whitelist instad of blacklist!
 
 gitignore file example
@@ -124,6 +114,10 @@ will probably use windows 10 with WSL2 and separate VMs for sensitive stuff...
 
 - Bricolage - Roppongi
 - Truffle bakery - Honzen Nakajo
+
+### parenting book
+
+- [birth partner](https://www.amazon.com/Birth-Partner-5th-Childbirth-Companions/dp/1558329102)
 
 ### baby education
 
