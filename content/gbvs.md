@@ -43,3 +43,6 @@ Setup
 cM LTackle (whiff) Acommandthrow (meaty grab)
 
 clL cM link! M cM link on croucher, remember for distance confirms!
+
+command grab > ex tackle seems good
+
