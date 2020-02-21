@@ -42,3 +42,4 @@ B A cB exStomp-C A exFB
 Setup
 cM LTackle (whiff) Acommandthrow (meaty grab)
 
+clL cM link! M cM link on croucher, remember for distance confirms!
