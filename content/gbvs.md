@@ -34,3 +34,11 @@ fThrow microwalk jumpB
 Corner Athrow clA jfC
 
 have to list them but a lot of downs get safe jumps with clA jfC
+
+mid screen vs all but ????
+
+B A cB exStomp-C A exFB
+
+Setup
+cM LTackle (whiff) Acommandthrow (meaty grab)
+
