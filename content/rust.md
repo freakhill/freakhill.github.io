@@ -78,7 +78,6 @@ simple http client lib
 
 [github repo](https://docs.rs/reqwest/0.7.1/reqwest/)
 
-
 ### Crossbeam
 
 set of tools for concurrent programming (atomic, queues, channels, exponential backoff, scoped threads)
@@ -166,7 +165,7 @@ easy logging of function result when Result
 
 ### shrinkwraprs
 
-better "newtype"
+better "newtype" (checkout repr(transparent))
 
 [gitlab repo](https://gitlab.com/williamyaoh/shrinkwraprs)
 
@@ -207,6 +206,14 @@ Low-latency cyclic dataflow computational model
 ### Cargo-flamegraph - Other flame graphs for rust!
 
 [Github repo](https://github.com/ferrous-systems/flamegraph)
+
+### thiserror
+
+Error library for libs
+
+### anyhow
+
+Error library for binaries
 
 ### Building fast interpreters in Rust
 
