@@ -66,13 +66,13 @@ variables whose binding is determined by user level code. at definition point th
 ## Stuff to check out
 
 - [Spiral language](https://github.com/mrakgr/The-Spiral-Language)
-- [Vau]()
-- [ATS]()
+- [Vau](https://github.com/breckinloggins/vau)
+- [ATS3](https://github.com/githwxi/ATS-Xanadu)
 - [Heliotrope](https://github.com/halgari/heliotrope)
 - [Pink](https://github.com/namin/pink)
 - [Collapsing towers of interpreters](http://lampwww.epfl.ch/~amin/pub/collapsing-towers.pdf)
 - [Egison language](https://github.com/egison/egison) and its great pattern matching
-- [Learn ADA/Spark]()
+- Learn ADA/Spark (check my books)
 - look for the source for rust's lifetime checker
 - [implementing functional languages](https://www.microsoft.com/en-us/research/wp-content/uploads/1992/01/student.pdf)
 - [spineless tagless machine](https://www.microsoft.com/en-us/research/wp-content/uploads/1992/04/spineless-tagless-gmachine.pdf)
@@ -3478,7 +3478,7 @@ public async delegate T TaskFunc<T>() immutable isolated;
 Now we can linearly hand off entire object graphs to a task, either permanently or temporarily:
 
 isolated int[] data = ...;
-Task<int> t = Task.Run([consume data]() => {
+Task<int> t = Task.Run([consume data] () => {
     // in here, we own `data`.
 });
 
