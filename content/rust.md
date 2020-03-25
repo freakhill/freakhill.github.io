@@ -12,6 +12,12 @@ in_search_index = true
 
 [Rust container cheat sheet](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit#slide=id.p)
 
+### Beef
+
+Fast, compact implementation of Cow
+
+[github](https://github.com/maciejhirsz/beef)
+
 ### Quiche
 
 [github](https://github.com/cloudflare/quiche)
