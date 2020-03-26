@@ -37,6 +37,10 @@ https://github.com/techgaun/github-dorks
 
 [Tarsnap](http://www.tarsnap.com/)
 
+### Configure postgresql
+
+https://postgresqlco.nf/en/doc/param/
+
 ### Configure a machine
 
 Lxde was great, last time I used lxqt, it was shit. the new lxqt terminal fucks up emacs hard. binding configuration is terrible. UX here and there is horrendously broken.
