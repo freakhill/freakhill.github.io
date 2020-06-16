@@ -173,7 +173,7 @@ our language.</p>
 <p>As small as possible amount of encapsulated unsafe code, isolated by component (&quot;Trusted Computing Base&quot;). OS scheduler, memory manager, all applications etc. were written in 100% safe code. Reliance on type safety =&gt; compiler part of the TCP. Limit the compiler related risks with &quot;proof carrying code&quot; and &quot;typed assembly language&quot; (TAL). Some amount of runtime checks will lessen the risk.</p>
 <p>The cost? There is some stuff you can't dfo without pointer arithmetic, data races, etc. Their research was about how to minimize those costs. They were pretty succesful. They could unlock things like no blocking IO/lightweight processes.fine frained concurrency/asynchonous message passing etc. in a pervasive way which in the end offset the costs.</p>
 <pre style="background-color:#2b303b;">
-For example, we did have certain types that were just buckets of bits. But these were just PODs. This allowed us to parse bits out of byte buffers – and casting to and fro between different wholly differnt “types” – efficiently and without loss of safety. We had a first class slicing type that permit us to form safe, checked windows over buffers, and unify the way we accessed all memory in the system (the slice type we’re adding to .NET was inspired by this).
+<code>For example, we did have certain types that were just buckets of bits. But these were just PODs. This allowed us to parse bits out of byte buffers – and casting to and fro between different wholly differnt “types” – efficiently and without loss of safety. We had a first class slicing type that permit us to form safe, checked windows over buffers, and unify the way we accessed all memory in the system (the slice type we’re adding to .NET was inspired by this).
 
 You might also wonder about the RTTI overheads required to support type safety. Well, thanks to PODs, and proper support for discriminated unions, we didn’t need to cast things all that much. And anywhere we did, the compiler optimized the hell out of the structures. The net result wasn’t much more than what a typical C++ program has just to support virtual dispatch (never mind casting).
 
@@ -190,7 +190,7 @@ Since Midori, I’ve been working to bring some of our key lessons about how to 
 The combination of memory, type, and concurrency safety gave us a powerful foundation to stand on. Most of all, it delivered a heightened level of developer productivity and let us move fast. The extremely costly buffer overflows, data races, deadlocks, and so on, simply did not happen. Someday all operating systems will be written this way.
 
 In the next article in this series, we’ll look at how this foundational safety let us deliver a capability-based security model that was first class in the programming model and type system, and brought the same “by-construction” solution to eliminating ambient authority and enabling the principle of least privilege everywhere, by default, in a big way. See you next time.
-</pre><h4 id="objects-as-secure-capabilities">Objects as secure capabilities<a class="zola-anchor" href="#objects-as-secure-capabilities" aria-label="Anchor link for: objects-as-secure-capabilities">🔗</a></h4>
+</code></pre><h4 id="objects-as-secure-capabilities">Objects as secure capabilities<a class="zola-anchor" href="#objects-as-secure-capabilities" aria-label="Anchor link for: objects-as-secure-capabilities">🔗</a></h4>
 <p><a href="http://joeduffyblog.com/2015/11/10/objects-as-secure-capabilities/">source</a></p>
 <p>Last time, we saw how Midori built on a foundation of type, memory, and concurrency safety. This time, we will see how this enabled some novel approaches to security. Namely, it let our system eliminate ambient authority and access control in favor of capabilities woven into the fabric of the system and its code. As with many of our other principles, the guarantees were delivered “by-construction” via the programming language and its type system.
 Capabilities</p>
@@ -322,11 +322,11 @@ Enter Async and Await</p>
 <p>What we had was a bit different from what you’ll find in C# and .NET. Let’s walk through the progression from the promises model above to this new async/await-based one. As we go, I’ll point out the differences.</p>
 <p>We first renamed Promise<T> to AsyncResult<T>, and made it a struct. (This is similar to .NET’s Task<T>, however focuses more on the “data” than the “computation.”) A family of related types were born:</p>
 <pre style="background-color:#2b303b;">
-T: the result of a prompt, synchronous computation that cannot fail.
+<code>T: the result of a prompt, synchronous computation that cannot fail.
 Async&lt;T&gt;: the result of an asynchronous computation that cannot fail.
 Result&lt;T&gt;: the result of a a prompt, synchronous computation that might fail.
 AsyncResult&lt;T&gt;: the result of an asynchronous computation that might fail.
-</pre>
+</code></pre>
 <p>That last one was really just a shortcut for Async&lt;Result<T>&gt;.</p>
 <p>The distinction between things that can fail and things that cannot fail is a topic for another day. In summary, however, our type system guaranteed these properties for us.</p>
 <p>Along with this, we added the await and async keywords. A method could be marked async:</p>
@@ -383,12 +383,12 @@ The Execution Model</p>
 <p>Well, that required one additional step. And this one was the biggie.</p>
 <p>The final key optimization was to ensure that async methods imposed as little penalty as possible. This meant eliminating a few sub-optimal aspects of the state machine rewrite model. Actually, we abandoned it:</p>
 <pre style="background-color:#2b303b;">
-It completely destroyed code quality. It impeded simple optimizations like inlining, because few inliners consider a switch statement with multiple state variables, plus a heap-allocated display frame, with lots of local variable copying, to be a “simple method.” We were competing with OS’s written in native code, so this matters a lot.
+<code>It completely destroyed code quality. It impeded simple optimizations like inlining, because few inliners consider a switch statement with multiple state variables, plus a heap-allocated display frame, with lots of local variable copying, to be a “simple method.” We were competing with OS’s written in native code, so this matters a lot.
 
 It required changes to the calling convention. Namely, returns had to be Async*&lt;T&gt; objects, much like .NET’s Task&lt;T&gt;. This was a non-starter. Even though ours were structs – eliminating the allocation aspect – they were multi-words, and required that code fetch out the values with state and type testing. If my async method returns an int, I want the generated machine code to be a method that returns an int, goddamnit.
 
 Finally, it was common for too much heap state to get captured. We wanted the total space consumed by an awaiting activity to be as small as possible. It was common for some processes to end up with hundreds or thousands of them, in addition to some processes constantly switching between them. For footprint and cache reasons, it was important that they remain as small as the most carefully hand-crafted state machine as possible.
-</pre>
+</code></pre>
 <p>The model we built was one where asynchronous activities ran on linked stacks. These links could start as small as 128 bytes and grow as needed. After much experimentation, we landed on a model where link sizes doubled each time; so, the first link would be 128b, then 256b, …, on up to 8k chunks. Implementing this required deep compiler support. As did getting it to perform well. The compiler knew to hoist link checks, especially out of loops, and probe for larger amounts when it could predict the size of stack frames (accounting for inlining). There is a common problem with linking where you can end up relinking frequently, especially at the edge of a function call within a loop, however most of the above optimizations prevented this from showing up. And, even if they did, our linking code was hand-crafted assembly – IIRC, it was three instructions to link – and we kept a lookaside of hot link segments we could reuse.</p>
 <p>There was another key innovation. Remember, I hinted earlier, we knew statically in the type system whether a function was asynchronous or not, simply by the presence of the async keyword? That gave us the ability in the compiler to execute all non-asynchronous code on classical stacks. The net result was that all synchronous code remained probe-free! Another consequence is the OS kernel could schedule all synchronous code on a set of pooled stacks. These were always warm, and resembled a classical thread pool, more than an OS scheduler. Because they never blocked, you didn’t have O(T) stacks, where T is the number of threads active in the entire system. Instead, you ended up with O(P), where P is the number of processors on the machine. Remember, eliminating demand paging was also key to achieiving this outcome. So it was really a bunch of “big bets” that added up to something that was seriously game-changing.
 Message Passing</p>
@@ -428,12 +428,12 @@ await console.WriteLine(result);
 <p>Message Passing Diagram</p>
 <p>The only types marshalable across message passing boundaries were:</p>
 <pre style="background-color:#2b303b;">
-Primitive types (int, string, etc).
+<code>Primitive types (int, string, etc).
 Custom PODs that didn’t contain pointers (explicitly labeled marshalable).
 References to streams (see below).
 References to other async objects (e.g., our ICalculator above).
 A special SharedData object, which requires a bit more explanation.
-</pre>
+</code></pre>
 <p>Most of these are obvious. The SharedData thing is a little subtle, however. Midori had a fundamental philosophy of “zero-copy” woven throughout its fabric. This will be the topic of a future post. It’s the secret sauce that let us out-perform many classical systems on some key benchmarks. The idea is, however, no byte should be copied if it can be avoided. So we don’t want to marshal a byte[] by copy when sending a message between processes, for example. The SharedData was a automatic ref-counted pointer to some immutable data in a heap shared between processes. The OS kernel managed this heap memory and reclaimed it when all references dropped to zero. Because the ref-counts were automatic, programs couldn’t get it wrong. This leveraged some new features in our language, like destructors.</p>
 <p>We also had the notion of “near objects,” which went an extra step and let you marshal references to immutable data within the same process heap. This let you marshal rich objects by-reference. For example:</p>
 <p>// An asynchronous object in my heap:
@@ -472,11 +472,11 @@ Cancellation</p>
 <p>The solution ended up building atop the foundation of CancellationToken.</p>
 <p>They key innovation was first to rebuild the idea of CancellationToken on top of our overall message passing model, and then to weave it throughout in all the right places. For example:</p>
 <pre style="background-color:#2b303b;">
-CancellationTokens could extend their reach across processes.
+<code>CancellationTokens could extend their reach across processes.
 Whole async objects could be wrapped in a CancellationToken, and used to trigger revocation.
 Whole async functions could be invoked with a CancellationToken, such that cancelling propagated downward.
 Areas like storage needed to manually check to ensure that state was kept consistent.
-</pre>
+</code></pre>
 <p>In summary, we took a “whole system” approach to the way cancellation was plumbed throughout the system, including extending the reach of cancellation across processes. I was happy with where we landedon this one.
 State Management</p>
 <p>The ever-problematic “state management” problem can be illustrated with a simple example:</p>
@@ -507,10 +507,10 @@ async void B() {
 <p>Anyway, there be dragons here.</p>
 <p>The solution is to steal a page from classical synchronization, and apply one of many techniques:</p>
 <pre style="background-color:#2b303b;">
-Isolation.
+<code>Isolation.
 Standard synchronization techniques (prevent write-write or read-write hazards).
 Transactions.
-</pre>
+</code></pre>
 <p>By far, we preferred isolation. It turns out web frameworks offer good lessons to learn from here. Most of the time, a server object is part of a “session” and should not be aliased across multiple concurrent clients. It tended to be easy to partition state into sub-objects, and have dialogues using those. Our language annotations around mutability helped to guide this process.</p>
 <p>A lesser regarded technique was to apply synchronization. Thankfully in our language, we knew which operations read versus wrote, and so we could use that to block dispatching messages intelligently, using standard reader-writer lock techniques. This was comfy and cozy and whatnot, but could lead to deadlocks if done incorrectly (which we did our best to detect). As you can see, once you start down this path, the world is less elegant, so we discouraged it.</p>
 <p>Finally, transactions. We didn’t go there. Distributed transactions are evil.</p>
@@ -543,9 +543,9 @@ Resource Management</p>
 <p>But the scale of our problem was much worse than anything I’d ever seen. Everything was asynchronous. Imagine an app traversing the entire filesystem, and performing a series of asynchronous operations for each file on disk. In Midori, the app, filesystem, disk drivers, etc., are all different asynchronous processes. It’s easy to envision the resulting fork bomb-like problem that results.</p>
 <p>The solution here broke down into a two-pronged defense:</p>
 <pre style="background-color:#2b303b;">
-Self-control: async code knows that it could flood the system with work, and explicitly tries not to.
+<code>Self-control: async code knows that it could flood the system with work, and explicitly tries not to.
 Automatic resource management: no matter what the user-written code does, the system can throttle automatically.
-</pre>
+</code></pre>
 <p>For obvious reasons, we preferred automatic resource management.</p>
 <p>This took the form of the OS scheduler making decisions about which processes to visit, which turns to let run, and, in some cases, techniques like flow control as we saw above with streams. This is the area we had the most “open ended” and “unresolved” research. We tried out many really cool ideas. This included attempting to model the expected resource usage of asynchronous activities (similar to this paper on convex optimization). That turned out to be very difficult, but certainly shows some interesting long turn promise if you can couple it with adaptive techniques. Perhaps surprisingly, our most promising results came from adapting advertisement bidding algorithms to resource allocation. Coupled with an element of game theory, this approach gets very interesting. If the system charges a market value for all system resources, and all agents in the system have a finite amount of “purchasing power,” we can expect they will purchase those resources that benefit themselves the most based on the market prices available.</p>
 <p>But automatic management wasn’t always perfect. That’s where self-control came in. A programmer could also help us out by capping the maximum number of outstanding activities, using simple techniques like “wide-loops.” A wide-loop was an asynchronous loop where the developer specified the maximum outstanding iterations. The system ensured it launched no more than this count at once. It always felt a little cheesy but, coupled with resource management, did the trick.</p>
@@ -588,15 +588,15 @@ What’s different</p>
 Compilation Architecture</p>
 <p>Our architecture involved three major components:</p>
 <pre style="background-color:#2b303b;">
-C# Compiler: Performs lexing, parsing, and semantic analysis. Ultimately translates from C# textual source code into a CIL-based intermediate representation (IR).
+<code>C# Compiler: Performs lexing, parsing, and semantic analysis. Ultimately translates from C# textual source code into a CIL-based intermediate representation (IR).
 Bartok: Takes in said IR, does high-level MSIL-based analysis, transformations, and optimizations, and finally lowers this IR to something a bit closer to a more concrete machine representation. For example, generics are gone by the time Bartok is done with the IR.
 Phoenix: Takes in this lowered IR, and goes to town on it. This is where the bulk of the “pedal to the metal” optimizations happen. The output is machine code.
-</pre>
+</code></pre>
 <p>The similarities here with Swift’s compiler design, particularly SIL, are evident. The .NET Native project also mirrors this architecture somewhat. Frankly, most AOT compilers for high level languages do.</p>
 <p>In most places, the compiler’s internal representation leveraged static single assignment form (SSA). SSA was preserved until very late in the compilation. This facilitated and improved the use of many of the classical compiler optimizations mentioned earlier.</p>
 <p>The goals of this architecture included:</p>
 <pre style="background-color:#2b303b;">
-Facilitate rapid prototyping and experimentation.
+<code>Facilitate rapid prototyping and experimentation.
 Produce high-quality machine code on par with commerical C/C++ compilers.
 Support debugging optimized machine code for improved productivity.
 Facilitate profile-guided optimizations based on sampling and/or instrumenting code.
@@ -604,7 +604,7 @@ Suitable for self-host:
     The resulting compiled compiler is fast enough.
     It is fast enough that the compiler developers enjoy using it.
     It is easy to debug problems when the compiler goes astray.
-</pre>
+</code></pre>
 <p>Finally, a brief warning. We tried lots of stuff. I can’t remember it all. Both Bartok and Phoenix existed for years before I even got involved in them. Bartok was a hotbed of research on managed languages – ranging from optimizations to GC to software transactional memory – and Phoenix was meant to replace the shipping Visual C++ compiler. So, anyway, there’s no way I can tell the full story. But I’ll do my best.
 Optimizations</p>
 <p>Let’s go deep on a few specific areas of classical compiler optimizations, extended to cover safe code.
@@ -634,10 +634,10 @@ for (int i = 0; i &lt; 100; i++) {
 <p>At the highest level, in Bartok, the IR is still relatively close to the program input. So, some simple patterns could be matched and eliminated. Before lowering further, the ABCD algorithm – a straightforward value range analysis based on SSA – then ran to eliminate even more common patterns using a more principled approach than pattern matching. We were also able to leverage ABCD in the global analysis phase too, thanks to inter-procedural length and control flow fact propagation.</p>
 <p>Next up, the Phoenix Loop Optimizer got its hands on things. This layer did all sorts of loop optimizations and, most relevant to this section, range analysis. For example:</p>
 <pre style="background-color:#2b303b;">
-Loop materialization: this analysis actually creates loops. It recognizes repeated patterns of code that would be more ideally represented as loops, and, when profitable, rewrites them as such. This includes unrolling hand-rolled loops so that a vectorizer can get its hands on them, even if they might be re-unrolled later on.
+<code>Loop materialization: this analysis actually creates loops. It recognizes repeated patterns of code that would be more ideally represented as loops, and, when profitable, rewrites them as such. This includes unrolling hand-rolled loops so that a vectorizer can get its hands on them, even if they might be re-unrolled later on.
 Loop cloning, unrolling, and versioning: this analysis creates copies of loops for purposes of specialization. That includes loop unrolling, creating architectural-specific versions of a vectorized loop, and so on.
 Induction range optimization: this is the phase we are most concerned with in this section. It uses induction range analysis to remove unnecessary checks, in addition to doing classical induction variable optimizations such as widening. As a byproduct of this phase, bounds checks were eliminated and coalesced by hoisting them outside of loops.
-</pre>
+</code></pre>
 <p>This sort of principled analysis was more capable than what was shown earlier. For example, there are ways to write the earlier loop that can easily “trick” the more basic techniques discussed earlier:</p>
 <p>var a = new int[100];</p>
 <p>// Trick #1: use the length instead of constant.
@@ -888,10 +888,10 @@ Parametric polymorphism (a.k.a., generics)</p>
 <p>The problem is, unless you implement an erasure model – which utterly stinks performance-wise due to boxing allocations, indirections, or both – there’s no way for you to possibly pre-instantiate all possible versions of the code ahead-of-time. For example, say you’re providing a List<T>. How do you know whether folks using your library will want a List<int>, List<string>, or List<SomeStructYouveNeverHeardOf>?</p>
 <p>Solutions abound:</p>
 <pre style="background-color:#2b303b;">
-Do not specialize. Erase everything.
+<code>Do not specialize. Erase everything.
 Specialize only a subset of instantiations, and create an erased instantiation for the rest.
 Specialize everything. This gives the best performance, but at some complexity.
-</pre>
+</code></pre>
 <p>Java uses #1 (in fact, erasure is baked into the language). Many ML compilers use #2. .NET’s NGen compilation model is sort of a variant of #2, where things that can be trivially specialized are specialized, and everything else is JIT compiled. .NET Native doesn’t yet have a solution to this problem, which means 3rd party libraries, separate compilation, and generics are a very big TBD. As with everything in Midori, we picked the hardest path, with the most upside, which meant #3. Actually I’m being a little glib; we had several ML compiler legends on the team, and #2 is fraught with peril; just dig a little into some papers on how hard (and clever) this can get. It’s difficult to know a priori which instantiations are going to be performance critical to a program. My own experience trying to get C# code into the heart of Windows back in the Longhorn days also reinforced this; we didn’t want JIT’ting and the rules for what generics you could and couldn’t use in that world were so mind boggling they eventually led to greek formulas.</p>
 <p>Anyway, Midori’s approach turned out to be harder than it sounded at first.</p>
 <p>Imagine you have a diamond. Library A exports a List<T> type, and libraries B and C both instantiate List<int>. A program D then consumes both B and C and maybe even passes List<T> objects returned from one to the other. How do we ensure that the versions of List<int> are compatible?</p>
@@ -994,17 +994,17 @@ Error model</p>
 <p>From a code quality perspective, exceptions can be nice. First, you can organize code segments so that the “cold” handlers aren’t dirtying your ICACHE on successful pathways. Second, you don’t need to perform any extra work during the normal calling convention. There’s no wrapping of values – so no extra register or stack pressure – and there’s no branching in callers. There can be some downsides to exceptions, however. In an untyped model, you must assume every function can throw, which obviously inhibits your ability to move code around.</p>
 <p>Our model ended up being a hybrid of two things:</p>
 <pre style="background-color:#2b303b;">
-Fail-fast for programming bugs.
+<code>Fail-fast for programming bugs.
 Typed exceptions for dynamically recoverable errors.
-</pre>
+</code></pre>
 <p>I’d say the ratio of fail-fast to typed exceptions usage ended up being 10:1. Exceptions were generally used for I/O and things that dealt with user data, like the shell and parsers. Contracts were the biggest source of fail-fast.</p>
 <p>The result was the best possible configuration of the above code quality attributes:</p>
 <pre style="background-color:#2b303b;">
-No calling convention impact.
+<code>No calling convention impact.
 No peanut butter associated with wrapping return values and caller branching.
 All throwing functions were known in the type system, enabling more flexible code motion.
 All throwing functions were known in the type system, giving us novel EH optimizations, like turning try/finally blocks into straightline code when the try could not throw.
-</pre>
+</code></pre>
 <p>A nice accident of our model was that we could have compiled it with either return codes or exceptions. Thanks to this, we actually did the experiment, to see what the impact was to our system’s size and speed. The exceptions-based system ended up being roughly 7% smaller and 4% faster on some key benchmarks.</p>
 <p>At the end, what we ended up with was the most robust error model I’ve ever used, and certainly the most performant one.
 Contracts</p>
@@ -1017,10 +1017,10 @@ ensures this.Count == old.Count + 1
 }</p>
 <p>The model was simple:</p>
 <pre style="background-color:#2b303b;">
-By default, all contracts are checked at runtime.
+<code>By default, all contracts are checked at runtime.
 The compiler was free to prove contracts false, and issue compile-time errors.
 The compiler was free to prove contracts true, and remove these runtime checks.
-</pre>
+</code></pre>
 <p>We had conditional compilation modes, however I will skip these for now. Look for an upcoming post on our language.</p>
 <p>In the early days, we experimented with contract analyzers like MSR’s Clousot, to prove contracts. For compile-time reasons, however, we had to abandon this approach. It turns out compilers are already very good at doing simple constraint solving and propagation. So eventually we just modeled contracts as facts that the compiler knew about, and let it insert the checks wherever necessary.</p>
 <p>For example, the loop optimizer complete with range information above can already leverage checks like this:</p>
@@ -1075,9 +1075,9 @@ Throughput</p>
 Culture</p>
 <p>A final word before wrapping up. Culture was the most important aspect of what we did. Without the culture, such an amazing team wouldn’t have self-selected, and wouldn’t have relentlessly pursued all of the above achievements. I’ll devote an entire post to this. However, in the context of compilers, two things helped:</p>
 <pre style="background-color:#2b303b;">
-We measured everything in the lab. “If it’s not in the lab, it’s dead to me.”
+<code>We measured everything in the lab. “If it’s not in the lab, it’s dead to me.”
 We reviewed progress early and often. Even in areas where no progress was made. We were habitually self-critical.
-</pre>
+</code></pre>
 <p>Every sprint, we had a so-called “CQ Review” (where CQ stands for “code quality”). The compiler team prepared for a few days, by reviewing every benchmark – ranging from the lowest of microbenchmarks to compiling and booting all of Windows – and investigating any changes. All expected wins were confirmed (we called this “confirming your kill”), any unexpected regressions were root cause analyzed (and bugs filed), and any wins that didn’t materialize were also analyzed and reported on so that we could learn from it. We even stared at numbers that didn’t change, and asked ourselves, why didn’t they change. Was it expected? Do we feel bad about it and, if so, how will we change next sprint? We reviewed our competitors’ latest compiler drops and monitored their rate of change. And so on.</p>
 <p>This process was enormously healthy. Everyone was encouraged to be self-critical. This was not a “witch hunt”; it was an opportunity to learn as a team how to do better at achieving our goals.</p>
 <p>Post-Midori, I have kept this process. I’ve been surprised at how contentious this can be with some folks. They get threatened and worry their lack of progress makes them look bad. They use “the numbers aren’t changing because that’s not our focus right now” as justification for getting out of the rhythm. In my experience, so long as the code is changing, the numbers are changing. It’s best to keep your eye on them lest you get caught with your pants around your ankles many months later when it suddenly matters most. The discipline and constant drumbeat are the most important parts of these reviews, so skipping even just one can be detrimental, and hence was verboten.</p>
@@ -1095,20 +1095,20 @@ Introduction</p>
 <p>Our overall solution was to offer a two-pronged error model. On one hand, you had fail-fast – we called it abandonment – for programming bugs. And on the other hand, you had statically checked exceptions for recoverable errors. The two were very different, both in programming model and the mechanics behind them. Abandonment unapologetically tore down the entire process in an instant, refusing to run any user code while doing so. (Remember, a typical Midori program had many small, lightweight processes.) Exceptions, of course, facilitated recovery, but had deep type system support to aid checking and verification.</p>
 <p>This journey was long and winding. To tell the tale, I’ve broken this post into six major areas:</p>
 <pre style="background-color:#2b303b;">
-Ambitions and Learnings
+<code>Ambitions and Learnings
 Bugs Aren’t Recoverable Errors!
 Reliability, Fault-Tolerance, and Isolation
 Bugs: Abandonment, Assertions, and Contracts
 Recoverable Errors: Type-Directed Exceptions
 Retrospective and Conclusions
-</pre>
+</code></pre>
 <p>In hindsight, certain outcomes seem obvious. Especially given modern systems languages like Go and Rust. But some outcomes surprised us. I’ll cut to the chase wherever I can but I’ll give ample back-story along the way. We tried out plenty of things that didn’t work, and I suspect that’s even more interesting than where we ended up when the dust settled.
 Ambitions and Learnings</p>
 <p>Let’s start by examining our architectural principles, requirements, and learnings from existing systems.
 Principles</p>
 <p>As we set out on this journey, we called out several requirements of a good Error Model:</p>
 <pre style="background-color:#2b303b;">
-Usable. It must be easy for developers to do the “right” thing in the face of error, almost as if by accident. A friend and colleague famously called this falling into the The Pit of Success. The model should not impose excessive ceremony in order to write idiomatic code. Ideally it is cognitively familiar to our target audience.
+<code>Usable. It must be easy for developers to do the “right” thing in the face of error, almost as if by accident. A friend and colleague famously called this falling into the The Pit of Success. The model should not impose excessive ceremony in order to write idiomatic code. Ideally it is cognitively familiar to our target audience.
 
 Reliable. The Error Model is the foundation of the entire system’s reliability. We were building an operating system, after all, so reliability was paramount. You might even have accused us as obsessively pursuing extreme levels of it. Our mantra guiding much of the programming model development was “correct by construction.”
 
@@ -1119,7 +1119,7 @@ Concurrent. Our entire system was distributed and highly concurrent. This raises
 Diagnosable. Debugging failures, either interactively or after-the-fact, needs to be productive and easy.
 
 Composable. At the core, the Error Model is a programming language feature, sitting at the center of a developer’s expression of code. As such, it had to provide familiar orthogonality and composability with other features of the system. Integrating separately authored components had to be natural, reliable, and predictable.
-</pre>
+</code></pre>
 <p>It’s a bold claim, however I do think what we ended up with succeeded across all dimensions.
 Learnings</p>
 <p>Existing Error Models didn’t meet the above requirements for us. At least not fully. If one did well on a dimension, it’d do poorly at another. For instance, error codes can have good reliability, but many programmers find them error prone to use; further, it’s easy to do the wrong thing – like forget to check one – which clearly violates the “pit of success” requirement.</p>
@@ -1148,18 +1148,18 @@ if (err) {
 <p>Many functional languages use return codes disguised in monads and named things like Option<T>, Maybe<T>, or Error<T>, which, when coupled with a dataflow-style of programming and pattern matching, feel far more natural. This approach removes several major drawbacks to return codes that we’re about to discuss, especially compared to C. Rust has largely adopted this model but has dome some exciting things with it for systems programmers.</p>
 <p>Despite their simplicity, return codes do come with some baggage; in summary:</p>
 <pre style="background-color:#2b303b;">
-Performance can suffer.
+<code>Performance can suffer.
 Programming model usability can be poor.
 The biggie: You can accidentally forget to check for errors.
-</pre>
+</code></pre>
 <p>Let’s discuss each one, in order, with examples from the languages cited above.
 Performance</p>
 <p>Error codes fail the test of “zero overhead for common cases; pay for play for uncommon cases”:</p>
 <pre style="background-color:#2b303b;">
-There is calling convention impact. You now have two values to return (for non-void returning functions): the actual return value and the possible error. This burns more registers and/or stack space, making calls less efficient. Inlining can of course help to recover this for the subset of calls that can be inlined.
+<code>There is calling convention impact. You now have two values to return (for non-void returning functions): the actual return value and the possible error. This burns more registers and/or stack space, making calls less efficient. Inlining can of course help to recover this for the subset of calls that can be inlined.
 
 There are branches injected into callsites anywhere a callee can fail. I call costs like this “peanut butter,” because the checks are smeared across the code, making it difficult to measure the impact directly. In Midori we were able to experiment and measure, and confirm that yes, indeed, the cost here is nontrivial. There is also a secondary effect which is, because functions contain more branches, there is more risk of confusing the optimizer.
-</pre>
+</code></pre>
 <p>This might be surprising to some people, since undoubtedly everyone has heard that “exceptions are slow.” It turns out that they don’t have to be. And, when done right, they get error handling code and data off hot paths which increases I-cache and TLB performance, compared to the overheads above, which obviously decreases them.</p>
 <p>Many high performance systems have been built using return codes, so you might think I’m nitpicking. As with many things we did, an easy criticism is that we took too extreme an approach. But the baggage gets worse.
 Forgetting to Check Them</p>
@@ -1207,10 +1207,10 @@ return error;</p>
 <p>In languages like D, C#, and Java, you have finally blocks to encode this “before scope exits” pattern more directly. Similarly, Microsoft’s proprietary extensions to C++ offer __finally, even if you’re not fully buying into RAII and exceptions. And D provides scope and Go offers defer. All of these help to eradicate the goto Error pattern.</p>
 <p>Next, imagine my function wants to return a real value and the possibility of an error? We’ve burned the return slot already so there are two obvious possibilities:</p>
 <pre style="background-color:#2b303b;">
-We can use the return slot for one of the two values (commonly the error), and another slot – like a pointer parameter – for the other of the two (commonly the real value). This is the common approach in C.
+<code>We can use the return slot for one of the two values (commonly the error), and another slot – like a pointer parameter – for the other of the two (commonly the real value). This is the common approach in C.
 
 We can return a data structure that carries the possibility of both in its very structure. As we will see, this is common in functional languages. But in a language like C, or Go even, that lacks parametric polymorphism, you lose typing information about the returned value, so this is less common to see. C++ of course adds templates, so in principle it could do this, however because it adds exceptions, the ecosystem around return codes is lacking.
-</pre>
+</code></pre>
 <p>In support of the performance claims above, imagine what both of these do to your program’s resulting assembly code.
 Returning Values “On The Side”</p>
 <p>An example of the first approach in C looks like this:</p>
@@ -1252,8 +1252,8 @@ Return Values in Data Structures</p>
 <p>For an example of a modern take on this, check out Scala’s Option type. The unfortunate news is that some languages, like those in the ML family and even Scala (thanks to its JVM heritage), mix this elegant model with the world of unchecked exceptions. This taints the elegance of the monadic data structure approach.</p>
 <p>Haskell does something even cooler and gives the illusion of exception handling while still using error values and local control flow:</p>
 <pre style="background-color:#2b303b;">
-There is an old dispute between C++ programmers on whether exceptions or error return codes are the right way. Niklas Wirth considered exceptions to be the reincarnation of GOTO and thus omitted them in his languages. Haskell solves this problem a diplomatic way: Functions return error codes, but the handling of error codes does not uglify the code.
-</pre>
+<code>There is an old dispute between C++ programmers on whether exceptions or error return codes are the right way. Niklas Wirth considered exceptions to be the reincarnation of GOTO and thus omitted them in his languages. Haskell solves this problem a diplomatic way: Functions return error codes, but the handling of error codes does not uglify the code.
+</code></pre>
 <p>The trick here is to support all the familiar throw and catch patterns, but using monads rather than control flow.</p>
 <p>Although Rust also uses error codes it is also in the style of the functional error types. For example, imagine we are writing a function named bar in Go: we’d like to call foo, and then simply propagate the error to our caller if it fails:</p>
 <p>func bar() error {
@@ -1305,17 +1305,17 @@ Foo(); // Let the error escape to our callers.
 <p>.NET makes a bad situation even worse due to asynchronous exceptions. C++ has so-called “asynchronous exceptions” too: these are failures that are triggered by hardware faults, like access violations. It gets really nasty in .NET, however. An arbitrary thread can inject a failure at nearly any point in your code. Even between the RHS and LHS of an assignment! As a result, things that look atomic in source code aren’t. I wrote about this 10 years ago and the challenges still exist, although the risk has lessened as .NET generally learned that thread aborts are problematic. The new CoreCLR even lacks AppDomains, and the new ASP.NET Core 1.0 stack certainly doesn’t use thread aborts like it used to. But the APIs are still there.</p>
 <p>There’s a famous interview with Anders Hejlsberg, C#’s chief designer, called The Trouble with Checked Exceptions. From a systems programmer’s perspective, much of it leaves you scratching your head. No statement affirms that the target customer for C# was the rapid application developer more than this:</p>
 <pre style="background-color:#2b303b;">
-Bill Venners: But aren’t you breaking their code in that case anyway, even in a language without checked exceptions? If the new version of foo is going to throw a new exception that clients should think about handling, isn’t their code broken just by the fact that they didn’t expect that exception when they wrote the code?
+<code>Bill Venners: But aren’t you breaking their code in that case anyway, even in a language without checked exceptions? If the new version of foo is going to throw a new exception that clients should think about handling, isn’t their code broken just by the fact that they didn’t expect that exception when they wrote the code?
 
 Anders Hejlsberg : No, because in a lot of cases, people don’t care. They’re not going to handle any of these exceptions. There’s a bottom level exception handler around their message loop. That handler is just going to bring up a dialog that says what went wrong and continue. The programmers protect their code by writing try finally’s everywhere, so they’ll back out correctly if an exception occurs, but they’re not actually interested in handling the exceptions.
-</pre>
+</code></pre>
 <p>This reminds me of On Error Resume Next in Visual Basic, and the way Windows Forms automatically caught and swallowed errors thrown by the application, and attempted to proceed. I’m not blaming Anders for his viewpoint here; heck, for C#’s wild popularity, I’m convinced it was the right call given the climate at the time. But this sure isn’t the way to write operating system code.</p>
 <p>C++ at least tried to offer something better than unchecked exceptions with its throw exception specifications. Unfortunately, the feature relied on dynamic enforcement which sounded its death knell instantaneously.</p>
 <p>If I write a function void f() throw(SomeError), the body of f is still free to invoke functions that throw things other than SomeError. Similarly, if I state that f throws no exceptions, using void f() throw(), it’s still possible to invoke things that throw. To implement the stated contract, therefore, the compiler and runtime must ensure that, should this happen, std::unexpected is called to rip the process down in response.</p>
 <p>I’m not the only person to recognize this design was a mistake. Indeed, throw is now deprecated. A detailed WG21 paper, Deprecating Exception Specifications, describes how C++ ended up here, and has this to offer in its opening statement:</p>
 <pre style="background-color:#2b303b;">
-Exception specifications have proven close to worthless in practice, while adding a measurable overhead to programs.
-</pre>
+<code>Exception specifications have proven close to worthless in practice, while adding a measurable overhead to programs.
+</code></pre>
 <p>The authors list three reasons for deprecating throw. Two of the three reasons were a result of the dynamic choice: runtime checking (and its associated opaque failure mode) and runtime performance overheads. The third reason, lack of composition in generic code, could have been dealt with using a proper type system (admittedly at an expense).</p>
 <p>But the worst part is that the cure relies on yet another dynamically enforced construct – the noexcept specifier – which, in my opinion, is just as bad as the disease.</p>
 <p>“Exception safety” is a commonly discussed practice in the C++ community. This approach neatly classifies how functions are intended to behave from a caller’s perspective with respect to failure, state transitions, and memory management. A function falls into one of four kinds: no-throw means forward progress is guaranteed and no exceptions will emerge; strong safety means that state transitions happen atomically and a failure will not leave behind partially committed state or broken invariants; basic safety means that, though a function might partially commit state changes, invariants will not be broken and leaks are prevented; and finally, no safety means anything’s possible. This taxonomy is quite helpful and I encourage anyone to be intentional and rigorous about error behavior, either using this approach or something similar. Even if you’re using error codes. The problem is, it’s essentially impossible to follow these guidelines in a system using unchecked exceptions, except for leaf node data structures that call a small and easily auditable set of other functions. Just think about it: to guarantee strong safety everywhere, you would need to consider the possibility of all function calls throwing, and safeguard the surrounding code accordingly. That either means programming defensively, trusting another function’s documented English prose (that isn’t being checked by a computer), getting lucky and only calling noexcept functions, or just hoping for the best. Thanks to RAII, the leak-freedom aspect of basic safety is easier to attain – and pretty common these days thanks to smart pointers – but even broken invariants are tricky to prevent. The article Exception Handling: A False Sense of Security sums this up well.</p>
@@ -1352,14 +1352,14 @@ foo();
 }</p>
 <p>This is getting much closer to something we can use. But it fails on a few accounts:</p>
 <pre style="background-color:#2b303b;">
-Exceptions are used to communicate unrecoverable bugs, like null dereferences, divide-by-zero, etc.
+<code>Exceptions are used to communicate unrecoverable bugs, like null dereferences, divide-by-zero, etc.
 
 You don’t actually know everything that might be thrown, thanks to our little friend RuntimeException. Because Java uses exceptions for all error conditions – even bugs, per above – the designers realized people would go mad with all those exception specifications. And so they introduced a kind of exception that is unchecked. That is, a method can throw it without declaring it, and so callers can invoke it seamlessly.
 
 Although signatures declare exception types, there is no indication at callsites what calls might throw.
 
 People hate them.
-</pre>
+</code></pre>
 <p>That last one is interesting, and I shall return to it later when describing the approach Midori took. In summary, peoples’ distaste for checked exceptions in Java is largely derived from, or at least significantly reinforced by, the other three bullets above. The resulting model seems to be the worst of both worlds. It doesn’t help you to write bulletproof code and it’s hard to use. You end up writing down a lot of gibberish in your code for little perceived benefit. And versioning your interfaces is a pain in the ass. As we’ll see later, we can do better.</p>
 <p>That versioning point is worth a ponder. If you stick to a single kind of throw, then the versioning problem is no worse than error codes. Either a function fails or it doesn’t. It’s true that if you design version 1 of your API to have no failure mode, and then want to add failures in version 2, you’re screwed. As you should be, in my opinion. An API’s failure mode is a critical part of its design and contract with callers. Just as you wouldn’t change the return type of an API silently without callers needing to know, you shouldn’t change its failure mode in a semantically meaningful way. More on this controversial point later on.</p>
 <p>CLU has an interesting approach, as described in this crooked and wobbly scan of a 1979 paper by Barbara Liskov, Exception Handling in CLU. Notice that they focus a lot on “linguistics”; in other words, they wanted a language that people would love. The need to check and repropagate all errors at callsites felt a lot more like return values, yet the programming model had that richer and slightly declarative feel of what we now know as exceptions. And most importantly, signals (their name for throw) were checked. There were also convenient ways to terminate the program should an unexpected signal occur.
@@ -1377,17 +1377,17 @@ Where Are We?</p>
 Bugs Aren’t Recoverable Errors!</p>
 <p>A critical distinction we made early on is the difference between recoverable errors and bugs:</p>
 <pre style="background-color:#2b303b;">
-A recoverable error is usually the result of programmatic data validation. Some code has examined the state of the world and deemed the situation unacceptable for progress. Maybe it’s some markup text being parsed, user input from a website, or a transient network connection failure. In these cases, programs are expected to recover. The developer who wrote this code must think about what to do in the event of failure because it will happen in well-constructed programs no matter what you do. The response might be to communicate the situation to an end-user, retry, or abandon the operation entirely, however it is a predictable and, frequently, planned situation, despite being called an “error.”
+<code>A recoverable error is usually the result of programmatic data validation. Some code has examined the state of the world and deemed the situation unacceptable for progress. Maybe it’s some markup text being parsed, user input from a website, or a transient network connection failure. In these cases, programs are expected to recover. The developer who wrote this code must think about what to do in the event of failure because it will happen in well-constructed programs no matter what you do. The response might be to communicate the situation to an end-user, retry, or abandon the operation entirely, however it is a predictable and, frequently, planned situation, despite being called an “error.”
 
 A bug is a kind of error the programmer didn’t expect. Inputs weren’t validated correctly, logic was written wrong, or any host of problems have arisen. Such problems often aren’t even detected promptly; it takes a while until “secondary effects” are observed indirectly, at which point significant damage to the program’s state might have occurred. Because the developer didn’t expect this to happen, all bets are off. All data structures reachable by this code are now suspect. And because these problems aren’t necessarily detected promptly, in fact, a whole lot more is suspect. Depending on the isolation guarantees of your language, perhaps the entire process is tainted.
-</pre>
+</code></pre>
 <p>This distinction is paramount. Surprisingly, most systems don’t make one, at least not in a principled way! As we saw above, Java, C#, and dynamic languages just use exceptions for everything; and C and Go use return codes. C++ uses a mixture depending on the audience, but the usual story is a project picks a single one and uses it everywhere. You usually don’t hear of languages suggesting two different techniques for error handling, however.</p>
 <p>Given that bugs are inherently not recoverable, we made no attempt to try. All bugs detected at runtime caused something called abandonment, which was Midori’s term for something otherwise known as “fail-fast”.</p>
 <p>Each of the above systems offers abandonment-like mechanisms. C# has Environment.FailFast; C++ has std::terminate; Go has panic; Rust has panic!; and so on. Each rips down the surrounding context abruptly and promptly. The scope of this context depends on the system – for example, C# and C++ terminate the process, Go the current Goroutine, and Rust the current thread, optionally with a panic handler attached to salvage the process.</p>
 <p>Although we did use abandonment in a more disciplined and ubiquitous way than is common, we certainly weren’t the first to recognize this pattern. This Haskell essay, articulates this distinction quite well:</p>
 <pre style="background-color:#2b303b;">
-I was involved in the development of a library that was written in C++. One of the developers told me that the developers are divided into the ones who like exceptions and the other ones who prefer return codes. As it seem to me, the friends of return codes won. However, I got the impression that they debated the wrong point: Exceptions and return codes are equally expressive, they should however not be used to describe errors. Actually the return codes contained definitions like ARRAY_INDEX_OUT_OF_RANGE. But I wondered: How shall my function react, when it gets this return code from a subroutine? Shall it send a mail to its programmer? It could return this code to its caller in turn, but it will also not know how to cope with it. Even worse, since I cannot make assumptions about the implementation of a function, I have to expect an ARRAY_INDEX_OUT_OF_RANGE from every subroutine. My conclusion is that ARRAY_INDEX_OUT_OF_RANGE is a (programming) error. It cannot be handled or fixed at runtime, it can only be fixed by its developer. Thus there should be no according return code, but instead there should be asserts.
-</pre>
+<code>I was involved in the development of a library that was written in C++. One of the developers told me that the developers are divided into the ones who like exceptions and the other ones who prefer return codes. As it seem to me, the friends of return codes won. However, I got the impression that they debated the wrong point: Exceptions and return codes are equally expressive, they should however not be used to describe errors. Actually the return codes contained definitions like ARRAY_INDEX_OUT_OF_RANGE. But I wondered: How shall my function react, when it gets this return code from a subroutine? Shall it send a mail to its programmer? It could return this code to its caller in turn, but it will also not know how to cope with it. Even worse, since I cannot make assumptions about the implementation of a function, I have to expect an ARRAY_INDEX_OUT_OF_RANGE from every subroutine. My conclusion is that ARRAY_INDEX_OUT_OF_RANGE is a (programming) error. It cannot be handled or fixed at runtime, it can only be fixed by its developer. Thus there should be no according return code, but instead there should be asserts.
+</code></pre>
 <p>Abandoning fine grained mutable shared memory scopes is suspect – like Goroutines or threads or whatever – unless your system somehow makes guarantees about the scope of the potential damage done. However, it’s great that these mechanisms are there for us to use! It means using an abandonment discipline in these languages is indeed possible.</p>
 <p>There are architectural elements necessary for this approach to succeed at scale, however. I’m sure you’re thinking “If I tossed the entire process each time I had a null dereference in my C# program, I’d have some pretty pissed off customers”; and, similarly, “That wouldn’t be reliable at all!” Reliability, it turns out, might not be what you think.
 Reliability, Fault-Tolerance, and Isolation</p>
@@ -1401,8 +1401,8 @@ To Build a Reliable System</p>
 <p>In particular, isolation is critical. Midori’s process model encouraged lightweight fine-grained isolation. As a result, programs and what would ordinarily be “threads” in modern operating systems were independent isolated entities. Safeguarding against failure of one such connection is far easier than when sharing mutable state in an address space.</p>
 <p>Isolation also encourages simplicity. Butler Lampson’s classic Hints on Computer System Design explores this topic. And I always loved this quote from Hoare:</p>
 <pre style="background-color:#2b303b;">
-The unavoidable price of reliability is simplicity. (C. Hoare).
-</pre>
+<code>The unavoidable price of reliability is simplicity. (C. Hoare).
+</code></pre>
 <p>By keeping programs broken into smaller pieces, each of which can fail or succeed on its own, the state machines within them stay simpler. As a result, recovering from failure is easier. In our language, the points of possible failure were explicit, further helping to keep those internal state machines correct, and pointing out those connections with the messier outside world. In this world, the price of individual failure is not nearly as dire. I can’t over-emphasize this point. None of the language features I describe later would have worked so well without this architectural foundation of cheap and ever-present isolation.</p>
 <p>Erlang has been very successful at building this property into the language in a fundamental way. It, like Midori, leverages lightweight processes connected by message passing, and encourages fault-tolerant architectures. A common pattern is the “supervisor,” where some processes are responsible for watching and, in the event of failure, restarting other processes. This article does a terrific job articulating this philosophy – “let it crash” – and recommended techniques for architecting reliable Erlang programs in practice.</p>
 <p>The key thing, then, is not preventing failure per se, but rather knowing how and when to deal with it.</p>
@@ -1419,7 +1419,7 @@ Abandonment</p>
 Bugs: Abandonment, Assertions, and Contracts</p>
 <p>A number of kinds of bugs in Midori might trigger abandonment:</p>
 <pre style="background-color:#2b303b;">
-An incorrect cast.
+<code>An incorrect cast.
 An attempt to dereference a null pointer.
 An attempt to access an array outside of its bounds.
 Divide-by-zero.
@@ -1429,7 +1429,7 @@ Stack overflow.
 Explicit abandonment.
 Contract failures.
 Assertion failures.
-</pre>
+</code></pre>
 <p>Our fundamental belief was that each is a condition the program cannot recover from. Let’s discuss each one.
 Plain Old Bugs</p>
 <p>Some of these situations are unquestionably indicative of a program bug.</p>
@@ -1465,10 +1465,10 @@ Assertions</p>
 <p>An assertion was a manual check in the code that some condition held true, triggering abandonment if it did not. As with most systems, we had both debug-only and release code assertions, however unlike most other systems, we had more release ones than debug. In fact, our code was peppered liberally with assertions. Most methods had multiple.</p>
 <p>This kept with the philosophy that it’s better to find a bug at runtime than to proceed in the face of one. And, of course, our backend compiler was taught how to optimize them aggressively as with everything else. This level of assertion density is similar to what guidelines for highly reliable systems suggest. For example, from NASA’s paper, The Power of Ten -Rules for Developing Safety Critical Code:</p>
 <pre style="background-color:#2b303b;">
-Rule: The assertion density of the code should average to a minimum of two assertions per function. Assertions are used to check for anomalous conditions that should never happen in real-life executions. Assertions must always be side-effect free and should be defined as Boolean tests.
+<code>Rule: The assertion density of the code should average to a minimum of two assertions per function. Assertions are used to check for anomalous conditions that should never happen in real-life executions. Assertions must always be side-effect free and should be defined as Boolean tests.
 
 Rationale: Statistics for industrial coding efforts indicate that unit tests often find at least one defect per 10 to 100 lines of code written. The odds of intercepting defects increase with assertion density. Use of assertions is often also recommended as part of strong defensive coding strategy.
-</pre>
+</code></pre>
 <p>To indicate an assertion, you simply called Debug.Assert or Release.Assert:</p>
 <p>void Foo() {
 Debug.Assert(something); // Debug-only assert.
@@ -1570,10 +1570,10 @@ Contract.Ensures(UnpublishedSize == 0);
 <p>Second, you might have noticed an issue with the call to Contract.Ensures. Since Ensures is meant to hold on all exit paths of the function, how would we implement this purely as an API? The answer is, you can’t. One approach is rewriting the resulting MSIL, after the language compiler emitted it, but that’s messy as all heck. At this point, you begin to wonder, why not simply acknowledge that this is a language expressivity and semantics issue, and add syntax?</p>
 <p>Another area of perpetual struggle for us was whether contracts are conditional or not. In many classical systems, you’d check contracts in debug builds, but not the fully optimized ones. For a long time, we had the same three levels for contracts that we did assertions mentioned earlier:</p>
 <pre style="background-color:#2b303b;">
-Weak, indicated by Contract.Weak.*, meaning debug-only.
+<code>Weak, indicated by Contract.Weak.*, meaning debug-only.
 Normal, indicated simply by Contract.*, leaving it as an implementation decision when to check them.
 Strong, indicated by Contract.Strong.*, meaning always checked.
-</pre>
+</code></pre>
 <p>I’ll admit, I initially found this to be an elegant solution. Unfortunately, over time we found that there was constant confusion about whether “normal” contracts were on in debug, release, or all of the above (and so people misused weak and strong accordingly). Anyway, when we began integrating this scheme into the language and backend compiler toolchain, we ran into substantial issues and had to backpedal a little bit.</p>
 <p>First, if you simply translated Contract.Weak.Requires to weak requires and Contract.Strong.Requires to strong requires, in my opinion, you end up with a fairly clunky and specialized language syntax, with more policy than made me comfortable. It immediately calls out for parameterization and substitutability of the weak/strong policies.</p>
 <p>Next, this approach introduces a sort of new mode of conditional compilation that, to me, felt awkward. In other words, if you want a debug-only check, you can already say something like:</p>
@@ -1603,9 +1603,9 @@ Advanced Type Systems</p>
 <p>Types are preferable, because they are guaranteed to be compile-time checked; and guaranteed to be fast to check. The assurances given to the developer are strong and the overall developer productivity of using them is better.</p>
 <p>Limitations in a type system are inevitable, however; a type system needs to leave some wiggle room, otherwise it quickly grows unwieldly and unusable and, in the extreme, devolves into bi-value bits and bytes. On the other hand, I was always disappointed by two specific areas of wiggle room that required the use of contracts:</p>
 <pre style="background-color:#2b303b;">
-Nullability.
+<code>Nullability.
 Numeric ranges.
-</pre>
+</code></pre>
 <p>Approximately 90% of our contracts fell into these two buckets. As a result, we seriously explored more sophisticated type systems to classify the nullability and ranges of variables using the type system instead of contracts.</p>
 <p>To make it concrete, this was the difference between this code which uses contracts:</p>
 <p>public virtual int Read(char[] buffer, int index, int count)
@@ -1626,12 +1626,12 @@ Non-Null Types</p>
 The Type System</p>
 <p>In a nutshell, non-nullability boiled down to some simple type system rules:</p>
 <pre style="background-color:#2b303b;">
-All unadorned types T were non-null by default.
+<code>All unadorned types T were non-null by default.
 Any type could be modified with a ?, as in T?, to mark it nullable.
 null is an illegal value for variables of non-null types.
 T implicitly converts to T?. In a sense, T is a subtype of T? (although not entirely true).
 Operators exist to convert a T? to a T, with runtime checks that abandoned on null.
-</pre>
+</code></pre>
 <p>Most of this is probably “obvious” in the sense that there aren’t many choices. The name of the game is systematically ensuring all avenues of null are known to the type system. In particular, no null can ever “sneakily” become the value of a non-null T type; this meant addressing zero-initialization, perhaps the hardest problem of all.
 The Syntax</p>
 <p>Syntactically, we offered a few ways to accomplish #5, converting from T? to T. Of course, we discouraged this, and preferred you to stay in “non-null” space as long as possible. But sometimes it’s simply not possible. Multi-step initialization happens from time to time – especially with collections data structures – and had to be supported.</p>
@@ -1639,10 +1639,10 @@ The Syntax</p>
 <p>Map&lt;int, Customer&gt; customers = ...;</p>
 <p>This tells us three things by construction:</p>
 <pre style="background-color:#2b303b;">
-The Map itself is not null.
+<code>The Map itself is not null.
 The int keys inside of it will not be null.
 The Customer values inside of it will also not be null.
-</pre>
+</code></pre>
 <p>Let’s now say that the indexer actually returns null to indicate the key was missing:</p>
 <p>public TValue? this[TKey key] {
 get { ... }
@@ -1672,9 +1672,9 @@ var d = C.N&lt;object?&gt;();</p>
 <p>I think we made this one harder initially than we needed to largely because C#’s existing nullable is a pretty odd duck and we got distracted trying to mimic it too much. The good news is we finally found our way, but it took a while.</p>
 <p>To illustrate what I mean, let’s go back to the example. There are two camps:</p>
 <pre style="background-color:#2b303b;">
-The .NET camp: a is object; b, c, and d are object?.
+<code>The .NET camp: a is object; b, c, and d are object?.
 The functional language camp: a is object; b and c are object?; d is object??.
-</pre>
+</code></pre>
 <p>In other words, the .NET camp thinks you should collapse any sequence of 1 or more ?s into a single ?. The functional language camp – who understands the elegance of mathematical composition – eschews the magic and lets the world be as it is. We eventually realized that the .NET route is incredibly complex, and requires runtime support.</p>
 <p>The functional language route does bend your mind slightly at first. For example, the map example from earlier:</p>
 <p>Map&lt;int, Customer?&gt; customers = ...;
@@ -1691,13 +1691,13 @@ if (customer != null) {
 Zero-Initialization</p>
 <p>Zero-initialization is a real pain in the butt. To tame it meant:</p>
 <pre style="background-color:#2b303b;">
-All non-null fields of a class must be initialized at construction time.
+<code>All non-null fields of a class must be initialized at construction time.
 All arrays of non-null elements must be fully initialized at construction time.
-</pre>
+</code></pre>
 <p>But it gets worse. In .NET, value types are implicitly zero-initialized. The initial rule was therefore:</p>
 <pre style="background-color:#2b303b;">
-All fields of a struct must be nullable.
-</pre>
+<code>All fields of a struct must be nullable.
+</code></pre>
 <p>But that stunk. It infected the whole system with nullable types immediately. My hypothesis was that nullability only truly works if nullable is the uncommon (say 20%) case. This would have destroyed that in an instant.</p>
 <p>So we went down the path of eliminating automatic zero-initialization semantics. This was quite a large change. (C# 6 went down the path of allowing structs to provide their own zero-arguments constructors and eventually had to back it out due to the sheer impact this had on the ecosystem.) It could have been made to work but veered pretty far off course, and raised some other problems that we probably got too distracted with. If I could do it all over again, I’d just eliminate the value vs. reference type distinction altogether in C#. The rationale for that’ll become clearer in an upcoming post on battling the garbage collector.
 The Fate of Non-Null Types</p>
@@ -1734,11 +1734,11 @@ return array[index];
 Recoverable Errors: Type-Directed Exceptions</p>
 <p>Abandonment isn’t the only story, of course. There are still plenty of legitimate situations where an error the programmer can reasonably recover from occurs. Examples include:</p>
 <pre style="background-color:#2b303b;">
-File I/O.
+<code>File I/O.
 Network I/O.
 Parsing data (e.g., a compiler parser).
 Validating user data (e.g., a web form submission).
-</pre>
+</code></pre>
 <p>In each of these cases, you usually don’t want to trigger abandonment upon encountering a problem. Instead, the program expects it to occur from time to time, and needs to deal with it by doing something reasonable. Often by communicating it to someone: the user typing into a webpage, the administrator of the system, the developer using a tool, etc. Of course, abandonment is one method call away if that’s the most appropriate action to take, but it’s often too drastic for these situations. And, especially for IO, it runs the risk of making the system very brittle. Imagine if the program you’re using decided to wink out of existence every time your network connection dropped a packet!
 Enter Exceptions</p>
 <p>We used exceptions for recoverable errors. Not the unchecked kind, and not quite the Java checked kind, either.</p>
@@ -1785,10 +1785,10 @@ public override void Foo() throws {...}
 <p>All of this extra typing added great power to recoverable errors. But if contracts outnumbered exceptions by 10:1, then simple throws exceptional methods outnumbered multi-failure-mode ones by another 10:1.</p>
 <p>At this point, you may be wondering, what differentiated this from Java’s checked exceptions?</p>
 <pre style="background-color:#2b303b;">
-The fact that the lion’s share of errors were expressed using abandonment meant most APIs didn’t throw.
+<code>The fact that the lion’s share of errors were expressed using abandonment meant most APIs didn’t throw.
 
 The fact that we encouraged a single mode of failure simplified the entire system greatly. Moreover, we made it easy to go from the world of multiple modes, to just a single and back again.
-</pre>
+</code></pre>
 <p>The rich type system support around weakening and strengthening also helped, as did something else we did to that helped bridge the gap between return codes and exceptions, improved code maintainability, and more …
 Easily Auditable Callsites</p>
 <p>At this point in the story, we still haven’t achieved the full explicit syntax of error codes. The declarations of functions say whether they can fail (good), but callers of those functions still inherit silent control flow (bad).</p>
@@ -1809,15 +1809,15 @@ and_so_on(...);
 <p>(Both Rust and Swift now support a similar syntax. I have to admit I’m sad we didn’t ship this to the general public years ago. Their implementations are very different, however consider this a huge vote of confidence in their syntax.)</p>
 <p>Of course, if you are trying a function that throws like this, there are two possibilities:</p>
 <pre style="background-color:#2b303b;">
-The exception escapes the calling function.
+<code>The exception escapes the calling function.
 There is a surrounding try/catch block that handles the error.
-</pre>
+</code></pre>
 <p>In the first case, you are required to declare that your function throws too. It is up to you whether to propagate strong typing information should the callee declare it, or simply leverage the single throws bit, of course.</p>
 <p>In the second case, we of course understood all the typing information. As a result, if you tried to catch something that wasn’t declared as being thrown, we could give you an error about dead code. This was yet another controversial departure from classical exceptions systems. It always bugged me that catch (FooException) is essentially hiding a dynamic type test. Would you silently permit someone to call an API that returns just object and automatically assign that returned value to a typed variable? Hell no! So we didn’t let you do that with exceptions either.</p>
 <p>Here too CLU influenced us. Liskov talks about this in A History of CLU:</p>
 <pre style="background-color:#2b303b;">
-CLU’s mechanism is unusual in its treatment of unhandled exceptions. Most mechanisms pass these through: if the caller does not handle an exception raised by a called procedure, the exception is propagated to its caller, and so on. We rejected this approach because it did not fit our ideas about modular program construction. We wanted to be able to call a procedure knowing just its specification, not its implementation. However, if exceptions are propagated automatically, a procedure may raise an exception not described in its specification.
-</pre>
+<code>CLU’s mechanism is unusual in its treatment of unhandled exceptions. Most mechanisms pass these through: if the caller does not handle an exception raised by a called procedure, the exception is propagated to its caller, and so on. We rejected this approach because it did not fit our ideas about modular program construction. We wanted to be able to call a procedure knowing just its specification, not its implementation. However, if exceptions are propagated automatically, a procedure may raise an exception not described in its specification.
+</code></pre>
 <p>Although we discouraged wide try blocks, this was conceptually a shortcut for propagating an error code. To see what I mean, consider what you’d do in a system with error codes. In Go, you might say the following:</p>
 <p>if err := doSomething(); err != nil {
 return err
@@ -1885,11 +1885,11 @@ x = tmp.Value;</p>
 <p>Either way, this exercise very vividly demonstrates the drawbacks of return codes. All that goop – which is meant to be rarely needed (assuming, of course, that failure is rare) – is on hot paths, mucking with your program’s golden path performance. This violates one of our most important principles.</p>
 <p>I described the results of our dual mode experiment in my last post. In summary, the exceptions approach was 7% smaller and 4% faster as a geomean across our key benchmarks, thanks to a few things:</p>
 <pre style="background-color:#2b303b;">
-No calling convention impact.
+<code>No calling convention impact.
 No peanut butter associated with wrapping return values and caller branching.
 All throwing functions were known in the type system, enabling more flexible code motion.
 All throwing functions were known in the type system, giving us novel EH optimizations, like turning try/finally blocks into straightline code when the try could not throw.
-</pre>
+</code></pre>
 <p>There were other aspects of exceptions that helped with performance. I already mentioned that we didn’t grovel the callstack gathering up metadata as most exceptions systems do. We left diagnostics to our diagnostics subsystem. Another common pattern that helped, however, was to cache exceptions as frozen objects, so that each throw didn’t require an allocation:</p>
 <p>const Exception retryLayout = new Exception();
 ...
@@ -1921,7 +1921,7 @@ public void Reset(immutable object token);
 const object abortToken = new object();
 const AbortException abortException = new AbortException(abortToken);</p>
 <pre style="background-color:#2b303b;">
-void Abort() throws AbortException {
+<code>void Abort() throws AbortException {
     throw abortException;
 }
 
@@ -1935,7 +1935,7 @@ void TopOfTheStack() {
         }
     }
 }
-</pre>
+</code></pre>
 <p>}</p>
 <p>This pattern made aborts very efficient. An average FRP recalculation aborted multiple times. Remember, FRP was the backbone of all UI in the system, so the slowness often attributed to exceptions was clearly not acceptable. Even allocating an exception object would have been unfortunate, due to the ensuing GC pressure.
 Opt-in “Try” APIs</p>
@@ -1949,14 +1949,14 @@ Keepers</p>
 <p>Keepers in Midori could be used for prompt operations, but more often spanned asynchronous boundaries.</p>
 <p>The canonical example of a keeper is one guarding filesystem operations. Accessing files and directories on a file system typically has failure modes such as:</p>
 <pre style="background-color:#2b303b;">
-Invalid path specification.
+<code>Invalid path specification.
 File not found.
 Directory not found.
 File in use.
 Insufficient privileges.
 Media full.
 Media write-protected.
-</pre>
+</code></pre>
 <p>One option is to annotate each filesystem API with a throws clause for each. Or, like Java, to create an IOException hierarchy with each of these as subclasses. An alternative is to use a keeper. This ensures the overall application doesn’t need to know or care about IO errors, permitting recovery logic to be centralized. Such a keeper interface might look like this:</p>
 <p>async interface IFileSystemKeeper {
 async string InvalidPathSpecification(string path) throws;
@@ -1990,16 +1990,16 @@ Retrospective and Conclusions</p>
 <p>We’ve reached the end of this particular journey. As I said at the outset, a relatively predictable and tame outcome. But I hope all that background helped to take you through the evolution as we sorted through the landscape of errors.</p>
 <p>In summary, the final model featured:</p>
 <pre style="background-color:#2b303b;">
-An architecture that assumed fine-grained isolation and recoverability from failure.
+<code>An architecture that assumed fine-grained isolation and recoverability from failure.
 Distinguishing between bugs and recoverable errors.
 Using contracts, assertions, and, in general, abandonment for all bugs.
 Using a slimmed down checked exceptions model for recoverable errors, with a rich type system and language syntax.
 Adopting some limited aspects of return codes – like local checking – that improved reliability.
-</pre>
+</code></pre>
 <p>And, though this was a multi-year journey, there were areas of improvement we were actively working on right up until our project’s untimely demise. I classified them differently because we didn’t have enough experience using them to claim success. I would have hoped we’d have tidied up most of them and shipped them if we ever got that far. In particular, I’d have liked to put this one into the final model category:</p>
 <pre style="background-color:#2b303b;">
-Leveraging non-null types by default to eliminate a large class of nullability annotations.
-</pre>
+<code>Leveraging non-null types by default to eliminate a large class of nullability annotations.
+</code></pre>
 <p>Abandonment, and the degree to which we used it, was in my opinion our biggest and most successful bet with the Error Model. We found bugs early and often, where they are easiest to diagnose and fix. Abandonment-based errors outnumbered recoverable errors by a ratio approaching 10:1, making checked exceptions rare and tolerable to the developer.</p>
 <p>Although we never had a chance to ship this, we have since brought some of these lessons learned to other settings.</p>
 <p>During the Microsoft Edge browser rewrite from Internet Explorer, for example, we adopted abandonment in a few areas. The key one, applied by a Midori engineer, was OOM. The old code would attempt to limp along as I described earlier and almost always did the wrong thing. My understanding is that abandonment has found numerous lurking bugs, as was our experience regularly in Midori when porting existing codebases. The great thing too is that abandonment is more of an architectural discipline that can be adopted in existing code-bases ranging in programming languages.</p>
@@ -2019,13 +2019,13 @@ Introduction</p>
 Diagnosis and The Cure</p>
 <p>How can you tell whether your performance culture is on track? Well, here are some signs that it’s not:</p>
 <pre style="background-color:#2b303b;">
-Answering the question, “how is the product doing on my key performance metrics,” is difficult.
+<code>Answering the question, “how is the product doing on my key performance metrics,” is difficult.
 Performance often regresses and team members either don’t know, don’t care, or find out too late to act.
 Blame is one of the most common responses to performance problems (either people, infrastructure, or both).
 Performance tests swing wildly, cannot be trusted, and are generally ignored by most of the team.
 Performance is something one, or a few, individuals are meant to keep an eye on, instead of the whole team.
 Performance issues in production are common, and require ugly scrambles to address (and/or cannot be reproduced).
-</pre>
+</code></pre>
 <p>These may sound like technical problems. It may come as a surprise, however, that they are primarily human problems.</p>
 <p>The solution isn’t easy, especially once your culture is in the weeds. It’s always easier to not dig a hole in the first place than it is to climb out of one later on. But the first rule when you’re in a hole is to stop digging! The cultural transformation must start from the top – management taking an active role in performance, asking questions, seeking insights, demanding rigor – while it simultaneously comes from the bottom – engineers actively seeking to understand performance of the code they are writing, ruthlessly taking a zero-tolerance stance on regressions, and being ever-self-critical and on the lookout for proactive improvements.</p>
 <p>This essay will describe some ways to ensure this sort of a culture, in addition to some best practices I’ve found help to increase its effectiveness once you have one in place. A lot of it may seem obvious, but believe me, it’s pretty rare to see everything in here working in harmony in practice. But when it is, wow, what a difference it can make.</p>
@@ -2033,11 +2033,11 @@ Performance issues in production are common, and require ugly scrambles to addre
 It Starts, and Ends, with Culture</p>
 <p>The key components of a healthy performance culture are:</p>
 <pre style="background-color:#2b303b;">
-Performance is part of the daily dialogue and “buzz” within the team. Everybody plays a role.
+<code>Performance is part of the daily dialogue and “buzz” within the team. Everybody plays a role.
 Management must care – truly, not superficially – about good performance, and understand what it takes.
 Engineers take a scientific, data-driven, inquisitive approach to performance. (Measure, measure, measure!)
 Robust engineering systems are in place to track goals, past and present performance, and to block regressions.
-</pre>
+</code></pre>
 <p>I’ll spend a bit of time talking about each of these roughly in turn.
 Dialogue, Buzz, and Communication</p>
 <p>The entire team needs to be on the hook for performance.</p>
@@ -2054,10 +2054,10 @@ Management: More Carrots, Fewer Sticks</p>
 <p>Performance doesn’t come for free. It costs the team by forcing them to slow down at times, to spend energy on things other than cranking out features, and hence requires some amount of intelligent tradeoff. How much really depends on the scenario. Managers need to coach the team to spend the right ratio of time. Those who assume it will come for free usually end up spending 2-5x the amount it would have taken, just at an inopportune time later on (e.g., during the endgame of shipping the product, in production when trying to scale up from 1,000 customers to 100,000, etc).</p>
 <p>A mentor of mine used to say “You get from your teams what you reward.” It’s especially true with performance and the engineering systems surrounding them. Consider two managers:</p>
 <pre style="background-color:#2b303b;">
-Manager A gives lip service to performance culture. She, however, packs every sprint schedule with a steady stream of features – “we’ve got to crush competitor Z and must reach feature parity!” – with no time for breaks in-between. She spends all-hands team meetings praising new features, demos aplenty, and even gives out a reward to an engineer at each one for “the most groundbreaking feature.” As a result, her team cranks out features at an impressive clip, delivers fresh demos to the board every single time, and gives the sales team plenty of ammo to pursue new leads. There aren’t performance gates and engineers generally don’t bother to think much about it.
+<code>Manager A gives lip service to performance culture. She, however, packs every sprint schedule with a steady stream of features – “we’ve got to crush competitor Z and must reach feature parity!” – with no time for breaks in-between. She spends all-hands team meetings praising new features, demos aplenty, and even gives out a reward to an engineer at each one for “the most groundbreaking feature.” As a result, her team cranks out features at an impressive clip, delivers fresh demos to the board every single time, and gives the sales team plenty of ammo to pursue new leads. There aren’t performance gates and engineers generally don’t bother to think much about it.
 
 Manager B takes a more balanced approach. She believes that given the competitive landscape, and the need to impress customers and board members with whizbang demos, new features need to keep coming. But she is also wary of building up too much debt in areas like performance, reliability, and quality for areas she expects to stick. So she intentionally puts her foot on the brake and pushes the team just as hard on these areas as she does features. She demands good engineering systems and live flighting of new features with performance telemetry built-in, for example. This requires that she hold board members and product managers at bay, which is definitely unpopular and difficult. In addition to a reward for “the most groundbreaking feature” award at each all-hands, she shows charts of performance progress and delivers a “performance ninja” award too, to the engineer who delivered the most impactful performance improvement. Note that engineering systems improvements also qualify!
-</pre>
+</code></pre>
 <p>Which manager do you think is going to ship a quality product, on time, that customers are in love with? My money is on Manager B. Sometimes you’ve got to slow down to speed up.</p>
 <p>Microsoft is undergoing two interesting transitions recently that are related to this point: on one hand, the elimination of “test” as a discipline mentioned earlier; and, on the other hand, a renewed focus on engineering systems. It’s been a bumpy ride. Surprisingly, one of the biggest hurdles to get over wasn’t with the individual engineers at all – it was the managers! “Development managers” in the old model got used to focusing on features, features, features, and left most of the engineering systems work to contractors, and most of the quality work to testers. As a result, they were ill-prepared to recognize and reward the kind of work that is essential to building a great performance culture. The result? You guessed it: a total lack of performance culture. But, more subtly, you also ended up with “leadership holes”; until recently, there were virtually no high-ranking engineers working on the mission-critical engineering systems that make the entire team more productive and capable. Who wants to make a career out of the mere grunt work assigned to contractors and underappreciated by management? Again, you get what you reward.</p>
 <p>There’s a catch-22 with early prototyping where you don’t know if the code is going to survive at all, and so the temptation is to spend zero time on performance. If you’re hacking away towards a minimum viable product (MVP), and you’re a startup burning cash, it’s understandable. But I strongly advise against this. Architecture matters, and some poorly made architectural decisions made at the outset can lay the foundation for an entire skyscraper of ill-performing code atop. It’s better to make performance part of the feasibility study and early exploration.</p>
@@ -2067,14 +2067,14 @@ Process and Infrastructure</p>
 <p>“Process and infrastructure” – how boring!</p>
 <p>Good infrastructure is a must. A team lacking the above cultural traits won’t even stop to invest in infrastructure; they will simply live with what should be an infuriating lack of rigor. And good process must ensure effective use of this infrastructure. Here is the bare minimum in my book:</p>
 <pre style="background-color:#2b303b;">
-All commits must pass a set of gated performance tests beforehand.
+<code>All commits must pass a set of gated performance tests beforehand.
 Any commits that slip past this and regress performance are reverted without question. I call this the zero tolerance rule.
 Continuous performance telemetry is reported from the lab, flighting, and live environments.
 This implies that performance tests and infrastructure have a few important characteristics:
     They aren’t noisy.
     They measure the “right” thing.
     They can be run in a “reasonable” amount of time.
-</pre>
+</code></pre>
 <p>I have this saying: “If it’s not automated, it’s dead to me.”</p>
 <p>This highlights the importance of good infrastructure and avoids the dreaded “it worked fine on my computer” that everybody, I’m sure, has encountered: a test run on some random machine – under who knows what circumstances – is quoted to declare success on a benchmark… only to find out some time later that the results didn’t hold. Why is this?</p>
 <p>There are countless possibilities. Perhaps a noisy process interfered, like AntiVirus, search indexing, or the application of operating system updates. Maybe the developer accidentally left music playing in the background on their multimedia player. Maybe the BIOS wasn’t properly adjusted to disable dynamic clock scaling. Perhaps it was due to an innocent data-entry error when copy-and-pasting the numbers into a spreadhseet. Or maybe the numbers for two comparison benchmarks came from two, incomparable machine configurations. I’ve seen all of these happen in practice.</p>
@@ -2084,7 +2084,7 @@ Test Rings</p>
 <p>The reality is that it’s usually not possible to run all tests and find all problems before a commit goes in, at least not within a reasonable amount of time. A good performance engineering system should balance the productivity of speedy codeflow with the productivity and assurance of regression prevention.</p>
 <p>A decent approach for this is to organize tests into so-called “rings”:</p>
 <pre style="background-color:#2b303b;">
-An inner ring containing tests that all developers on the team measure before each commit.
+<code>An inner ring containing tests that all developers on the team measure before each commit.
 An inner ring containing tests that developers on your particular sub-team measure before each commit.
 An inner ring containing tests that developers run at their discretion before each commit.
 Any number of successive rings outside of this:
@@ -2092,7 +2092,7 @@ Any number of successive rings outside of this:
     Post-commit testing – nightly, weekly, etc. – based on time/resource constraints.
     Pre-release verification.
     Post-release telemetry and monitoring.
-</pre>
+</code></pre>
 <p>As you can see, there’s a bit of flexibility in how this gets structured in practice. I wish I could lie and say that it’s a science, however it’s an art that requires intelligently trading off many factors. This is a constant source of debate and one that the management team should be actively involved in.</p>
 <p>A small team might settle on one standard set of benchmarks across the whole team. A larger team might need to split inner ring tests along branching lines. And no matter the size, we would expect the master/main branch to enforce the most important performance metrics for the whole team, ensuring no code ever flows in that damages a core scenario.</p>
 <p>In some cases, we might leave running certain pre-commit tests to the developer’s discretion. (Note, this does not mean running pre-commit tests altogether is optional – only a particular set of them!) This might be the case if, for example, the test covered a lesser-used component and we know the nightly tests would catch any post-commit regression. In general, when you have a strong performance culture, it’s okay to trust judgement calls sometimes. Trust but verify.</p>
@@ -2104,9 +2104,9 @@ Measurement, Metrics, and Statistics</p>
 <p>Measure what, though?</p>
 <p>I put metrics into two distinct categories:</p>
 <pre style="background-color:#2b303b;">
-Consumption metrics. These directly measure the resources consumed by running a test.
+<code>Consumption metrics. These directly measure the resources consumed by running a test.
 Observational metrics. These measure the outcome of running a test, observationally, using metrics “outside” of the system.
-</pre>
+</code></pre>
 <p>Examples of consumption metrics are hardware performance counters, such as instructions retired, data cache misses, instruction cache misses, TLB misses, and/or context switches. Software performance counters are also good candidates, like number of I/Os, memory allocated (and collected), interrupts, and/or number of syscalls. Examples of observational metrics include elapsed time and cost of running the test as billed by your cloud provider. Both are clearly important for different reasons.</p>
 <p>Seeing a team measure time and time alone literally brings me to tears. It’s a good measure of what an end-user will see – and therefore makes a good high-level test – however it is seriously lacking in the insights it can give you. And if there’s no visibility into variance, it can be borderline useless.</p>
 <p>Consumption metrics are obviously much more helpful to an engineer trying to understand why something changed. In our above web server team example, imagine request response time regressed by 30%. All the test report tells us is the time. It’s true, a developer can then try to reproduce the scenario locally, and manually narrow down the cause, however can be tedious, takes time, and is likely imperfect due to differences in lab versus local hardware. What if, instead, both instructions retired and memory allocated were reported alongside the regression in time? From this, it could be easy to see that suddenly 256KB of memory was being allocated per request that wasn’t there before. Being aware of recent commits, this could make it easy for an engineer to quickly pinpoint and back out the culprit in a timely manner before additional commits pile on top, further obscuring the problem. It’s like printf debugging.</p>
@@ -2115,11 +2115,11 @@ Observational metrics. These measure the outcome of running a test, observationa
 Goals and Baselines</p>
 <p>Little of the above matters if you lack goals and baselines. For each benchmark/metric pair, I recommend recognizing four distinct concepts in your infrastructure and processes:</p>
 <pre style="background-color:#2b303b;">
-Current: the current performance (which can span multiple metrics).
+<code>Current: the current performance (which can span multiple metrics).
 Baseline: the threshold the product must stay above/below, otherwise tests fail.
 Sprint Goal: where the team must get to before the current sprint ends.
 Ship Goal: where the team must get to in order to ship a competitive feature/scenario.
-</pre>
+</code></pre>
 <p>Assume a metric where higher is better (like throughput); then it’s usually the case that Ship Goal &gt;= Sprint Goal &gt;= Current &gt;= Baseline. As wins and losses happen, continual adjustments should be made.</p>
 <p>For example, a “baseline ratcheting” process is necessary to lock in improvements. A reasonable approach is to ratchet the baseline automatically to within some percentage of the current performance, ideally based on standard deviation and/or CV. Another approach is to require that developers do it manually, so that all ratcheting is intentional and accounted for. And interestingly, you may find it helpful to ratchet in the other direction too. That is, block commits that improve performance dramatically and yet do not ratchet the baseline. This forces engineers to stop and think about whether performance changes were intentional – even the good ones! A.k.a., “confirm your kill.”</p>
 <p>It’s of course common that sprint goals remain stable from one sprint to the next. All numbers can’t be improving all the time. But this system also helps to ensure that the team doesn’t backslide on prior achievements.</p>
@@ -2157,10 +2157,10 @@ Making Concurrency Easier</p>
 <p>As a concurrency geek, this was the moment I was waiting for. Almost overnight, finding sponsors for all this innovative work I had been dreaming about got a lot easier, because it now had a real, and very urgent, business need.</p>
 <p>In short, we needed to:</p>
 <pre style="background-color:#2b303b;">
-Make it easier to write parallel code.
+<code>Make it easier to write parallel code.
 Make it easier to avoid concurrency pitfalls.
 Make both of these things happen almost “by accident.”
-</pre>
+</code></pre>
 <p>We already had threads, thread-pools, locks, and basic events. Where to go from here?</p>
 <p>Three specific projects were hatched around this point and got an infusion of interest and staffing.
 Software Transactional Memory</p>
@@ -2183,12 +2183,12 @@ Parallel Language Integrated Query (PLINQ)</p>
 <p>Alongside STM, I’d been prototyping a “skunkworks” data parallel framework, on nights and weekends, to leverage our recent work in Language Integrated Query (LINQ).</p>
 <p>The idea behind parallel LINQ (PLINQ) was to steal a page from three well-researched areas:</p>
 <pre style="background-color:#2b303b;">
-Parallel databases, which already parallelized SQL queries on users’ behalves without them needing to know about it, often with impressive results.
+<code>Parallel databases, which already parallelized SQL queries on users’ behalves without them needing to know about it, often with impressive results.
 
 Declarative and functional languages, which often used list comprehensions to express higher-level language operations that could be aggressively optimized, including parallelism. For this, I deepened my obsession with Haskell, and was inspired by APL.
 
 Data parallelism, which had quite a lengthy history in academia and even some more mainstream incarnations, most notably OpenMP.
-</pre>
+</code></pre>
 <p>The idea was pretty straightforward. Take existing LINQ queries, which already featured operations like maps, filters, and aggregations – things that were classically parallelizable in both languages and databases – and auto-parallelize them. Well, it couldn’t be implicit, because of side-effects. But all it took was a little AsParallel to enable:</p>
 <p>// Sequential:
 var q = (from x in xs
@@ -2232,7 +2232,7 @@ An Architecture, and An Idea</p>
 <p>A number of concurrency gurus were also on the Midori team, and I had been talking to them about all of this for a couple years leading up to me joining. At a top-level, we knew the existing foundation was the wrong one to bet on. Shared-memory multithreading really isn’t the future, we thought, and notably absent from all of my prior work was fixing this problem. The Midori team was set up exactly to tackle grand challenges and make big bets.</p>
 <p>So, we made some:</p>
 <pre style="background-color:#2b303b;">
-Isolation is paramount, and we will embrace it wherever possible.
+<code>Isolation is paramount, and we will embrace it wherever possible.
 
 Message passing will connect many such isolated parties through strongly typed RPC interfaces.
 
@@ -2242,7 +2242,7 @@ A “promises-like” programming model will be first class so that:
     Synchronous blocking is disallowed.
     All asynchronous activity in the system is explicit.
     Sophisticated coordination patterns are possible without resorting to locks and events.
-</pre>
+</code></pre>
 <p>To reach these conclusions we were heavily inspired by Hoare CSPs, Gul Agha’s and Carl Hewitt’s work on Actors, E, π, Erlang, and our own collective experiences building concurrent, distributed, and various RPC-based systems over the years.</p>
 <p>I didn’t say this before, however message passing was notably absent in my work on PFX. There were multiple reasons. First, there were many competing efforts, and none of them “felt” right. For instance, the Concurrency and Coordination Runtime (CCR) was very complex (but had many satisfied customers); the Axum language was, well, a new language; MSR’s Cω was powerful, but required language changes which some were hesitant to pursue (though the derivative library-only work, Joins, held some promise); and so on. Second, it didn’t help that everyone seemed to have a different idea on what the fundamental concepts should be.</p>
 <p>But it really came down to isolation. Windows processes are too heavyweight for the fine-grained isolation we thought necessary to deliver safe, ubiquitous and easy message passing. And no sub-process isolation technology on Windows was really up for the task: COM apartments, CLR AppDomains, … many flawed attempts instantly come to mind; frankly, I did not want to die on that hill.</p>
@@ -2255,7 +2255,7 @@ Why Not Stop Here?</p>
 <p>It’s a reasonable question. A very robust system could be built with nothing more than the above, and I should say, throughout multiple years of pounding away at the system, the above foundation stood the test of time and underwent far fewer changes than what came next (syntax aside). There is a simplicity to leaving it at this that I admire. In fact, with perfect hindsight, I believe stopping here would have been a reasonable story for “V1.”</p>
 <p>However, a number of things kept us pushing for more:</p>
 <pre style="background-color:#2b303b;">
-There was no sub-process parallelism. Notably absent were task and data parallelism. This was painful for a guy who had just come from building .NET’s task and PLINQ programming models. We had plenty of places that had latent parallelism just waiting to be unlocked, like image decoding, the multimedia pipeline, FRP rendering stack, browser, eventually speech recognition, and more. One of Midori’s top-level goals was to tackle the concurrency monster and, although a lot of parallelism came for “free” thanks to processes, the absence of task and data parallelism hurt.
+<code>There was no sub-process parallelism. Notably absent were task and data parallelism. This was painful for a guy who had just come from building .NET’s task and PLINQ programming models. We had plenty of places that had latent parallelism just waiting to be unlocked, like image decoding, the multimedia pipeline, FRP rendering stack, browser, eventually speech recognition, and more. One of Midori’s top-level goals was to tackle the concurrency monster and, although a lot of parallelism came for “free” thanks to processes, the absence of task and data parallelism hurt.
 
 All messages between processes required RPC data marshaling, so rich objects could not be shared. One solution to the absence of task parallelism could have been to model everything as processes. Need a task? Spawn a process. In Midori, they were cheap enough for this to work. Doing that, however, entailed marshaling data. Not only could that be an expensive operation, not all types were marshalable, severely limiting parallelizable operations.
 
@@ -2264,7 +2264,7 @@ In fact, an existing “exchange heap” was developed for buffers, loosely base
 Even intra-process race conditions existed, due to multiple asynchronous activities in-flight and interleaving, despite the lack of data races thanks to the single message loop model described above. A benefit of the await model is that interleaving are at least visible and auditable in the source code; but they could still trigger concurrency errors. We saw opportunities for the language and frameworks to help developers get this correct.
 
 Finally, we also had a vague desire to have more immutability in the system. Doing so could help with concurrency safety, of course, but we felt the language should also help developers get existing commonplace patterns correct-by-construction. We also saw performance optimization opportunities if the compiler could trust immutability.
-</pre>
+</code></pre>
 <p>We went back to academia and the ThinkWeek paper in search of inspiration. These approaches, if combined in a tasteful way, seemed like they could give us the tools necessary to deliver not only safe task and data parallelism, but also finer-grained isolation, immutability, and tools to possibly address some of the intra-process race conditions.</p>
 <p>So, we forked the C# compiler, and went to town.
 The Model</p>
@@ -2274,10 +2274,10 @@ Permission</p>
 <p>The first key concept was permission.</p>
 <p>Any reference could have one and it governed what you could do with the referent object:</p>
 <pre style="background-color:#2b303b;">
-mutable: The target object (graph) can be mutated through the usual ways.
+<code>mutable: The target object (graph) can be mutated through the usual ways.
 readonly: The target object (graph) can be read from but cannot be mutated.
 immutable: The target object (graph) can be read from and will never be mutated.
-</pre>
+</code></pre>
 <p>A subtyping relationship meant you could implicitly convert either mutable or immutable to readonly. In other words, mutable &lt;: readonly and immutable &lt;: readonly.</p>
 <p>For example:</p>
 <p>Foo m = new Foo(); // mutable by default.</p>
@@ -2321,8 +2321,8 @@ Ownership</p>
 <p>The second key concept was ownership.</p>
 <p>A reference could be given an ownership annotation, just as it could be given a permission:</p>
 <pre style="background-color:#2b303b;">
-isolated: The target object (graph) forms an unaliased transitive closure of state.
-</pre>
+<code>isolated: The target object (graph) forms an unaliased transitive closure of state.
+</code></pre>
 <p>For example:</p>
 <p>isolated List<int> builder = new List<int>();</p>
 <p>Unlike permissions, which indicate what operations are legal on a given reference, ownership annotations told us important aliasing properties about the given object graphs. An isolated graph has a single “in-reference” to the root object in the object graph, and no “out-references” (except for immutable object references, which are permitted).</p>

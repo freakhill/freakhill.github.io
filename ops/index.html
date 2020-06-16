@@ -61,25 +61,25 @@
   <h2 id="riak">Riak<a class="zola-anchor" href="#riak" aria-label="Anchor link for: riak">🔗</a></h2>
 <p>attach to running riak node</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">riak attach
-</span></pre>
+<code><span style="color:#c0c5ce;">riak attach
+</span></code></pre>
 <p>list processes by memory usage</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">riak-admin top -sort msg_q
-</span></pre>
+<code><span style="color:#c0c5ce;">riak-admin top -sort msg_q
+</span></code></pre>
 <p>programatically build a pid</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#ebcb8b;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)
-</span></pre>
+<code><span style="color:#bf616a;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)
+</span></code></pre>
 <p>get info about a process</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#ebcb8b;">erlang</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">process_info</span><span style="color:#c0c5ce;">(</span><span style="color:#ebcb8b;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)).
-</span></pre><h2 id="haproxy">Haproxy<a class="zola-anchor" href="#haproxy" aria-label="Anchor link for: haproxy">🔗</a></h2>
+<code><span style="color:#c0c5ce;">erlang:</span><span style="color:#96b5b4;">process_info</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)).
+</span></code></pre><h2 id="haproxy">Haproxy<a class="zola-anchor" href="#haproxy" aria-label="Anchor link for: haproxy">🔗</a></h2>
 <p><a href="https://cbonte.github.io/haproxy-dconv/1.9/configuration.html">Haproxy doc (1.9)</a></p>
 <p>use the runtime api to get some info</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#bf616a;">/usr/bin/socat -T</span><span style="color:#c0c5ce;"> 15</span><span style="color:#bf616a;"> -t</span><span style="color:#c0c5ce;"> 5 /run/haproxy/admin.sock - &lt;&lt;&lt; &quot;</span><span style="color:#a3be8c;">show activity</span><span style="color:#c0c5ce;">&quot; 
-</span></pre>
+<code><span style="color:#bf616a;">/usr/bin/socat -T</span><span style="color:#c0c5ce;"> 15</span><span style="color:#bf616a;"> -t</span><span style="color:#c0c5ce;"> 5 /run/haproxy/admin.sock - &lt;&lt;&lt; &quot;</span><span style="color:#a3be8c;">show activity</span><span style="color:#c0c5ce;">&quot; 
+</span></code></pre>
 <p>some of the stuff:</p>
 <ul>
 <li>show errors    : report last request and response errors for each proxy</li>
@@ -90,8 +90,8 @@
 </ul>
 <p>how to get the socket?</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#bf616a;">grep </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">stats socket</span><span style="color:#c0c5ce;">&quot; conf
-</span></pre>
+<code><span style="color:#bf616a;">grep </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">stats socket</span><span style="color:#c0c5ce;">&quot; conf
+</span></code></pre>
 <ul>
 <li><a href="https://www.haproxy.com/blog/websockets-load-balancing-with-haproxy/">Haproxy &amp; Websockets</a></li>
 <li><a href="https://www.haproxy.com/blog/haproxy-traffic-mirroring-for-real-world-testing/">Haproxy traffic mirroring</a></li>
@@ -101,14 +101,14 @@
 <p><a href="https://adoptopenjdk.net/">Adopt A JDK</a> to get a free JDK</p>
 <h3 id="jshell">jshell<a class="zola-anchor" href="#jshell" aria-label="Anchor link for: jshell">🔗</a></h3>
 <pre style="background-color:#2b303b;">
-<span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;"> con = (</span><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;">) </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">URL</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">https://***</span><span style="color:#c0c5ce;">&quot;).</span><span style="color:#bf616a;">openConnection</span><span style="color:#c0c5ce;">();
+<code><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;"> con = (</span><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;">) </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">URL</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">https://***</span><span style="color:#c0c5ce;">&quot;).</span><span style="color:#bf616a;">openConnection</span><span style="color:#c0c5ce;">();
 con.</span><span style="color:#bf616a;">setRequestMethod</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">GET</span><span style="color:#c0c5ce;">&quot;); con.</span><span style="color:#bf616a;">getResponseCode</span><span style="color:#c0c5ce;">();
-</span></pre>
+</span></code></pre>
 <p>To test whether the JVM can deal with the pointed server.</p>
 <h3 id="jmx-stuff">jmx stuff<a class="zola-anchor" href="#jmx-stuff" aria-label="Anchor link for: jmx-stuff">🔗</a></h3>
 <p>for quick debugging</p>
 <pre style="background-color:#2b303b;">
-<span style="color:#c0c5ce;">ex -vnE /...java11.../conf/security/java.policy &lt;&lt;EOF
+<code><span style="color:#c0c5ce;">ex -vnE /...java11.../conf/security/java.policy &lt;&lt;EOF
 /grant {/ a
     permission java.security.AllPermission;
 .
@@ -129,7 +129,7 @@ reset
 killall java
 unset JAVA_TOOL_OPTIONS
 jstatd -p ...whatever... &amp;
-</span></pre><h2 id="security">Security<a class="zola-anchor" href="#security" aria-label="Anchor link for: security">🔗</a></h2>
+</span></code></pre><h2 id="security">Security<a class="zola-anchor" href="#security" aria-label="Anchor link for: security">🔗</a></h2>
 <ul>
 <li>script for quick securing of servers: <a href="https://github.com/marshyski/quick-secure">github repo</a></li>
 <li>non root port 80 binding: <a href="https://wiki.apache.org/httpd/NonRootPortBinding">link</a></li>
