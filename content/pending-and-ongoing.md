@@ -54,6 +54,10 @@ What Is a Masterpiece? (Walter Neurath Memorial Lectures, No 11)
 - Visual Thinking
 - The psychology of the child
 
+### Excellent read
+
+- https://pvk.ca/Blog/2019/02/25/the-unscalable-thread-pool/
+
 ## Mini book reviews, starting from the 17th of march 2019
 
 #### [The book of numbers](https://mennohenselmans.com/the-myth-of-1glb-optimal-protein-intake-for-bodybuilders/)
