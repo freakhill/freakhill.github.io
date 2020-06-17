@@ -34,8 +34,6 @@ in_search_index = true
 ### Currently reading:
 
 - [Notes on the synthesis of form](https://www.amazon.com/Notes-Synthesis-Form-Harvard-Paperbacks/dp/0674627512) (there is also a pdf out there)
-- [SOA Patterns](https://www.amazon.com/SOA-Patterns-Arnon-Rotem-Gal-Oz/dp/1933988266)
-- [Papert - Mindstorms 1st ed](http://worrydream.com/refs/Papert%20-%20Mindstorms%201st%20ed.pdf)
 
 ### To buy
 What Is a Masterpiece? (Walter Neurath Memorial Lectures, No 11)
@@ -83,6 +81,10 @@ This book has good informative content! But it is written in an extremely labori
 Excellent content! Very practical advices on how to prepare and deliver slide based presentations, valid for not only scientists, but also engineers (and maybe/probable others). However the book repeat itself so much that I think it could easily be cut in half. I understand repeating yourself a little, but that much repeating should be reserved for 500+ p. books... The author also has a passion for namedropping. Honestly you could cut that book by 2/3rd and keep the content intact, some limited repeating included.
 
 Still I recommend the read!
+
+### [Designing Distributed Systems](https://www.amazon.com/Designing-Distributed-Systems-Patterns-Paradigms-ebook/dp/B079YTM4FC)
+
+This is basically a kubernetes tutorial... There is good content in this but it is like a fifth or a tenth of the book. At least the kubernetes parts are quick to skip. A few hours read.
 
 ## Music
 
