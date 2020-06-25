@@ -8,8 +8,7 @@ in_search_index = true
 [extra]
 +++
 
-- [buy when i buy my own windows pc - lazy nezumi](https://lazynezumi.com/buy)
-- [FetiFes](https://www.fetifes.com/)
+- high quality cheap audio device brand (mic/amps) [Advance Audio](https://advancedaudio.ca/)
 - word for "theme song" 主題歌
 
 - [Library to parse/optimize queries from SQL](https://calcite.apache.org/)
