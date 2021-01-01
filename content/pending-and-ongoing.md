@@ -86,6 +86,10 @@ Still I recommend the read!
 
 This is basically a kubernetes tutorial... There is good content in this but it is like a fifth or a tenth of the book. At least the kubernetes parts are quick to skip. A few hours read.
 
+### [Domain-Driven Design](https://www.amazon.co.jp/-/en/Evans-Eric-ebook/dp/B00794TAUG/ref=sr_1_1?dchild=1&keywords=domain+driven+design&qid=1609494586&sr=8-1)
+
+This is a thick book... I enjoyed it as one would enjoy reading a mix of a dictionary and a theological studies book... This was a slug. There are maybe ~50p of valuable-to-me stuff in there, food for thoughts. Read the bits about ubiquitous language, bounded contexts, the 17th part, then breeze through stuff written in bold, and you should be fine.
+
 ## Music
 
 - [Music theory](https://en.wikipedia.org/wiki/Music_theory)
