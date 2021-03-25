@@ -3675,3 +3675,65 @@ The model of leveraging decades of prior research was fascinating and I’m so h
 
 Anyway, there you have it. Next up in the series, we will talk about Battling the GC.
 
+# Stuff to read
+
+- [Scopes prograamming language](https://scopes.readthedocs.io/en/latest/)
+- [Pony programming laanguage](https://www.ponylang.io)
+- [Algebraic effects and handlers in Eff](https://www.eff-lang.org/handlers-tutorial.pdf)
+- [Terraa programming languaage](terralang.org)
+- [Fexprs paper](https://web.wpi.edu/Pubs/ETD/Available/etd-090110-124904/unrestricted/jshutt.pdf)
+- [Heliotrope - collapsing tower of inerpreters](https://www.youtube.com/watch?v=bi2Zd4ZmIsw&feature=emb_logo)
+- [Pink in scheme - collapsing tower of interpreters](https://github.com/namin/pink)
+- [Collapsing towers of interpreters](http://lampwww.epfl.ch/~amin/pub/collapsing-towers.pdf)
+- [Functional programming in Coq](https://softwarefoundations.cis.upenn.edu/lf-current/Basics.html#lab18)
+- [EQUIV - program equivaalence](https://softwarefoundations.cis.upenn.edu/plf-current/Equiv.html#lab9)
+- [QUICKCHICK - Property based testing in Coq](https://softwarefoundations.cis.upenn.edu/qc-current/Introduction.html#lab3)
+- [Canonical structures for the working Coq user](https://hal.inria.fr/hal-00816703/document/)
+- [First class modules and modular implicits in Ocaml](http://tycon.github.io/modular-implicits.html)
+- [Modular implicits](https://arxiv.org/pdf/1512.01895.pdf)
+- [Modular type classes](https://people.mpi-sws.org/~dreyer/papers/mtc/main-long.pdf)
+- [Type theory in Type theory](http://www.cs.nott.ac.uk/%7Epsztxa/publ/tt-in-tt.pdf)
+- [Effects as Sessions - Sessions as Effects](http://www.doc.ic.ac.uk/~dorchard/publ/popl16-orchard-yoshida.pdf)
+- [System F-omega with EquirecursiveTypes for Datatype-Generic Programming](http://ps.informatik.uni-tuebingen.de/research/functors/equirecursion-fomega-popl16.pdf)
+- [Context threading to implement efficient VM](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=C53DB74541258B744CE2392FE68848AF?doi=10.1.1.59.1271&rep=rep1&type=pdf)
+- [Partial evaluation of Computation process - Futamura](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.10.2747&rep=rep1&type=pdf)
+- [Egison pattern matching](https://www.egison.org/)
+- [Coding a lisp interpreter in Shen](http://www.shenlanguage.org/shenpaper.pdf)
+- [ShenDoc](http://www.shenlanguage.org/shendoc.htm)
+- !!! [On the unity of duality](http://noamz.org/papers/unity-duality.pdf)
+- [Types are calaling conventions](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/tacc-hs09.pdf?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fsimonpj%2Fpapers%2Fstrict-core%2Ftacc-hs09.pdf)
+- [Halide lang](https://halide-lang.org/)
+- [ML modules and haskell type claasses, a constructive comparison](http://lambda-the-ultimate.org/node/1558)
+- [An ad-hoc approach to the implementation of polymorphism](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.98.2165&rep=rep1&type=pdf)
+- [An intuitionistic theory of types](https://github.com/michaelt/martin-lof/blob/master/pdfs/An-Intuitionistic-Theory-of-Types-1972.pdf)
+- [Constructive mathematics and computer programming](https://github.com/michaelt/martin-lof/blob/master/pdfs/Constructive-mathematics-and-computer-programming-1982.pdf)
+- [Programming in martin-lof's type theory](http://www.cse.chalmers.se/research/group/logic/book/book.pdf)
+- [Type, abstractions and parametric polymorphism](http://www.cse.chalmers.se/edu/year/2010/course/DAT140_Types/Reynolds_typesabpara.pdf)
+- [Separation logic, a logic for shaared mutable data structures](http://www.cs.cmu.edu/~jcr/seplogic.pdf)
+- [Introduction to separation logic](http://www.cs.cmu.edu/afs/cs.cmu.edu/project/fox-19/member/jcr/www15818As2011/cs818A3-11.html)
+- [Type theory and its meaning explanation](https://arxiv.org/pdf/1512.01837.pdf)
+
+
+
+
+find more stuff about linear types
+
+- [Dependant types aand multi-monadic effects in F*](https://www.fstar-lang.org/papers/mumon/paper.pdf)
+- [Breaking though the normalization barrier: A self interpreter for System F-omega](http://compilers.cs.ucla.edu/popl16/popl16-full.pdf)
+- [Abstracting gradual typing](https://pleiad.cl/papers/2016/garciaAl-popl2016.pdf)
+- [Is sound gradual typing dead](https://www2.ccs.neu.edu/racket/pubs/popl16-tfgnvf.pdf)
+- [An analatycal approach to programs as data objects](https://www.cs.uoregon.edu/research/summerschool/summer09/lectures/danvy-dissertation.pdf)
+- [Type inference as constriant solving](https://www.cs.uoregon.edu/research/summerschool/summer13/lectures/Type_inference.pdf)
+- [Dependent intersection - a new way of defining records in type thheory](http://www.nuprl.org/documents/Kopylov/dinter.pdf)
+- [Type theoriticaal fundations for data structures, claasses, objects](http://www.cs.cornell.edu/people/kopylov/papers/thesis/thesis.pdf)
+- [Formal foundations of computer security](http://www.nuprl.org/documents/Constable/Formal.Foundations.of.Computer.Security.Security.pdf)
+- [Unguessable atoms - a logical foundation for security](http://www.nuprl.org/documents/Bickford/unguessable.pdf)
+- [Naive computational type theory](http://www.nuprl.org/documents/Constable/naive.pdf)
+- [Innovaations in computational type theory using nuprl](http://www.nuprl.org/documents/Allen/05-jal-final.pdf)
+- [HOTT lecture notes](https://github.com/RobertHarper/hott-notes)
+- [Lecture notes on combinatory modal logic](http://www.cs.cmu.edu/~fp/courses/15816-s10/lectures/09-combinators.pdf)
+- [Summer of oregon 13 lectures vids](https://www.cs.uoregon.edu/research/summerschool/summer13/lectures/)
+- [A non type theoretic definition of martin lof types](https://ecommons.cornell.edu/bitstream/handle/1813/6672/87-832.pdf?sequence=1&isAllowed=y)
+- [Proofs and types](http://www.paultaylor.eu/stable/prot.pdf)
+- [The Spiral language](https://github.com/mrakgr/The-Spiral-Language#1-inlineables-methods-and-join-points)
+

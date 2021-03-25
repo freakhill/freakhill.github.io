@@ -28,6 +28,16 @@ in_search_index = true
 - [Blade: A data center garbage collector](https://blog.acolyer.org/2015/05/06/blade-a-data-center-garbage-collector/)
 - [Firmament: Fast, centralized cluster scheduling at scale](https://blog.acolyer.org/2016/11/30/firmament-fast-centralized-cluster-scheduling-at-scale/)
 - [Large-scale cluster management at Google with Borg](https://blog.acolyer.org/2015/05/07/large-scale-cluster-management-at-google-with-borg/)
+- [SAT SMT by example](https://sat-smt.codes/SAT_SMT_by_example.pdf)
+- [CUE data/conf validation language](https://cuelang.org/docs/about/)
+- [PAMELA (Probabalistic Advanced Modeling and Execution Learning Architecture)](https://github.com/dollabs/pamela)
+- [Should your specification language be typed](https://www.microsoft.com/en-us/research/uploads/prod/2016/12/Should-Your-Specification-Language-Be-Typed.pdf)
+- [Partisan - TCP based membership for Erlang/Elixir](https://github.com/lasp-lang/partisan)
+- [LASP distributed programming model](https://lasp-lang.readme.io/docs/what-is-lasp)
+- [Logic and lattices for distributed programing](http://www.neilconway.org/docs/socc2012_bloom_lattices.pdf)
+
+
+
 
 ## Books
 

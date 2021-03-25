@@ -147,3 +147,7 @@ and remove 1h or so
 - [more detailed blog!](https://blog.simiacryptus.com/2015/10/modeling-network-latency.html)
 - [sum of lognormal distributions](https://stats.stackexchange.com/questions/238529/the-sum-of-independent-lognormal-random-variables-appears-lognormal)
 - [the lognormal central limit theorem](http://lognormalscheduling.blogspot.com/2011/11/fenton-wilkinson-approximation-and.html)
+
+## Good links
+
+- [polyglot makefiles](http://agdr.org/2020/05/14/Polyglot-Makefiles.html)
