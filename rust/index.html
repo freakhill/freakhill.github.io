@@ -165,7 +165,7 @@
 <p>raw AST interpretation slower than bytecode slower than JIT/codegen aaaand codegen has a huge constant factor but ends up beating JIT past some point.</p>
 <h4 id="raw-interpretation">Raw interpretation<a class="zola-anchor" href="#raw-interpretation" aria-label="Anchor link for: raw-interpretation">🔗</a></h4>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
+<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
   Expr::Literal(lit) =&gt; *lit,
   Expr::Variable(var) =&gt; var.</span><span style="color:#96b5b4;">calc</span><span style="color:#c0c5ce;">(context),
   Expr::Binary { lhs, op, rhs } =&gt; {
@@ -177,7 +177,7 @@
 </span></code></pre><h4 id="bytecode">Bytecode<a class="zola-anchor" href="#bytecode" aria-label="Anchor link for: bytecode">🔗</a></h4>
 <p>compile:</p>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
+<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
   Expr::Literal(lit) =&gt; bytecode.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(BytecodeOp::Literal(*lit)),
   Expr::Variable(v) =&gt; bytecode.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(BytecodeOp::Variable(*v)),
   Expr::Binary { lhs, op, rhs } =&gt; {
@@ -189,7 +189,7 @@
 </span></code></pre>
 <p>exec:</p>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> op in &amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.ops {
+<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> op in &amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.ops {
   </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> op {
     BytecodeOp::Literal(lit) =&gt; stack.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(*lit),
     BytecodeOp::Variable(var) =&gt; stack.</span><span style="color:#96b5b4;">push</span><span style="color:#c0c5ce;">(var.</span><span style="color:#96b5b4;">calc</span><span style="color:#c0c5ce;">(context)),
@@ -203,9 +203,9 @@
 </span></code></pre><h4 id="boxed-closures-much-better-perf-than-ast-bytecode">Boxed closures (much better perf than ast/bytecode)<a class="zola-anchor" href="#boxed-closures-much-better-perf-than-ast-bytecode" aria-label="Anchor link for: boxed-closures-much-better-perf-than-ast-bytecode">🔗</a></h4>
 <p>(target is f64 because the example is a calculator...)</p>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">pub type </span><span style="color:#c0c5ce;">CompiledExpr = Box&lt;dyn Fn(&amp;Context) -&gt; </span><span style="color:#b48ead;">f64</span><span style="color:#c0c5ce;">&gt;
+<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">pub type </span><span style="color:#c0c5ce;">CompiledExpr = Box&lt;dyn Fn(&amp;Context) -&gt; </span><span style="color:#b48ead;">f64</span><span style="color:#c0c5ce;">&gt;
 </span></code></pre><pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
+<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> e {
   Expr::Literal(lit) =&gt; Box::new(</span><span style="color:#b48ead;">move </span><span style="color:#c0c5ce;">|_ctx| lit),
   Expr::Variable(var) =&gt; </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> var {
     Variable::X =&gt; Box::new(</span><span style="color:#b48ead;">move </span><span style="color:#c0c5ce;">|ctx| ctx.x),
@@ -239,7 +239,7 @@
 <p>think about it later on...</p>
 <h4 id="llvm-from-rust">LLVM from Rust<a class="zola-anchor" href="#llvm-from-rust" aria-label="Anchor link for: llvm-from-rust">🔗</a></h4>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> context = Context::create();
+<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> context = Context::create();
 </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> f64type = context.</span><span style="color:#96b5b4;">f64_type</span><span style="color:#c0c5ce;">();
 </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> builder = context.</span><span style="color:#96b5b4;">create_builder</span><span style="color:#c0c5ce;">();
 
@@ -272,7 +272,7 @@ builder.</span><span style="color:#96b5b4;">build_return</span><span style="colo
 </span><span style="color:#b48ead;">unsafe </span><span style="color:#c0c5ce;">{ engine.</span><span style="color:#96b5b4;">get_function</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">jit_compiled</span><span style="color:#c0c5ce;">&quot;)? }
 </span></code></pre><h4 id="cranelift">Cranelift<a class="zola-anchor" href="#cranelift" aria-label="Anchor link for: cranelift">🔗</a></h4>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> builder = SimpleJITBuilder::new();
+<code class="language-rust" data-lang="rust"><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> builder = SimpleJITBuilder::new();
 </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> module: Module&lt;SimpleJITBackend&gt; = Module::new(builder);
 </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> ctx = module.</span><span style="color:#96b5b4;">make_context</span><span style="color:#c0c5ce;">();
 </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> func_builder_ctx = FunctionBuilderContext::new();

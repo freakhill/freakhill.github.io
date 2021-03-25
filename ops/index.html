@@ -61,24 +61,24 @@
   <h2 id="riak">Riak<a class="zola-anchor" href="#riak" aria-label="Anchor link for: riak">🔗</a></h2>
 <p>attach to running riak node</p>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">riak attach
+<code class="language-shell" data-lang="shell"><span style="color:#c0c5ce;">riak attach
 </span></code></pre>
 <p>list processes by memory usage</p>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">riak-admin top -sort msg_q
+<code class="language-shell" data-lang="shell"><span style="color:#c0c5ce;">riak-admin top -sort msg_q
 </span></code></pre>
 <p>programatically build a pid</p>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#bf616a;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)
+<code class="language-erlang" data-lang="erlang"><span style="color:#bf616a;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)
 </span></code></pre>
 <p>get info about a process</p>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">erlang:</span><span style="color:#96b5b4;">process_info</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)).
+<code class="language-erlang" data-lang="erlang"><span style="color:#c0c5ce;">erlang:</span><span style="color:#96b5b4;">process_info</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">c</span><span style="color:#c0c5ce;">:</span><span style="color:#bf616a;">pid</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">227</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)).
 </span></code></pre><h2 id="haproxy">Haproxy<a class="zola-anchor" href="#haproxy" aria-label="Anchor link for: haproxy">🔗</a></h2>
 <p><a href="https://cbonte.github.io/haproxy-dconv/1.9/configuration.html">Haproxy doc (1.9)</a></p>
 <p>use the runtime api to get some info</p>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#bf616a;">/usr/bin/socat -T</span><span style="color:#c0c5ce;"> 15</span><span style="color:#bf616a;"> -t</span><span style="color:#c0c5ce;"> 5 /run/haproxy/admin.sock - &lt;&lt;&lt; &quot;</span><span style="color:#a3be8c;">show activity</span><span style="color:#c0c5ce;">&quot; 
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">/usr/bin/socat -T</span><span style="color:#c0c5ce;"> 15</span><span style="color:#bf616a;"> -t</span><span style="color:#c0c5ce;"> 5 /run/haproxy/admin.sock - &lt;&lt;&lt; &quot;</span><span style="color:#a3be8c;">show activity</span><span style="color:#c0c5ce;">&quot; 
 </span></code></pre>
 <p>some of the stuff:</p>
 <ul>
@@ -90,7 +90,7 @@
 </ul>
 <p>how to get the socket?</p>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#bf616a;">grep </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">stats socket</span><span style="color:#c0c5ce;">&quot; conf
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">grep </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">stats socket</span><span style="color:#c0c5ce;">&quot; conf
 </span></code></pre>
 <ul>
 <li><a href="https://www.haproxy.com/blog/websockets-load-balancing-with-haproxy/">Haproxy &amp; Websockets</a></li>
@@ -101,14 +101,14 @@
 <p><a href="https://adoptopenjdk.net/">Adopt A JDK</a> to get a free JDK</p>
 <h3 id="jshell">jshell<a class="zola-anchor" href="#jshell" aria-label="Anchor link for: jshell">🔗</a></h3>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;"> con = (</span><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;">) </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">URL</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">https://***</span><span style="color:#c0c5ce;">&quot;).</span><span style="color:#bf616a;">openConnection</span><span style="color:#c0c5ce;">();
+<code class="language-java" data-lang="java"><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;"> con = (</span><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;">) </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">URL</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">https://***</span><span style="color:#c0c5ce;">&quot;).</span><span style="color:#bf616a;">openConnection</span><span style="color:#c0c5ce;">();
 con.</span><span style="color:#bf616a;">setRequestMethod</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">GET</span><span style="color:#c0c5ce;">&quot;); con.</span><span style="color:#bf616a;">getResponseCode</span><span style="color:#c0c5ce;">();
 </span></code></pre>
 <p>To test whether the JVM can deal with the pointed server.</p>
 <h3 id="jmx-stuff">jmx stuff<a class="zola-anchor" href="#jmx-stuff" aria-label="Anchor link for: jmx-stuff">🔗</a></h3>
 <p>for quick debugging</p>
 <pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">ex -vnE /...java11.../conf/security/java.policy &lt;&lt;EOF
+<code class="language-shell" data-lang="shell"><span style="color:#c0c5ce;">ex -vnE /...java11.../conf/security/java.policy &lt;&lt;EOF
 /grant {/ a
     permission java.security.AllPermission;
 .
@@ -171,6 +171,10 @@ jstatd -p ...whatever... &amp;
 <li><a href="https://blog.simiacryptus.com/2015/10/modeling-network-latency.html">more detailed blog!</a></li>
 <li><a href="https://stats.stackexchange.com/questions/238529/the-sum-of-independent-lognormal-random-variables-appears-lognormal">sum of lognormal distributions</a></li>
 <li><a href="http://lognormalscheduling.blogspot.com/2011/11/fenton-wilkinson-approximation-and.html">the lognormal central limit theorem</a></li>
+</ul>
+<h2 id="good-links">Good links<a class="zola-anchor" href="#good-links" aria-label="Anchor link for: good-links">🔗</a></h2>
+<ul>
+<li><a href="http://agdr.org/2020/05/14/Polyglot-Makefiles.html">polyglot makefiles</a></li>
 </ul>
 
 </div>
