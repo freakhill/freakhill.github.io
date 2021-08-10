@@ -64,6 +64,12 @@ grep "stats socket" conf
 
 [Adopt A JDK](https://adoptopenjdk.net/) to get a free JDK
 
+### list jvm options (command line cli parameters)
+
+```bash
+java -XX:+PrintFlagsFinal
+```
+
 ### jshell
 
 ```java
