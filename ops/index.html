@@ -99,7 +99,10 @@
 </ul>
 <h2 id="jvm">JVM<a class="zola-anchor" href="#jvm" aria-label="Anchor link for: jvm">🔗</a></h2>
 <p><a href="https://adoptopenjdk.net/">Adopt A JDK</a> to get a free JDK</p>
-<h3 id="jshell">jshell<a class="zola-anchor" href="#jshell" aria-label="Anchor link for: jshell">🔗</a></h3>
+<h3 id="list-jvm-options-command-line-cli-parameters">list jvm options (command line cli parameters)<a class="zola-anchor" href="#list-jvm-options-command-line-cli-parameters" aria-label="Anchor link for: list-jvm-options-command-line-cli-parameters">🔗</a></h3>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">java -XX</span><span style="color:#c0c5ce;">:+PrintFlagsFinal
+</span></code></pre><h3 id="jshell">jshell<a class="zola-anchor" href="#jshell" aria-label="Anchor link for: jshell">🔗</a></h3>
 <pre style="background-color:#2b303b;">
 <code class="language-java" data-lang="java"><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;"> con = (</span><span style="color:#ebcb8b;">HttpURLConnection</span><span style="color:#c0c5ce;">) </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">URL</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">https://***</span><span style="color:#c0c5ce;">&quot;).</span><span style="color:#bf616a;">openConnection</span><span style="color:#c0c5ce;">();
 con.</span><span style="color:#bf616a;">setRequestMethod</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">GET</span><span style="color:#c0c5ce;">&quot;); con.</span><span style="color:#bf616a;">getResponseCode</span><span style="color:#c0c5ce;">();
