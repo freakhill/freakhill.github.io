@@ -97,6 +97,18 @@
 <li><a href="https://www.haproxy.com/blog/haproxy-traffic-mirroring-for-real-world-testing/">Haproxy traffic mirroring</a></li>
 <li><a href="https://www.haproxy.com/blog/extending-haproxy-with-the-stream-processing-offload-engine/">Haproxy SPOE filters</a></li>
 </ul>
+<h2 id="container-stuff">Container stuff<a class="zola-anchor" href="#container-stuff" aria-label="Anchor link for: container-stuff">🔗</a></h2>
+<p>go into container to run gdb</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">nsenter -t </span><span style="color:#c0c5ce;">$</span><span style="color:#bf616a;">host_pid -m -p</span><span style="color:#c0c5ce;"> gdb</span><span style="color:#bf616a;"> -p </span><span style="color:#c0c5ce;">$</span><span style="color:#bf616a;">in_container_pid
+</span></code></pre>
+<p>bind the container fs to get symbols in thee binary container from the host machine with perf (<a href="https://newbedev.com/how-do-you-get-debugging-symbols-working-in-linux-perf-tool-inside-docker-containers">from this</a>)</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">bindfs</span><span style="color:#c0c5ce;"> /proc/$(</span><span style="color:#bf616a;">docker</span><span style="color:#c0c5ce;"> inspect</span><span style="color:#bf616a;"> --format </span><span style="color:#c0c5ce;">{{.State.Pid}} $</span><span style="color:#bf616a;">CONTAINER_ID</span><span style="color:#c0c5ce;">)/root /foo
+</span><span style="color:#bf616a;">perf</span><span style="color:#c0c5ce;"> record</span><span style="color:#bf616a;"> -g -a -F</span><span style="color:#c0c5ce;"> 100</span><span style="color:#bf616a;"> -e</span><span style="color:#c0c5ce;"> cpu-clock</span><span style="color:#bf616a;"> -G</span><span style="color:#c0c5ce;"> docker/$(</span><span style="color:#bf616a;">docker</span><span style="color:#c0c5ce;"> inspect</span><span style="color:#bf616a;"> --format </span><span style="color:#c0c5ce;">{{.Id}} $</span><span style="color:#bf616a;">CONTAINER_ID</span><span style="color:#c0c5ce;">) sleep 90
+</span></code></pre><h2 id="flamegraph">Flamegraph<a class="zola-anchor" href="#flamegraph" aria-label="Anchor link for: flamegraph">🔗</a></h2>
+<p><a href="https://github.com/brendangregg/FlameGraph">Flamegraph instructions</a></p>
+<p>(clone the repo and do the stuff)</p>
 <h2 id="jvm">JVM<a class="zola-anchor" href="#jvm" aria-label="Anchor link for: jvm">🔗</a></h2>
 <p><a href="https://adoptopenjdk.net/">Adopt A JDK</a> to get a free JDK</p>
 <h3 id="list-jvm-options-command-line-cli-parameters">list jvm options (command line cli parameters)<a class="zola-anchor" href="#list-jvm-options-command-line-cli-parameters" aria-label="Anchor link for: list-jvm-options-command-line-cli-parameters">🔗</a></h3>
