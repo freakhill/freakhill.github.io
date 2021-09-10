@@ -60,6 +60,27 @@ grep "stats socket" conf
 - [Haproxy traffic mirroring](https://www.haproxy.com/blog/haproxy-traffic-mirroring-for-real-world-testing/)
 - [Haproxy SPOE filters](https://www.haproxy.com/blog/extending-haproxy-with-the-stream-processing-offload-engine/)
 
+## Container stuff
+
+go into container to run gdb
+
+```bash
+nsenter -t $host_pid -m -p gdb -p $in_container_pid
+```
+
+bind the container fs to get symbols in thee binary container from the host machine with perf ([from this](https://newbedev.com/how-do-you-get-debugging-symbols-working-in-linux-perf-tool-inside-docker-containers))
+
+```bash
+bindfs /proc/$(docker inspect --format {{.State.Pid}} $CONTAINER_ID)/root /foo
+perf record -g -a -F 100 -e cpu-clock -G docker/$(docker inspect --format {{.Id}} $CONTAINER_ID) sleep 90
+```
+
+## Flamegraph
+
+[Flamegraph instructions](https://github.com/brendangregg/FlameGraph)
+
+(clone the repo and do the stuff)
+
 ## JVM
 
 [Adopt A JDK](https://adoptopenjdk.net/) to get a free JDK
