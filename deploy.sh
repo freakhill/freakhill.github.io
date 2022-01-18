@@ -27,6 +27,7 @@ function setup_context() {
     trap popd EXIT
     cur_branch=$(git rev-parse --abbrev-ref HEAD)
     trap "git checkout $cur_branch" EXIT
+    return 0
 }
 
 function build_website() {
@@ -34,7 +35,7 @@ function build_website() {
     trap "rm -fr $tempdir" EXIT
     echo "zola build output to $tempdir"
     zola build --output-dir="$tempdir"
-
+    return 0
 }
 
 function git_add_and_push() {
@@ -44,6 +45,7 @@ function git_add_and_push() {
         git commit -am "autopush changes (deploy scripts)"
         git push
     fi
+    return 0
 }
 
 setup_context
