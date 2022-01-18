@@ -22,20 +22,45 @@ set -e
 # with the startup trick we ensured that $REPO is valid~ish
 REPO="$1"
 
+
+# appends a command to a trap
+#
+# - 1st arg:  code to add
+# - remaining args:  names of traps to modify
+#
+trap_add() {
+    trap_add_cmd=$1; shift || fatal "${FUNCNAME} usage error"
+    for trap_add_name in "$@"; do
+        trap -- "$(
+            # helper fn to get existing trap command from output
+            # of trap -p
+            extract_trap_cmd() { printf '%s\n' "$3"; }
+            # print existing trap command with newline
+            eval "extract_trap_cmd $(trap -p "${trap_add_name}")"
+            # print the new trap command
+            printf '%s\n' "${trap_add_cmd}"
+        )" "${trap_add_name}" \
+            || fatal "unable to add to trap ${trap_add_name}"
+    done
+}
+# set the trace attribute for the above function.  this is
+# required to modify DEBUG or RETURN traps because functions don't
+# inherit them unless the trace attribute is set
+declare -f -t trap_add
+
+
 function setup_context() {
     pushd "$REPO"
-    trap popd EXIT
+    trap_add popd EXIT
     cur_branch=$(git rev-parse --abbrev-ref HEAD)
-    trap "git checkout $cur_branch" EXIT
-    return 0
+    trap_add "git checkout $cur_branch" EXIT
 }
 
 function build_website() {
     tempdir="$1"
-    trap "rm -fr $tempdir" EXIT
+    trap_add "rm -fr $tempdir" EXIT
     echo "zola build output to $tempdir"
     zola build --output-dir="$tempdir"
-    return 0
 }
 
 function git_add_and_push() {
@@ -45,7 +70,6 @@ function git_add_and_push() {
         git commit -am "autopush changes (deploy scripts)"
         git push
     fi
-    return 0
 }
 
 setup_context
