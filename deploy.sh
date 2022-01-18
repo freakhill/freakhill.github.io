@@ -25,7 +25,7 @@ cd "$REPO"
 git checkout dev
 TEMPDIR=$(mktemp -d)
 trap "rm -fr $TEMPDIR" EXIT
-echo "zole build output to $TEMPDIR"
+echo "zola build output to $TEMPDIR"
 zola build --output-dir="$TEMPDIR"
 
 add_and_push() {
@@ -39,7 +39,7 @@ add_and_push() {
 
 add_and_push
 git checkout master
+trap "git checkout dev" EXIT
 git pull
 cp -r "$TEMPDIR/*" ./
 add_and_push
-git checkout dev
