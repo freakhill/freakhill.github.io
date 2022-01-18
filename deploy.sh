@@ -11,7 +11,7 @@ if [ -z "$1" ]
 then
     SCRIPTDIR="$( cd "$(dirname "$0")" ; pwd -P )"
     TEMPFILE=$(mktemp)
-    trap "rm -fr $TEMPFILE" ERR EXIT
+    trap "rm -fr $TEMPFILE" EXIT
     cp "$0" "$TEMPFILE"
     chmod +x "$TEMPFILE"
     exec "$TEMPFILE" "$SCRIPTDIR"
@@ -26,14 +26,15 @@ setup_context() {
     pushd "$REPO"
     trap popd EXIT
     cur_branch=$(git rev-parse --abbrev-ref HEAD)
-    trap "git checkout $cur_branch" ERR EXIT
+    trap "git checkout $cur_branch" EXIT
 }
 
 build_website() {
-    TEMPDIR=$(mktemp -d)
-    trap "rm -fr $TEMPDIR" ERR EXIT
-    echo "zola build output to $TEMPDIR"
-    zola build --output-dir="$TEMPDIR"
+    tempdir="$1"
+    trap "rm -fr $tempdir" EXIT
+    echo "zola build output to $tempdir"
+    zola build --output-dir="$tempdir"
+
 }
 
 git_add_and_push() {
@@ -48,8 +49,9 @@ git_add_and_push() {
 setup_context
 git_add_and_push
 git checkout dev
-build_website
+tempdir=$(mktemp -d)
+build_website "$tempdir"
 git checkout master
 git pull
-cp -r "$TEMPDIR/*" ./
+cp -r "$tempdir/*" ./
 git_add_and_push
