@@ -6,9 +6,8 @@
 
 ###################################################
 # startup trick
-REPO="$1"
 
-if [ -z "$REPO" ]
+if [ -z "$1" ]
 then
     SCRIPTDIR="$( cd "$(dirname "$0")" ; pwd -P )"
     TEMPFILE=$(mktemp)
@@ -21,25 +20,36 @@ fi
 
 set -e
 # with the startup trick we ensured that $REPO is valid~ish
-cd "$REPO"
-git checkout dev
-TEMPDIR=$(mktemp -d)
-trap "rm -fr $TEMPDIR" EXIT
-echo "zola build output to $TEMPDIR"
-zola build --output-dir="$TEMPDIR"
+REPO="$1"
 
-add_and_push() {
+setup_context() {
+    pushd "$REPO"
+    trap popd EXIT
+    cur_branch=$(git rev-parse --abbrev-ref HEAD)
+    trap "git checkout $cur_branch" EXIT
+}
+
+build_website() {
+    TEMPDIR=$(mktemp -d)
+    trap "rm -fr $TEMPDIR" EXIT
+    echo "zola build output to $TEMPDIR"
+    zola build --output-dir="$TEMPDIR"
+}
+
+git_add_and_push() {
     git add -A
     if [[ -n $(git status -s) ]]
     then
-        git commit -am autodeploy
+        git commit -am "autopush changes (deploy scripts)"
         git push
     fi
 }
 
-add_and_push
+setup_context
+git_add_and_push
+git checkout dev
+build_website
 git checkout master
-trap "git checkout dev" EXIT
 git pull
 cp -r "$TEMPDIR/*" ./
-add_and_push
+git_add_and_push
