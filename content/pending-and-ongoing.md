@@ -10,61 +10,12 @@ in_search_index = true
 [extra]
 +++
 
-## To read online
-
-- [Ensuring parity between Build and Production environments using Jenkins and Docker](https://engineering.klarna.com/ensuring-parity-between-build-and-production-environments-using-jenkins-and-docker-2695f758b549)
-- [The origin of complexity](https://itnext.io/the-origin-of-complexity-8ecb39130fc)
-- [BLUF: The Military Standard That Can Make Your Writing More Powerful](https://www.animalz.co/blog/bottom-line-up-front/)
-- [The Ideal Versus the Real: Revisiting the History of Virtual Machines and Containers](https://arxiv.org/pdf/1904.12226.pdf)
-- [Gradual Typing from Theory to Practice](https://blog.sigplan.org/2019/07/12/gradual-typing-theory-practice/)
-- [Demystifying Containers - Part I: Kernel Space](https://medium.com/@saschagrunert/demystifying-containers-part-i-kernel-space-2c53d6979504)
-- [Demystifying Containers - Part II: Container Runtimes](https://medium.com/@saschagrunert/demystifying-containers-part-ii-container-runtimes-e363aa378f25)
-- [No Compromises: Distributed Transactions with Consistency, Availability, and Performance](https://blog.acolyer.org/2016/01/14/no-compromises/)
-- [Blurred Persistence: Efficient Transactions in Persistent Memory](https://blog.acolyer.org/2016/01/21/blurred-persistence/)
-- [A Critique of ANSI SQL Isolation Levels](https://blog.acolyer.org/2016/02/24/a-critique-of-ansi-sql-isolation-levels/)
-- [Exploring NUMA on Amazon Cloud Instances](http://techblog.cloudperf.net/2016/09/exploring-numa-on-amazon-cloud-instances.html)
-- [Experience with Rules-Based Programming for Distributed Concurrent Fault-Tolerant Code](https://blog.acolyer.org/2016/01/19/dcft/)
-- [Consensus on Transaction Commit](https://blog.acolyer.org/2016/01/13/consensus-on-transaction-commit/)
-- [Blade: A data center garbage collector](https://blog.acolyer.org/2015/05/06/blade-a-data-center-garbage-collector/)
-- [Firmament: Fast, centralized cluster scheduling at scale](https://blog.acolyer.org/2016/11/30/firmament-fast-centralized-cluster-scheduling-at-scale/)
-- [Large-scale cluster management at Google with Borg](https://blog.acolyer.org/2015/05/07/large-scale-cluster-management-at-google-with-borg/)
-- [SAT SMT by example](https://sat-smt.codes/SAT_SMT_by_example.pdf)
-- [CUE data/conf validation language](https://cuelang.org/docs/about/)
-- [PAMELA (Probabalistic Advanced Modeling and Execution Learning Architecture)](https://github.com/dollabs/pamela)
-- [Should your specification language be typed](https://www.microsoft.com/en-us/research/uploads/prod/2016/12/Should-Your-Specification-Language-Be-Typed.pdf)
-- [Partisan - TCP based membership for Erlang/Elixir](https://github.com/lasp-lang/partisan)
-- [LASP distributed programming model](https://lasp-lang.readme.io/docs/what-is-lasp)
-- [Logic and lattices for distributed programing](http://www.neilconway.org/docs/socc2012_bloom_lattices.pdf)
-
-
-
-
 ## Books
 
 ### Currently reading:
 
+- [Thinking fast and slow](https://www.amazon.co.jp/-/en/Daniel-Kahneman-ebook/dp/B00555X8OA/ref=sr_1_1?crid=1DZJUVGFIEMYS&keywords=thinking+fast+and+slow&qid=1642515914&sprefix=thinking+fas%2Caps%2C174&sr=8-1)
 - [Notes on the synthesis of form](https://www.amazon.com/Notes-Synthesis-Form-Harvard-Paperbacks/dp/0674627512) (there is also a pdf out there)
-
-### To buy
-What Is a Masterpiece? (Walter Neurath Memorial Lectures, No 11)
-
-- Envisioning Information
-- Innovation and Entrepreneurship
-- Instead of Education
-- Lateral Thinking: Creativity Step by Step
-- Man and His Symbols
-- Nurtured by Love: The Classic Approach to Talent Education
-- Teach Your Own: A Hopeful Path for Education
-- Technology, Management and Society
-- The Origin of Consciousness in the Breakdown of the Bicameral Mind
-- The disappearance of childhood
-- Understanding Media: The Extensions of Man : Critical Edition
-- Visual Thinking
-- The psychology of the child
-
-### Excellent read
-
-- https://pvk.ca/Blog/2019/02/25/the-unscalable-thread-pool/
 
 ## Mini book reviews, starting from the 17th of march 2019
 
@@ -100,25 +51,55 @@ This is basically a kubernetes tutorial... There is good content in this but it 
 
 This is a thick book... I enjoyed it as one would enjoy reading a mix of a dictionary and a theological studies book... This was a slug. There are maybe ~50p of valuable-to-me stuff in there, food for thoughts. Read the bits about ubiquitous language, bounded contexts, the 17th part, then breeze through stuff written in bold, and you should be fine.
 
-## Music
+### [GUT - The inside story of our body's most underrated organ](https://www.amazon.co.jp/-/en/Giulia-Enders/dp/1771643765/ref=sr_1_2?crid=2EWBTY0S80HEH&keywords=gut+underrated+story&qid=1642515852&sprefix=gut+underrated+story%2Caps%2C193&sr=8-2)
 
-- [Music theory](https://en.wikipedia.org/wiki/Music_theory)
-- [Tonality](https://en.wikipedia.org/wiki/Tonality)
-- [Modes](https://en.wikipedia.org/wiki/Mode_(music))
-- [Microtonal music in live - scale of fifths](https://www.subaqueousmusic.com/sof/)
-- [Musical temperament](https://en.wikipedia.org/wiki/Musical_temperament)
-- [Octave](https://en.wikipedia.org/wiki/Octave)
-- [Diatonic scale](https://en.wikipedia.org/wiki/Diatonic_scale)
-- [Whole tone scale](https://en.wikipedia.org/wiki/Whole_tone_scale)
-- [Octatonic scale](https://en.wikipedia.org/wiki/Octatonic_scale)
-- [Harmonic series](https://en.wikipedia.org/wiki/Harmonic_series_(music))
-- [Reason for the piano layout](https://www.quora.com/Whats-the-reason-for-the-piano-keyboard-layout-of-12-keys-in-an-octave-with-7-white-keys-in-front-and-5-at-the-back-Why-this-specific-arrangement)
+Nicely written and very informative. Quite simply a must read!
 
-G sharp and A flat are not the same note
-{{ youtube(id="tGEXJe3px68") }}
+### To buy
+What Is a Masterpiece? (Walter Neurath Memorial Lectures, No 11)
 
-Understanding equal temperament
-{{ youtube(id="wUBkbrvCmGA") }}
+- Envisioning Information
+- Innovation and Entrepreneurship
+- Instead of Education
+- Lateral Thinking: Creativity Step by Step
+- Man and His Symbols
+- Nurtured by Love: The Classic Approach to Talent Education
+- Teach Your Own: A Hopeful Path for Education
+- Technology, Management and Society
+- The Origin of Consciousness in the Breakdown of the Bicameral Mind
+- The disappearance of childhood
+- Understanding Media: The Extensions of Man : Critical Edition
+- Visual Thinking
+- The psychology of the child
 
-Minor scales - Natural, Harmonic, Melodic
-{{ youtube(id="Q7WqKpD7w4Q") }}
+## Online
+
+### To read
+
+- [Ensuring parity between Build and Production environments using Jenkins and Docker](https://engineering.klarna.com/ensuring-parity-between-build-and-production-environments-using-jenkins-and-docker-2695f758b549)
+- [The origin of complexity](https://itnext.io/the-origin-of-complexity-8ecb39130fc)
+- [BLUF: The Military Standard That Can Make Your Writing More Powerful](https://www.animalz.co/blog/bottom-line-up-front/)
+- [The Ideal Versus the Real: Revisiting the History of Virtual Machines and Containers](https://arxiv.org/pdf/1904.12226.pdf)
+- [Gradual Typing from Theory to Practice](https://blog.sigplan.org/2019/07/12/gradual-typing-theory-practice/)
+- [Demystifying Containers - Part I: Kernel Space](https://medium.com/@saschagrunert/demystifying-containers-part-i-kernel-space-2c53d6979504)
+- [Demystifying Containers - Part II: Container Runtimes](https://medium.com/@saschagrunert/demystifying-containers-part-ii-container-runtimes-e363aa378f25)
+- [No Compromises: Distributed Transactions with Consistency, Availability, and Performance](https://blog.acolyer.org/2016/01/14/no-compromises/)
+- [Blurred Persistence: Efficient Transactions in Persistent Memory](https://blog.acolyer.org/2016/01/21/blurred-persistence/)
+- [A Critique of ANSI SQL Isolation Levels](https://blog.acolyer.org/2016/02/24/a-critique-of-ansi-sql-isolation-levels/)
+- [Exploring NUMA on Amazon Cloud Instances](http://techblog.cloudperf.net/2016/09/exploring-numa-on-amazon-cloud-instances.html)
+- [Experience with Rules-Based Programming for Distributed Concurrent Fault-Tolerant Code](https://blog.acolyer.org/2016/01/19/dcft/)
+- [Consensus on Transaction Commit](https://blog.acolyer.org/2016/01/13/consensus-on-transaction-commit/)
+- [Blade: A data center garbage collector](https://blog.acolyer.org/2015/05/06/blade-a-data-center-garbage-collector/)
+- [Firmament: Fast, centralized cluster scheduling at scale](https://blog.acolyer.org/2016/11/30/firmament-fast-centralized-cluster-scheduling-at-scale/)
+- [Large-scale cluster management at Google with Borg](https://blog.acolyer.org/2015/05/07/large-scale-cluster-management-at-google-with-borg/)
+- [SAT SMT by example](https://sat-smt.codes/SAT_SMT_by_example.pdf)
+- [CUE data/conf validation language](https://cuelang.org/docs/about/)
+- [PAMELA (Probabalistic Advanced Modeling and Execution Learning Architecture)](https://github.com/dollabs/pamela)
+- [Should your specification language be typed](https://www.microsoft.com/en-us/research/uploads/prod/2016/12/Should-Your-Specification-Language-Be-Typed.pdf)
+- [Partisan - TCP based membership for Erlang/Elixir](https://github.com/lasp-lang/partisan)
+- [LASP distributed programming model](https://lasp-lang.readme.io/docs/what-is-lasp)
+- [Logic and lattices for distributed programing](http://www.neilconway.org/docs/socc2012_bloom_lattices.pdf)
+
+### Excellent read
+
+- https://pvk.ca/Blog/2019/02/25/the-unscalable-thread-pool/
