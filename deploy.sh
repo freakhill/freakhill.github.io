@@ -22,14 +22,14 @@ set -e
 # with the startup trick we ensured that $REPO is valid~ish
 REPO="$1"
 
-setup_context() {
+function setup_context() {
     pushd "$REPO"
     trap popd EXIT
     cur_branch=$(git rev-parse --abbrev-ref HEAD)
     trap "git checkout $cur_branch" EXIT
 }
 
-build_website() {
+function build_website() {
     tempdir="$1"
     trap "rm -fr $tempdir" EXIT
     echo "zola build output to $tempdir"
@@ -37,7 +37,7 @@ build_website() {
 
 }
 
-git_add_and_push() {
+function git_add_and_push() {
     git add -A
     if [[ -n $(git status -s) ]]
     then
