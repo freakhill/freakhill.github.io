@@ -61,6 +61,7 @@ function build_website() {
     trap_add "rm -fr $tempdir" EXIT
     echo "zola build output to $tempdir"
     zola build --output-dir="$tempdir"
+    ls "$tempdir"
 }
 
 function git_add_and_push() {
