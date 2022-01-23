@@ -23,7 +23,7 @@ some other ex command
 and now we will save and quit
 wq
 EOF
-# -v verbose
+# -V verbose
 # -n no temporary buffer
 # -E extended ex mode (vi -E, ex -E, vim -E, exim are the same)
 ```
